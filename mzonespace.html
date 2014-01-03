@@ -1,0 +1,62 @@
+    <div id="spacegallery" data-role="page">
+      <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+      <script src="js/hammer.js"></script>
+      <script src="js/jquery.hammer.min.js"></script>
+      <script defer src="js/jquery.flexslider.js"></script>
+      <link rel="stylesheet" type="text/css" href="css/mzonespacestylesheet.css" />
+      
+      <style>
+      	ul.slides img {
+      		height: 100px !important;
+      		width: auto !important;
+      	}
+      .slider-wrapper {
+      	width:83%;
+      	position:absolute;
+      	top:520px;
+      }	
+
+      #testdiv{
+      	margin:50px;
+      	background: red;
+      	height: 100px;
+      }
+      .dragImg {
+        position: absolute;
+      }
+      </style>
+      <div style="width:151px;height:50px;position:absolute;top:10px;left:863px;">
+        <img src="css/images/spacegallery/backbtn.png" id="backbtn">
+      </div>
+    	<div class="slider-wrapper">
+            <div class="slider">
+                <div class="flexslider carousel">
+                  <ul class="slides">
+                    <li><img src="css/images/spacegallery/asteroid.png" /></li>
+                    <li><img src="css/images/spacegallery/blackhole.png" /></li>
+                    <li><img src="css/images/spacegallery/comet.png" /></li>
+                    <li><img src="css/images/spacegallery/galaxy.png" /></li>
+                    <li><img src="css/images/spacegallery/galaxy2.png" /></li>
+                    <li><img src="css/images/spacegallery/isp.png" /></li>
+                    <li><img src="css/images/spacegallery/lunarcolony.png" /></li>
+                    <li><img src="css/images/spacegallery/lunarlander.png" /></li>
+                    <li><img src="css/images/spacegallery/redgiant.png" /></li>
+                    <li><img src="css/images/spacegallery/spaceshuttle.png" /></li>
+                    <li><img src="css/images/spacegallery/supergiantblue.png" /></li>
+                    <li><img src="css/images/spacegallery/supernova.png" /></li>
+                  </ul>
+                </div><!--flexslider carousel-->
+            </div><!--slider-->
+        </div><!--slider-wrapper-->
+        
+    
+
+    <script src="js/hammer.fakemultitouch.js"></script>
+    <script src="js/hammer.showtouches.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script>
+      $("#backbtn").on('tap', function() {
+        $.mobile.changePage("controlpanel.html", {transition:"flip"});
+      });
+    </script>
+</div><!--spacegallery-->

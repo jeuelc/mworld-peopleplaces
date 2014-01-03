@@ -1,0 +1,576 @@
+/********* Super Fast Money **********/
+
+#sub-money ,#sub-money-the-magic-of-money,#sub-money-the-magic-of-money-different-types-of-money,#sub-money-the-magic-of-money-different-types-of-money-run-on-the-bank,#sub-money-the-magic-of-money-how-much-money-is-there,#sub-money-the-magic-of-money-how-much-money-is-there-inflation,#sub-money-the-magic-of-money-why-put-money-in-bank,#sub-money-what-is-money,#sub-money-what-is-money-i-owe-you,#sub-money-what-is-money-something-to-trade,#sub-money-what-is-money-store-of-value{
+  background:url('images/9-12/The_Modern_World/Money/Money_BG.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+#sub-money-how-do-you-make-money{
+  background:url('images/9-12/The_Modern_World/Money/How_Do_You_Make_Money/How_Do_You_Make_Money_BG.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+#sub-money-how-do-you-make-money-production{
+  background:url('images/9-12/The_Modern_World/Money/How_Do_You_Make_Money/Production/Production_BG.png') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+#sub-money-how-do-you-make-money-production-sale{
+  background:url('images/9-12/The_Modern_World/Money/How_Do_You_Make_Money/Production/Sale/Sale_BG.png') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+#sub-money-how-do-you-make-money-production-sale-invest-to-grow{
+  background:url('images/9-12/The_Modern_World/Money/How_Do_You_Make_Money/Production/Sale/Invest_To_Grow/Invest_To_Grow_BG.png') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+#sub-money-how-do-you-make-money-production-sale-invest-to-grow-the-competition{
+  background:url('images/9-12/The_Modern_World/Money/How_Do_You_Make_Money/Production/Sale/Invest_To_Grow/The_Competition/The_Competition_BG.png') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+#sub-money-how-do-you-make-money-production-sale-invest-to-grow-the-competition-innovate{
+  background:url('images/9-12/The_Modern_World/Money/How_Do_You_Make_Money/Production/Sale/Invest_To_Grow/The_Competition/Innovate/Innovate_BG.png') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+#sub-money-the-magic-of-money-making-money-by-lending{
+  background:url('images/9-12/The_Modern_World/Money/The_Magic_Of_Money/Making_Money_By_Lending/Making_Money_By_Lending_BG.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;	
+}
+#sub-money-what-is-money-something-to-trade-camels-vs-computers{
+  background:url('images/9-12/The_Modern_World/Money/What_Is_Money/Something_To_Trade/Camels_Vs_Computers/Camels_Vs_Computers_BG.png') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;	
+}
+#sub-money-what-is-money-store-of-value-electronic-banking{
+  background:url('images/9-12/The_Modern_World/Money/What_Is_Money/Store_Of_Value/Electronic_Banking_How_Safe_Is_It/Electronic_Banking_How_Safe_Is_It_BG.png') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;	
+}
+.plMoney, .psMoney, .bMoney, .fMoney {
+  position:absolute;
+  top:670px;
+  left:1024px;
+  z-index:20;
+}
+
+.micbtnMoney {
+  background:url('images/9-12/The_Modern_World/micmw.png') no-repeat 0 -81px;
+  height:81px;
+  width:81px;
+}
+
+.rwMoney {
+  background:url('images/9-12/The_Modern_World/rwmw.png') no-repeat 0 -73px;
+  height:73px;
+  width:73px;
+}
+
+.plpsMoney {
+  background:url('images/9-12/The_Modern_World/playmw.png') no-repeat 0 -73px;
+  height:73px;
+  width:73px;
+}
+
+.fwMoney {
+  background:url('images/9-12/The_Modern_World/fwmw.png') no-repeat 0 -73px;
+  height:73px;
+  width:73px;
+}
+
+.menubtnMoney {
+  background:url('images/9-12/The_Modern_World/menumw.png') no-repeat 0 -90px;
+  height:90px;
+  width:90px;
+}
+
+
+.homebtnMoney {
+  background:url('images/9-12/The_Modern_World/mapmw.png') no-repeat 0 -74px;
+  height:74px;
+  width:80px;
+}
+
+.mpbtnMoney {
+  background:url('images/9-12/The_Modern_World/mpointsmw.png') no-repeat 0 -84px;
+  height:79px;
+  width:80px;
+}
+
+.cpbtnMoney {
+  background:url('images/9-12/The_Modern_World/ctrlpnlmw.png') no-repeat 0 -74px;
+  height:74px;
+  width:74px;
+}
+
+.infobtnMoney {
+  background:url('images/9-12/The_Modern_World/infomw.png') no-repeat 0 -74px;
+  height:74px;
+  width:74px;
+}
+
+.credsbtnMoney {
+  background:url('images/9-12/The_Modern_World/creditsnmw.png') no-repeat 0 -74px;
+  height:74px;
+  width:74px;
+}
+
+.navtitleholderMoney{
+	width: 435px;
+	height: 68px;
+	position: absolute;
+	top: 169px;
+	left: 295px;
+	text-align: center;
+	line-height: 32px;
+}
+
+.navtitleholderMoney h1{
+	text-transform: uppercase;
+	color: #FFF;
+	font-family: Chalkboard SE;
+	padding: 0;
+	margin: 0;
+	font-weight: bold;
+}
+
+.bptitleholderMoney {
+  width:627px;
+  height:68px;
+  text-align:center;
+  line-height:28px;
+  position:absolute;
+  top:169px;
+  left:194px;
+}
+
+.bptitleholderMoney h1{
+  text-transform:uppercase;
+  color: #FFFFFF;
+  font-family:"Chalkboard SE";
+  font-weight:bold;
+  padding:0;
+  margin:0;
+}
+
+.navMoney-content{
+  position:absolute;
+  left:305px;
+  top:263px;
+  width:410px;
+  height:359px;
+  overflow-y:scroll;
+  text-align:center;
+  font-family:"comic sans ms";
+  font-size:18px;
+  font-weight:normal;
+  color:#000000;
+}
+.navMoney-content p {
+  margin-top:0 !important;
+}
+
+.navMoney-content3 {
+  position:absolute;
+  left:59px;
+  top:263px;
+  width:920px;
+  height:160px;
+  overflow-y:scroll;
+  text-align:left;
+  font-family:"comic sans ms";
+  font-size:18px;
+  font-weight:normal;
+  color:#000000;
+}
+
+
+.bpcontentMoney{
+	color: #000000;
+	font-family: Comic sans ms;
+	font-size: 18px;
+	font-weight: normal;
+	height: 356px;
+	left: 550px;
+	overflow-y: scroll;
+	position: absolute;
+	text-align: left;
+	top: 266px;
+	width: 413px;
+}
+
+.navMoney-how_do_you_make_moneny{
+	position: absolute;
+	right: 103px;
+	top: 263px;
+	width: 350px;
+	height: 359px;
+	overflow: auto;
+	text-align: center;
+	font-family: "Chalkboard SE";
+	font-size: 18px;
+	font-weight: normal;
+	color: #000000;
+}
+.navMoney-production{
+	position: absolute;
+	right: 103px;
+	top: 148px;
+	width: 350px;
+	height: 359px;
+	overflow: auto;
+	text-align: center;
+	font-family: "Chalkboard SE";
+	font-size: 18px;
+	font-weight: normal;
+	color: #000000;
+
+}
+.navMoney-camels-vs-computers{
+	position: absolute;
+	left: 60px;
+	top: 57px;
+	width: 900px;
+	height: 230px;
+	overflow: auto;
+	text-align: justify;
+	font-family: "comic sans ms";
+	font-size: 18px;
+	font-weight: normal;
+	color: #000000;
+}
+.navMoney-sale{
+	position: absolute;
+	right: 103px;
+	top: 148px;
+	width: 350px;
+	height: 425px;
+	overflow: auto;
+	text-align: center;
+	font-family: "Chalkboard SE";
+	font-size: 18px;
+	font-weight: normal;
+	color: #000000;
+
+}
+.navMoney-invest-to-grow{
+	position: absolute;
+	right: 103px;
+	top: 148px;
+	width: 350px;
+	height: 425px;
+	overflow: auto;
+	text-align: center;
+	font-family: "Chalkboard SE";
+	font-size: 18px;
+	font-weight: normal;
+	color: #000000;
+
+}
+.navMoney-the-competition{
+	position: absolute;
+	right: 103px;
+	top: 148px;
+	width: 350px;
+	height: 425px;
+	overflow: auto;
+	text-align: center;
+	font-family: "Chalkboard SE";
+	font-size: 18px;
+	font-weight: normal;
+	color: #000000;
+
+}
+.navMoney-the-competition{
+	position: absolute;
+	right: 103px;
+	top: 148px;
+	width: 350px;
+	height: 425px;
+	overflow: auto;
+	text-align: center;
+	font-family: "Chalkboard SE";
+	font-size: 18px;
+	font-weight: normal;
+	color: #000000;
+
+}
+.navMoney-making_money_by_lending{
+	position: absolute;
+	right: 0px;
+	top: 70px;
+	width: 1000px;
+	height: 359px;
+	overflow: auto;
+	text-align: justify;
+	font-family: comic sans ms;
+	font-size: 18px;
+	font-weight: normal;
+	color: #000000;	
+}
+.get_started{
+	height: 80px;
+	width: 144px;
+	top: 578px;
+	position: absolute;
+	right: 85px;
+}
+
+
+#sub-money-the-magic-of-money-different-types-of-money .bptitleholder,#sub-money-the-magic-of-money-different-types-of-money-run-on-the-bank .bptitleholder,#sub-money-the-magic-of-money-how-much-money-is-there .bptitleholder,#sub-money-the-magic-of-money-how-much-money-is-there-inflation .bptitleholder,#sub-money-the-magic-of-money-why-put-money-in-bank .bptitleholder,#sub-money-the-magic-of-money .bptitleholder,#sub-money-what-is-money-i-owe-you .bptitleholder,#sub-money-what-is-money-something-to-trade .bptitleholder,#sub-money-what-is-money-store-of-value .bptitleholder,#sub-money .bptitleholder{
+  width:627px;
+  height:68px;
+  text-align:center;
+  line-height:28px;
+  position:absolute;
+  top:169px;
+  left:194px;
+}
+
+#sub-money-how-do-you-make-money .bptitleholder{
+	width: 330px;
+	height: 68px;
+	line-height: 28px;
+	position: absolute;
+	top: 169px !important;
+	left: 573px;
+}
+
+#sub-money-how-do-you-make-money .bptitleholder h1{
+	text-transform: uppercase;
+	color: #ffffff;
+	font-family: "comic sans ms" !important;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#sub-money-what-is-money-something-to-trade-camels-vs-computers .bptitleholder{
+	width: 627px;
+	height: 68px;
+	line-height: 28px;
+	position: absolute;
+	top: 72px !important;
+	left: 80px;	
+}
+
+#sub-money-the-magic-of-money-making-money-by-lending .bptitleholder{
+	width: 627px;
+	height: 68px;
+	text-align: center;
+	line-height: 28px;
+	position: absolute;
+	top: 22px !important;
+	left: 194px;	
+}
+
+#sub-money-the-magic-of-money-making-money-by-lending .bptitleholder h1{
+	text-transform:uppercase;
+	color: #000000 !important;
+	font-family:"comic sans ms" !important;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#sub-money-how-do-you-make-money-production .bptitleholder{
+	width: 627px;
+	height: 68px;
+	text-align: center;
+	line-height: 28px;
+	position: absolute;
+	top: 82px;
+	left: 433px;	
+}
+
+#sub-money-how-do-you-make-money-production .bptitleholder h1{
+	text-transform:uppercase;
+	color: #ffffff !important;
+	font-family:"comic sans ms" !important;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#sub-money-how-do-you-make-money-production-sale .bptitleholder{
+	width: 627px;
+	height: 68px;
+	text-align: center;
+	line-height: 28px;
+	position: absolute;
+	top: 81px;
+	left: 430px;	
+}
+
+#sub-money-how-do-you-make-money-production-sale .bptitleholder h1{
+	text-transform:uppercase;
+	color: #ffffff !important;
+	font-family:"comic sans ms" !important;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#sub-money-how-do-you-make-money-production-sale-invest-to-grow .bptitleholder{
+	width: 627px;
+	height: 68px;
+	text-align: center;
+	line-height: 28px;
+	position: absolute;
+	top: 82px;
+	left: 435px;	
+}
+
+#sub-money-how-do-you-make-money-production-sale-invest-to-grow .bptitleholder h1{
+	text-transform:uppercase;
+	color: #ffffff !important;
+	font-family:"comic sans ms" !important;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#sub-money-how-do-you-make-money-production-sale-invest-to-grow-the-competition .bptitleholder{
+	width: 627px;
+	height: 68px;
+	text-align: center;
+	line-height: 28px;
+	position: absolute;
+	top: 78px;
+	left: 433px;	
+}
+
+#sub-money-how-do-you-make-money-production-sale-invest-to-grow-the-competition .bptitleholder h1{
+	text-transform:uppercase;
+	color: #ffffff !important;
+	font-family:"comic sans ms" !important;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#sub-money-how-do-you-make-money-production-sale-invest-to-grow-the-competition-innovate .bptitleholder{
+	width: 627px;
+	height: 68px;
+	text-align: center;
+	line-height: 28px;
+	position: absolute;
+	top: 81px;
+	left: 434px;	
+}
+
+#sub-money-how-do-you-make-money-production-sale-invest-to-grow-the-competition-innovate .bptitleholder h1{
+	text-transform:uppercase;
+	color: #ffffff !important;
+	font-family:"comic sans ms" !important;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#sub-money-the-magic-of-money-different-types-of-money .bptitleholder h1,#sub-money-the-magic-of-money-different-types-of-money-run-on-the-bank .bptitleholder h1,#sub-money-the-magic-of-money-how-much-money-is-there .bptitleholder h1,#sub-money-the-magic-of-money-how-much-money-is-there-inflation .bptitleholder h1,#sub-money-the-magic-of-money-why-put-money-in-bank .bptitleholder h1,#sub-money-the-magic-of-money .bptitleholder h1,#sub-money-what-is-money .bptitleholder h1,#sub-money-what-is-money-i-owe-you .bptitleholder h1,#sub-money-what-is-money-something-to-trade .bptitleholder h1,#sub-money-what-is-money-something-to-trade-camels-vs-computers .bptitleholder h1,#sub-money-what-is-money-store-of-value .bptitleholder h1,#sub-money .bptitleholder h1{
+	text-transform:uppercase;
+	color: #ffffff !important;
+	font-family:"comic sans ms" !important;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+.custom_random_div_1{
+	height: 133px;
+	width: 248px;
+	position:absolute;
+	top: 269px;
+	left: 189px;
+	font-family: comic sans ms;
+	padding-left: 10px;
+	padding-top: 5px;			
+}
+.custom_random_div_2{
+	height: 51px;
+	width: 178px;
+	position:absolute;
+	top: 613px;
+	left: 158px;
+	font-family: comic sans ms;
+	padding-left: 10px;
+	padding-top: 5px;			
+}
+.custom_random_div_3{
+	height: 51px;
+	width: 253px;
+	position:absolute;
+	top: 643px;
+	left: 408px;
+	font-family: comic sans ms;
+	padding-left: 10px;
+	padding-top: 5px;
+}
+.custom_random_div_4{
+	height: 108px;
+	width: 180px;
+	position:absolute;
+	top: 516px;
+	left: 772px;
+	font-family: comic sans ms;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-right: 12px;			
+}
+.custom_random_div_5{			
+	height: 80px;
+	width: 117px;
+	position:absolute;
+	top: 355px;
+	left: 757px;
+	font-family: comic sans ms;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-right: 12px;			
+}
+		
+#sub-money-what-is-money-store-of-value-electronic-banking .bptitleholder {
+	width: 805px;
+	height: 68px;
+	text-align: center;
+	line-height: 28px;
+	position: absolute;
+	top: 81px;
+	left: 95px;
+}
+
+#sub-money-what-is-money-store-of-value-electronic-banking .bptitleholder h1{
+	text-transform: uppercase;
+	color: #ffffff;
+	font-family: "comic sans ms";
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+.navMoney-Electronic-Banking{
+	position: absolute;
+	left: 76px;
+	top: 172px;
+	width: 303px;
+	height: 449px;
+	overflow: auto;
+	text-align: justify;
+	font-family: "comic sans ms";
+	font-size: 18px;
+	font-weight: normal;
+	color: #000000;
+}

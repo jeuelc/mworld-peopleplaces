@@ -1,0 +1,116 @@
+<!-- i-C-a -->
+<div data-role="page" id="game-ag3"> 
+  <style>
+    .legacy { opacity:0.6; }
+    .legacy.selected { opacity:1.0; }
+  </style>
+  <div data-role="content">
+    <div id="wrapper">
+      <div style="width:165px;height:68px;position:absolute;top:0px;left:-40px;z-index:999"><img src="css/images/5-8/Ancient_Civilizations/Greece/game/3back.png" id="backbtn"></div>
+      <div style="width:165px;height:68px;position:absolute;top:0px;left:852px;z-index:999"><img src="css/images/5-8/Ancient_Civilizations/Greece/game/3save.png" id="savebtn"></div>
+      
+      <div id="hop" class="legacy" style="width:177px;height:118px;position:absolute;top:151px;left:150px;background:url(css/images/5-8/Ancient_Civilizations/Greece/game/hop.png)">&nbsp;</div>
+      <div id="txthop" style="width:142px;height:46px;position:absolute;top:262px;left:166px;">
+        <input type="text" id="namehop" style="background:rgba(255, 255, 255, 0.25);border:none;text-align:center;">
+      </div>
+      <div id="bg" class="legacy" style="width:178px;height:116px;position:absolute;top:167px;left:430px;background:url(css/images/5-8/Ancient_Civilizations/Greece/game/bg.png)">&nbsp;</div>
+      <div id="txtbg" style="width:144px;height:46px;position:absolute;top:274px;left:448px;">
+        <input type="text" id="namebg" style="background:rgba(255, 255, 255, 0.25);border:none;text-align:center;">
+      </div>
+      <div id="soh" class="legacy" style="width:178px;height:116px;position:absolute;top:458px;left:440px;background:url(css/images/5-8/Ancient_Civilizations/Greece/game/soh.png)">&nbsp;</div>
+      <div id="txtsoh" style="width:143px;height:46px;position:absolute;top:567px;left:466px;">
+        <input type="text" id="namesoh" style="background:rgba(255, 255, 255, 0.25);border:none;text-align:center;">
+      </div>
+      <div id="bk" class="legacy" style="width:106px;height:184px;position:absolute;top:430px;left:204px;background:url(css/images/5-8/Ancient_Civilizations/Greece/game/bk.png)">&nbsp;</div>
+      <div id="txtbk" style="width:107px;height:46px;position:absolute;top:610px;left:202px;">
+        <input type="text" id="namebk" style="background:rgba(255, 255, 255, 0.25);border:none;text-align:center;">
+      </div>
+      <div id="tm" class="legacy" style="width:180px;height:114px;position:absolute;top:155px;left:716px;background:url(css/images/5-8/Ancient_Civilizations/Greece/game/tm.png)">&nbsp;</div>
+      <div id="txttm" style="width:144px;height:46px;position:absolute;top:261px;left:738px;">
+        <input type="text" id="nametm" style="background:rgba(255, 255, 255, 0.25);border:none;text-align:center;">
+      </div>
+      <div id="opt" class="legacy" style="width:103px;height:164px;position:absolute;top:423px;left:752px;background:url(css/images/5-8/Ancient_Civilizations/Greece/game/opt.png)">&nbsp;</div>
+      <div id="txtopt" style="width:105px;height:46px;position:absolute;top:580px;left:750px;">
+        <input type="text" id="nameopt" style="background:rgba(255, 255, 255, 0.25);border:none;text-align:center;">
+      </div>
+      
+    </div>
+  </div> <!-- end content -->  
+  <script>
+    $(function() {
+      $(".legacy").on('tap', function() {
+        $(this).toggleClass("selected");
+      });
+      
+    });
+    
+    $('#savebtn').on('tap', function() {
+      var ansarray = [];
+      var chooseright = false;
+      var namethree = false;
+      var nameone = 0;
+      $.each($('.selected'), function() {
+        ansarray.push(this.id);
+      });
+      
+      if(ansarray == "bg") {
+        chooseright = true;
+      } 
+      var optanswer = $('#nameopt').val();
+      var tmanswer = $('#nametm').val();
+      var bkanswer = $('#namebk').val();
+      var sohanswer = $('#namesoh').val();
+      var bganswer = $('#namebg').val();
+      var hopanswer = $('#namehop').val();
+      
+      if(optanswer.toLowerCase() == "oriental pearl tower") {
+        nameone = nameone + 1;
+      }
+      
+      if(tmanswer.toLowerCase() == "taj mahal") {
+        nameone = nameone + 1;
+      }
+      
+      if(bkanswer.toLowerCase() == "burj khalifa") {
+        nameone = nameone + 1;
+      }
+      
+      if(sohanswer.toLowerCase() == "sydney opera house") {
+        nameone = nameone + 1;
+      }
+      
+      if(bganswer.toLowerCase() == "brandenburg gate") {
+        nameone = nameone + 1;
+      }
+      
+      if(hopanswer.toLowerCase() == "houses of parliament") {
+        nameone = nameone + 1;
+      }
+      
+      if(nameone > 2) {
+        namethree = true;
+      }
+      
+      if(chooseright) {
+        if(namethree) {
+          alert("Conratulations! You earned the maximum points!");
+        } else {
+          alert("Congratulations! Now, name at least three of them.");
+        }
+      } else {
+        if(namethree) {
+          alert("Conratulations! You named three of them correctly.");
+        } else {
+          alert("Not quite.");
+        }
+      }
+      
+    });
+    
+    $('#backbtn').on('tap', function() {
+      $.mobile.changePage("sub-ac-greece-math-science-more.html");
+    });
+    
+    
+  </script>
+</div>

@@ -1,0 +1,595 @@
+/********* Sleep And Dreams **********/
+
+#sleeps , #broken , #messing , #parasomnias , #notsleeping , #brokensleep , #meaningofdreams , #openeyes , #rememberingdreams , #sleepcultures , #sleepstructure , #earlybirds , #sleeptime , #howsleep , #whywesleep,#duringsleep {
+  background:url('images/9-12/Human_Body/Sleeps_And_Dreams/sleeps_bg.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+#bodyclock {
+  background:url('images/9-12/Human_Body/Sleeps_And_Dreams/Why_Do_We_Sleep/Tick_Tock_Body_clock/tick_tock_body_clock_bg.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+#enoughtsleep{
+  background:url('images/9-12/Human_Body/Sleeps_And_Dreams/Why_Do_We_Sleep/What_Happens_During_Sleep/When_You_Dont_Get_Enough_Sleep/When_You_Dont_Get_Enough_Sleep_Bg.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+#whydodreaming{
+  background:url('images/9-12/Human_Body/Sleeps_And_Dreams/In_Your_Dreams/Why_Do_We_Dream/why_do_we_dream_bg.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+#inyourdreams{
+  background:url('images/9-12/Human_Body/Sleeps_And_Dreams/In_Your_Dreams/In_Your_Dreams_Bg.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+.in_your_dreams{
+color: #000000;
+font-family: "comic sans ms";
+font-size: 18px;
+font-weight: normal;
+height: 356px;
+margin-left: 142px;
+position: absolute;
+text-align: center;
+top: 483px;
+width: 70%;	
+}
+#socialjetlag{
+  background:url('images/9-12/Human_Body/Sleeps_And_Dreams/Broken_Sleep/Messing_With_Your_Body_Clock/Social_Jet_lag/Social_Jet_Lag_Bg.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+#sleepneeded{
+  background:url('images/9-12/Human_Body/Sleeps_And_Dreams/How_Do_We_Sleep/How_Much_Sleep_Do_You_Need/how_much_sleep_needed_bg.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+#bodyclocks{
+  background:url('images/9-12/Human_Body/Sleeps_And_Dreams/Broken_Sleep/Messing_With_Your_Body_Clock/Body_Clock_Out_Of_Sync/body_clock_out_of_sync.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+.plsleeps, .pssleeps, .bsleeps, .fsleeps {
+  position:absolute;
+  top:670px;
+  left:1024px;
+  z-index:20;
+}
+
+.micbtnsleeps {
+  background:url('images/9-12/Human_Body/michb.png') no-repeat 0 -81px;
+  height:81px;
+  width:81px;
+}
+
+.rwsleeps {
+  background:url('images/9-12/Human_Body/rwhb.png') no-repeat 0 -73px;
+  height:73px;
+  width:73px;
+}
+
+.plpssleeps {
+  background:url('images/9-12/Human_Body/playhb.png') no-repeat 0 -73px;
+  height:73px;
+  width:73px;
+}
+
+.fwsleeps {
+  background:url('images/9-12/Human_Body/fwhb.png') no-repeat 0 -73px;
+  height:73px;
+  width:73px;
+}
+
+.menubtnsleeps {
+  background:url('images/9-12/Human_Body/menuhb.png') no-repeat 0 -90px;
+  height:90px;
+  width:90px;
+}
+
+
+.homebtnsleeps {
+  background:url('images/9-12/Human_Body/maphb.png') no-repeat 0 -74px;
+  height:74px;
+  width:80px;
+}
+
+.mpbtnsleeps {
+  background:url('images/9-12/Human_Body/mpointshb.png') no-repeat 0 -84px;
+  height:79px;
+  width:80px;
+}
+
+.cpbtnsleeps {
+  background:url('images/9-12/Human_Body/ctrlpnlhb.png') no-repeat 0 -74px;
+  height:74px;
+  width:74px;
+}
+
+.infobtnsleeps {
+  background:url('images/9-12/Human_Body/infohb.png') no-repeat 0 -74px;
+  height:74px;
+  width:74px;
+}
+
+.credsbtnsleeps {
+  background:url('images/9-12/Human_Body/creditsnhb.png') no-repeat 0 -74px;
+  height:74px;
+  width:74px;
+}
+
+.storypagetitlehuman_messing_body_clock {
+	color: #000000;
+    font-family: "comic sans ms";
+    margin-left: 243px;
+    position: absolute;
+    top: 33px;
+}
+.storypagetitlehuman_messing_body_clock h1
+{
+  text-transform:uppercase;
+  color: #ffffff;
+  font-family:"comic sans ms";
+  font-weight:normal;
+  padding:0;
+  margin:0;
+}
+
+.storypagetitlehuman_sleep_needed {
+	color: #000000;
+	font-family: "comic sans ms";
+	margin-left: 215px;
+	position: absolute;
+	top: 20px;
+}
+.storypagetitlehuman_sleep_needed h1
+{
+  text-transform:uppercase;
+  color: #ffffff;
+  font-family:"comic sans ms";
+  font-weight:normal;
+  padding:0;
+  margin:0;
+}
+.storypageetg_sleep_needed {
+	color: #ffffff;
+	font-family: "comic sans ms";
+	font-size: 18px;
+	font-weight: bold;
+	height: 356px;
+	margin-left: 0px;
+	position: absolute;
+	text-align: center;
+	top: 38px;
+	width: 94%;
+}
+.storypagetitlehuman_bodyclock {
+	color: #000000;
+	font-family: "comic sans ms";
+	margin-left: 575px;
+	position: absolute;
+	top: 5px;
+	width: 435px;
+	text-align: center;
+}
+
+.storypageetg_bodyclock {
+	color: #000000;
+	font-family: "comic sans ms";
+	font-size: 16px;
+	font-weight: normal;
+	height: 356px;
+	position: absolute;
+	text-align: center;
+	top: 473px;
+	width: 97%;
+}
+
+.navsleepanddreams-content {
+	position: absolute;
+	left: 98px;
+	top: 251px;
+	width: 830px;
+	height: 145px;
+	overflow: auto;
+	text-align: center;
+	font-family: comic sans ms;
+	font-size: 18px;
+	font-weight: normal;
+	color: #000000;
+}
+
+.navsleepanddreamsbtn1{
+	left: 134px;
+    position: absolute;
+    top: 405px;
+}
+
+.navsleepanddreamsbtn2 {
+    left: 394px;
+    position: absolute;
+    top: 435px;
+}
+.navsleepanddreamsbtn3 {
+    left: 657px;
+    position: absolute;
+    top: 405px;
+}
+
+#bodyclocks .bptitleholder{
+	width:627px;
+	height:68px;
+	text-align:center;
+	line-height:28px;
+	position:absolute;
+	top:30px;
+	left:194px;
+}
+
+#bodyclocks .bptitleholder h1{
+	text-transform: uppercase;
+	color: #ffffff !important;
+	font-family: "comic sans ms";
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#socialjetlag .bptitleholder{
+	width:627px;
+	height:68px;
+	text-align:center;
+	line-height:28px;
+	position:absolute;
+	top:25px;
+	left:194px;
+}
+
+#socialjetlag .bptitleholder h1{
+	text-transform: uppercase;
+	color: #ffffff;
+	font-family: "comic sans ms";
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#duringsleep .bptitleholder h1{
+	text-transform: uppercase;
+	color: #ffffff;
+	font-family: "comic sans ms";
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#enoughtsleep .bptitleholder{
+	width: 463px;
+	height: 68px;
+	text-align: center;
+	line-height: 28px;
+	position: absolute;
+	top: 40px;
+	left: 10px;
+	line-height: 45px;
+}
+
+#enoughtsleep .bptitleholder h1{
+	text-transform: uppercase;
+	color: #ffffff;
+	font-family: "comic sans ms";
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#sleepneeded .bptitleholder{
+	width:627px;
+	height:68px;
+	text-align:center;
+	line-height:28px;
+	position:absolute;
+	top:20px;
+	left:194px;
+}
+
+#sleepneeded .bptitleholder h1{
+	text-transform: uppercase;
+	color: #ffffff;
+	font-family: "comic sans ms";
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#meaningofdreams .bptitleholder h1{
+	text-transform: uppercase;
+	color: #ffffff;
+	font-family: "comic sans ms";
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#openeyes .bptitleholder h1{
+	text-transform: uppercase;
+	color: #ffffff;
+	font-family: "comic sans ms";
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#rememberingdreams .bptitleholder h1{
+	text-transform: uppercase;
+	color: #ffffff;
+	font-family: "comic sans ms";
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#sleepcultures .bptitleholder h1{
+	text-transform: uppercase;
+	color: #ffffff;
+	font-family: "comic sans ms";
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#sleepstructure .bptitleholder h1{
+	text-transform: uppercase;
+	color: #ffffff;
+	font-family: "comic sans ms";
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#sleeps .bptitleholder{
+	width:627px;
+	height:68px;
+	text-align:center;
+	line-height:28px;
+	position:absolute;
+	top:169px;
+	left:194px;
+}
+
+#sleeps .bptitleholder h1 {
+	text-transform:uppercase;
+	color: #ffffff !important;
+	font-family:"comic sans ms";
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#sleeps .nav-content{
+  position:absolute;
+  left:305px;
+  top:263px;
+  width:410px;
+  height:359px;
+  /*overflow-y:auto;*/
+  overflow:auto;
+  text-align:center;
+  font-family:"comic sans ms";
+  font-size:18px;
+  font-weight:normal;
+  color:#000000 !important;
+}
+
+#brokensleep  .bptitleholder h1 {
+	text-transform:uppercase;
+	color: #ffffff !important;
+	font-family:"comic sans ms";
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#messing .bptitleholder h1 {
+	text-transform:uppercase;
+	color: #ffffff !important;
+	font-family:"comic sans ms";
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+	line-height:35px;
+}
+
+#notsleeping .bptitleholder h1 {
+	text-transform:uppercase;
+	color: #ffffff !important;
+	font-family:"comic sans ms";
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#parasomnias .bptitleholder{
+	width:627px;
+	height:68px;
+	text-align:center;
+	line-height:28px;
+	position:absolute;
+	top:143px;
+	left:194px;
+}
+
+#parasomnias .bptitleholder h1 {
+	text-transform:uppercase;
+	color: #ffffff !important;
+	font-family:"comic sans ms";
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+	line-height:40px;
+}
+
+#sleeptime .bptitleholder h1 {
+	text-transform:uppercase;
+	color: #ffffff !important;
+	font-family:"comic sans ms";
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#inyourdreams .bptitleholder{
+	width:627px;
+	height:68px;
+	text-align:center;
+	line-height:28px;
+	position:absolute;
+	top:70px;
+	left:194px;
+}
+
+#inyourdreams .bptitleholder h1 {
+	text-transform:uppercase;
+	color: #ffffff !important;
+	font-family:"comic sans ms";
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#whywesleep .bptitleholder h1 {
+	text-transform:uppercase;
+	color: #ffffff !important;
+	font-family:"comic sans ms";
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#whydodreaming .bptitleholder h1 {
+	text-transform:uppercase;
+	color: #ffffff !important;
+	font-family:"comic sans ms";
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#bodyclock .bptitleholder{
+	width: 475px;
+	height: 68px;
+	text-align: center;
+	line-height: 28px;
+	position: absolute;
+	top: 29px;
+	left: 0px;
+}
+
+#bodyclock .bptitleholder h1 {
+	text-transform:uppercase;
+	color: #ffffff !important;
+	font-family:"comic sans ms";
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#howsleep .bptitleholder h1 {
+	text-transform:uppercase;
+	color: #ffffff !important;
+	font-family:"comic sans ms";
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#bodyclock .bptitleholder{
+	width: 475px;
+	height: 68px;
+	text-align: center;
+	line-height: 28px;
+	position: absolute;
+	top: 150px;
+	left: 0px;
+}
+
+#earlybirds .bptitleholder h1 {
+	text-transform:uppercase;
+	color: #ffffff !important;
+	font-family:"comic sans ms";
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+	line-height:40px;
+}
+
+.bpcontentsleeps{
+	color: #000000;
+    font-family: "comic sans ms";
+    font-size: 18px;
+    font-weight: normal;
+    height: 356px;
+    left: 550px;
+    overflow-y: auto;
+    position: absolute;
+    text-align: left;
+    top: 266px;
+    width: 413px;
+}
+
+.bpcontent_messing_body_clock {
+	color: #ffffff;
+	font-family: "comic sans ms";
+	font-size: 18px;
+	font-weight: normal;
+	height: 356px;
+	margin-left: 0px;
+	position: absolute;
+	text-align: center;
+	top: 65px;
+	width: 94%;
+}
+
+.bpcontent_messing_social_jetlag {
+	color: #000000;
+	font-family: "comic sans ms";
+	margin-left: 70px;
+	position: absolute;
+	top: 65px;
+	width: 850px;
+	font-weight: normal;
+}
+
+.bpcontent_messing_social_jetlag h1{
+  text-transform:uppercase;
+  color: #ffffff;
+  font-family:"comic sans ms";
+  font-weight:normal;
+  padding:0;
+  margin:0;
+}
+
+.bpcontent_messing_social_jetlag_new {
+	color: #000000;
+	font-family: "comic sans ms";
+	margin-left: 70px;
+	position: absolute;
+	top: 240px;
+	width: 600px;
+	font-weight: normal;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html> 
+<!-- i-C-a -->
+<html>
+<head> 
+	<title>Kidz First</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="css/jquery.mobile-1.2.1.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/ioslider.css" />
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/jquery.easing.js"></script>
+	<script src="js/jquery.mobiledragdrop.js"></script>
+	<script src="js/jquery.mobile-1.2.1.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="js/index.js"></script>
+  <script type="text/javascript" charset="utf-8" src="js/preloadCssImages.jQuery_v5.js"></script>  
+  <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/buttoneffects.js"></script>
+  <script>
+  $(document).ready(function() {
+    $.preloadCssImages();
+  });
+  </script>
+  <script type="text/javascript" src="html5lightbox.js"></script>
+  <script type="text/javascript">
+    var html5lightbox_options = { bgcolor: "#000000"};
+  </script>
+  <script type="text/javascript" src="js/jquery.iosslider.js"></script>
+  <script type="text/javascript" src="js/mpoints.js"></script>
+  <script type="text/javascript" src="js/jquery.session.js"></script>
+</head> 
+<body> 
+  <div data-role="page">
+    <!--<div style="width:50%; float:left;margin-top:100px;text-align:center;"><a id="home2link" href="game-iw3.html" data-transition="slide"><img src="css/images/stud2.png"></a></div>-->
+    <div style="width:50%; float:left;margin-top:100px;text-align:center;"><a href="home.html" id="home2link" data-transition="slide" data-prefetch><img src="css/images/stud2.png"></a></div>
+  <script>
+    //$('#home2link').on('tap', function() { naturalsoundbg.play(); });
+    $('#home2link').on('tap', function() { mainaudiobg.play(); });
+  </script>
+ </div><!-- /page -->
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-changing-places-living-with-diversity">
+  <script src="js/slidebar_changing_places.js"></script>
+  <link rel="stylesheet" href="css/style_changing_places.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnChangingPlaces"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnChangingPlaces"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnChangingPlaces"></div></div>
+  <div class="infobtnholder"><div class="infobtnChangingPlaces"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnChangingPlaces"></div></div>
+  <div class="menubtnholder"><div class="menubtnChangingPlaces"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:14px;"><h1>Living with Diversity</h1></div>
+  <div id="Languagelink" style="position: absolute;left: 560px;top: 285px;width: 180px;height: 132px;"></div>
+  <div id="Festivallink" style="position: absolute;left: 772px;top: 355px;width: 160px;height: 112px;"></div>
+  <div id="Medialink" style="position: absolute;left: 530px;top: 475px;width: 145px;height: 100px;"></div>
+  <div id="ComingTogetherlink" style="position: absolute;left: 820px;top: 515px;width: 165px;height: 100px;"></div>
+  <div data-role="content" class="kidzcontent">
+	  <div class="navChangingPlaces-LivingDiversity">
+        <p>When immigrants settle in a new country they bring with them their languages, religions, cultural practices and traditions.  So America is becoming more and more diverse as a result of mass migration.  You see examples of this diversity on city streets: there are shop signs in Mandarin, street vendors selling Halal food and advertisements in Spanish.</p>
+      </div>
+    <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+  </div> <!-- end content -->  
+    
+  
+  <!--<div class="audiopanel">-->
+    <!-- images are in slidebarnat.js 
+         note: change the ids to be able play the narration
+    -->
+    <div class="micbtnholder"><div class="micbtnChangingPlaces" id="playstopLivingDiversity"></div></div>
+    <div class="bChangingPlaces"><div class="rwChangingPlaces" id="LivingDiversityaudiobbtn"></div></div>
+    <div class="plChangingPlaces"><div class="plpsChangingPlaces" id="LivingDiversityaudioplbtn"></div></div>
+    <div class="fChangingPlaces"><div class="fwChangingPlaces" id="LivingDiversityaudiofbtn"></div></div>
+    <div id="actualaudio-LivingDiversity" style="visibility:hidden;"></div>
+  <!--</div>-->
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+    var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      if(sound.canPlayType('audio/mpeg')) {
+        $('#actualaudio-LivingDiversity').html('<audio id="LivingDiversityaudio" controls preload onpause="playsChangingPlaces()" onplay="pauseChangingPlaces()"><source src="audio/Changing_Places/Living_With_Diversity.mp3" type="audio/mpeg"></audio>');
+      } 
+    
+      $("#sub-changing-places-living-with-diversity").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+    })();
+    
+	
+	$('#Languagelink').on('tap', function() {
+      $.mobile.changePage("sub-changing-places-living-with-diversity-Language.html", {transition: "slide"});
+    });
+    
+    $('#Festivallink').on('tap', function() {
+      $.mobile.changePage("sub-changing-places-living-with-diversity-Festivals.html", {transition: "slide"});
+    });
+    
+    $('#Medialink').on('tap', function() {
+      $.mobile.changePage("sub-changing-places-living-with-diversity-Media.html", {transition: "slide"});
+    });
+	
+	$('#ComingTogetherlink').on('tap', function() {
+      $.mobile.changePage("sub-changing-places-living-with-diversity-Coming-Together.html", {transition: "slide"});
+    });
+	
+    $('.homelinkbh').on('tap', function() { mainaudiobg.play(); bgsoundChangingPlaces.pause(); bgsoundChangingPlaces.currentTime = 0;});
+    
+    function goBack(){
+      $.mobile.changePage("sub-changing-places.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsChangingPlaces(){
+         bgsoundChangingPlaces.play();
+    }
+       
+    function pauseChangingPlaces(){
+         bgsoundChangingPlaces.pause();
+    }
+    
+	/* ******************** */
+    /* this is the microphone button */
+  
+    $("#playstopLivingDiversity").on('tap', function() {
+      if(!playing) {
+        LivingDiversityaudio.play();
+        $('.micbtnChangingPlaces').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        LivingDiversityaudio.pause(); LivingDiversityaudio.currentTime = 0;
+        $('.micbtnChangingPlaces').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#LivingDiversityaudioplbtn").on('tap', function() {
+      if(!paused) {
+        LivingDiversityaudio.pause();
+        paused = true;
+      } else {
+        LivingDiversityaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#LivingDiversityaudiofbtn").on('tap', function() {
+      var ctime = LivingDiversityaudio.currentTime;
+      LivingDiversityaudio.currentTime = ctime + 10;
+    });
+    
+    $("#LivingDiversityaudiobbtn").on('tap', function() {
+      var ctime = LivingDiversityaudio.currentTime;
+      LivingDiversityaudio.currentTime = ctime - 10;
+    });
+    
+    $("#LivingDiversityaudiopsbtn").on('tap', function() {
+      LivingDiversityaudio.pause();
+    });
+  </script>
+</div> <!--//home-->

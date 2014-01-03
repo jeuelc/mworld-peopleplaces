@@ -1,0 +1,137 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-changing-places-big-decision">
+  <script src="js/slidebar_changing_places.js"></script>
+  <link rel="stylesheet" href="css/style_changing_places.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnChangingPlaces"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnChangingPlaces"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnChangingPlaces"></div></div>
+  <div class="infobtnholder"><div class="infobtnChangingPlaces"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnChangingPlaces"></div></div>
+  <div class="menubtnholder"><div class="menubtnChangingPlaces"></div></div>
+  
+  <a id="ZimbabwelinkZoom" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Changing_Places/A_Big_Decision/ZimbabwelinkZoom.jpg', '');">click here</a>
+  
+  <a id="VietnamlinkZoom" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Changing_Places/A_Big_Decision/VietnamlinkZoom.jpg', '');">click here</a>
+  
+  <a id="guatemallinkZoom" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Changing_Places/A_Big_Decision/guatemallinkZoom.jpg', '');">click here</a>
+  
+  <div class="bptitleholder" style="padding-top:14px;"><h1>A Big Decision</h1></div>
+  <div id="Zimbabwelink" style="position: absolute;left: 139px;top: 230px;width: 145px;height: 132px;"></div>
+  <div id="Vietnamlink" style="position: absolute;left: 459px;top: 20px;width: 140px;height: 130px;"></div>
+  <div id="guatemallink" style="position: absolute;left: 850px;top: 116px;width: 135px;height: 132px;"></div>
+  <div data-role="content" class="kidzcontent">
+	  <div class="navChangingPlaces-bigdecision">
+        <p>Why do people migrate to other countries?</p>
+		<p>In 2010, there were more than 214 million people living outside the country they were born in.  This was about 3% of the world's population.There are lots of reasons why people decide to move to another country.  Some move to find work and are lured by the prospect of earning more money than they would back home.  Others want to flee war, conflict or unrest.  Some people hope to be reunited with family members who have already made the move.</p>
+		<p>The reality for many migrants is that they move for a combination of reasons.  Regardless of why they do it, the decision to migrate to another country is a big one to make.  You leave behind family, friends and all thats familiar.  The experience of migration has a huge impact on the life of the immigrant and the society that they join.</p>
+      </div>
+    <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+  </div> <!-- end content -->  
+    
+  
+  <!--<div class="audiopanel">-->
+    <!-- images are in slidebarnat.js 
+         note: change the ids to be able play the narration
+    -->
+    <div class="micbtnholder"><div class="micbtnChangingPlaces" id="playstopBigDecision"></div></div>
+    <div class="bChangingPlaces"><div class="rwChangingPlaces" id="BigDecisionaudiobbtn"></div></div>
+    <div class="plChangingPlaces"><div class="plpsChangingPlaces" id="BigDecisionaudioplbtn"></div></div>
+    <div class="fChangingPlaces"><div class="fwChangingPlaces" id="BigDecisionaudiofbtn"></div></div>
+    <div id="actualaudio-BigDecision" style="visibility:hidden;"></div>
+  <!--</div>-->
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+    var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      if(sound.canPlayType('audio/mpeg')) {
+        $('#actualaudio-BigDecision').html('<audio id="BigDecisionaudio" controls preload onpause="playsChangingPlaces()" onplay="pauseChangingPlaces()"><source src="audio/Changing_Places/Big_Decision.mp3" type="audio/mpeg"></audio>');
+      } 
+    
+      $("#sub-changing-places-big-decision").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+    })();
+    
+	
+	$('#forceslink').on('tap', function() {
+      $.mobile.changePage("sub-super-fast-trains-overcoming-resistance-forces-and-motion.html", {transition: "slide"});
+    });
+    
+    $('#aerodynamicslink').on('tap', function() {
+      $.mobile.changePage("sub-super-fast-trains-overcoming-resistance-aerodynamics.html", {transition: "slide"});
+    });
+    
+    $('#rollinglink').on('tap', function() {
+      $.mobile.changePage("sub-super-fast-trains-overcoming-resistance-rolling-resistance.html", {transition: "slide"});
+    });
+	
+    $('.homelinkbh').on('tap', function() { mainaudiobg.play(); bgsoundChangingPlaces.pause(); bgsoundChangingPlaces.currentTime = 0;});
+    
+    function goBack(){
+      $.mobile.changePage("sub-changing-places.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsChangingPlaces(){
+         bgsoundChangingPlaces.play();
+    }
+       
+    function pauseChangingPlaces(){
+         bgsoundChangingPlaces.pause();
+    }
+    
+	$("#Zimbabwelink").on('tap', function() {
+      $('#ZimbabwelinkZoom')[0].click();
+    });
+    $("#Vietnamlink").on('tap', function() {
+      $('#VietnamlinkZoom')[0].click();
+    });
+	$("#guatemallink").on('tap', function() {
+      $('#guatemallinkZoom')[0].click();
+    });
+	
+    /* ******************** */
+    /* this is the microphone button */
+  
+    $("#playstopBigDecision").on('tap', function() {
+      if(!playing) {
+        BigDecisionaudio.play();
+        $('.micbtnChangingPlaces').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        BigDecisionaudio.pause(); BigDecisionaudio.currentTime = 0;
+        $('.micbtnChangingPlaces').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#BigDecisionaudioplbtn").on('tap', function() {
+      if(!paused) {
+        BigDecisionaudio.pause();
+        paused = true;
+      } else {
+        BigDecisionaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#BigDecisionaudiofbtn").on('tap', function() {
+      var ctime = BigDecisionaudio.currentTime;
+      BigDecisionaudio.currentTime = ctime + 10;
+    });
+    
+    $("#BigDecisionaudiobbtn").on('tap', function() {
+      var ctime = BigDecisionaudio.currentTime;
+      BigDecisionaudio.currentTime = ctime - 10;
+    });
+    
+    $("#BigDecisionaudiopsbtn").on('tap', function() {
+      BigDecisionaudio.pause();
+    });
+  </script>
+</div> <!--//home-->

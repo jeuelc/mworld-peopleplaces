@@ -1,0 +1,278 @@
+/********* Manga **********/
+#sub-manga, #sub-manga-characters-and-worlds-cute-cool-characters, #sub-manga-characters-and-worlds-cute-cool-characters-visual-conventions, #sub-manga-characters-and-worlds-weird-wonderful-worlds, #sub-manga-what-is-manga, #sub-manga-what-is-manga-origins-of-manga, #sub-manga-manga-alive, #sub-manga-manga-alive, #sub-manga-manga-alive-cool-japan, #sub-manga-manga-alive-cosplay, #sub-manga-manga-alive-decorate-your-life, #sub-manga-manga-alive-fan-conventions, #sub-manga-making-manga-manga-tools, #sub-manga-making-manga-panels, #sub-manga-making-manga-sfx, #sub-manga-making-manga-speech-bubbles, #sub-manga-making-manga-symbols, #sub-manga-making-mangatones-textures-and-speech{
+  background:url('images/9-12/Language_and_Culture/Manga/Magna_BG.png') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+#sub-manga-making-manga{
+  background:url('images/9-12/Language_and_Culture/Manga/Making_Manga/Making_Manga_BG_Sample_Active.png') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+#sub-manga-characters-and-worlds{
+  background:url('images/9-12/Language_and_Culture/Manga/Characters_And_Worlds/Characters_And_World_BG.png') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+.plManga, .psManga, .bManga, .fManga {
+  position:absolute;
+  top:670px;
+  left:1024px;
+  z-index:20;
+}
+
+.micbtnManga {
+  background:url('images/9-12/Language_and_Culture/miclc.png') no-repeat 0 -81px;
+  height:81px;
+  width:81px;
+}
+
+.rwManga {
+  background:url('images/9-12/Language_and_Culture/rwlc.png') no-repeat 0 -73px;
+  height:73px;
+  width:73px;
+}
+
+.plpsManga {
+  background:url('images/9-12/Language_and_Culture/playlc.png') no-repeat 0 -73px;
+  height:73px;
+  width:73px;
+}
+
+.fwManga {
+  background:url('images/9-12/Language_and_Culture/fwlc.png') no-repeat 0 -73px;
+  height:73px;
+  width:73px;
+}
+
+.menubtnManga {
+  background:url('images/9-12/Language_and_Culture/menulc.png') no-repeat 0 -90px;
+  height:90px;
+  width:90px;
+}
+
+
+.homebtnManga {
+  background:url('images/9-12/Language_and_Culture/maplc.png') no-repeat 0 -74px;
+  height:74px;
+  width:80px;
+}
+
+.mpbtnManga {
+  background:url('images/9-12/Language_and_Culture/mpointslc.png') no-repeat 0 -84px;
+  height:79px;
+  width:80px;
+}
+
+.cpbtnManga {
+  background:url('images/9-12/Language_and_Culture/ctrlpnllc.png') no-repeat 0 -74px;
+  height:74px;
+  width:74px;
+}
+
+.infobtnManga {
+  background:url('images/9-12/Language_and_Culture/infolc.png') no-repeat 0 -74px;
+  height:74px;
+  width:74px;
+}
+
+.credsbtnManga {
+  background:url('images/9-12/Language_and_Culture/creditslc.png') no-repeat 0 -74px;
+  height:74px;
+  width:74px;
+}
+
+.navtitleholderManga{
+	width: 435px;
+	height: 68px;
+	position: absolute;
+	top: 169px;
+	left: 295px;
+	text-align: center;
+	line-height: 32px;
+}
+
+.navtitleholderManga h1{
+	text-transform: uppercase;
+	color: #FFF;
+	font-family: comic sans ms;
+	padding: 0;
+	margin: 0;
+	font-weight: bold;
+}
+
+.bptitleholderManga {
+  width:627px;
+  height:68px;
+  text-align:center;
+  line-height:28px;
+  position:absolute;
+  top:169px;
+  left:194px;
+}
+
+.bptitleholderManga h1
+ {
+  text-transform:uppercase;
+  color: #FFFFFF;
+  font-family:"comic sans ms";
+  font-weight:bold;
+  padding:0;
+  margin:0;
+}
+
+.navManga-content{
+  position:absolute;
+  left:305px;
+  top:263px;
+  width:410px;
+  height:359px;
+  /*overflow-y:scroll;*/
+  overflow:auto;
+  text-align:center;
+  font-family:"comic sans ms";
+  font-size:18px;
+  font-weight:normal;
+  color:#000000;
+}
+.navManga-content p {
+  margin-top:0 !important;
+}
+
+.navManga-characters-worlds{
+  position:absolute;
+  left:300px;
+  top:263px;
+  width:410px;
+  height:310px;
+  overflow:auto;
+  text-align:center;
+  font-family:"comic sans ms";
+  font-size:18px;
+  font-weight:normal;
+  color:#ffffff;
+}
+
+.navManga-making-manga{
+  position: absolute;
+  left: 612px;
+  top: 195px;
+  width: 390px;
+  height: 346px;
+  overflow: auto;
+  text-align: center;
+  font-family: "comic sans ms";
+  font-size: 18px;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+.navManga-content3 {
+  position:absolute;
+  left:59px;
+  top:263px;
+  width:920px;
+  height:160px;
+  overflow-y:scroll;
+  text-align:left;
+  font-family:"comic sans ms";
+  font-size:18px;
+  font-weight:normal;
+  color:#000000;
+}
+
+.bpcontentManga{
+  width:413px;
+  height:356px;
+  position:absolute;
+  left:550px;
+  top:266px;
+  overflow:auto;
+  font-family:"comic sans ms";
+  font-size:18px;
+  font-weight:normal;
+  text-align:left;
+  color:#000000;
+}
+
+#sub-manga .bptitleholder h1, #sub-manga-characters-and-worlds .bptitleholder h1, #sub-manga-characters-and-worlds-cute-cool-characters .bptitleholder h1, #sub-manga-characters-and-worlds-cute-cool-characters-visual-conventions .bptitleholder h1, #sub-manga-characters-and-worlds-weird-wonderful-worlds .bptitleholder h1, #sub-manga-what-is-manga .bptitleholder h1, #sub-manga-what-is-manga-origins-of-manga .bptitleholder h1, #sub-manga-manga-alive .bptitleholder h1, #sub-manga-manga-alive .bptitleholder h1, #sub-manga-manga-alive-cool-japan .bptitleholder h1, #sub-manga-manga-alive-cosplay .bptitleholder h1, #sub-manga-manga-alive-decorate-your-life .bptitleholder h1, #sub-manga-manga-alive-fan-conventions .bptitleholder h1, #sub-manga-making-manga .bptitleholder h1, #sub-manga-making-manga-manga-tools .bptitleholder h1, #sub-manga-making-manga-panels .bptitleholder h1, #sub-manga-making-manga-sfx .bptitleholder h1, #sub-manga-making-manga-speech-bubbles .bptitleholder h1, #sub-manga-making-manga-symbols .bptitleholder h1, #sub-manga-making-mangatones-textures-and-speech .bptitleholder h1{
+	text-transform: uppercase;
+	color: #ffffff !important;
+	font-family: "comic sans ms";
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#sub-manga .bptitleholder{
+	width: 627px;
+	height: 68px;
+	text-align: center;
+	line-height: 28px;
+	position: absolute;
+	top: 169px;
+	left: 194px;
+}
+
+#sub-manga-characters-and-worlds .bptitleholder, #sub-manga-characters-and-worlds-cute-cool-characters .bptitleholder, #sub-manga-characters-and-worlds-cute-cool-characters-visual-conventions .bptitleholder, #sub-manga-characters-and-worlds-weird-wonderful-worlds .bptitleholder, #sub-manga-what-is-manga-origins-of-manga .bptitleholder, #sub-manga-manga-alive .bptitleholder, #sub-manga-manga-alive .bptitleholder, #sub-manga-manga-alive-decorate-your-life .bptitleholder, #sub-manga-manga-alive-fan-conventions .bptitleholder, #sub-manga-making-manga-manga-tools .bptitleholder, #sub-manga-making-manga-panels .bptitleholder, #sub-manga-making-manga-sfx .bptitleholder, #sub-manga-making-manga-speech-bubbles .bptitleholder, #sub-manga-making-manga-symbols .bptitleholder, #sub-manga-making-mangatones-textures-and-speech .bptitleholder{
+	width: 330px;
+	height: 70px;
+	text-align: center;
+	line-height: 38px;
+	position: absolute;
+	top: 150px;
+	left: 355px;
+}
+
+#sub-manga-characters-and-worlds-weird-wonderful-worlds .bptitleholder{
+	width: 390px;
+	height: 70px;
+	text-align: center;
+	line-height: 38px;
+	position: absolute;
+	top: 150px;
+	left: 340px;
+}
+#sub-manga-what-is-manga .bptitleholder{
+	width: 345px;
+	height: 70px;
+	text-align: center;
+	line-height: 38px;
+	position: absolute;
+	top: 169px;
+	left: 355px;
+}
+#sub-manga-what-is-manga-origins-of-manga .bptitleholder{
+	width: 340px;
+	height: 70px;
+	text-align: center;
+	line-height: 38px;
+	position: absolute;
+	top: 169px;
+	left: 355px;
+}
+#sub-manga-manga-alive-cool-japan .bptitleholder, #sub-manga-manga-alive-cosplay .bptitleholder{
+	width: 330px;
+	height: 70px;
+	text-align: center;
+	line-height: 38px;
+	position: absolute;
+	top: 165px;
+	left: 355px;
+}
+
+#sub-manga-making-manga .bptitleholder{
+	width: 330px;
+	height: 70px;
+	text-align: center;
+	line-height: 38px;
+	position: absolute;
+	top: 125px;
+	left: 602px;
+}

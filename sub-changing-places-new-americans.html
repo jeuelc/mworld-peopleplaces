@@ -1,0 +1,113 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-changing-places-new-americans">
+  <script src="js/slidebar_changing_places.js"></script>
+  <link rel="stylesheet" href="css/style_changing_places.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnChangingPlaces"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnChangingPlaces"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnChangingPlaces"></div></div>
+  <div class="infobtnholder"><div class="infobtnChangingPlaces"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnChangingPlaces"></div></div>
+  <div class="menubtnholder"><div class="menubtnChangingPlaces"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:14px;"><h1>New Americans</h1></div>
+  
+    <div data-role="content" class="kidzcontent">
+      <div class="navChangingPlaces-content">
+        <p>Lets use the United States as a case study to explore in more detail what its like for immigrants to settle in a new land. The US is a great example as it is the classic nation of immigrants.  It has more immigrants than any other country in the world.  About 40 million immigrants live in America. To put this into context, if immigrants in America were a country on their own, its population size would be greater than that of 162 other countries in the world!</p>
+		<p>Immigrants in the United States are encouraged to hold on to their cultural traditions, which means America is a multicultural society.  Immigrants in time can also become American citizens, making them new Americans.</p>
+		<p>The experiences of immigrants in settling in America are pretty varied but generally immigrants encounter a number of challenges as well as opportunities.</p>
+		<p>What do you think are some of the challenges and opportunities for migrating to a new country?</p>
+      </div>
+        
+      <div class="navtwobtn1">
+  <p><a href="sub-changing-places-new-americans-New-York.html" data-transition="slide"><img src="css/images/9-12/People_and_Places/Changing_Places/New_Americans/Button1.png"></a></p>
+      </div>
+      <div class="navtwobtn3">
+        <p><a href="sub-changing-places-new-americans-settling-in.html" data-transition="slide" ><img src="css/images/9-12/People_and_Places/Changing_Places/New_Americans/Button2.png"></a></p>
+      </div>
+     
+    <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+    </div> <!-- end content -->  
+    
+  
+  <!--<div class="audiopanel">-->
+    <div class="micbtnholder"><div class="micbtnChangingPlaces" id="playstopNewAmericans"></div></div>
+    <div class="bChangingPlaces"><div class="rwChangingPlaces" id="NewAmericansaudiobbtn"></div></div>
+    <div class="plChangingPlaces"><div class="plpsChangingPlaces" id="NewAmericansaudioplbtn"></div></div>
+    <div class="fChangingPlaces"><div class="fwChangingPlaces" id="NewAmericansaudiofbtn"></div></div>
+    <div id="actualaudio-NewAmericans" style="visibility:hidden;"></div>
+  <!--</div>-->
+  <script>
+    sound = new Audio(); // 'sound' is now an audio object
+    var playing;
+    (function() {
+      playing = false;
+      if(sound.canPlayType('audio/mpeg')) {
+        $('#actualaudio-NewAmericans').html('<audio id="NewAmericansaudio" controls preload onpause="playsChangingPlaces()" onplay="pauseChangingPlaces()"><source src="audio/Changing_Places/New_Americans.mp3" type="audio/mpeg"></audio>');
+      } 
+    
+      $("#sub-changing-places-new-americans").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+    })();
+    
+    $('.homelinkbh').on('tap', function() { mainaudiobg.play(); bgsoundChangingPlaces.pause(); bgsoundChangingPlaces.currentTime = 0;});
+	
+	function goBack() {
+      $.mobile.changePage("sub-changing-places.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsChangingPlaces() {
+         bgsoundChangingPlaces.play();
+    }
+       
+    function pauseChangingPlaces() {
+         bgsoundChangingPlaces.pause();
+    }
+    /* ******************** */
+	
+    $("#playstopNewAmericans").on('tap', function() {
+      if(!playing) {
+        NewAmericansaudio.play();
+        $('.micbtnChangingPlaces').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        NewAmericansaudio.pause(); NewAmericansaudio.currentTime = 0;
+        $('.micbtnChangingPlaces').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+	
+	 $("#NewAmericansaudioplbtn").on('tap', function() {
+      if(!paused) {
+        NewAmericansaudio.pause();
+        paused = true;
+      } else {
+        NewAmericansaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#NewAmericansaudiofbtn").on('tap', function() {
+      var ctime = NewAmericansaudio.currentTime;
+      NewAmericansaudio.currentTime = ctime + 10;
+    });
+    
+    $("#NewAmericansaudiobbtn").on('tap', function() {
+      var ctime = NewAmericansaudio.currentTime;
+      NewAmericansaudio.currentTime = ctime - 10;
+    });
+    
+    $("#NewAmericansaudiopsbtn").on('tap', function() {
+     NewAmericansaudio.pause();
+      //$(".audiopanel").css({"backgroundPosition":"0px 0px"});
+    });
+    
+    $('.navbtn1').on('tap', function() { 
+      nav1Effects(); 
+    });
+  </script>
+</div> <!--//home-->

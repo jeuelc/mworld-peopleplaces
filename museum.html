@@ -1,0 +1,339 @@
+<!-- i-C-a -->
+<div data-role="page" id="museum">  
+  <script src="js/hammer.js"></script>
+  <script src="js/jquery.hammer.js"></script>
+  <script src="js/myLogic.js"></script>
+  <style>
+  .currentItem { border: 2px solid #FFFFFF; }
+  </style>
+  <div data-role="content">
+    <div id="wrapper">
+      <div id="rlc" style="position:absolute;left:0;top:0;display:none;width:50px;height:34px;"><img id="rotateleft" src="css/images/museum/rotateleft.png"></div>
+      <div id="rrc" style="position:absolute;left:0;top:0;display:none;width:50px;height:34px;" ><img id="rotateright" src="css/images/museum/rotateright.png"></div>
+      <div id="str" style="position:absolute;left:0;top:0;display:none;width:50px;height:34px;" ><img id="straight" src="css/images/museum/straight.png"></div>
+      <div id="cnl" style="position:absolute;left:0;top:0;display:none;width:50px;height:34px;" ><img id="cancel" src="css/images/museum/cancel.png"></div>
+      <div id="cnlclass" style="position:absolute;left:0;top:0;display:none;width:50px;height:34px;" ><img id="cancel" src="css/images/museum/cancel.png"></div>
+      <div id="rmv" style="position:absolute;left:0;top:0;display:none;width:50px;height:34px;" ><a href="#confirmRemove" data-rel="popup" data-position-to="window" data-inline="true" data-transition="pop"><img id="remove" src="css/images/museum/remove.png"></a></div>
+      <div style="width:178px;float:right;">
+        <a href="#confirmSave" data-rel="popup" data-position-to="window" data-inline="true" data-transition="pop"><img src="css/images/museum/savegallery.png"></a>
+        <div id="museumbackbtn" style="width:178px;height:65px;background:url(css/images/museum/backbtn.png) no-repeat center center;">&nbsp;</div>
+      </div>
+      <!--<div style="width:160px;height:68px;position:absolute;top:680px;left:850px;z-index:999" class="sicontainer" id="nawong">Toggle Gallery</div>-->
+      <div id="zoomwrapper"></div><!--/zoomwrapper-->
+    </div>
+    <div class="v-spacer"></div>
+    <div data-role="popup" id="confirmSave" data-theme="c" data-overlay-theme="a" style="width: 300px;" data-history="false">
+      <div data-role="header" data-theme="a"><h1>Save Museum</h1></div>
+      <span style="text-align:center;">Are you sure you want to spend xx mpoints to save this state?</span>
+      <div data-role="content" data-theme="d" data-backbtn="false">
+        <a href="#" class="myopt" id="savestate" data-role="button" data-inline="false" data-theme="b">Ok</a> 
+        <a href="#" class="myopt" id="closeConfirm" data-role="button" data-inline="false" data-theme="b">Cancel</a>
+      </div>
+    </div>
+    <div data-role="popup" id="confirmRemove" data-theme="c" data-overlay-theme="a" style="width: 300px;" data-history="false">
+      <div data-role="header" data-theme="a"><h1>Remove Item</h1></div>
+      <span style="text-align:center;">Are you sure you want to spend xx mpoints to remove this item?</span>
+      <div data-role="content" data-theme="d" data-backbtn="false">
+        <a href="#" class="myopt" id="confRemove" data-role="button" data-inline="false" data-theme="b">Ok</a> 
+        <a href="#" class="myopt" id="closeRemove" data-role="button" data-inline="false" data-theme="b">Cancel</a>
+      </div>
+    </div>
+  </div> <!-- end content -->  
+  
+  <script type="text/javascript">
+			$(document).ready(function() {
+			
+				$('.iosSlider').iosSlider({
+					scrollbar: true,
+					snapToChildren: true,
+					desktopClickDrag: true,
+					infiniteSlider: true, 
+					navSlideSelector: $('.iosSliderButtons .button'),
+					scrollbarHeight: '2',
+					scrollbarBorderRadius: '0',
+					scrollbarOpacity: '0.5',
+					onSlideChange: slideContentChange,
+					onSliderLoaded: slideContentChange,
+					keyboardControls: true,
+          scrollbarHide: false,
+          scrollbarLocation: 'bottom'
+				});
+				
+				function slideContentChange(args) {
+					/* indicator */
+					$('.iosSliderButtons .button').removeClass('selected');
+					$('.iosSliderButtons .button:eq(' + (args.currentSlideNumber - 1) + ')').addClass('selected');
+				}
+				
+			});
+		</script>
+  <div id="carouselholder" style="width:1024px;height:330px;background:url(css/images/museum/carouselholderbg.png) center center no-repeat;position:absolute;top:650px;">
+    <div id="candlestick" style="width:107px;height:101px;background:url(css/images/museum/candlestick.png) center center no-repeat;float:right;margin-right:17px;margin-top:12px;margin-bottom:-35px;">&nbsp;</div>
+    <!--<div id="carousel-left" style="margin-top:216px;margin-left:1px;"><img id="cprev" src="css/images/museum/carousel-prev.png"></div>
+    <div id="carousel-right" style="margin-top:216px;margin-right:11px;"><img id="cnext" src="css/images/museum/carousel-next.png"></div>-->
+    <div class = 'iosSlider' id="museumslider" style="margin-top:78px !important; padding:22px 0px; margin-left:48px; width:864px !important;">
+  		<div class = 'slider' id="slidescontainer">
+        <div class = 'item' id = 'item1'></div>
+  			<div class = 'item' id = 'item2'></div>
+  			<div class = 'item' id = 'item3'></div>
+  			<div class = 'item' id = 'item4'></div>
+        <div class = 'item' id = 'item5'></div>
+  			<div class = 'item' id = 'item6'></div>
+  			<div class = 'item' id = 'item7'>50</div>
+  			<div class = 'item' id = 'item8'>100</div>
+  			<div class = 'item' id = 'item9'>150</div>
+  			<div class = 'item' id = 'item10'>200</div>
+  			<div class = 'item' id = 'item11'>250</div>
+  			<div class = 'item' id = 'item12'>300</div>
+  			<div class = 'item' id = 'item13'>350</div>
+  			<!--<div class = 'item' id = 'item14'>400</div>-->
+      </div>
+  	</div>
+  </div>
+   <script>
+    $('#closeConfirm').on('tap', function() {
+      $('#confirmSave').popup( "close" );
+    });
+    
+    $('#closeRemove').on('tap', function() {
+      $('#confirmRemove').popup( "close" );
+    });
+    
+    $('#confRemove').on('tap', function() {
+      for(var i=1;i<15;i++) {
+        if($("#zoom"+i+" > img").attr("class") == "currentItem") {
+          $("#zoom"+i).fadeOut(800);
+          var slideHTML = '<div class=\"item\" id=\"item'+i+'\" ></div>';
+          $('.iosSlider').iosSlider('addSlide', slideHTML, i);
+        }
+      }
+      $('img.currentItem').removeClass();
+      $('#confirmRemove').popup( "close" );
+      $('#rlc').fadeOut(200);
+      $('#rrc').fadeOut(200);
+      $('#str').fadeOut(200);
+      $('#cnl').fadeOut(200);
+      $('#cnlclass').fadeOut(200);
+      $('#rmv').fadeOut(200);
+      $('#sicontainer').animate({'top':'680px'});
+      $('.iosSlider').iosSlider('update');
+    });
+    
+    $('#savestate').on('tap', function() {
+      for(var i=1;i<15;i++) {
+        if($("#zoom"+i+" > img").attr("class") == "currentItem") {
+          $("div#zoom"+i).removeClass();
+          $("div#zoom"+i).addClass("zoomProps saved");
+        }
+      }
+      $('img.currentItem').removeClass();
+      var imongnawong = $('#zoomwrapper').html();
+      var itemsleft = $('#slidescontainer').html();
+      $.ajax({
+        type: "POST",
+        url: "http://back.uvmate.com/mzones/museum/acgallerysavestate.php",
+        data: { htmlcontent: imongnawong}
+      }).done(function( msgstate ) { });
+      $.ajax({
+        type: "POST",
+        url: "http://back.uvmate.com/mzones/museum/acgallerysaveitems.php",
+        data: { slidesleft: itemsleft}
+      }).done(function( msgitems ) { 
+        $('#confirmSave').popup( "close" );
+        alert("Gallery Saved");
+        $('#sicontainer').animate({'top':'680px'});
+      });
+    });
+    
+    $(document).ready(function() {
+      $.ajax({
+        type: "POST",
+        url: "http://back.uvmate.com/mzones/museum/acgalleryopenstate.php",
+      }).done(function( gallerycontent ) {
+        if(gallerycontent.length > 2) {
+          //alert("asdhg"+gallerycontent.length );
+          gallerycontent = gallerycontent.replace(/\\/g, '');
+          $('#zoomwrapper').html(gallerycontent);
+          $.ajax({
+            type: "POST",
+            url: "http://back.uvmate.com/mzones/museum/acgalleryopenitems.php",
+          }).done(function( itemsleft ) {
+              itemsleft = itemsleft.replace(/\\/g, '');
+              //$('#slidescontainer').html(itemsleft);
+              //$('.iosSlider').iosSlider('update');
+              
+              
+              $('#museumslider').on('vmousedown','.item', function() {
+                
+                //$('div#item2').bind( "taphold", tapholdHandler );
+                var thisid = this.id;
+                var numid = thisid.split("m");
+                alert("imong nawong "+thisid);
+              });
+          });
+          var zoom1 = new ZoomView('#zoom1','#zoom1 :first');
+          var zoom2 = new ZoomView('#zoom2','#zoom2 :first');
+          var zoom3 = new ZoomView('#zoom3','#zoom3 :first');
+          var zoom4 = new ZoomView('#zoom4','#zoom4 :first');
+          var zoom5 = new ZoomView('#zoom5','#zoom5 :first');
+          var zoom6 = new ZoomView('#zoom6','#zoom6 :first');
+          var zoom7 = new ZoomView('#zoom7','#zoom7 :first');
+          var zoom8 = new ZoomView('#zoom8','#zoom8 :first');
+          var zoom9 = new ZoomView('#zoom9','#zoom9 :first');
+          var zoom10 = new ZoomView('#zoom10','#zoom10 :first');
+          var zoom11 = new ZoomView('#zoom11','#zoom11 :first');
+          var zoom12 = new ZoomView('#zoom12','#zoom12 :first');
+          var zoom13 = new ZoomView('#zoom13','#zoom13 :first');
+          var zoom14 = new ZoomView('#zoom14','#zoom14 :first');
+        
+          $('.zoomProps').on('tap', function() {
+            //var pieceId = this.parentNode.id;
+            var pieceId = $(this).attr('id');
+            var imgClass = $('#'+pieceId+' > img').attr("class");
+            if(imgClass == "currentItem") {
+              var position = $('#'+pieceId).position();
+              var lapad = $('#'+pieceId+' > img').attr('width');
+              var halflapad = lapad / 2;
+              $('#rlc').css({'left':position.left + parseInt(halflapad), 'top':position.top, 'z-index':99});
+              $('#rrc').css({'left':position.left + parseInt(halflapad), 'top':position.top, 'z-index':99});
+              $('#str').css({'left':position.left + parseInt(halflapad), 'top':position.top, 'z-index':99});
+              $('#cnl').css({'left':position.left + parseInt(halflapad), 'top':position.top, 'z-index':99});
+              $('#rmv').css({'left':position.left + parseInt(halflapad), 'top':position.top, 'z-index':99});
+              
+              $('#rlc').fadeIn(800);
+              $('#rrc').fadeIn(800);
+              $('#str').fadeIn(800);
+              $('#cnl').fadeIn(800);
+              $('#rmv').fadeIn(800);
+              $('#rlc').animate({'left':position.left - 10, 'top':position.top - 80});
+              $('#rrc').animate({'left':position.left + parseInt(halflapad) + parseInt(halflapad) + 10, 'top':position.top - 80});
+              $('#str').animate({'left':position.left + parseInt(halflapad), 'top':position.top - 80});
+              $('#rmv').animate({'left':position.left + parseInt(halflapad) + parseInt(halflapad) + 10, 'top':position.top});
+              $('#cnl').animate({'left':position.left + parseInt(halflapad) + parseInt(halflapad) + 10, 'top':position.top + 80});
+            } else {
+              $('#'+pieceId+' > img').addClass("currentItem");
+              var position = $('#'+pieceId).position();
+              var lapad = $('#'+pieceId+' > img').attr('width');
+              var halflapad = lapad / 2;
+              $('#rmv').css({'left':position.left + parseInt(halflapad), 'top':position.top, 'z-index':99});
+              $('#cnlclass').css({'left':position.left + parseInt(halflapad), 'top':position.top, 'z-index':99});
+              $('#rmv').fadeIn(800);
+              $('#cnlclass').fadeIn(800);
+              $('#rmv').animate({'left':position.left, 'top':position.top-20});
+              $('#cnlclass').animate({'left':position.left + parseInt(halflapad) + parseInt(halflapad), 'top':position.top-20});
+            }
+          });
+        }
+      });
+    });
+    
+    $('#slidescontainer').on('vmousedown','.item', function() {
+        //alert('churva'+this.id);
+        //$(this).trigger('swiping');
+        var thisid = this.id;
+        var numid = thisid.split("m");
+        $(this).swipe({swipeUp:function() {
+          $(this).remove();
+          $('.iosSlider').iosSlider('update');
+          $('#zoom'+numid[1]).css('visibility','visible');
+          $('div#zoom'+numid[1]+" > img").addClass('currentItem');
+        }});
+    });
+    
+    $('#showitems').on('tap', function() {
+      if($('#sicontainer').css('top') == "490px") {
+        $('#sicontainer').animate({'top':680}, 1000);
+        $('#museumslider').animate({'margin-top':'216px'}, 1000);
+        $('#carousel-left').animate({'margin-top':'216px'}, 1000);
+        $('#carousel-right').animate({'margin-top':'216px'}, 1000);
+      } else {
+        $('#sicontainer').animate({'top':290}, 1000);
+        $('#museumslider').animate({'margin-top':'-92px'}, 1000);
+        $('#carousel-left').animate({'margin-top':'-92px'}, 1000);
+        $('#carousel-right').animate({'margin-top':'-92px'}, 1000);
+      }
+    });
+    
+    $('#cprev').on('tap', function() {
+      var curMat = matrixToArray($("#slidescontainer").css("-webkit-transform"));
+      if(curMat[4] > -4896) {
+        var nexMat4 = curMat[4] - 204;
+        $("#slidescontainer").css({'-webkit-transform':'matrix(1,0,0,1,'+nexMat4+',0)'});
+      }
+    });
+    
+    $('#cnext').on('tap', function() {
+      var curMat = matrixToArray($("#slidescontainer").css("-webkit-transform"));
+      if(curMat[4] < -2856) {
+        var nexMat4 = parseFloat(curMat[4]) + 204;
+        $("#slidescontainer").css({'-webkit-transform':'matrix(1,0,0,1,'+nexMat4+',0)'});
+      }
+    });
+    
+    function matrixToArray(matrix) {
+      return matrix.substr(7, matrix.length - 8).split(', ');
+    }
+    
+    $('#rotateleft').on('tap', function() {
+      var imahe = $('.currentItem').prop('src');
+      var patt=/\"|\'|\)/g;
+      var imahenameext = imahe.split('/').pop().replace(patt,'');
+      var imahename = imahenameext.split('.', 1);
+      var imahestring = String(imahename);
+      var imahepos = imahestring.split('-', 1);
+      var finalimahe = imahe.replace(imahename, imahepos+"-left");
+      //alert(finalimahe);
+      $('.currentItem').prop('src', finalimahe)
+    });
+    
+    $('#rotateright').on('tap', function() {
+      var imahe = $('.currentItem').prop('src');
+      var patt=/\"|\'|\)/g;
+      var imahenameext = imahe.split('/').pop().replace(patt,'');
+      var imahename = imahenameext.split('.', 1);
+      var imahestring = String(imahename);
+      var imahepos = imahestring.split('-', 1);
+      var finalimahe = imahe.replace(imahename, imahepos+"-right");
+      //alert(finalimahe);
+      $('.currentItem').prop('src', finalimahe)
+    });
+    
+    $('#straight').on('tap', function() {
+      var imahe = $('.currentItem').prop('src');
+      var patt=/\"|\'|\)/g;
+      var imahenameext = imahe.split('/').pop().replace(patt,'');
+      var imahename = imahenameext.split('.', 1);
+      var imahestring = String(imahename);
+      var imahepos = imahestring.split('-', 1);
+      var finalimahe = imahe.replace(imahename, imahepos);
+      //alert(finalimahe);
+      $('.currentItem').prop('src', finalimahe)
+    });
+    
+    $('#cnl').on('tap', function() {
+      $('#rlc').fadeOut(200);
+      $('#rrc').fadeOut(200);
+      $('#str').fadeOut(200);
+      $('#cnl').fadeOut(200);
+      $('#rmv').fadeOut(200);
+      //$('.currentItem').removeClass();
+    });
+    
+    $('#cnlclass').on('tap', function() {
+      $('#cnlclass').fadeOut(200);
+      $('#rmv').fadeOut(200);
+      $('.currentItem').removeClass();
+    });
+    
+    $("#museumbackbtn").on('tap', function() {
+      $.mobile.changePage("controlpanel.html", { transition: "flip" });
+    });
+    
+    $('.sicontainer').bind('taphold', tapholdHandler);
+    function tapholdHandler(event) {
+      var maoniid = $(event.target).attr("id");
+      alert("ni-hold ang pungak sa "+maoniid);
+    }
+   </script>
+   <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+</div>

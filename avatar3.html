@@ -1,0 +1,540 @@
+<!-- i-C-a -->
+  <div data-role="page" style="padding:15px;" id="avatarcreator">
+    <div id="avatarholder" style="float:left;width:225px;height:422px;padding-top:310px;padding-left:125px;">
+      <div id="avatarcontainer">
+        <div id="avatarbody" style="background-attachment: scroll; background-color: transparent; width: 200px; height: 320px; top: 6px; position: relative; background-position: 0px 50%; background-repeat: no-repeat no-repeat; ">
+          <div id="avatarhair" style="background-image: none; width: 198px; height: 122px; top: 29px; left: 12px; position: relative; display: none; background-position: 50% 50%; background-repeat: no-repeat no-repeat; " ></div>
+          <div id="avatarhair-joe" style="width: 192px; height: 188px; position: relative; left: 21px; top: -6px; background-image: none; display: none; background-position: 50% 50%; background-repeat: no-repeat no-repeat; "></div>
+          <div id="avatarhair-jane" style="width: 192px; height: 122px; position: relative; left: 13px; top: 65px; background-image: none; background-position: 50% 50%; background-repeat: no-repeat no-repeat; "></div>
+          <div id="avatareyes" style="width: 192px; height: 122px; left: 18px; top: -52px; background-image: none; position: relative; display: none; background-position: 50% 50%; background-repeat: no-repeat no-repeat; "></div>
+          <div id="avatareyes-joe" style="width: 192px; height: 122px; position: relative; left: 9px; top: -137px; background-image: none; display: none; background-position: 50% 50%; background-repeat: no-repeat no-repeat; "></div>
+          <div id="avatareyes-jane" style="width: 192px; height: 122px; position: relative; left: 10px; top: -49px; background-image: none; background-position: 50% 50%; background-repeat: no-repeat no-repeat; "></div>
+          <div id="avatareyes-albert" style="width: 192px; height: 122px; position: relative; left: 3px; top: 66px; background-image: none; display: none; background-position: 50% 50%; background-repeat: no-repeat no-repeat; "></div>
+          <div id="avatareyes-may" style="width: 192px; height: 122px; position: relative; left: 8px; top: 74px; background-image: none; display: none; background-position: 50% 50%; background-repeat: no-repeat no-repeat; "></div>
+          <div id="avatareyes-mary" style="width: 192px; height: 122px; position: relative; left: 8px; top: 74px; background-image: none; display: none; background-position: 50% 50%; background-repeat: no-repeat no-repeat; "></div>
+          <div id="avatarfh" style="background-image: none; top: -146px; left: 13px; width: 198px; height: 122px; position: relative; display: none; background-position: 50% 50%; background-repeat: no-repeat no-repeat; " ></div>
+          <div id="avatargadget-jane" style="width: 192px; height: 122px; position: relative; left: 33px; top: -113px; background-image: none; background-position: 50% 50%; background-repeat: no-repeat no-repeat; "></div>
+          <div id="avatarcoat" style="width: 198px; height: 122px; left: 22px; top: -231px; background-image: none; position: relative; display: none; background-position: 50% 50%; background-repeat: no-repeat no-repeat; "></div>
+          <div id="avatarclothes-mary" style="width: 198px; height: 122px; position: relative; background-image: none; left: 17px; top: 37px; display: none; background-position: 50% 50%; background-repeat: no-repeat no-repeat; "></div>
+          <div id="avataracc-jane" style="width: 192px; height: 122px; position: relative; left: 11px; top: -222px; background-image: none; background-position: 50% 50%; background-repeat: no-repeat no-repeat; "></div>
+        </div>
+      </div><!--/avatarcontainer-->
+      <div style="clear:both;"></div>
+    </div><!--/avatarholder-->
+    <div id="editavatar" style="float:right;width:525px;height:730px;overflow:hidden;scroll:auto;">
+      <div style="width:525px;margin:4px auto 0;" id="savediv">
+        <a href="#" id="saveavatar" style="float:right;margin-right:45px;"><img src="css/images/avatar/savebtn.png"></a>
+        <a href="#" id="backprevstate" style="float:left;margin-left:30px;"><img src="css/images/avatar/backbtn.png"></a>
+      </div><div style="clear:both;"></div>
+      <a href="#" id="bodyopts" class="avatarbox" style="float:left;margin-left:30px;margin-top:58px;"><img src="css/images/avatar/avatar-choose.png"></a>
+      <a href="#" id="hairopts" class="avatarbox" style="float:right;margin-right:45px;margin-top:58px;"><img src="css/images/avatar/avatar-head.png"></a>
+      <div style="clear:both;"></div>
+      <a href="#" id="eyesopts" class="avatarbox" style="margin:172px 173px; float:left;"><img src="css/images/avatar/avatar-eye.png"></a>
+      <div style="clear:both;"></div>
+      <a href="#" id="noseopts" class="avatarbox" style="float:left;margin-left:30px;margin-top:25px;display:none;"><img src="css/images/avatar/avatar-fh.png"></a>
+      <a href="#" id="mouthopts" class="avatarbox" style="float:right;margin-right:45px;margin-top:25px;display:none;"><img src="css/images/avatar/avatar-clothes.png"></a>
+      <a href="#" id="gadgetsopts" class="avatarbox" style="float:left;margin-left:30px;margin-top:25px;display:none;"><img src="css/images/avatar/avatar-gadgets.png"></a>
+      <a href="#" id="accopts" class="avatarbox" style="float:right;margin-right:45px;margin-top:25px;display:none;"><img src="css/images/avatar/avatar-acc.png"></a>
+      <div id="bodyoptscontainer" class="optscontainer">
+        <div id="rico" class="bodychoice" style="float:left;margin-top:2px;display:none;"><img src="css/images/avatar/coachrico.png"></div>
+        <div id="jane" class="bodychoice" style="float:left;margin-top:2px;display:none;"><img src="css/images/avatar/coachjane.png"></div>
+        <div id="joe" class="bodychoice" style="float:left;margin-top:2px;display:none;"><img src="css/images/avatar/coachjoe.png"></div>
+        <div id="albert" class="bodychoice" style="float:left;margin-top:2px;display:none;"><img src="css/images/avatar/coachalbert.png"></div>
+        <div id="may" class="bodychoice" style="float:left;margin-top:2px;display:none;"><img src="css/images/avatar/coachmay.png"></div>
+        <div id="mary" class="bodychoice" style="float:left;margin-top:2px;display:none;"><img src="css/images/avatar/coachmary.png"></div>
+      </div>
+      
+      <div id="no-hg" class="hairchoice" style="display:none;float:left;margin-top:22px;"><img src="css/images/avatar/none.png"></div>
+      <div id="hat-hg" class="hairchoice" style="display:none;float:left;margin-top:40px;"><img src="css/images/avatar/hat.png"></div>
+      <div id="no-hgjane" class="hairchoice-jane" style="display:none;float:left;margin-top:22px;"><img src="css/images/avatar/none.png"></div>
+      <div id="headphone-hgjane" class="hairchoice-jane" style="display:none;float:left;margin-top:22px;"><img src="css/images/avatar/headphone-jane.png"></div>
+      <div id="no-hgjoe" class="hairchoice-joe" style="display:none;float:left;margin-top:22px;"><img src="css/images/avatar/none.png"></div>
+      <div id="hat-hgjoe" class="hairchoice-joe" style="display:none;float:left;margin-top:40px;"><img src="css/images/avatar/hat-joe.png"></div>
+    
+      <div id="no-ew" class="eyechoice" style="display:none;float:left;margin-top:22px;"><img src="css/images/avatar/none.png"></div>
+      <div id="d-ew" class="eyechoice" style="display:none;float:left;margin-top:64px;"><img src="css/images/avatar/darksg.png"></div>
+      <div id="y-ew" class="eyechoice" style="display:none;float:left;margin-top:-8px;"><img src="css/images/avatar/yellowsg.png"></div>
+      <div id="no-ewjane" class="eyechoice-jane" style="display:none;float:left;margin-top:22px;"><img src="css/images/avatar/none.png"></div>
+      <div id="shades-ewjane" class="eyechoice-jane" style="display:none;float:left;margin-top:22px;"><img src="css/images/avatar/shades-jane.png"></div>
+      <div id="gglass-ewjane" class="eyechoice-jane" style="display:none;float:left;margin-top:22px;"><img src="css/images/avatar/gglass-jane.png"></div>
+      <div id="no-ewjoe" class="eyechoice-joe" style="display:none;float:left;margin-top:22px;"><img src="css/images/avatar/none.png"></div>
+      <div id="shades-ewjoe" class="eyechoice-joe" style="display:none;float:left;margin-top:22px;"><img src="css/images/avatar/shades-joe.png"></div>
+      <div id="glasses-ewjoe" class="eyechoice-joe" style="display:none;float:left;margin-top:22px;"><img src="css/images/avatar/glasses-joe.png"></div>
+      <div id="no-ewalbert" class="eyechoice-albert" style="display:none;float:left;margin-top:22px;"><img src="css/images/avatar/none.png"></div>
+      <div id="glasses-ewalbert" class="eyechoice-albert" style="display:none;float:left;margin-top:22px;"><img src="css/images/avatar/glasses-albert.png"></div>
+      <div id="mg-ewalbert" class="eyechoice-albert" style="display:none;float:left;margin-top:22px;"><img src="css/images/avatar/mg-albert.png"></div>
+      <div id="no-ewmay" class="eyechoice-may" style="display:none;float:left;margin-top:22px;"><img src="css/images/avatar/none.png"></div>
+      <div id="glasses-ewmay" class="eyechoice-may" style="display:none;float:left;margin-top:22px;"><img src="css/images/avatar/glasses-may.png"></div>
+      <div id="shades-ewmay" class="eyechoice-may" style="display:none;float:left;margin-top:22px;"><img src="css/images/avatar/shades-may.png"></div>
+      <div id="no-ewmary" class="eyechoice-mary" style="display:none;float:left;margin-top:22px;"><img src="css/images/avatar/none.png"></div>
+      <div id="glasses-ewmary" class="eyechoice-mary" style="display:none;float:left;margin-top:22px;"><img src="css/images/avatar/glasses-mary.png"></div>
+      <div id="shades-ewmary" class="eyechoice-mary" style="display:none;float:left;margin-top:22px;"><img src="css/images/avatar/shades-mary.png"></div>
+    
+    
+      <div id="fh1" class="nosechoice" style="display:none;float:left;margin-top:22px;"><img src="css/images/avatar/none.png"></div>
+      <div id="fh2" class="nosechoice" style="display:none;float:left;margin-top:40px;"><img src="css/images/avatar/goatee.png"></div>
+      <div id="fh3" class="nosechoice" style="display:none;float:left;margin-top:0px;"><img src="css/images/avatar/beard.png"></div>
+    
+      <div id="coat1" class="coatchoice" style="display:none;float:left;margin-top:22px;"><img src="css/images/avatar/none.png"></div>
+      <div id="coat2" class="coatchoice" style="display:none;float:left;margin-top:40px;"><img src="css/images/avatar/jacket-show.png"></div>
+      <div id="noapron-mary" class="coatchoice-mary" style="display:none;float:left;margin-top:22px;"><img src="css/images/avatar/none.png"></div>
+      <div id="apron-mary" class="coatchoice-mary" style="display:none;float:left;margin-top:40px;"><img src="css/images/avatar/apron-mary.png"></div>
+      <div id="wapron-mary" class="coatchoice-mary" style="display:none;float:left;margin-top:40px;"><img src="css/images/avatar/wapron-mary.png"></div>
+      
+      <div id="no-gadgetjane" class="gadgetchoice-jane" style="display:none;float:left;margin-top:22px;"><img src="css/images/avatar/none.png"></div>
+      <div id="tab-gadgetjane" class="gadgetchoice-jane" style="display:none;float:left;margin-top:22px;"><img src="css/images/avatar/tab-jane.png"></div>
+      
+      <div id="no-accjane" class="accchoice-jane" style="display:none;float:left;margin-top:22px;"><img src="css/images/avatar/none.png"></div>
+      <div id="bag-accjane" class="accchoice-jane" style="display:none;float:left;margin-top:22px;"><img src="css/images/avatar/bag-janeopt.png"></div>
+    </div><!--/editavatar-->
+ <script>
+ var coachnum, ricohg, ricohgv, joehg, joehgv, janehg, janehgv, ricoew, ricoewv, joeew, joeewv, janeew, janeewv, albertew,
+     alberewv, mayew, mayewv, maryew, maryewv, ricofh, ricofhv, janeg, janegv, ricoc, ricocv, marya, maryav;
+ 
+ $('#backprevstate').on('tap', function() {
+  if($('.avatarbox').is(':visible')) {
+    $.mobile.changePage("controlpanel.html", {transition: "slide"}); 
+  } else {
+    $('#bodyopts').fadeIn(100);
+    $('#hairopts').fadeIn(100);
+    $('#eyesopts').fadeIn(100);
+    
+    $('.bodychoice').fadeOut(100);
+    $('.hairchoice').fadeOut(100);
+    $('.hairchoice-jane').fadeOut(100);
+    $('.hairchoice-joe').fadeOut(100);
+    $('.eyechoice').fadeOut(100);
+    $('.eyechoice-jane').fadeOut(100);
+    $('.eyechoice-joe').fadeOut(100);
+    $('.eyechoice-albert').fadeOut(100);
+    $('.eyechoice-may').fadeOut(100);
+    $('.nosechoice').fadeOut(100);
+    $('.coatchoice').fadeOut(100);
+    $('.accchoice-jane').fadeOut(100);
+    $('.gadgetchoice-jane').fadeOut(100);
+    $('.eyechoice-mary').fadeOut(100);
+    $('.coatchoice-mary').fadeOut(100);
+    
+    var name = $('#avatarbody').css('background-image');
+    var patt=/\"|\'|\)/g;
+    var coachname = name.split('/').pop().replace(patt,'');
+    if(coachname=="ricosprites.png") {
+      $('#noseopts').fadeIn(100);
+      $('#mouthopts').fadeIn(100);
+    } else if(coachname=="janesprites.png") {
+      $('#gadgetsopts').fadeIn(100);
+      $('#accopts').fadeIn(100);
+    } else if(coachname=="marysprites.png") {
+      $('#mouthopts').fadeIn(100);
+    }
+  }
+ });
+ 
+ $('#bodyopts').on('tap', function() {
+    $('.avatarbox').fadeOut(100);
+    $('.bodychoice').fadeIn(100);
+ });
+ 
+ $('#hairopts').on('tap', function() {
+    $('.avatarbox').fadeOut(100);
+    var name = $('#avatarbody').css('background-image');
+    var patt=/\"|\'|\)/g;
+    var coachname = name.split('/').pop().replace(patt,'');
+    if(coachname=="ricosprites.png") {
+      $('.hairchoice').fadeIn(100);
+    } else if(coachname=="janesprites.png") {
+      $('.hairchoice-jane').fadeIn(100);
+    } else if(coachname=="joesprites.png") {
+      $('.hairchoice-joe').fadeIn(100);
+    }
+ });
+ 
+ $('#eyesopts').on('tap', function() {
+    $('.avatarbox').fadeOut(100);
+    var name = $('#avatarbody').css('background-image');
+    var patt=/\"|\'|\)/g;
+    var coachname = name.split('/').pop().replace(patt,'');
+    if(coachname=="ricosprites.png") {
+      $('.eyechoice').fadeIn(100);
+    } else if(coachname=="janesprites.png") {
+      $('.eyechoice-jane').fadeIn(100);
+    } else if(coachname=="joesprites.png") {
+      $('.eyechoice-joe').fadeIn(100);
+    } else if(coachname=="albertsprites.png") {
+      $('.eyechoice-albert').fadeIn(100);
+    } else if(coachname=="maysprites.png") {
+      $('.eyechoice-may').fadeIn(100);
+    } else if(coachname=="marysprites.png") {
+      $('.eyechoice-mary').fadeIn(100);
+    }
+ });
+ 
+ $('#noseopts').on('tap', function() {
+    $('.avatarbox').fadeOut(100);
+    $('.nosechoice').fadeIn(100);
+ });
+ 
+ $('#mouthopts').on('tap', function() {
+    $('.avatarbox').fadeOut(100);
+    var name = $('#avatarbody').css('background-image');
+    var patt=/\"|\'|\)/g;
+    var coachname = name.split('/').pop().replace(patt,'');
+    if(coachname=="ricosprites.png") {
+      $('.coatchoice').fadeIn(100);
+    } else if(coachname=="marysprites.png") {
+      $('.coatchoice-mary').fadeIn(100);
+    }
+ });
+ 
+ $('#gadgetsopts').on('tap', function() {
+  $('.avatarbox').fadeOut(100);
+  $('.gadgetchoice-jane').fadeIn(100);
+ });
+ 
+ $('#accopts').on('tap', function() {
+  $('.avatarbox').fadeOut(100);
+  $('.accchoice-jane').fadeIn(100);
+ });
+ 
+ $('#rico').on('tap', function() {
+  coachnum = "1";
+  $('#avatarbody').css('background-image', 'url("css/images/avatar/ricosprites.png")');
+  $('#avatarbody').css('background-repeat', 'no-repeat');
+  $('#avatarbody').css('background-position', '0px center');
+  $('#avatarhair').fadeIn(10);
+  $('#avatareyes').fadeIn(10);
+  $('#avatarfh').fadeIn(10);
+  $('#avatarcoat').fadeIn(10);
+  $('#avatarhair-jane').fadeOut(10);
+  $('#avatareyes-jane').fadeOut(10);
+  $('#avataracc-jane').fadeOut(10);
+  $('#avatargadget-jane').fadeOut(10);
+  $('#avatarhair-joe').fadeOut(10);
+  $('#avatareyes-joe').fadeOut(10);
+  $('#avatareyes-albert').fadeOut(10);
+  $('#avatareyes-mary').fadeOut(10);
+  $('#avatarclothes-mary').fadeOut(10);
+ });
+ 
+ $('#jane').on('tap', function() {
+  coachnum = "2";
+  $('#avatarbody').css('background-image', 'url("css/images/avatar/janesprites.png")');
+  $('#avatarbody').css('background-repeat', 'no-repeat');
+  $('#avatarbody').css('background-position', '0px center');
+  $('#avatarhair').fadeOut(10);
+  $('#avatarhair-jane').fadeIn(10);
+  $('#avatareyes').fadeOut(10);
+  $('#avatareyes-jane').fadeIn(10);
+  $('#avatarfh').fadeOut(10);
+  $('#avatarcoat').fadeOut(10);
+  $('#avataracc-jane').fadeIn(10);
+  $('#avatargadget-jane').fadeIn(10);
+  $('#avatarhair-joe').fadeOut(10);
+  $('#avatareyes-joe').fadeOut(10);
+  $('#avatareyes-albert').fadeOut(10);
+  $('#avatareyes-may').fadeOut(10);
+  $('#avatareyes-mary').fadeOut(10);
+  $('#avatarclothes-mary').fadeOut(10);
+ });
+ 
+ $('#joe').on('tap', function() {
+  coachnum = "3";
+  $('#avatarbody').css('background-image', 'url("css/images/avatar/joesprites.png")');
+  $('#avatarbody').css('background-repeat', 'no-repeat');
+  $('#avatarbody').css('background-position', '0px center');
+  $('#avatarhair-joe').fadeIn(10);
+  $('#avatareyes-joe').fadeIn(10);
+  $('#avatarhair').fadeOut(10);
+  $('#avatareyes').fadeOut(10);
+  $('#avatarfh').fadeOut(10);
+  $('#avatarcoat').fadeOut(10);
+  $('#avataracc-jane').fadeOut(10);
+  $('#avatargadget-jane').fadeOut(10);
+  $('#avatareyes-jane').fadeOut(10);
+  $('#avatarhair-jane').fadeOut(10);
+  $('#avatareyes-albert').fadeOut(10);
+  $('#avatareyes-may').fadeOut(10);
+  $('#avatareyes-mary').fadeOut(10);
+  $('#avatarclothes-mary').fadeOut(10);
+ });
+ 
+ $('#albert').on('tap', function() {
+  coachnum = "4";
+  $('#avatarbody').css('background-image', 'url("css/images/avatar/albertsprites.png")');
+  $('#avatarbody').css('background-repeat', 'no-repeat');
+  $('#avatarbody').css('background-position', '0px center');
+  $('#avatareyes-albert').fadeIn(10);
+  $('#avatarhair-joe').fadeOut(10);
+  $('#avatareyes-joe').fadeOut(10);
+  $('#avatarhair').fadeOut(10);
+  $('#avatareyes').fadeOut(10);
+  $('#avatarfh').fadeOut(10);
+  $('#avatarcoat').fadeOut(10);
+  $('#avataracc-jane').fadeOut(10);
+  $('#avatargadget-jane').fadeOut(10);
+  $('#avatareyes-jane').fadeOut(10);
+  $('#avatarhair-jane').fadeOut(10);
+  $('#avatareyes-may').fadeOut(10);
+  $('#avatareyes-mary').fadeOut(10);
+  $('#avatarclothes-mary').fadeOut(10);
+ });
+ 
+ $('#may').on('tap', function() {
+  coachnum = "5";
+  $('#avatarbody').css('background-image', 'url("css/images/avatar/maysprites.png")');
+  $('#avatarbody').css('background-repeat', 'no-repeat');
+  $('#avatarbody').css('background-position', '0px center');
+  $('#avatareyes-may').fadeIn(10);
+  $('#avatareyes-albert').fadeOut(10);
+  $('#avatarhair-joe').fadeOut(10);
+  $('#avatareyes-joe').fadeOut(10);
+  $('#avatarhair').fadeOut(10);
+  $('#avatareyes').fadeOut(10);
+  $('#avatarfh').fadeOut(10);
+  $('#avatarcoat').fadeOut(10);
+  $('#avataracc-jane').fadeOut(10);
+  $('#avatargadget-jane').fadeOut(10);
+  $('#avatareyes-jane').fadeOut(10);
+  $('#avatarhair-jane').fadeOut(10);
+  $('#avatareyes-mary').fadeOut(10);
+  $('#avatarclothes-mary').fadeOut(10);
+ });
+ 
+ $('#mary').on('tap', function() {
+  coachnum = "6";
+  $('#avatarbody').css('background-image', 'url("css/images/avatar/marysprites.png")');
+  $('#avatarbody').css('background-repeat', 'no-repeat');
+  $('#avatarbody').css('background-position', '0px center');
+  $('#avatareyes-mary').fadeIn(10);
+  $('#avatarclothes-mary').fadeIn(10);
+  $('#avatareyes-may').fadeOut(10);
+  $('#avatareyes-albert').fadeOut(10);
+  $('#avatarhair-joe').fadeOut(10);
+  $('#avatareyes-joe').fadeOut(10);
+  $('#avatarhair').fadeOut(10);
+  $('#avatareyes').fadeOut(10);
+  $('#avatarfh').fadeOut(10);
+  $('#avatarcoat').fadeOut(10);
+  $('#avataracc-jane').fadeOut(10);
+  $('#avatargadget-jane').fadeOut(10);
+  $('#avatareyes-jane').fadeOut(10);
+  $('#avatarhair-jane').fadeOut(10);
+ });
+ 
+ $('#no-hg').on('tap', function() {
+  ricohg = "0";
+  $('#avatarhair').css('background-image', 'none');
+ });
+ $('#hat-hg').on('tap', function() {
+  ricohg = "1";
+  $('#avatarhair').css('background-image', 'url("css/images/avatar/hat.png")');
+  $('#avatarhair').css('background-repeat', 'no-repeat');
+  $('#avatarhair').css('background-position', 'center center');
+ });
+ $('#no-hgjane').on('tap', function() {
+  janehg = "0";
+  $('#avatarhair-jane').css('background-image', 'none');
+ });
+ $('#headphone-hgjane').on('tap', function() {
+  janehg = "1";
+  $('#avatarhair-jane').css({'background-image':'url("css/images/avatar/headphone-jane.png")', 'background-repeat':'no-repeat', 'background-position':'center center'});
+ });
+ $('#no-hgjoe').on('tap', function() {
+  joehg = "0";
+  $('#avatarhair-joe').css('background-image', 'none');
+ });
+ $('#hat-hgjoe').on('tap', function() {
+  joehg = "1";
+  $('#avatarhair-joe').css({'background-image':'url("css/images/avatar/hat-joe.png")', 'background-repeat':'no-repeat', 'background-position':'center center'});
+ });
+ 
+ $('#no-ew').on('tap', function() {
+  ricoew = "0";
+  $('#avatareyes').css('background-image', 'none');
+  $('#avatareyes').css('background-repeat', 'no-repeat');
+  $('#avatareyes').css('background-position', 'center center');
+ });
+ $('#d-ew').on('tap', function() {
+  ricoew = "1";
+  $('#avatareyes').css('background-image', 'url("css/images/avatar/darksg.png")');
+  $('#avatareyes').css('background-repeat', 'no-repeat');
+  $('#avatareyes').css('background-position', 'center center');
+ });
+ $('#y-ew').on('tap', function() {
+  ricoew = "2";
+  $('#avatareyes').css('background-image', 'url("css/images/avatar/yellowsg.png")');
+  $('#avatareyes').css('background-repeat', 'no-repeat');
+  $('#avatareyes').css('background-position', 'center center');
+ });
+ $('#no-ewjane').on('tap', function() {
+  janeew = "0";
+  $('#avatareyes-jane').css('background-image', 'none');
+ });
+ $('#shades-ewjane').on('tap', function() {
+  janeew = "1";
+  $('#avatareyes-jane').css({'background-image':'url("css/images/avatar/shades-jane.png")', 'background-repeat':'no-repeat', 'background-position':'center center'});
+ });
+ $('#gglass-ewjane').on('tap', function() {
+  janeew = "2";
+  $('#avatareyes-jane').css({'background-image':'url("css/images/avatar/gglass-jane.png")', 'background-repeat':'no-repeat', 'background-position':'center center'});
+ });
+ $('#no-ewjoe').on('tap', function() {
+  joeew = "0";
+  $('#avatareyes-joe').css('background-image', 'none');
+ });
+ $('#glasses-ewjoe').on('tap', function() {
+  joeew = "1";
+  $('#avatareyes-joe').css({'background-image':'url("css/images/avatar/glasses-joe.png")', 'background-repeat':'no-repeat', 'background-position':'center center'});
+ });
+ $('#shades-ewjoe').on('tap', function() {
+  joeew = "2";
+  $('#avatareyes-joe').css({'background-image':'url("css/images/avatar/shades-joe.png")', 'background-repeat':'no-repeat', 'background-position':'center center'});
+ });
+ 
+$('#no-ewalbert').on('tap', function() {
+  albertew = "0";
+  $('#avatareyes-albert').css('background-image', 'none');
+ });
+ $('#glasses-ewalbert').on('tap', function() {
+  albertew = "1";
+  $('#avatareyes-albert').css({'background-image':'url("css/images/avatar/glasses-albert.png")', 'background-repeat':'no-repeat', 'background-position':'center center'});
+ });
+ $('#mg-ewalbert').on('tap', function() {
+  alberew = "2";
+  $('#avatareyes-albert').css({'background-image':'url("css/images/avatar/mg-albert.png")', 'background-repeat':'no-repeat', 'background-position':'center center'});
+ });
+ 
+ $('#no-ewmay').on('tap', function() {
+  mayew = "0";
+  $('#avatareyes-may').css('background-image', 'none');
+ });
+ $('#glasses-ewmay').on('tap', function() {
+  mayew = "1";
+  $('#avatareyes-may').css({'background-image':'url("css/images/avatar/glasses-may.png")', 'background-repeat':'no-repeat', 'background-position':'center center'});
+ });
+ $('#shades-ewmay').on('tap', function() {
+  mayew = "2";
+  $('#avatareyes-may').css({'background-image':'url("css/images/avatar/shades-may.png")', 'background-repeat':'no-repeat', 'background-position':'center center'});
+ });
+ 
+ $('#no-ewmary').on('tap', function() {
+  maryew = "0";
+  $('#avatareyes-mary').css('background-image', 'none');
+ });
+ $('#glasses-ewmary').on('tap', function() {
+  maryew = "1";
+  $('#avatareyes-mary').css({'background-image':'url("css/images/avatar/glasses-mary.png")', 'background-repeat':'no-repeat', 'background-position':'center center'});
+ });
+ $('#shades-ewmary').on('tap', function() {
+  maryew = "2";
+  $('#avatareyes-mary').css({'background-image':'url("css/images/avatar/shades-mary.png")', 'background-repeat':'no-repeat', 'background-position':'center center'});
+ });
+ 
+ $('#no-gadgetjane').on('tap', function() {
+  janeg = "0";
+  $('#avatargadget-jane').css('background-image', 'none');
+ });
+ $('#tab-gadgetjane').on('tap', function() {
+  janeg = "1";
+  $('#avatargadget-jane').css({'background-image':'url("css/images/avatar/tab-jane.png")', 'background-repeat':'no-repeat', 'background-position':'center center'});
+ });
+ 
+ $('#no-accjane').on('tap', function() {
+  janeacc = "0";
+  $('#avataracc-jane').css('background-image', 'none');
+ });
+ $('#bag-accjane').on('tap', function() {
+  janeacc = "1";
+  $('#avataracc-jane').css({'background-image':'url("css/images/avatar/bag-jane.png")', 'background-repeat':'no-repeat', 'background-position':'center center'});
+ });
+ 
+ $('#fh1').on('tap', function() {
+  ricofh = "0";
+  $('#avatarfh').css('background-image', 'none');
+  $('#avatarfh').css('background-repeat', 'no-repeat');
+  $('#avatarfh').css('background-position', 'center center');
+ });
+ $('#fh2').on('tap', function() {
+  ricofh = "1";
+  $('#avatarfh').css('background-image', 'url("css/images/avatar/goatee.png")');
+  $('#avatarfh').css('background-repeat', 'no-repeat');
+  $('#avatarfh').css('background-position', 'center center');
+  $('#avatarfh').css('top', '-131px');
+  $('#avatarfh').css('left', '14px');
+ });
+ $('#fh3').on('tap', function() {
+  ricofh = "2";
+  $('#avatarfh').css('background-image', 'url("css/images/avatar/beard.png")');
+  $('#avatarfh').css('background-repeat', 'no-repeat');
+  $('#avatarfh').css('background-position', 'center center');
+  $('#avatarfh').css('top', '-146px');
+  $('#avatarfh').css('left', '13px');
+ });
+ 
+ $('#coat1').on('tap', function() {
+  ricoc = "0";
+  $('#avatarcoat').css('background-image', 'none');
+  $('#avatarcoat').css('background-repeat', 'no-repeat');
+  $('#avatarcoat').css('background-position', 'center center');
+ });
+ $('#coat2').on('tap', function() {
+  ricoc = "1";
+  $('#avatarcoat').css('background-image', 'url("css/images/avatar/jacket.png")');
+  $('#avatarcoat').css('background-repeat', 'no-repeat');
+  $('#avatarcoat').css('background-position', 'center center');
+ });
+ 
+ $('#noapron-mary').on('tap', function() {
+  marya = "0";
+  $('#avatarclothes-mary').css('background-image', 'none');
+ });
+ $('#apron-mary').on('tap', function() {
+  marya = "1";
+  $('#avatarclothes-mary').css('background-image', 'url("css/images/avatar/apron-mary.png")');
+  $('#avatarclothes-mary').css('background-repeat', 'no-repeat');
+  $('#avatarclothes-mary').css('background-position', 'center center');
+ });
+ $('#wapron-mary').on('tap', function() {
+  marya = "2";
+  $('#avatarclothes-mary').css('background-image', 'url("css/images/avatar/wapron-mary.png")');
+  $('#avatarclothes-mary').css('background-repeat', 'no-repeat');
+  $('#avatarclothes-mary').css('background-position', 'center center');
+ });
+ 
+ function animateEyesBlink() {
+  var avatar = $('#avatarbody').css('background-image');
+  if(avatar != "none") {
+    be = blinkEyes();
+  }
+  eyesblink = setTimeout(animateEyesBlink, 5000);
+ }
+ 
+ function blinkEyes() {
+  setTimeout((function() {$('#avatarbody').css('background-position', '-218px center')}), 80);
+  setTimeout((function() {$('#avatarbody').css('background-position', '-436px center')}), 160);
+  setTimeout((function() {$('#avatarbody').css('background-position', '-218px center')}), 240);
+  setTimeout((function() {$('#avatarbody').css('background-position', '0px center')}), 320);
+ }
+ 
+ $('#saveavatar').on('tap', function() {
+  var coachstatusstring = coachnum+";"+ricohg+";"+joehg+";"+janehg+";"+ricoew+";"+joeew+";"+janeew+";"+albertew+";"+mayew+";"+ricofh+";"+janeg+";"+ricoc+";"+marya+";"+janeacc+";";
+  //alert("mao ni status: "+coachstatusstring);
+  //var avatardetails = $('#avatarcontainer').html();
+  $.ajax({
+    type: "POST",
+    url: "saveavatar2.php",
+    data: { coachstatus: coachstatusstring}
+  }).done(function( msgstate ) { 
+    alert("Avatar Saved");
+  });
+ });
+ 
+ (function() {
+  var kidid = 1;
+  eyesblink = setTimeout(animateEyesBlink, 3000);
+  
+  loadCoachAccessories(kidid);
+ })();
+ 
+ </script>
+ </div><!-- /page -->

@@ -1,0 +1,165 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-changing-places-global-experience-European-Union">
+  <script src="js/hammer.js"></script>
+  <script src="js/jquery.hammer.js"></script>
+  <script src="js/slidebar_changing_places.js"></script>
+  <link rel="stylesheet" href="css/style_changing_places.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnChangingPlaces"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnChangingPlaces"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnChangingPlaces"></div></div>
+  <div class="infobtnholder"><div class="infobtnChangingPlaces"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnChangingPlaces"></div></div>
+  <div class="menubtnholder"><div class="menubtnChangingPlaces"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:0px;"><h1>European Union</h1></div>
+  <div id="spacechar">&nbsp;
+    <div data-role="content" class="kidzcontent">
+      <div class="v-spacer"></div>
+      <div class="sidebarleft-half">
+        <a id="uropeanlink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Changing_Places/A_Global_Experience/European_Union/Uropean_Parliament_Hi_Res.jpg', 'The European Parliament has members elected from European Union member states. Here legislation is made in regards to immigration amongst many other things.');">click here</a>
+        
+        <div id="f1_container" style="visibility:hidden;position:absolute;left:100px;top:270px;">
+          <div id="f1_card">
+            <div class="front face">
+              <img id="dopple" src="css/images/9-12/People_and_Places/Changing_Places/A_Global_Experience/European_Union/Quiz.png">
+            </div>
+            <div id="backofcard" class="back face center" style="background:url(css/images/9-12/People_and_Places/Changing_Places/A_Global_Experience/European_Union/Quiz_Reverse.png) no-repeat;">
+              <div class="returncard" style="position:absolute;left:0px;top:0px;width:362px;height:170px;"></div>
+              <div id="trueans" style="position:absolute;left:90px;top:180px;width:70px;height:50px;"></div>
+              <div id="falseans" style="position:absolute;left:200px;top:180px;width:70px;height:50px;"></div>
+            </div>
+          </div><!--/f1+card-->
+        </div><!--/f1_container-->
+		<div id="zoomwrapper">
+          <div id="pol1" class="pPiece" style="left:100px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Changing_Places/A_Global_Experience/European_Union/Quiz.png" alt="" />
+          </div>
+          <div id="pol2"class="pPiece" style="left:75px;top:290px;">
+             <img src="css/images/9-12/People_and_Places/Changing_Places/A_Global_Experience/European_Union/Uropean_Parliament.jpg " alt="" />
+          </div>
+        </div><!--/zoomwrapper-->
+      </div>
+      
+      <div class="bpcontentChangingPlaces">
+        <p>When it comes to immigration, European countries are quite unusual.  Citizens who are part of the European Union (EU) enjoy freedom of movement into other EU countries.  So, for instance, a Polish citizen can live and work in Spain.  In most parts of the world, governments control immigration very tightly.  Yet in the case of the EU, it is a fundamental right that citizens of member countries can move freely within the Union.</p>
+		<p>Europe is also unusual in that it has changed from being a sender of migrants to countries such as the USA and Australia to being a recipient of them.  Four per cent of the EU population were born outside the continent of Europe.  In some countries, such as Austria, Sweden, Spain and the Netherlands, the number is much higher.  There is some public resistance to the arrival of non-European immigrants; however governments in Europe see immigration as an opportunity to balance its ageing population.</p>
+      </div>
+       
+      <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+    </div> <!-- end content -->  
+  </div><!--/spacechar-->        
+  
+    <div class="micbtnholder"><div class="micbtnChangingPlaces" id="playstopEuropeanUnion"></div></div>
+    <div class="bChangingPlaces"><div class="rwChangingPlaces" id="EuropeanUnionaudiobbtn"></div></div>
+    <div class="plChangingPlaces"><div class="plpsChangingPlaces" id="EuropeanUnionaudioplbtn"></div></div>
+    <div class="fChangingPlaces"><div class="fwChangingPlaces" id="EuropeanUnionaudiofbtn"></div></div>
+    <div id="actualaudio-EuropeanUnion" style="visibility:hidden;"></div>
+  <!-- </div> -->
+  
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+ 
+	var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      $('div#pol1').css("z-index", 2);
+      $('div#pol2').css("z-index", 1);
+      $('div#pol1 > img').css("-webkit-transform", "rotate(0deg)");
+      $('div#pol2 > img').css("-webkit-transform", "rotate(5deg)");
+      if(sound.canPlayType('audio/mpeg')) {
+        $('#actualaudio-EuropeanUnion').html('<audio id="EuropeanUnionaudio" controls preload onpause="playsChangingPlaces()" onplay="pauseChangingPlaces()"><source src="audio/Changing_Places/European_Union.mp3" type="audio/mpeg"></audio>');
+      }             
+      $("#sub-changing-places-global-experience-European-Union").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+    })();
+    
+    $('.homelinkbh').on('tap', function() { mainaudiobg.play(); bgsoundChangingPlaces.pause(); bgsoundChangingPlaces.currentTime = 0;});
+	
+    $('#falseans').on('tap', function() {
+      alert("Wrong answer");
+    });
+    $('#trueans').on('tap', function() {
+      alert("Correct answer");
+    });
+    
+    $(".returncard").on('tap', function() {
+      $('#f1_card').css({"-webkit-transform": "rotateY(0deg)"});
+      $('#f1_card').css({"-moz-transform": "rotateY(0deg)"});
+      $('#f1_card').css({"-o-transform": "rotateY(0deg)"});
+      $('#f1_card').css({"transform": "rotateY(0deg)"});
+      setTimeout(function() {
+        $("#pol1").css({"visibility":"visible", "z-index":4});
+        $('#f1_container').css({"visibility":"hidden", "z-index":0});
+      }, 1000);
+    });
+    
+    $("#pol1").on('tap', function() {
+      $('#f1_container').css({"visibility":"visible", "z-index":10});
+      $(this).css({"visibility":"hidden"});
+      $('#f1_card').css({"-webkit-transform": "rotateY(180deg)"});
+      $('#f1_card').css({"-moz-transform": "rotateY(180deg)"});
+      $('#f1_card').css({"-o-transform": "rotateY(180deg)"});
+      $('#f1_card').css({"transform": "rotateY(180deg)"});
+    });
+	
+    $("#pol2").on('tap', function() {
+      $('#uropeanlink')[0].click();
+    });
+    
+    function goBack() {
+      $.mobile.changePage("sub-changing-places-global-experience.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsChangingPlaces() {
+         bgsoundChangingPlaces.play();
+    }
+       
+    function pauseChangingPlaces() {
+         bgsoundChangingPlaces.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+    $("#playstopEuropeanUnion").on('tap', function() {
+      if(!playing) {
+        EuropeanUnionaudio.play();
+        $('.micbtnChangingPlaces').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        EuropeanUnionaudio.pause(); EuropeanUnionaudio.currentTime = 0;
+        $('.micbtnChangingPlaces').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#EuropeanUnionaudioplbtn").on('tap', function() {
+      if(!paused) {
+        EuropeanUnionaudio.pause();
+        paused = true;
+      } else {
+        EuropeanUnionaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#EuropeanUnionaudiofbtn").on('tap', function() {
+      var ctime = EuropeanUnionaudio.currentTime;
+      EuropeanUnionaudio.currentTime = ctime + 10;
+    });
+    
+    $("#EuropeanUnionaudiobbtn").on('tap', function() {
+      var ctime = EuropeanUnionaudio.currentTime;
+      EuropeanUnionaudio.currentTime = ctime - 10;
+    });
+    
+    $("#EuropeanUnionaudiopsbtn").on('tap', function() {
+      EuropeanUnionaudio.pause();
+    });
+  </script>
+  <script src="js/twocardLogic.js"></script>  <!-- for card dragging effects -->
+</div> <!--//home-->

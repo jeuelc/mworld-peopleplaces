@@ -1,0 +1,175 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-changing-places-new-americans-settling-in">
+  <script src="js/hammer.js"></script>
+  <script src="js/jquery.hammer.js"></script>
+  <script src="js/slidebar_changing_places.js"></script>
+  <link rel="stylesheet" href="css/style_changing_places.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnChangingPlaces"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnChangingPlaces"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnChangingPlaces"></div></div>
+  <div class="infobtnholder"><div class="infobtnChangingPlaces"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnChangingPlaces"></div></div>
+  <div class="menubtnholder"><div class="menubtnChangingPlaces"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:0px;"><h1>Settling In</h1></div>
+  <div id="spacechar">&nbsp;
+    <div data-role="content" class="kidzcontent">
+      <div class="v-spacer"></div>
+      <div class="sidebarleft-half">
+        <a id="weddinglink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Changing_Places/New_Americans/Settling_In/Ellis_Island_Hi_Res.jpg', 'Ellis Island was were millions of immigrants were processed from 1892 until 1954. The island is located  near the Statue of Liberty, which was a gift to the US from the people of France.');">click here</a>
+        
+        <div id="f1_container" style="visibility:hidden;position:absolute;left:100px;top:270px;">
+          <div id="f1_card">
+            <div class="front face">
+              <img id="dopple" src="css/images/9-12/People_and_Places/Changing_Places/New_Americans/Settling_In/True_False.png">
+            </div>
+            <div id="backofcard" class="back face center" style="background:url(css/images/9-12/People_and_Places/Changing_Places/New_Americans/Settling_In/True_False_Reverse.png) no-repeat;">
+              <div class="returncard" style="position:absolute;left:0px;top:0px;width:362px;height:170px;"></div>
+              <div id="trueans" style="position:absolute;left:90px;top:180px;width:70px;height:50px;"></div>
+              <div id="falseans" style="position:absolute;left:200px;top:180px;width:70px;height:50px;"></div>
+            </div>
+          </div><!--/f1+card-->
+        </div><!--/f1_container-->
+		<div id="zoomwrapper">
+          <div id="pol1" class="pPiece" style="left:100px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Changing_Places/New_Americans/Settling_In/True_False.png" alt="" />
+          </div>
+          <div id="pol2"class="pPiece" style="left:75px;top:290px;">
+             <img src="css/images/9-12/People_and_Places/Changing_Places/New_Americans/Settling_In/High_Achievers.png" alt="" />
+          </div>
+		  <div id="pol3"class="pPiece" style="left:80px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Changing_Places/New_Americans/Settling_In/Ellis_Island.jpg" alt="" />
+          </div>
+        </div><!--/zoomwrapper-->
+      </div>
+      
+      <div class="bpcontentChangingPlaces">
+        <p>For many immigrants, the early years of settlement can be challenging.  Immigrants who don't speak English well may struggle to find a job, or be relegated to menial work, that is, work that is very different, less prestigious and well paid compared to what they did at home.</p>
+		<p>A lot of immigrants find that their qualifications and work experience from back home count for little in America.  So to make a living they may need to accept jobs that are well below their qualifications and skill level. For example, it would be like being a doctor in your home country and having to drive a taxi.</p>
+		<p>Some immigrants also experience discrimination and endure poverty because of their background.  Discrimination is the unfair treatment a person or group of people differently.  For example, the 2011 US Census estimated that nearly one in four Mexican and Central American immigrant families in Los Angeles lived in poverty.</p>
+		<p>Still, many immigrants accept these initial hurdles and make sacrifices so that their children and grandchildren have more opportunities than they did.</p>
+      </div>
+       
+      <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+    </div><!-- end content -->  
+  </div><!--/spacechar-->        
+  
+    <div class="micbtnholder"><div class="micbtnChangingPlaces" id="playstopSettlingIn"></div></div>
+    <div class="bChangingPlaces"><div class="rwChangingPlaces" id="SettlingInaudiobbtn"></div></div>
+    <div class="plChangingPlaces"><div class="plpsChangingPlaces" id="SettlingInaudioplbtn"></div></div>
+    <div class="fChangingPlaces"><div class="fwChangingPlaces" id="SettlingInaudiofbtn"></div></div>
+    <div id="actualaudio-SettlingIn" style="visibility:hidden;"></div>
+  <!-- </div> -->
+  
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+ 
+	var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      $('div#pol2').css("z-index", 2);
+      $('div#pol1').css("z-index", 1);
+      $('div#pol1 > img').css("-webkit-transform", "rotate(0deg)");
+      $('div#pol2 > img').css("-webkit-transform", "rotate(5deg)");
+      $('div#pol3 > img').css("-webkit-transform", "rotate(-3deg)");
+      if(sound.canPlayType('audio/mpeg')) {
+        $('#actualaudio-SettlingIn').html('<audio id="SettlingInaudio" controls preload onpause="playsChangingPlaces()" onplay="pauseChangingPlaces()"><source src="audio/Changing_Places/Settling_In.mp3" type="audio/mpeg"></audio>');
+      }             
+      $("#sub-changing-places-new-americans-settling-in").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+    })();
+    
+    $('.homelinkbh').on('tap', function() { mainaudiobg.play(); bgsoundChangingPlaces.pause(); bgsoundChangingPlaces.currentTime = 0;});
+	
+    $('#falseans').on('tap', function() {
+      alert("Wrong answer");
+    });
+    $('#trueans').on('tap', function() {
+      alert("Correct answer");
+    });
+    
+    $(".returncard").on('tap', function() {
+      $('#f1_card').css({"-webkit-transform": "rotateY(0deg)"});
+      $('#f1_card').css({"-moz-transform": "rotateY(0deg)"});
+      $('#f1_card').css({"-o-transform": "rotateY(0deg)"});
+      $('#f1_card').css({"transform": "rotateY(0deg)"});
+      setTimeout(function() {
+        $("#pol1").css({"visibility":"visible", "z-index":4});
+        $('#f1_container').css({"visibility":"hidden", "z-index":0});
+      }, 1000);
+    });
+    
+    $("#pol1").on('tap', function() {
+      $('#f1_container').css({"visibility":"visible", "z-index":10});
+      $(this).css({"visibility":"hidden"});
+      $('#f1_card').css({"-webkit-transform": "rotateY(180deg)"});
+      $('#f1_card').css({"-moz-transform": "rotateY(180deg)"});
+      $('#f1_card').css({"-o-transform": "rotateY(180deg)"});
+      $('#f1_card').css({"transform": "rotateY(180deg)"});
+    });
+	
+	$("#pol2").on('tap', function() {
+      $.mobile.changePage("sub-changing-places-new-americans-settling-in-high-achievers.html", {transition: "slide"});
+    });
+	
+    $("#pol3").on('tap', function() {
+      $('#weddinglink')[0].click();
+    });
+    
+    function goBack() {
+      $.mobile.changePage("sub-changing-places-new-americans.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsChangingPlaces() {
+         bgsoundChangingPlaces.play();
+    }
+       
+    function pauseChangingPlaces() {
+         bgsoundChangingPlaces.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+    $("#playstopSettlingIn").on('tap', function() {
+      if(!playing) {
+        SettlingInaudio.play();
+        $('.micbtnChangingPlaces').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        SettlingInaudio.pause(); SettlingInaudio.currentTime = 0;
+        $('.micbtnChangingPlaces').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#SettlingInaudioplbtn").on('tap', function() {
+      if(!paused) {
+        SettlingInaudio.pause();
+        paused = true;
+      } else {
+        SettlingInaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#SettlingInaudiofbtn").on('tap', function() {
+      var ctime = SettlingInaudio.currentTime;
+      SettlingInaudio.currentTime = ctime + 10;
+    });
+    
+    $("#SettlingInaudiobbtn").on('tap', function() {
+      var ctime = SettlingInaudio.currentTime;
+      SettlingInaudio.currentTime = ctime - 10;
+    });
+    
+    $("#SettlingInaudiopsbtn").on('tap', function() {
+      SettlingInaudio.pause();
+    });
+  </script>
+  <script src="js/threecardLogic.js"></script>  <!-- for card dragging effects -->
+</div> <!--//home-->

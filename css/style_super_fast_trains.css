@@ -1,0 +1,166 @@
+/********* Super Fast Trains **********/
+
+#sub-super-fast-trains, #sub-super-fast-trains-crazy-ideas, #sub-super-fast-trains-what-are-they, #sub-super-fast-trains-looking-future, #sub-super-fast-trains-overcoming-resistance-aerodynamics, #sub-super-fast-trains-overcoming-resistance-rolling-resistance, #sub-super-fast-trains-crazy-ideas-floating-trains, #sub-super-fast-trains-crazy-ideas-half-train-plane, #sub-super-fast-trains-crazy-ideas-jet-trains, #sub-super-fast-trains-overcoming-resistance-aerodynamics-powerful-gusts, #sub-super-fast-trains-overcoming-resistance-maglev-trains, #sub-super-fast-trains-overcoming-resistance-forces-and-motion, #sub-super-fast-trains-overcoming-resistance-aerodynamics-pressure-drag, #sub-super-fast-trains-overcoming-resistance-aerodynamics-crosswinds, #sub-super-fast-trains-overcoming-resistance-aerodynamics-skin-frictions, #sub-super-fast-trains-looking-future-vacuum-tube-trains, #sub-super-fast-trains-looking-future-cool-stuff, #sub-super-fast-trains-what-are-they-up-close-and-personal, #sub-super-fast-trains-what-are-they-how-can-they-go-so-fast,#sub-super-fast-trains-what-are-they-why-do-we-build-team {
+  background:url('images/9-12/The_Modern_World/Super_Fast_Trains/super_fast_trains_bg.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+#sub-super-fast-trains-overcoming-resistance{
+  background:url('images/9-12/The_Modern_World/Super_Fast_Trains/Overcoming_Resistance/Overcoming_Resistance_Sample.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+.pltrains, .pstrains, .btrains, .ftrains {
+  position:absolute;
+  top:670px;
+  left:1024px;
+  z-index:20;
+}
+
+.micbtntrains {
+  background:url('images/9-12/The_Modern_World/micmw.png') no-repeat 0 -81px;
+  height:81px;
+  width:81px;
+}
+
+.rwtrains {
+  background:url('images/9-12/The_Modern_World/rwmw.png') no-repeat 0 -73px;
+  height:73px;
+  width:73px;
+}
+
+.plpstrains {
+  background:url('images/9-12/The_Modern_World/playmw.png') no-repeat 0 -73px;
+  height:73px;
+  width:73px;
+}
+
+.fwtrains {
+  background:url('images/9-12/The_Modern_World/fwmw.png') no-repeat 0 -73px;
+  height:73px;
+  width:73px;
+}
+
+.menubtntrains {
+  background:url('images/9-12/The_Modern_World/menumw.png') no-repeat 0 -90px;
+  height:90px;
+  width:90px;
+}
+
+
+.homebtntrains {
+  background:url('images/9-12/The_Modern_World/mapmw.png') no-repeat 0 -74px;
+  height:74px;
+  width:80px;
+}
+
+.mpbtntrains {
+  background:url('images/9-12/The_Modern_World/mpointsmw.png') no-repeat 0 -84px;
+  height:79px;
+  width:80px;
+}
+
+.cpbtntrains {
+  background:url('images/9-12/The_Modern_World/ctrlpnlmw.png') no-repeat 0 -74px;
+  height:74px;
+  width:74px;
+}
+
+.infobtntrains {
+  background:url('images/9-12/The_Modern_World/infomw.png') no-repeat 0 -74px;
+  height:74px;
+  width:74px;
+}
+
+.credsbtntrains {
+  background:url('images/9-12/The_Modern_World/creditsnmw.png') no-repeat 0 -74px;
+  height:74px;
+  width:74px;
+}
+
+.navtitleholdertrains{
+	width: 435px;
+	height: 68px;
+	position: absolute;
+	top: 169px;
+	left: 295px;
+	text-align: center;
+	line-height: 32px;
+}
+
+.navtitleholdertrains h1{
+	text-transform: uppercase;
+	color: #FFF;
+	font-family: Chalkboard SE;
+	padding: 0;
+	margin: 0;
+	font-weight: bold;
+}
+
+.bptitleholdertrains {
+  width:627px;
+  height:68px;
+  text-align:center;
+  line-height:28px;
+  position:absolute;
+  top:169px;
+  left:194px;
+}
+
+.bptitleholdertrains h1
+ {
+  text-transform:uppercase;
+  color: #FFFFFF;
+  font-family:"Chalkboard SE";
+  font-weight:bold;
+  padding:0;
+  margin:0;
+}
+
+.navtrains-content{
+  position:absolute;
+  left:305px;
+  top:263px;
+  width:410px;
+  height:359px;
+  overflow-y:scroll;
+  text-align:center;
+  font-family:"Chalkboard SE";
+  font-size:18px;
+  font-weight:bold;
+  color:#000000;
+}
+.navtrains-content p {
+  margin-top:0 !important;
+}
+
+.navtrains-content3 {
+  position:absolute;
+  left:59px;
+  top:263px;
+  width:920px;
+  height:160px;
+  overflow-y:scroll;
+  text-align:left;
+  font-family:"Chalkboard SE";
+  font-size:18px;
+  font-weight:bold;
+  color:#000000;
+}
+
+.bpcontenttrains{
+  width:413px;
+  height:356px;
+  position:absolute;
+  left:550px;
+  top:266px;
+  overflow-y:scroll;
+  font-family:"Chalkboard SE";
+  font-size:18px;
+  font-weight:bold;
+  text-align:left;
+  color:#000000;
+}

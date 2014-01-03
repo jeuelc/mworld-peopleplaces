@@ -1,0 +1,169 @@
+/********* Luminous Light  **********/
+#luminouslight, #seeing, #augmentedsight,#colours,#trickswithlight,#bioluminescence,#circusmirror,#hologram,#iridescence,#refraction,#whatisit,#gammarays,#infrared,#radiowaves,#ultraviolet,#visible,#xrays{
+ background:url('images/9-12/The_Wonders_of_Science/Luminous_Light/luminouslight_bg.png') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+#nolightnolife{
+  background:url('images/9-12/The_Wonders_of_Science/Luminous_Light/What_Is_It/No_Light_No_Life/No_Light_No_Life_bg.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+#brightlight{
+  background:url('images/9-12/The_Wonders_of_Science/Luminous_Light/What_Is_It/Super_Bright_Light/Super_Bright_Light_bg.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+.storypageetg_electromagnetic_visible {
+	color: #000000;
+	font-family: "Chalkboard SE";
+	font-size: 18px;
+	font-weight: bold;
+	height: 356px;
+	right: 10px;
+	position: absolute;
+	text-align: center;
+	top: 232px;
+	width: 50%;
+
+}
+.storypagetitlehuman_electromagnetic_visible {
+	color: #000000;
+	font-family: "Chalkboard SE";
+	margin-left: 438px;
+	position: absolute;
+	top: 182px;
+}
+#invisible{
+  background:url('images/9-12/The_Wonders_of_Science/Luminous_Light/How_To_Make_Yourself_Invisible/How_To_Make_Yourself_Invisible_bg.png') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+#sunsetred{
+  background:url('images/9-12/The_Wonders_of_Science/Luminous_Light/Seeing/Why_Is_The_Sunset_Red/Why_Is_Sunset_Red.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+#lookingback{
+  background:url('images/9-12/The_Wonders_of_Science/Luminous_Light/Seeing/Looking_Back_In_Time/Looking_Back_In_Time_bg.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+#electromagnetic{
+  background:url('images/9-12/The_Wonders_of_Science/Luminous_Light/What_Is_It/Electromagnetic_Spectrum/Electromagnetic_Spectrum_bg.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+.plluminous, .psluminous, .bluminous, .fluminous {
+  position:absolute;
+  top:670px;
+  left:1024px;
+  z-index:20;
+}
+
+.plpsluminous {
+  background:url('images/9-12/The_Wonders_of_Science/play.png') no-repeat 0 -73px;
+  height:73px;
+  width:73px;
+}
+
+.micbtnluminous {
+  background:url('images/9-12/The_Wonders_of_Science/mic.png') no-repeat 0 -81px;
+  height:81px;
+  width:81px;
+}
+
+.rwluminous {
+  background:url('images/9-12/The_Wonders_of_Science/rw.png') no-repeat 0 -73px;
+  height:73px;
+  width:73px;
+}
+
+.plpsluminous {
+  background:url('images/9-12/The_Wonders_of_Science/play.png') no-repeat 0 -73px;
+  height:73px;
+  width:73px;
+}
+
+.fwluminous {
+  background:url('images/9-12/The_Wonders_of_Science/fw.png') no-repeat 0 -73px;
+  height:73px;
+  width:73px;
+}
+
+.menubtnluminous {
+  background:url('images/9-12/The_Wonders_of_Science/menu.png') no-repeat 0 -90px;
+  height:90px;
+  width:90px;
+}
+
+
+.homebtnluminous {
+  background:url('images/9-12/The_Wonders_of_Science/map.png') no-repeat 0 -74px;
+  height:74px;
+  width:80px;
+}
+
+.mpbtnluminous {
+  background:url('images/9-12/The_Wonders_of_Science/mpoints.png') no-repeat 0 -84px;
+  height:79px;
+  width:80px;
+}
+
+.cpbtnluminous {
+  background:url('images/9-12/The_Wonders_of_Science/ctrlpnl.png') no-repeat 0 -74px;
+  height:74px;
+  width:74px;
+}
+
+.infobtnluminous {
+  background:url('images/9-12/The_Wonders_of_Science/info.png') no-repeat 0 -74px;
+  height:74px;
+  width:74px;
+}
+
+.credsbtnluminous {
+  background:url('images/9-12/The_Wonders_of_Science/credits.png') no-repeat 0 -74px;
+  height:74px;
+  width:74px;
+}
+
+.bptitleholder_luminous_light{
+	width: 627px;
+	height: 68px;
+	text-align: center;
+	line-height: 28px;
+	position: absolute;
+	top: 169px;
+	left: 194px;	
+}
+.navtitleholder_luminous_light h1, .bptitleholder_luminous_light h1, h1 {
+text-transform: uppercase;
+color: #FFFFFF;
+font-family: "Chalkboard SE";
+font-weight: bold;
+padding: 0;
+margin: 0;
+font-size: 25px;
+}
+.bpcontentvolcano_luminous_light{
+	color: #000000;
+	font-family: "Chalkboard SE";
+	font-size: 18px;
+	font-weight: normal;
+	height: 356px;
+	left: 550px;
+	overflow-y: scroll;
+	position: absolute;
+	text-align: left;
+	top: 266px;
+	width: 413px;
+}

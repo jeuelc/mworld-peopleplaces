@@ -1,0 +1,135 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-changing-places-living-with-diversity-Language">
+  <script src="js/hammer.js"></script>
+  <script src="js/jquery.hammer.js"></script>
+  <script src="js/slidebar_changing_places.js"></script>
+  <link rel="stylesheet" href="css/style_changing_places.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnChangingPlaces"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnChangingPlaces"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnChangingPlaces"></div></div>
+  <div class="infobtnholder"><div class="infobtnChangingPlaces"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnChangingPlaces"></div></div>
+  <div class="menubtnholder"><div class="menubtnChangingPlaces"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:0px;"><h1>Language</h1></div>
+  <div id="spacechar">&nbsp;
+    <div data-role="content" class="kidzcontent">
+      <div class="v-spacer"></div>
+      <div class="sidebarleft-half">
+        <a id="skillslink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Changing_Places/Living_With_Diversity/Languages/Airport_Hi_Res.jpg', 'Collection of multilingual airport signs in English, Japanese, Chinese, and Korean for departure lobby, gates, baggage claim, arrival lobby, information, rent a car, hotel reservation and check-in.');">click here</a>
+		
+        <a id="immigrationlink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Changing_Places/Living_With_Diversity/Languages/China_Town_Hi_Res.jpg', 'Chinatown, New York City with many colourful signs for Chinese businesses. (Courtesy: Batchelder/Alamy)');">click here</a>
+		
+		<div id="zoomwrapper">
+          <div id="pol1" class="pPiece" style="left:100px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Changing_Places/Living_With_Diversity/Languages/Airport.jpg" alt="" />
+          </div>
+          <div id="pol2"class="pPiece" style="left:75px;top:290px;">
+             <img src="css/images/9-12/People_and_Places/Changing_Places/Living_With_Diversity/Languages/China_Town.jpg" alt="" />
+          </div>
+		</div><!--/zoomwrapper-->
+      </div>
+      
+      <div class="bpcontentChangingPlaces">
+        <p>Language is a central part of culture.  Immigrants from non-English-speaking backgrounds may continue to speak in their mother tongue after settling in America.  Children of immigrants may also take classes to learn the language of their ancestors as a way of keeping a connection between generations.</p>
+		<p>In 2011, nearly 38 million Americans spoke Spanish.  Other popular foreign languages include Chinese, Hindi/Urdu, French, Vietnamese and the Tagalog language of the Philippines.</p>
+		<p>Minority languages add a lot to the richness of a society.  However, the use of foreign languages in public spaces (such as state schools and in shops) has been controversial in the United States.  Critics worry that the rise of foreign languages will lead to a decline in the use of English in the US.  Some people wonder how people can communicate if they dont all speak the same language.</p>
+      </div>
+       
+      <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+    </div> <!-- end content -->  
+  </div><!--/spacechar-->        
+  
+    <div class="micbtnholder"><div class="micbtnChangingPlaces" id="playstopLanguage"></div></div>
+    <div class="bChangingPlaces"><div class="rwChangingPlaces" id="Languageaudiobbtn"></div></div>
+    <div class="plChangingPlaces"><div class="plpsChangingPlaces" id="Languageaudioplbtn"></div></div>
+    <div class="fChangingPlaces"><div class="fwChangingPlaces" id="Languageaudiofbtn"></div></div>
+    <div id="actualaudio-Language" style="visibility:hidden;"></div>
+  <!-- </div> -->
+  
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+ 
+	var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      $('div#pol1').css("z-index", 2);
+      $('div#pol2').css("z-index", 1);
+      $('div#pol1 > img').css("-webkit-transform", "rotate(0deg)");
+      $('div#pol2 > img').css("-webkit-transform", "rotate(5deg)");
+      if(sound.canPlayType('audio/mpeg')) {
+        $('#actualaudio-Language').html('<audio id="Languageaudio" controls preload onpause="playsChangingPlaces()" onplay="pauseChangingPlaces()"><source src="audio/Changing_Places/Language.mp3" type="audio/mpeg"></audio>');
+      }             
+      $("#sub-changing-places-living-with-diversity-Language").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+    })();
+    
+    $('.homelinkbh').on('tap', function() { mainaudiobg.play(); bgsoundChangingPlaces.pause(); bgsoundChangingPlaces.currentTime = 0;});
+    
+    $("#pol1").on('tap', function() {
+      $('#skillslink')[0].click();
+    });
+    $("#pol2").on('tap', function() {
+      $('#immigrationlink')[0].click();
+    });
+	$("#pol3").on('tap', function() {
+      $('#graphlink')[0].click();
+    });
+	
+    function goBack() {
+      $.mobile.changePage("sub-changing-places-living-with-diversity.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsChangingPlaces() {
+         bgsoundChangingPlaces.play();
+    }
+       
+    function pauseChangingPlaces() {
+         bgsoundChangingPlaces.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+    $("#playstopLanguage").on('tap', function() {
+      if(!playing) {
+        Languageaudio.play();
+        $('.micbtnChangingPlaces').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        Languageaudio.pause(); Languageaudio.currentTime = 0;
+        $('.micbtnChangingPlaces').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#Languageaudioplbtn").on('tap', function() {
+      if(!paused) {
+        Languageaudio.pause();
+        paused = true;
+      } else {
+        Languageaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#Languageaudiofbtn").on('tap', function() {
+      var ctime = Languageaudio.currentTime;
+      Languageaudio.currentTime = ctime + 10;
+    });
+    
+    $("#Languageaudiobbtn").on('tap', function() {
+      var ctime = Languageaudio.currentTime;
+      Languageaudio.currentTime = ctime - 10;
+    });
+    
+    $("#Languageaudiopsbtn").on('tap', function() {
+      Languageaudio.pause();
+    });
+  </script>
+  <script src="js/twocardLogic.js"></script>  <!-- for card dragging effects -->
+</div> <!--//home-->

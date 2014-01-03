@@ -1,0 +1,423 @@
+/********* Super Fast skelton **********/
+
+#sub-build-your-own-skelton, #sub-build-your-own-skelton-keep-skelton-healthy, #sub-build-your-own-skelton-without-bones-in-trouble, #sub-build-your-own-skelton-what-are-bones,#sub-build-your-own-skelton-what-are-bones-every-bone-has-home,#sub-build-your-own-skelton-what-are-bones-long-short-wobbly-and-strange,#sub-build-your-own-skelton-what-are-bones-what-are-they-made-of,#sub-build-your-own-skelton-without-bones-in-trouble-thanks-for-your-support,#sub-build-your-own-skelton-without-bones-in-trouble-your-body-is-full-of-levers,#sub-build-your-own-skelton-keep-your-skelton-healthy-fueling-your-skelton,#sub-build-your-own-skelton-keep-skelton-healthy-old-bones{
+  background:url('images/9-12/Human_Body/Build_Your_Own_Skelton/Build_your_Own_Skelton_bg.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+#sub-build-your-own-skelton-what-are-bones-bones-are-alive{
+  background:url('images/9-12/Human_Body/Build_Your_Own_Skelton/What_Are_Bones/Bones_Are_Alive/Bones_Are_Alive_bg.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+#sub-build-your-own-skelton-without-bones-in-trouble-making-blood{
+  background:url('images/9-12/Human_Body/Build_Your_Own_Skelton/Without_Bones_We_Are_In_Trouble/Making_Blood/Making_Blood_Bg.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+#sub-build-your-own-skelton-without-bones-in-trouble-your-boney-shield{
+  background:url('images/9-12/Human_Body/Build_Your_Own_Skelton/Without_Bones_We_Are_In_Trouble/Your_Bony_Shield/Your_Bony_Shield_Bg.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+#sub-build-your-own-skelton-keep-your-skelton-healthy-bone-fitness{
+  background:url('images/9-12/Human_Body/Build_Your_Own_Skelton/Keep_Your_Skeleton_Healthy/Bone_Fitness/Bone_Fitness_Bg.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+#sub-build-your-own-skelton-keep-your-skelton-healthy-broken-bones{
+  background:url('images/9-12/Human_Body/Build_Your_Own_Skelton/Keep_Your_Skeleton_Healthy/Broken_Bones/Broken_Bones_Bg.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+.plskelton, .psskelton, .bskelton, .fskelton {
+  position:absolute;
+  top:670px;
+  left:1024px;
+  z-index:20;
+}
+
+.micbtnskelton {
+  background:url('images/9-12/Human_Body/michb.png') no-repeat 0 -81px;
+  height:81px;
+  width:81px;
+}
+
+.rwskelton {
+  background:url('images/9-12/Human_Body/rwhb.png') no-repeat 0 -73px;
+  height:73px;
+  width:73px;
+}
+
+.plpsskelton {
+  background:url('images/9-12/Human_Body/playhb.png') no-repeat 0 -73px;
+  height:73px;
+  width:73px;
+}
+
+.fwskelton {
+  background:url('images/9-12/Human_Body/fwhb.png') no-repeat 0 -73px;
+  height:73px;
+  width:73px;
+}
+
+.menubtnskelton {
+  background:url('images/9-12/Human_Body/menuhb.png') no-repeat 0 -90px;
+  height:90px;
+  width:90px;
+}
+
+
+.homebtnskelton {
+  background:url('images/9-12/Human_Body/maphb.png') no-repeat 0 -74px;
+  height:74px;
+  width:80px;
+}
+
+.mpbtnskelton {
+  background:url('images/9-12/Human_Body/mpointshb.png') no-repeat 0 -84px;
+  height:79px;
+  width:80px;
+}
+
+.cpbtnskelton {
+  background:url('images/9-12/Human_Body/ctrlpnlhb.png') no-repeat 0 -74px;
+  height:74px;
+  width:74px;
+}
+
+.infobtnskelton {
+  background:url('images/9-12/Human_Body/infohb.png') no-repeat 0 -74px;
+  height:74px;
+  width:74px;
+}
+
+.credsbtnskelton {
+  background:url('images/9-12/Human_Body/creditsnhb.png') no-repeat 0 -74px;
+  height:74px;
+  width:74px;
+}
+
+.navtitleholderskelton{
+	width: 435px;
+	height: 68px;
+	position: absolute;
+	top: 169px;
+	left: 295px;
+	text-align: center;
+	line-height: 32px;
+}
+
+.navtitleholderskelton h1{
+	text-transform: uppercase;
+	color: #FFF;
+	font-family: comic sans ms;
+	padding: 0;
+	margin: 0;
+	font-weight: bold;
+}
+
+.bptitleholderskelton {
+  width:627px;
+  height:68px;
+  text-align:center;
+  line-height:28px;
+  position:absolute;
+  top:169px;
+  left:194px;
+}
+
+.bptitleholderskelton h1{
+  text-transform:uppercase;
+  color: #FFFFFF;
+  font-family:"comic sans ms";
+  font-weight:bold;
+  padding:0;
+  margin:0;
+}
+
+.navskelton-content{
+  position:absolute;
+  left:305px;
+  top:263px;
+  width:410px;
+  height:359px;
+  /*overflow-y:scroll;*/
+  overflow: auto;
+  text-align:center;
+  font-family:"comic sans ms";
+  font-size:18px;
+  font-weight:normal;
+  color:#000000;
+}
+
+.navskelton-content p {
+  margin-top:0 !important;
+}
+
+.navskelton-content3 {
+  position:absolute;
+  left:59px;
+  top:263px;
+  width:920px;
+  height:160px;
+  /*overflow-y:scroll;*/
+  overflow: auto;
+  text-align:left;
+  font-family:"comic sans ms";
+  font-size:18px;
+  font-weight:normal;
+  color:#000000;
+}
+
+.bpcontentskelton{
+  width:413px;
+  height:356px;
+  position:absolute;
+  left:550px;
+  top:266px;
+  /*overflow-y:scroll;*/
+  overflow: auto;
+  font-family:"comic sans ms";
+  font-size:18px;
+  font-weight:normal;
+  text-align:left;
+  color:#000000;
+}
+
+.bones-are-alive-text{
+	position: absolute;
+	right: 62px;
+	top: 111px;
+	width: 399px;
+	height: 525px;
+	overflow: auto;
+	text-align: left;
+	font-family: "comic sans ms";
+	font-size: 18px;
+	font-weight: normal;
+	color: #000000;	
+}
+
+.making-blood-text{
+	position: absolute;
+	right: 62px;
+	top: 111px;
+	width: 465px;
+	height: 525px;
+	overflow: auto;
+	text-align: left;
+	font-family: "comic sans ms";
+	font-size: 18px;
+	font-weight: normal;
+	color: #000000;
+}
+.healthy-bone-text{
+	position: absolute;
+	left: 25px;
+	top: 73px;
+	width: 970px;
+	height: 220px;
+	overflow: auto;
+	text-align: left;
+	font-family: "comic sans ms";
+	font-size: 18px;
+	font-weight: normal;
+	color: #FFFFFF;
+}
+.broken-bone-text{
+	position: absolute;
+	left: 25px;
+	top: 111px;
+	width: 368px;
+	height: 525px;
+	overflow: auto;
+	text-align: left;
+	font-family: "comic sans ms";
+	font-size: 18px;
+	font-weight: normal;
+	color: #FFFFFF;
+}
+.your-boney-shield-text{
+	position: absolute;
+	right: 62px;
+	top: 111px;
+	width: 425px;
+	height: 525px;
+	overflow: auto;
+	font-family: "comic sans ms";
+	font-size: 18px;
+	font-weight: normal;
+	color: #FFFFFF;
+
+}
+
+.every-bone-has-home-text{
+	position: absolute;
+	left: 62px;
+	top: 240px;
+	width: 399px;
+	height: 525px;
+	overflow: auto;
+	text-align: left;
+	font-family: "comic sans ms";
+	font-size: 18px;
+	font-weight: normal;
+	color: #000000;	
+	float:left;
+}
+.every-bone-has-home-img{
+	background: url('images/9-12/Human_Body/Build_Your_Own_Skelton/What_Are_Bones/Every_Bone_Has_Home/Every_Bone_Has_Home.gif') no-repeat;
+	position: absolute;
+	right: 0px;
+	top: 248px;
+	width: 640px;
+	height: 360px;
+	overflow: auto;
+	text-align: left;
+	font-family: "comic sans ms";
+	font-size: 18px;
+	font-weight: normal;
+	color: #000000;
+	float: left;
+}
+.short-wobbly-and-strange-text,.what-are-they-made-of-text,.thanks-for-your-support-text,.your-body-is-full-of-levers,.fueling-your-skelton-text,.healthy-old-bones-text{
+	position: absolute;
+	right: 60px;
+	top: 263px;
+	width: 410px;
+	height: 359px;
+	overflow: auto;
+	text-align: center;
+	font-family: "comic sans ms";
+	font-size: 18px;
+	font-weight: normal;
+	color: #000000;
+}
+
+#sub-build-your-own-skelton-without-bones-in-trouble .bptitleholder{
+	width: 627px;
+	height: 68px;
+	text-align: center;
+	line-height: 35px;
+	position: absolute;
+	top: 149px;
+	left: 194px;
+}
+
+#sub-build-your-own-skelton-without-bones-in-trouble-your-boney-shield .bptitleholder{
+	width: 627px;
+	height: 68px;
+	text-align: center;
+	line-height: 28px;
+	position: absolute;
+	top: 50px;
+	left: 412px;
+}
+
+#sub-build-your-own-skelton-without-bones-in-trouble-making-blood .bptitleholder{
+	width: 627px;
+	height: 68px;
+	text-align: center;
+	line-height: 28px;
+	position: absolute;
+	top: 85px;
+	left: 400px;
+}
+
+#sub-build-your-own-skelton-keep-your-skelton-healthy-bone-fitness .bptitleholder{
+	width: 627px;
+	height: 68px;
+	text-align: center;
+	line-height: 28px;
+	position: absolute;
+	top: 35px;
+	left: 188px;
+}
+
+#sub-build-your-own-skelton-keep-your-skelton-healthy-broken-bones .bptitleholder{
+	width: 370px !important;
+	height: 68px;
+	text-align: center;
+	line-height: 28px;
+	position: absolute;
+	top: 38px;
+	left:10px;
+}
+
+#sub-build-your-own-skelton-what-are-bones-bones-are-alive .bptitleholder{
+	width: 627px !important;
+	height: 68px;
+	text-align: center;
+	line-height: 28px;
+	position: absolute;
+	top: 70px;
+	left: 424px;
+}
+
+#sub-build-your-own-skelton-what-are-bones-what-are-they-made-of .bptitleholder, #sub-build-your-own-skelton-what-are-bones-every-bone-has-home .bptitleholder, #sub-build-your-own-skelton-without-bones-in-trouble-thanks-for-your-support .bptitleholder, #sub-build-your-own-skelton-without-bones-in-trouble-your-body-is-full-of-levers .bptitleholder, #sub-build-your-own-skelton-keep-your-skelton-healthy-fueling-your-skelton .bptitleholder, #sub-build-your-own-skelton-keep-skelton-healthy-old-bones .bptitleholder{
+	width: 627px;
+	height: 68px;
+	text-align: center;
+	line-height: 28px;
+	position: absolute;
+	top: 190px;
+	left: 194px;
+}
+
+#sub-build-your-own-skelton-what-are-bones-long-short-wobbly-and-strange .bptitleholder{
+	width: 627px;
+	height: 68px;
+	text-align: center;
+	line-height: 35px;
+	position: absolute;
+	top: 165px;
+	left: 194px;
+}
+	
+#sub-build-your-own-skelton .bptitleholder h1, #sub-build-your-own-skelton-what-are-bones .bptitleholder h1, #sub-build-your-own-skelton-without-bones-in-trouble .bptitleholder h1, #sub-build-your-own-skelton-keep-skelton-healthy .bptitleholder h1, #sub-build-your-own-skelton-what-are-bones-what-are-they-made-of .bptitleholder h1, #sub-build-your-own-skelton-what-are-bones-long-short-wobbly-and-strange .bptitleholder h1, #sub-build-your-own-skelton-what-are-bones-every-bone-has-home .bptitleholder h1, #sub-build-your-own-skelton-what-are-bones-bones-are-alive .bptitleholder h1, #sub-build-your-own-skelton-without-bones-in-trouble-thanks-for-your-support .bptitleholder h1, #sub-build-your-own-skelton-without-bones-in-trouble-your-boney-shield .bptitleholder h1, #sub-build-your-own-skelton-without-bones-in-trouble-your-body-is-full-of-levers .bptitleholder h1, #sub-build-your-own-skelton-without-bones-in-trouble-making-blood .bptitleholder h1, #sub-build-your-own-skelton-keep-your-skelton-healthy-bone-fitness .bptitleholder h1, #sub-build-your-own-skelton-keep-your-skelton-healthy-fueling-your-skelton .bptitleholder h1, #sub-build-your-own-skelton-keep-your-skelton-healthy-broken-bones .bptitleholder h1, #sub-build-your-own-skelton-keep-skelton-healthy-old-bones .bptitleholder h1{
+	text-transform: uppercase;
+	color: #ffffff !important;
+	font-family: "comic sans ms" !important;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#sub-build-your-own-skelton-keep-your-skelton-healthy-broken-bones .bptitleholder h1{
+	text-transform: uppercase;
+	color: #ffffff !important;
+	font-family: "comic sans ms" !important;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#sub-build-your-own-skelton-without-bones-in-trouble-making-blood .bptitleholder h1{
+	text-transform: uppercase;
+	color: #000000 !important;
+	font-family: "comic sans ms" !important;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+.bpcontentskelton{
+	color: #000000;
+    font-family: "comic sans ms";
+    font-size: 18px;
+    font-weight: normal;
+    height: 356px;
+    left: 550px;
+    overflow-y: auto;
+    position: absolute;
+    text-align: left;
+    top: 266px;
+    width: 413px;
+}

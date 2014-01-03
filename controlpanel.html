@@ -1,0 +1,118 @@
+<!-- i-C-a -->
+<div data-role="page" id="control-panel">
+  <div id="mzlink">&nbsp;</div>
+  <div id="aclink">
+    <div id="avatarcontainer2" style="width:218px;height:244px;margin-left:-20px;"></div>
+  </div>
+  <div style="width:289px;height:92px;position:absolute;top:2px;left:3px;">
+    <a href="home.html" data-transition="slide"><img src="css/images/controlpanel/worldlink.png"></a>
+  </div>
+  <div id="friendslink">&nbsp;</div>
+  <div id="settingslink">&nbsp;</div>
+  <div id="mpointslink">&nbsp;</div>
+  <div id="panel-mpoints">&nbsp;</div>
+  <div id="panel-friends">&nbsp;</div>
+  <div id="panel-settings">&nbsp;</div>
+  <div id="panel-mzones">
+    <div style="float:left;clear:both;margin-top:40px;margin-left:30px;">
+      <div class="mzl"><a href="museum.html"><img src="css/images/controlpanel/mzl-ac.png"></a></div>
+      <div class="mzl"><a href="#"><img src="css/images/controlpanel/mzl.png"></a></div>
+      <div class="mzl"><a href="#"><img src="css/images/controlpanel/mzl.png"></a></div>
+      <div class="mzl"><a href="#"><img src="css/images/controlpanel/mzl.png"></a></div>
+    </div>
+    <div style="float:left;clear:both;margin-left:106px;margin-top:15px;">
+      <div class="mzl"><a href="mzonespace.html"><img src="css/images/controlpanel/mzl-s.png"></a></div>
+      <div class="mzl"><a href="#"><img src="css/images/controlpanel/mzl.png"></a></div>
+      <div class="mzl"><a href="#"><img src="css/images/controlpanel/mzl.png"></a></div>
+    </div>
+    <div style="float:left;clear:both;margin-left:30px;margin-top:15px;">
+      <div class="mzl"><a href="#"><img src="css/images/controlpanel/mzl.png"></a></div>
+      <div class="mzl"><a href="#"><img src="css/images/controlpanel/mzl.png"></a></div>
+      <div class="mzl"><a href="#"><img src="css/images/controlpanel/mzl.png"></a></div>
+      <div class="mzl"><a href="#"><img src="css/images/controlpanel/mzl.png"></a></div>
+    </div>
+  </div>
+  <script>
+  $(function() {
+    $.ajax({
+      type: "POST",
+      //url: "http://back.uvmate.com/avatar/avataropenstate.php",
+      url: "avataropenstate.php",
+    }).done(function( avatarcontent ) {
+      if(avatarcontent.length > 2) {
+        avatarcontent = avatarcontent.replace(/\\/g, '');
+        $('#avatarcontainer2').html(avatarcontent);
+        $('#avatarcontainer2').css({'z-index':'999'});
+        $('#avatarbody').css({'width':'200px', 'height':'320px', 'position':'relative', 'top':'6px'});
+        $('#avatarhair').css({'width':'198px', 'height':'122px', 'position':'relative', 'top':'29px', 'left':'12px'});
+        $('#avatareyes').css({'width':'192px', 'height':'122px', 'position':'relative', 'left':'18px', 'top':'-52px'});
+        $('#avatarfh').css({'width':'198px', 'height':'122px', 'position':'relative'});
+        $('#avatarcoat').css({'width':'198px', 'height':'122px', 'position':'relative', 'left':'22px', 'top':'-231px'});
+        eyesblink = setTimeout(animateEyesBlink, 3000);
+      }
+    }); 
+  });
+  
+  function animateEyesBlink() {
+    var avatar = $('#avatarbody').css('background-image');
+    if(avatar != "none") {
+      be = blinkEyes();
+    }
+    eyesblink = setTimeout(animateEyesBlink, 5000);
+  }
+ 
+ function blinkEyes() {
+  setTimeout((function() {$('#avatarbody').css('background-position', '-218px center')}), 80);
+  setTimeout((function() {$('#avatarbody').css('background-position', '-436px center')}), 160);
+  setTimeout((function() {$('#avatarbody').css('background-position', '-218px center')}), 240);
+  setTimeout((function() {$('#avatarbody').css('background-position', '0px center')}), 320);
+ } 
+  
+  $('#mzlink').on('tap', function() { 
+    //$.mobile.changePage("museum.html", {transition: "slide"}); 
+    if($('#panel-mzones').css('left') == '-650px') {
+      $('#panel-mzones').animate({'left':'190px'}, 1000);
+    } else {
+      $('#panel-mzones').animate({'left':'-650px'}, 1000);
+    }
+    $('#panel-friends').animate({'top':'748px'}, 1000);
+    $('#panel-mpoints').animate({'left':'1024px'}, 1000);
+    $('#panel-settings').animate({'top':'-348px'}, 1000);
+  });
+  
+  $('#friendslink').on('tap', function() {
+    if($('#panel-friends').css('top') == '748px') {
+      $('#panel-friends').animate({'top':'122px'}, 1000);
+    } else {
+      $('#panel-friends').animate({'top':'748px'}, 1000);
+    }
+    $('#panel-mzones').animate({'left':'-650px'}, 1000);
+    $('#panel-mpoints').animate({'left':'1024px'}, 1000);
+    $('#panel-settings').animate({'top':'-348px'}, 1000);
+  });
+  
+  $('#mpointslink').on('tap', function() {
+    if($('#panel-mpoints').css('left') == '1024px') {
+      $('#panel-mpoints').animate({'left':'206px'}, 1000);
+    } else {
+      $('#panel-mpoints').animate({'left':'1024px'}, 1000);
+    }
+    $('#panel-mzones').animate({'left':'-650px'}, 1000);
+    $('#panel-friends').animate({'top':'748px'}, 1000);
+    $('#panel-settings').animate({'top':'-348px'}, 1000);
+  });
+  
+  $('#settingslink').on('tap', function() {
+    if($('#panel-settings').css('top') == '-348px') {
+      $('#panel-settings').animate({'top':'130px'}, 1000);
+    } else {
+      $('#panel-settings').animate({'top':'-348px'}, 1000);
+    }
+    $('#panel-mzones').animate({'left':'-650px'}, 1000);
+    $('#panel-friends').animate({'top':'748px'}, 1000);
+    $('#panel-mpoints').animate({'left':'1024px'}, 1000);
+  });
+  
+  $('#aclink').on('tap', function() { $.mobile.changePage("avatar2.html", {transition: "slide"}); });
+  </script>
+</div> <!--//home-->

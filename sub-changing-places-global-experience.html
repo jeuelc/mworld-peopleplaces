@@ -1,0 +1,129 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-changing-places-global-experience">
+  <script src="js/slidebar_changing_places.js"></script>
+  <link rel="stylesheet" href="css/style_changing_places.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnChangingPlaces"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnChangingPlaces"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnChangingPlaces"></div></div>
+  <div class="infobtnholder"><div class="infobtnChangingPlaces"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnChangingPlaces"></div></div>
+  <div class="menubtnholder"><div class="menubtnChangingPlaces"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:14px;"><h1>A Global Experience</h1></div>
+  
+    <div data-role="content" class="kidzcontent">
+      <div class="navChangingPlaces-content3">
+        <p>What are the advantages of having new immigrants to a country?</p>
+		<p>Although the United States is the largest recipient of immigrants in the world, it isnt the society in which immigration is an important issue.  Many countries around the world accept immigrants.  Cheap airfares mean it is affordable to move to another country, although there are many other reasons that determine whether immigration can occur.  With the globalisation of the economy, people may need to move abroad for work whether they be temporary, long-term or permanent migrants.</p>
+		<p>The movement of people is likely to continue well into the future. Lets look at the experiences of other countries.</p>
+      </div>
+        
+      <div class="navbtn1" style="top:420px;">
+        <p><a href="sub-changing-places-global-experience-Australia.html" data-transition="slide"><img src="css/images/9-12/People_and_Places/Changing_Places/A_Global_Experience/Australia.png"></a></p>
+      </div>
+      <div class="navbtn2" style="left:400px;">
+        <p><a href="sub-changing-places-global-experience-South-Africa.html" data-transition="slide"><img src="css/images/9-12/People_and_Places/Changing_Places/A_Global_Experience/South_Africa.png"></a></p>
+      </div>
+      <div class="navbtn3" style="top:420px;">
+        <p><a href="sub-changing-places-global-experience-European-Union.html" data-transition="slide"><img src="css/images/9-12/People_and_Places/Changing_Places/A_Global_Experience/EU.png"></a></p>
+      </div>
+        
+      <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+    </div> <!-- end content -->  
+    
+  
+  <!--<div class="audiopanel">-->
+    <!-- images are in slidebarnat.js 
+         note: change the ids to be able play the narration
+    -->
+    <div class="micbtnholder"><div class="micbtnChangingPlaces" id="playstopGlobalExperience"></div></div>
+    <div class="bChangingPlaces"><div class="rwChangingPlaces" id="GlobalExperienceaudiobbtn"></div></div>
+    <div class="plChangingPlaces"><div class="plpsChangingPlaces" id="GlobalExperienceaudioplbtn"></div></div>
+    <div class="fChangingPlaces"><div class="fwChangingPlaces" id="GlobalExperienceaudiofbtn"></div></div>
+    <div id="actualaudio-GlobalExperience" style="visibility:hidden;"></div>
+  <!--</div>-->
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+    var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      if(sound.canPlayType('audio/mpeg')) {
+        $('#actualaudio-GlobalExperience').html('<audio id="GlobalExperienceaudio" controls preload onpause="playsChangingPlaces()" onplay="pauseChangingPlaces()"><source src="audio/Changing_Places/Global_Experience.mp3" type="audio/mpeg"></audio>');
+      } 
+    
+      $("#sub-changing-places-global-experience").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+    })();
+    
+    $('.homelinkbh').on('tap', function() { bgsoundChangingPlaces.pause(); bgsoundChangingPlaces.currentTime = 0; mainaudiobg.play(); });
+    
+    function goBack() {
+      $.mobile.changePage("sub-changing-places.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsChangingPlaces() {
+         bgsoundChangingPlaces.play();
+    }
+       
+    function pauseChangingPlaces() {
+         bgsoundChangingPlaces.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+    $("#playstopGlobalExperience").on('tap', function() {
+      if(!playing) {
+        GlobalExperienceaudio.play();
+        $('.micbtnChangingPlaces').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        GlobalExperienceaudio.pause(); GlobalExperienceaudio.currentTime = 0;
+        $('.micbtnChangingPlaces').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#GlobalExperienceaudioplbtn").on('tap', function() {
+      if(!paused) {
+        GlobalExperienceaudio.pause();
+        paused = true;
+      } else {
+        GlobalExperienceaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#GlobalExperienceaudiofbtn").on('tap', function() {
+      var ctime = GlobalExperienceaudio.currentTime;
+      GlobalExperienceaudio.currentTime = ctime + 10;
+    });
+    
+    $("#GlobalExperienceaudiobbtn").on('tap', function() {
+      var ctime = GlobalExperienceaudio.currentTime;
+      GlobalExperienceaudio.currentTime = ctime - 10;
+    });
+    
+    $("#GlobalExperienceaudiopsbtn").on('tap', function() {
+      GlobalExperienceaudio.pause();
+      //$(".audiopanel").css({"backgroundPosition":"0px 0px"});
+    });
+    
+    $('.navbtn1').on('tap', function() { 
+      nav1Effects(); 
+    });
+    
+    $('.navbtn2').on('tap', function() { 
+      nav2Effects(); 
+    });
+    
+    $('.navbtn3').on('tap', function() { 
+      nav3Effects(); 
+    });
+    
+  </script>
+</div> <!--//home-->

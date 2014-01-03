@@ -1,0 +1,2039 @@
+/* i-C-a */
+
+body { background:#000000; font-size:17px;}
+
+#kid {
+  width:1024px;
+  height:720px !important;
+  margin:auto;
+  background:url('images/5-8/Home_Screen/final_world_background.png') no-repeat;
+  overflow: hidden !important;
+  /*background:url('images/5-8/Home_Screen/kidbg.png') no-repeat;*/
+}
+
+#kid2 {
+  width:1024px;
+  height:720px !important;
+  margin:auto;
+  background:url('images/9-12/Home_Screen/homepage.jpg') no-repeat;
+  /*overflow: hidden !important;*/
+  /*background:url('images/5-8/Home_Screen/kidbg.png') no-repeat;*/
+}
+
+.v-spacer {
+  height:2px;
+  clear:both;
+}
+
+#logoholder {
+  margin-top:180px;
+  margin-left:75px;
+  float:left;
+}
+
+a.artmusic.bsubjectlink { background:url("images/5-8/Home_Screen/bartmusic.png") no-repeat; }
+a.dinosours.bsubjectlink { background:url("images/5-8/Home_Screen/bdinosours.png") no-repeat; }
+a.animals.bsubjectlink { background:url("images/5-8/Home_Screen/banimals.png") no-repeat; }
+a.humanbody.bsubjectlink { background:url("images/5-8/Home_Screen/bhumanbody.png") no-repeat; }
+a.science.bsubjectlink { background:url("images/5-8/Home_Screen/bscience.png") no-repeat; margin-top:10px; }
+a.peopleplaces.bsubjectlink { background:url("images/5-8/Home_Screen/bpeople.png") no-repeat; margin-top:10px; }
+a.space.bsubjectlink { background:url("images/5-8/Home_Screen/bspace.png") no-repeat; margin-top:10px; }
+a.cultures.bsubjectlink { background:url("images/5-8/Home_Screen/bculture.png") no-repeat; margin-top:10px; }
+a.natural.bsubjectlink { background:url("images/5-8/Home_Screen/bnatural.png") no-repeat; margin-top:25px; }
+a.modern.bsubjectlink { background:url("images/5-8/Home_Screen/bmodern.png") no-repeat; margin-top:25px; }
+a.ancient.bsubjectlink { background:url("images/5-8/Home_Screen/bancient.png") no-repeat; margin-top:25px; }
+a.fun.bsubjectlink { background:url("images/5-8/Home_Screen/bfun.png") no-repeat; margin-top:25px; }
+
+.bsubject .bsubjectlink {
+  width: 228px;
+  height: 144px;
+  display:block;
+  text-align:center;
+  margin:auto;
+}
+
+.bsubject {
+  /*width:215px;*/
+  width:25%;
+  height:116px;
+  float:left;
+  margin:10px auto;
+  text-align:center;
+}
+
+#ancient {
+  background:url('images/5-8/Ancient_Civilizations/ancientbg.jpg') no-repeat;
+  height:748px !important;
+  width:1024px !important;
+  overflow:hidden;
+}
+
+#animals2 {
+  background:url('images/9-12/Animals/animalsbg.jpg') no-repeat;
+  height:748px !important;
+  width:1024px !important;
+  overflow:hidden;
+}
+
+#artandmusic2 {
+  background:url('images/9-12/Art_and_Music/artandmusicbg.jpg') no-repeat;
+  height: 748px !important;
+  width:1024px !important;
+  overflow:hidden !important;
+}
+
+#humanbody2 {
+  background:url('images/9-12/Human_Body/humanbodybg.jpg') no-repeat;
+  height: 748px !important;
+  width:1024px !important;
+  overflow:hidden !important;
+}
+
+#languageculture2 {
+  background:url('images/9-12/Language_and_Culture/langcultbg.jpg') no-repeat;
+  height: 748px !important;
+  width:1024px !important;
+  overflow:hidden !important;
+}
+
+#peopleplaces2 {
+  background:url('images/9-12/People_and_Places/peopleplacesbg.jpg') no-repeat;
+  height: 748px !important;
+  width:1024px !important;
+  overflow:hidden !important;
+}
+
+#modernworld2 {
+  background:url('images/9-12/The_Modern_World/modernworldbg.jpg') no-repeat;
+  height: 748px !important;
+  width:1024px !important;
+  overflow:hidden !important;
+}
+
+#naturalworld2 {
+  background:url('images/9-12/The_Natural_World/naturalworldbg.jpg') no-repeat;
+  height: 748px !important;
+  width:1024px !important;
+  overflow:hidden !important;
+}
+
+#wonderscience2 {
+  background:url('images/9-12/The_Wonders_of_Science/wondersciencebg.jpg') no-repeat;
+  height: 748px !important;
+  width:1024px !important;
+  overflow:hidden !important;
+}
+
+#aroundag {
+  background:url('images/5-8/Ancient_Civilizations/Greece/World_around_Greece/waagbg.jpg') no-repeat;
+  height:748px !important;
+  width:1024px !important;
+  overflow:hidden !important;
+}
+
+#ancientgreece, #originsofgreece, #hittites, #kinghatpray, #mycenaeans, #minoans, #lifeinag,  
+#panathenai, #agschool, #agora, #lydians, #lydiansmoney, #agintro, #legacyofgreece, #legacyofgreece2, #minoansend,
+#tribesofgreece, #templesofgreece, #spartans, #storytelling, #romans, #persians, #xenophon, #egyptians,
+#phoenicians, #babylonians, #gilgamesh, #persianeducation, #mathsciencemore, #architecture {
+  /*background:url('images/5-8/Ancient_Civilizations/Greece/agbg.png') no-repeat;*/
+  background:url('images/9-12/Ancient_Civilizations/Greece/agbgn.jpg') no-repeat;
+  height:748px !important;
+  width:1024px !important;
+  overflow:hidden !important;
+}
+
+#theseus {
+  background:url('images/5-8/Ancient_Civilizations/Greece/Origins_of_Ancient_Greece/theseusbg.jpg') no-repeat;
+  height:748px;
+  width:1024px !important;
+  overflow:hidden !important;
+}
+
+#olympics{
+  background:url('images/5-8/Ancient_Civilizations/Greece/Life_in_Ancient_Greece/olympicbg.jpg') no-repeat;
+  height:748px;
+  width:1024px !important;
+  overflow:hidden !important;
+}
+
+#iliad {
+  background:url('images/5-8/Ancient_Civilizations/Greece/Life_in_Ancient_Greece/iliadbg.jpg') no-repeat;
+  height:748px;
+  width:1024px !important;
+  overflow:hidden !important;
+}
+
+#odyssey {
+  background:url('images/5-8/Ancient_Civilizations/Greece/Life_in_Ancient_Greece/odysseybg.jpg') no-repeat;
+  height:748px;
+  width:1024px !important;
+  overflow:hidden !important;
+}
+
+#animatedsoldier {
+  background:url('images/5-8/Ancient_Civilizations/Greece/soldiersprite12.png') no-repeat;
+  width:340px;
+  height:145px;
+  margin-left:535px;
+  float:left;
+}
+
+#acgreecechar {
+  /*background:url('images/5-8/Space/minister.png') no-repeat scroll 761px 30px transparent;*/
+  float:left;
+  width:1024px;
+  position:absolute;
+}
+
+.header { padding-left:70px; }
+
+.aclink {
+   width:25%;
+   margin:auto;
+   float:left;
+   text-align:center;
+   margin-top:20px;
+}
+
+#aglink {
+  width:197px;
+  height:200px;
+  margin:auto;
+  background:url('images/5-8/Ancient_Civilizations/aglink.png') no-repeat;
+}
+
+#eglink {
+  width:197px;
+  height:200px;
+  margin:auto;
+  background:url('images/5-8/Ancient_Civilizations/egyptlink.png') no-repeat;
+}
+
+#rolink {
+  width:197px;
+  height:200px;
+  margin:auto;
+  background:url('images/5-8/Ancient_Civilizations/romelink.png') no-repeat;
+}
+
+#chlink {
+  width:197px;
+  height:200px;
+  margin:auto;
+  background:url('images/5-8/Ancient_Civilizations/chinalink.png') no-repeat;
+}
+
+#node-body-holder-lifeinag {
+  font-family:"Chalkboard SE";
+  border:solid 5px #e6e6e6;
+  padding: 0 20px;
+  background:url('images/5-8/textbg.png');
+  max-height:265px;
+  overflow-y:scroll;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  -border-radius:10px;
+}
+
+#node-body-holder-mycenaeans {
+  font-family:"Chalkboard SE";
+  padding: 0 20px;
+  max-height:360px;
+  overflow-y:scroll;
+  /*border:solid 5px #e6e6e6;
+  background:url('images/5-8/textbg.png');
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  -border-radius:10px;*/
+}
+
+#node-body-holder, #node-body-holder1, #node-body-holder2, #node-body-holder3 {
+  font-family:"Chalkboard SE";
+  /*border:solid 5px #e6e6e6;*/
+  padding: 0 20px;
+  /*background:url('images/5-8/textbg.png');*/
+  max-height:320px;   /*Rhomar *****/
+  overflow-y:scroll;
+  /*-webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  -border-radius:10px;*/
+}
+
+#titleb-holder, #title-holder { text-align:center; }
+
+#titleb-holder h1 { color:#FFFFFF; }
+
+#node-content-theseus {
+  width:80%;
+  margin:140px auto 50px auto;
+  text-align:center;
+}
+
+#node-content-kinghatpray {
+  width:80%;
+  margin:180px auto 60px auto;
+  text-align:center;
+}
+
+#node-content {
+  width:40%;
+  margin:90px auto 0 auto;
+  text-align:center;
+}
+
+#node-content-half {
+  width:50%;
+  margin:40px auto 0 auto; /*Rhomar   ******  */
+  text-align:center;
+  float:right;
+}
+
+.sidebarleft {
+  width:28%;
+  float:left;
+}
+
+.sidebarright {
+  width:28%;
+  float:right;
+}
+
+.sidebarleft-half {
+  width:50%;
+  float:left;
+  z-index:9999;
+}
+.sidebarright-half {
+  width:50%;
+  float:right;
+  z-index:9999;
+}
+.kidzcontent {
+  margin-top:90px;
+}
+#eal2, #eal1, #legacy, #waag {
+  text-align:center;
+  margin:10px 0 0 0;
+}
+
+#eal2tall, #legacytall {
+  text-align:center;
+  margin:10px 0 0 0;
+}
+
+#eal2short, #eal3short, #eal2short-oag, #eal3short-oag {
+  text-align:center;
+  margin:10px 0 0 0;
+}
+
+#eal1short, #eal1short-oag {
+  text-align:center;
+  margin:24px 0 0 0;
+}
+
+#eal1tall, #waagtall {
+  text-align:center;
+  margin:10px 0 0 0;
+}
+
+#vidlinkholder {
+  border:solid 5px #e6e6e6;
+  padding: 0;
+  background:#ffffff;
+  width:376px;
+  margin:auto;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  -border-radius:10px;
+}
+
+#space {
+  background:url('images/5-8/Space/spacebg.png') no-repeat;
+  height:748px;
+  width:1024px !important;
+}
+
+#space2 {
+  background:url('images/9-12/Space/spacebg.png') no-repeat;
+  height:748px;
+  width:1024px !important;
+}
+
+#blackholes {
+  background:url('images/5-8/Space/Black_Holes/bhnavbg.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+#whatisbh, #supergiant, #supernova, #snexplosion, #formgold, #neutron, #blackhole,
+#nscollide, #lifeabh, #galaxies, #bhingalaxy, #quasars, #binaries, #bhgo {
+  background:url('images/5-8/Space/Black_Holes/bhbg.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+#seebh {
+  background:url('images/5-8/Space/Black_Holes/bhbg.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+#supergiantpage {
+  background:url('images/5-8/Space/Black_Holes/Where_BH_Come/supergiantbg.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+#gravity {
+  background:url('images/5-8/Space/Black_Holes/What_is_BH/gravitybg.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+#bhcomefrom {
+  background:url('images/5-8/Space/Black_Holes/Where_BH_Come/bhcomefrombg.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+/*for animated gif test*/
+#animated {
+  /*background:url('images/5-8/Ancient_Civilizations/animated.gif') no-repeat;*/
+  width:64px;
+  height:88px;
+  float:right;
+  margin-top:200px;
+}
+/*end for animated gif test*/
+
+#spacechar {
+  /*background:url('images/5-8/Space/minister.png') no-repeat scroll 761px 30px transparent;*/
+  height:748px;
+  width:1024px !important;
+}
+
+#coach {
+  /*background:url('images/5-8/Space/coachrico.png') no-repeat scroll 761px 30px transparent;*/
+  height:748px;
+  width:1024px;
+}
+
+#node-pop { width: 90%; margin:auto; padding:10px;}
+
+#vidoverlay { 
+  background: url('images/vidplaybtn.png') no-repeat center center transparent; 
+  width:100%;
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:100;
+}
+
+.previdcontainer {
+  float:left;
+  position:absolute;
+  left:0;
+  top:46px;
+  z-index:0;
+}
+
+#foot-band { font-size:14px; }
+
+/************************************/
+.row-1{
+	margin-top: 145px;
+	margin-left: 211px;
+}
+
+.natural-world{
+	margin-left: 308px;
+}
+
+.row-2{
+	margin-left: 392px;
+}
+
+.people_and_places{
+	position: relative;
+	bottom: 65px;
+}
+
+.ancient_civilization{
+	position: relative;
+	left: 286px;
+	bottom: 49px;
+}
+
+.language_and_culture{
+	position: relative;
+	left: 219px;
+	bottom: 115px;
+}
+
+.wonder_of_science{
+	position: relative;
+	left: 411px;
+	bottom: 64px;
+}
+
+.human_body{
+	position: relative;
+	left: 487px;
+	bottom: 83px;
+}
+
+.art_and_music{
+	position: relative;
+	left: 616px;
+	bottom: 42px;
+}
+
+.row-4{
+	margin-left: 189px;
+}
+
+.animals{
+	position: relative;
+	bottom: 74px;
+}
+
+.modern_world{
+	position: relative;
+	left: 384px;
+	bottom: 53px;
+}
+
+#spacegallery {
+  background:url('images/spacegallery/spacegallerybg.jpg') no-repeat;
+  height:748px  !important;
+  width:1024px;
+  overflow: hidden;
+}
+
+#museum {
+  background:url('images/museum/museumbg.jpg') no-repeat;
+  height:748px  !important;
+  width:1024px;
+  overflow: hidden;
+}
+
+/*#museumslider {
+  background:url('images/museum/carousel.png') center 0px no-repeat;
+}*/
+
+#carousel-left {
+  background:url('images/museum/carousel-left.png') no-repeat;
+  width:47px;
+  height:198px;
+  float:left;
+  z-index:99;
+}
+
+#carousel-right {
+  background:url('images/museum/carousel-right.png') no-repeat;
+  width:47px;
+  height:198px;
+  float:right;
+  z-index:99;
+}
+
+.zoomProps{	  
+  height: 185px;
+  width: 197px;
+  position:absolute;
+  visibility:hidden;
+  top:310px;
+  left:398px;
+}
+	
+#zoomwrapper {
+  height: 500px;
+  width: 994px;
+  overflow: hidden;
+}
+		  
+.upSky{ background: #FFFFFF; }
+
+/********* control panel **********/
+
+
+.taskbarpanel a img {
+  margin: 0 0 20px 30px;
+  
+}
+
+.taskbarpanel {
+  float:left;
+  overflow:hidden;
+  z-index:9999;
+  position:relative;
+  top:140px;
+  left:-280px;
+}
+
+.taskbar {
+  width:500px;
+  height:100px;
+  background:url('images/taskbarbg.png');
+  position:absolute;
+  top:-100px;
+  left:10px;
+  border:solid 2px #000000;
+}
+
+.tbicon {
+  background:url('images/taskbarbg.png');
+  width:100px;
+  float:left;
+  height:80px;
+  margin:10px 0px 10px 20px;
+  color:#FFFFFF;
+  text-align:center;
+}
+
+#control-panel {
+  width:1024px;
+  height:748px;
+  overflow:hidden;
+  background:url('images/controlpanel/cpbg.jpg') no-repeat;
+}
+
+#mzlink {
+  position:absolute;
+  background:url('images/controlpanel/cp-mzonebtn.png') no-repeat;
+  width:144px;
+  height:270px;
+  top:134px;
+  left:3px;
+}
+
+#aclink {
+  position:absolute;
+  background:url('images/controlpanel/cp-coachbg.png') no-repeat;
+  width:182px;
+  height:308px;
+  top:420px;
+  left:3px;
+}
+
+#friendslink {
+  position:absolute;
+  float:left;
+  width:256px;
+  height:157px;
+  background:url('images/controlpanel/cp-friendsbtn.png') no-repeat;
+  top:588px;
+  left:185px;
+}
+
+#settingslink {
+  position:absolute;
+  float:left;
+  width:274px;
+  height:146px;
+  background:url('images/controlpanel/cp-settingsbtn.png') no-repeat;
+  top:601px;
+  left:444px;
+}
+
+#mpointslink {
+  position:absolute;
+  float:left;
+  width:226px;
+  height:70px;
+  background:url('images/controlpanel/cp-mpointsbtn.png') no-repeat;
+  top:4px;
+  left:784px;
+}
+
+#panel-mpoints {
+  position:absolute;
+  width:649px;
+  height:398px;
+  left:1024px;
+  top:120px;
+  background:url('images/controlpanel/panel-mpoints.png') no-repeat;
+}
+
+#panel-friends {
+  position:absolute;
+  width:743px;
+  height:383px;
+  left:134px;
+  top:748px;
+  background:url('images/controlpanel/panel-friends.png') no-repeat;
+}
+
+#panel-settings {
+  position:absolute;
+  width:548px;
+  height:348px;
+  left:234px;
+  top:-348px;
+  background:url('images/controlpanel/panel-settings.png') no-repeat;
+}
+
+#panel-mzones {
+  position:absolute;
+  width:650px;
+  height:454px;
+  left:-650px;
+  top:120px;
+  background:url('images/controlpanel/panel-mzone.png') no-repeat;
+}
+
+.mzl {
+  width:109px;
+  height:109px;
+  margin-right:44px;
+  float:left;
+}
+
+/********* /control panel **********/
+
+/******* homescreen sprites**********/
+#schead { background:url('images/9-12/Home_Screen/sch.png') no-repeat 0 0; }
+#sctail { background:url('images/9-12/Home_Screen/sct.png') no-repeat 0 0; }
+#waterfall{ background:url('images/9-12/Home_Screen/waterfall.png') no-repeat 0 0; }
+#fountain{ background:url('images/9-12/Home_Screen/fountain.png') no-repeat 0 0; }
+/******* /homescreen sprites**********/
+
+/*******bh games**********/
+#game-bh1 {
+  background:url('images/5-8/Space/Black_Holes/game/game1bg.png') no-repeat 0 0;
+  width:1024px;
+  height:748px;
+  overflow:hidden;
+}
+
+#game-bh2 {
+  background:url('images/5-8/Space/Black_Holes/game/game2bg.png') no-repeat 0 0;
+  width:1024px;
+  height:748px;
+  overflow:hidden;
+}
+
+.bhgame2Q {
+  height:67px;
+  width:184px;
+  position:absolute;
+}
+
+.bhgame2A {
+  height:67px;
+  width:102px;
+  padding-left:16px;
+  position:absolute;
+  background:url('images/5-8/Space/Black_Holes/game/nozlebooster.png') no-repeat 0 8px;
+}
+
+.bhgame1Piece {	  
+  height: 186px;
+  width: 173px;
+  position:absolute;
+  top:310px;
+  left:398px;
+}
+
+#clueboardleft { background:url('images/5-8/Space/Black_Holes/game/cbl.png') no-repeat; }
+#clueboardright { background:url('images/5-8/Space/Black_Holes/game/cbr.png') no-repeat; }
+#urbracket { 
+  background:url('images/5-8/Space/Black_Holes/game/urbracket.png') no-repeat; 
+  height:158px;
+  width:186px;
+  float:left;
+}
+#lrbracket { 
+  background:url('images/5-8/Space/Black_Holes/game/lrbracket.png') no-repeat -384px 0; 
+  height:158px;
+  width:186px;
+  float:right;
+}
+
+#arrow1, #arrow3 {
+  background:url('images/5-8/Space/Black_Holes/game/arrow1.png') no-repeat 0 0;
+}
+#arrow2 {
+  background:url('images/5-8/Space/Black_Holes/game/arrow2.png') no-repeat 0 0;
+}
+#bqlink {
+  background:url('images/5-8/Space/Black_Holes/game/bh1bq.png') no-repeat 0 0;
+}
+
+#bonusq {
+  background:url('images/taskbarbg.png');
+  width:500px;
+  height:250px;
+  position:absolute;
+  top:100px;
+  left:300px;
+  border:solid 2px #000000;
+  text-align:center;
+  padding:20px;
+  -webkit-border-radius:30px;
+  -moz-border-radius:30px;
+  -border-radius:30px;
+}
+/******* /bh games**********/
+
+/******* ag games**********/
+#game-ag1 {
+  background:url('images/5-8/Ancient_Civilizations/Greece/game/game1bg.jpg') no-repeat 0 0;
+  width:1024px;
+  height:748px;
+  overflow:hidden;
+}
+
+#game-ag2 {
+  background:url('images/5-8/Ancient_Civilizations/Greece/game/game2bg.jpg') no-repeat 0 0;
+  width:1024px;
+  height:748px;
+  overflow:hidden;
+}
+
+#game-ag3 {
+  background:url('images/5-8/Ancient_Civilizations/Greece/game/game3bg.jpg') no-repeat 0 0;
+  width:1024px;
+  height:748px;
+  overflow:hidden;
+}
+
+.aggame1Piece {
+  position:absolute;
+}
+/******* /ag games**********/
+
+
+/******* polaroidtest**********/
+
+.pPiece img {
+  /*border-radius: 20px;*/
+  -webkit-border-radius: 25px;
+  border:solid 4px #FFFFFF;
+  box-shadow: 5px 5px 5px #000000;
+}
+
+.pPiece {
+  position:absolute;
+  width:360px;
+  height:280px;
+  top:310px;
+  left:398px;
+}
+/******* /polaroidtest**********/
+
+/******* avatarcreator*********/
+#avatarcreator {
+  background:url('images/avatar/avatarcreatorbg.jpg') no-repeat;
+  height:748px;
+  width:1024px;
+}
+/******* /avatarcreator*********/
+
+/**********flipcard effect**************/
+#f1_container {
+  position: relative;
+  width: 360px;
+  height: 280px;
+  z-index: 1;
+}
+#f1_container {
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  -o-perspective: 1000px;
+  perspective: 1000px;
+}
+#f1_card {
+  width: 360px;
+  height: 280px;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: all 1.0s linear;
+  -moz-transform-style: preserve-3d;
+  -moz-transition: all 1.0s linear;
+  -o-transform-style: preserve-3d;
+  -o-transition: all 1.0s linear;
+  transform-style: preserve-3d;
+  transition: all 1.0s linear;
+  
+}
+
+#f2_container {
+  position: relative;
+  width: 360px;
+  height: 280px;
+  z-index: 1;
+}
+#f2_container {
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  -o-perspective: 1000px;
+  perspective: 1000px;
+}
+#f2_card {
+  width: 360px;
+  height: 280px;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: all 1.0s linear;
+  -moz-transform-style: preserve-3d;
+  -moz-transition: all 1.0s linear;
+  -o-transform-style: preserve-3d;
+  -o-transition: all 1.0s linear;
+  transform-style: preserve-3d;
+  transition: all 1.0s linear;
+}
+
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-border-radius: 25px;
+  border:solid 4px #FFFFFF;
+  box-shadow: 5px 5px 5px #000000;
+}
+.face.back {
+  display: block;
+  -webkit-transform: rotateY(180deg);
+  -webkit-box-sizing: border-box;
+  -moz-transform: rotateY(180deg);
+  -moz-box-sizing: border-box;
+  -o-transform: rotateY(180deg);
+  -o-box-sizing: border-box;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  background-color: #aaa;
+}
+/********** /flipcard effect**************/
+
+/***********slider button************/
+.menubtnholder {
+  position:absolute;
+  top:660px;
+  left:0px;
+  z-index:21;
+}
+
+.menubtnbh {
+  background:url('images/5-8/Space/menu.png') no-repeat 0 -90px;
+  height:90px;
+  width:90px;
+}
+
+.homebtnbh {
+  background:url('images/5-8/Space/map.png') no-repeat 0 -74px;
+  height:74px;
+  width:80px;
+}
+
+.mpbtnbh {
+  background:url('images/5-8/Space/mpoints.png') no-repeat 0 -84px;
+  height:79px;
+  width:80px;
+}
+
+.cpbtnbh {
+  background:url('images/5-8/Space/ctrlpnl.png') no-repeat 0 -74px;
+  height:74px;
+  width:74px;
+}
+
+.infobtnbh {
+  background:url('images/5-8/Space/info.png') no-repeat 0 -74px;
+  height:74px;
+  width:74px;
+}
+
+.credsbtnbh {
+  background:url('images/5-8/Space/credits.png') no-repeat 0 -74px;
+  height:74px;
+  width:74px;
+}
+
+.homebtnholder, .cpbtnholder, .buildbtnholder, .mpbtnholder, .credsbtnholder, .infobtnholder {
+  position:absolute;
+  top:670px;
+  left:-93px;
+  z-index:20;
+}
+
+.menuhousing {
+  /*background:url('images/5-8/Ancient_Civilizations/Greece/menuhousing.png');*/
+  width:660px;
+  height:145px;
+  position:absolute;
+  top:603px;
+  left:-660px;
+  z-index:19;
+}
+/*********** /slider button************/
+
+/************* new rules ***********/
+.bptitleholder {
+  width:627px;
+  height:68px;
+  text-align:center;
+  line-height:28px;
+  position:absolute;
+  top:169px;
+  left:194px;
+}
+
+.bptitleholderbh {
+  width:627px;
+  height:68px;
+  text-align:center;
+  line-height:28px;
+  position:absolute;
+  top:169px;
+  left:194px;
+}
+
+.navtitleholder {
+  width:410px;
+  height:68px;
+  position:absolute;
+  top:169px;
+  left:305px;
+  text-align:center;
+  line-height:32px;
+}
+
+.navtitleholder_custom {
+    height: 68px;
+    left: 296px;
+    line-height: 32px;
+    position: absolute;
+    text-align: center;
+    top: 80px;
+    width: 410px;
+}
+
+.navtitleholderbh {
+  width:553px;
+  height:68px;
+  position:absolute;
+  top:169px;
+  left:305px;
+  text-align:center;
+  line-height:32px;
+}
+
+.navtitleholder h1, .bptitleholder h1, h1 {
+text-transform: uppercase;
+color: #FFF;
+font-family: "comic sans ms";
+padding: 0;
+margin: 0;
+font-size: 25px;
+font-weight: bold;
+}
+
+.navtitleholderbh h1, .bptitleholderbh h1 {
+  text-transform:uppercase;
+  color: #000000;
+  font-family:"Chalkboard SE";
+  font-weight:normal;
+  padding:0;
+  margin:0;
+}
+
+.navbh-content {
+  position:absolute;
+  left:305px;
+  top:263px;
+  width:410px;
+  height:359px;
+  overflow-y:scroll;
+  text-align:center;
+  font-family:"Chalkboard SE";
+  font-size:18px;
+  font-weight:bold;
+  color:#000000;
+}
+
+.nav-content {
+  position:absolute;
+  left:305px;
+  top:263px;
+  width:410px;
+  height:359px;
+  overflow-y:scroll;
+  text-align:left;
+  font-family: "comic sans ms";
+  font-size:18px;
+  font-weight:normal;
+}
+
+.navbtn1 {
+  position:absolute;
+  left:60px;
+  top:221px;
+}
+
+.navbtn2 {
+  position:absolute;
+  left:60px;
+  top:449px;
+}
+
+.navbtn3 {
+  position:absolute;
+  left:760px;
+  top:221px;
+}
+
+.navbtn4 {
+  position:absolute;
+  left:760px;
+  top:449px;
+}
+
+.botlogoholder {
+  width:221px;
+  height:82px;
+  position:absolute;
+  left:398px;
+  top:684px;
+  text-align:center;
+}
+
+.bpcontent {
+  width:413px;
+  height:356px;
+  position:absolute;
+  left:550px;
+  top:266px;
+  overflow-y:scroll;
+  font-family:"Chalkboard SE";
+  font-size:18px;
+  font-weight:bold;
+  text-align:left;
+}
+
+.bpcontentbh {
+  width:413px;
+  height:356px;
+  position:absolute;
+  left:550px;
+  top:266px;
+  overflow-y:scroll;
+  font-family:"Chalkboard SE";
+  font-size:18px;
+  font-weight:bold;
+  text-align:left;
+  color:#000000;
+}
+
+.bpcontent p, .nav-content p, .bpcontentbh p, .navbh-content p {
+  margin-top:0 !important;
+}
+
+.storypagetitle {
+  width:390px;
+  font-family:"Chalkboard SE";
+  position:absolute;
+  left:550px;
+  top:200px;
+  text-align:center;
+}
+
+.storypagetitlebh h1 { color:#ffffff;}
+
+.storypagetitlebh {
+  width:390px;
+  font-family:"Chalkboard SE";
+  position:absolute;
+  left:550px;
+  top:200px;
+  text-align:center;
+  color:#000000;
+}
+
+.storypage{
+  width:390px;
+  height:356px;
+  position:absolute;
+  left:550px;
+  top:266px;
+  overflow-y:scroll;
+  font-family:"Chalkboard SE";
+  font-size:18px;
+  font-weight:bold;
+  text-align:left;
+}
+
+.storypagebh{
+  width:390px;
+  height:356px;
+  position:absolute;
+  left:550px;
+  top:266px;
+  overflow-y:scroll;
+  font-family:"Chalkboard SE";
+  font-size:18px;
+  font-weight:bold;
+  text-align:left;
+  color:#ffffff;
+}
+
+.audiopanel {
+  position:absolute;
+  top:611px;
+  left:827px;
+  width:169px;
+  height:137px;
+  /*background:url("images/audio/micpanel.png") no-repeat 0 0;*/
+  padding-left:28px;
+}
+
+.plbh, .psbh, .bbh, .fbh {
+  position:absolute;
+  top:670px;
+  left:1024px;
+  z-index:20;
+} 
+
+.micbtnholder {
+  position:absolute;
+  top:664px;
+  left:942px;
+  width:81px;
+  height:81px;
+}
+
+.micbtnbh {
+  background:url('images/5-8/Space/mic.png') no-repeat 0 -81px;
+  height:81px;
+  width:81px;
+}
+
+.rwbh {
+  background:url('images/5-8/Space/rw.png') no-repeat 0 -73px;
+  height:73px;
+  width:73px;
+}
+
+.plpsbh {
+  background:url('images/5-8/Space/play.png') no-repeat 0 -73px;
+  height:73px;
+  width:73px;
+}
+
+.fwbh {
+  background:url('images/5-8/Space/fw.png') no-repeat 0 -73px;
+  height:73px;
+  width:73px;
+}
+/************* /new rules ***********/
+
+/*************mzone-space***********/
+div#spacegallery {
+	background:url(images/spacegallery/spacegallerybg.jpg) no-repeat;
+	width:1024px;
+	height:748px;
+	margin:0 auto;
+}
+
+.slider-wrapper {
+	width:83%;
+	position:absolute;
+	top:620px;
+}
+
+ul.slides {
+	background:#000;
+}
+
+.flexslider {
+	width:81%;
+	margin:0 auto !important;
+}
+/************* /mzone-space*********/
+
+/********* the wonders of science  **********/
+.plwos, .pswos, .bwos, .fwos {
+  position:absolute;
+  top:670px;
+  left:1024px;
+  z-index:20;
+}
+
+.micbtnwos {
+  background:url('images/9-12/The_Wonders_of_Science/mic.png') no-repeat 0 -81px;
+  height:81px;
+  width:81px;
+}
+
+.rwwos {
+  background:url('images/9-12/The_Wonders_of_Science/rw.png') no-repeat 0 -73px;
+  height:73px;
+  width:73px;
+}
+
+.plpswos {
+  background:url('images/9-12/The_Wonders_of_Science/play.png') no-repeat 0 -73px;
+  height:73px;
+  width:73px;
+}
+
+.fwwos {
+  background:url('images/9-12/The_Wonders_of_Science/fw.png') no-repeat 0 -73px;
+  height:73px;
+  width:73px;
+}
+
+.menubtnwos {
+  background:url('images/9-12/The_Wonders_of_Science/menu.png') no-repeat 0 -90px;
+  height:90px;
+  width:90px;
+}
+
+.homebtnwos {
+  background:url('images/9-12/The_Wonders_of_Science/map.png') no-repeat 0 -74px;
+  height:74px;
+  width:80px;
+}
+
+.mpbtnwos {
+  background:url('images/9-12/The_Wonders_of_Science/mpoints.png') no-repeat 0 -84px;
+  height:79px;
+  width:80px;
+}
+
+.cpbtnwos {
+  background:url('images/9-12/The_Wonders_of_Science/ctrlpnl.png') no-repeat 0 -74px;
+  height:74px;
+  width:74px;
+}
+
+.infobtnwos {
+  background:url('images/9-12/The_Wonders_of_Science/info.png') no-repeat 0 -74px;
+  height:74px;
+  width:74px;
+}
+
+.credsbtnwos {
+  background:url('images/9-12/The_Wonders_of_Science/credits.png') no-repeat 0 -74px;
+  height:74px;
+  width:74px;
+}
+/********* the wonders of science -end **********/
+/********* invisible world **********/
+#invisibleworld {
+  background:url('images/9-12/The_Wonders_of_Science/Invisible_World/invisibleworldbg.jpg') no-repeat;
+  height:748px !important;
+  width:1024px !important;
+  overflow:hidden !important;
+}
+
+#game-iw1 {
+  background:url('images/9-12/The_Wonders_of_Science/Invisible_World/game/game1bg.jpg') no-repeat 0 0;
+  width:1024px;
+  height:748px;
+  overflow:hidden;
+}
+
+#overlay {
+  background:url('images/9-12/The_Wonders_of_Science/Invisible_World/game/overlay.png');
+}
+
+.quarks {
+  width:266px;
+  height:74px;
+  position:absolute;
+}
+
+#topquark { background: url('images/9-12/The_Wonders_of_Science/Invisible_World/game/tq.png') no-repeat 0 0; }
+#upquark { background: url('images/9-12/The_Wonders_of_Science/Invisible_World/game/uq.png') no-repeat 0 0; }
+#downquark { background: url('images/9-12/The_Wonders_of_Science/Invisible_World/game/dq.png') no-repeat 0 0; }
+#strangequark { background: url('images/9-12/The_Wonders_of_Science/Invisible_World/game/sq.png') no-repeat 0 0; }
+#charmquark { background: url('images/9-12/The_Wonders_of_Science/Invisible_World/game/cq.png') no-repeat 0 0; }
+/********* invisible world -end ******/
+/********* volcano world **********/
+#volcanoworld {
+  background:url('images/9-12/volcanoworld/volcanoheader1.jpg') no-repeat;
+  height:748px !important;
+  width:1024px !important;
+  overflow:hidden !important;
+}
+
+
+
+/************* our css ***************************/
+
+.navvolcanobtn1 {
+    left: 60px;
+    position: absolute;
+    top: 243px;
+}
+
+.navvolcanobtn2 {
+    left: 60px;
+    position: absolute;
+    top: 474px;
+}
+
+.navvolcanobtn3 {
+    left: 760px;
+    position: absolute;
+    top: 243px;
+}
+
+.navvolcanobtn4 {
+    left: 760px;
+    position: absolute;
+    top: 474px;
+}
+.menuvolcanobtnholder {
+   left: 0;
+    position: absolute;
+    top: 660px;
+    z-index: 21;
+}
+.navvolcanobig-content {
+position: absolute;
+left: 98px;
+top: 251px;
+width: 830px;
+height: 359px;
+overflow-y: scroll;
+text-align: center;
+font-family: comic sans ms;
+font-size: 18px;
+color: #000000;
+}
+.navvolcanobigbtn1 {
+    left: 134px;
+    position: absolute;
+    top: 475px;
+}
+.navvolcanobigbtn2 {
+    left: 394px;
+    position: absolute;
+    top: 504px;
+}
+.navvolcanobigbtn3 {
+    left: 657px;
+    position: absolute;
+    top: 475px;
+}
+.botlogobigholder {
+ height: 82px;
+    left: 398px;
+    position: absolute;
+    text-align: center;
+    top: 707px;
+    width: 221px;
+}
+#big-badfrom {
+ background:url('images/5-8/volcanoes/supar.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+#findingvolcanoesfrom {
+ background:url('images/5-8/volcanoes/finding.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+.navtitleholdervolcano {
+width: 435px;
+height: 68px;
+position: absolute;
+top: 169px;
+left: 295px;
+text-align: center;
+line-height: 32px;
+}
+.navvolcano-content {
+  position:absolute;
+  left:305px;
+  top:263px;
+  width:410px;
+  height:359px;
+  overflow-y:scroll;
+  text-align:center;
+  font-family:"Chalkboard SE";
+  font-size:18px;
+  font-weight:bold;
+  color:#000000;
+}
+.navvolcano-content p {
+  margin-top:0 !important;
+}
+.navtitleholdervolcano h1, .bptitleholdervolcano h1 {
+text-transform: uppercase;
+color: #FFF;
+font-family: comic sans ms;
+padding: 0;
+margin: 0;
+font-weight: bold;
+}
+
+
+/*=====================================sub-volcano-big & bad-superbaddies==================================*/
+.storypagetitlebh-ds 
+{
+  width:390px;
+  font-family:"Chalkboard SE";
+  position:absolute;
+  left:550px;
+  top:45px;
+  text-align:center;
+  color:#FFFFFF;
+}
+.ds-storypagebh
+{
+  	font-family: "Chalkboard SE";
+    font-size: 18px;
+    font-weight: bold;
+    height: 430px;
+    left: 468px;
+    overflow-y: scroll;
+    position: absolute;
+    text-align: left;
+    top: 96px;
+    width: 510px;
+	color:#000;
+}
+.v-volcano {
+  height:2px;
+  clear:both;
+}
+.storypagetitlevolcano-ds{
+ color: #FFFFFF;
+    font-family: "Chalkboard SE";
+    left: 550px;
+    position: absolute;
+    text-align: center;
+    top: 45px;
+    width: 390px;
+}
+.ds-storypagevolcano {
+    color: #000000;
+    font-family: "Chalkboard SE";
+    font-size: 18px;
+    font-weight: bold;
+    height: 430px;
+    left: 468px;
+    overflow-y: scroll;
+    position: absolute;
+    text-align: left;
+    top: 96px;
+    width: 510px;
+}
+ #superpoison , #cranky , #sparkly , #death , #living , #hideinmounts , #hideundersea , #krak , #littlemonster , #volcanobigworld{
+  background:url('images/9-12/volcanoworld/volcanoheader1.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+#superpoisonpage {
+  background:url('images/5-8/Space/Black_Holes/Where_BH_Come/supergiantbg.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+.bptitleholdervolcano {
+    height: 68px;
+    left: 194px;
+    line-height: 28px;
+    position: absolute;
+    text-align: center;
+    top: 169px;
+    width: 627px;
+}
+.bpcontentvolcano {
+    color: #000000;
+    font-family: "comic sans ms";
+    font-size: 18px;
+    font-weight: normal;
+    height: 356px;
+    left: 550px;
+    overflow-y: scroll;
+    position: absolute;
+    text-align: left;
+    top: 266px;
+    width: 413px;
+}
+.storypagetitlefindingvolcanoes {
+	color: #000000;
+    font-family: "Chalkboard SE";
+    position: absolute;
+    top: 33px;
+    width: 390px;
+}
+.storypagetitlefindingvolcanoes h1 {
+    color: #000000;
+}
+.storypagefindingvolcanoes{
+    color: #000000;
+    font-family: "Chalkboard SE";
+    font-size: 18px;
+    font-weight: bold;
+    height: 356px;
+    position: absolute;
+    top: 76px;
+    width: 678px;
+}
+#findingvolcanoesetgfrom {
+ background:url('images/5-8/volcanoes/etg.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+.storypagetitleetg{
+color: #000000;
+    font-family: "Chalkboard SE";
+    margin-left: 42px;
+    position: absolute;
+    top: 33px;
+}
+.storypageetg {
+	color: #000000;
+    font-family: "Chalkboard SE";
+    font-size: 18px;
+    font-weight: bold;
+    height: 356px;
+    margin-left: 42px;
+    position: absolute;
+    top: 76px;
+    width: 915px;
+}
+
+.storypageetg_sunset{
+	color: #FFFFFF;
+    font-family: "Comic Sans MS";
+    font-size: 18px;
+    font-weight: bold;
+    height: 300px;
+    margin-left: 40px;
+    position: absolute;
+    text-align: center;
+    top: 50px;
+    width: 84%;
+}
+.storypageetg_custom{
+	color: #000000;
+    font-family: "Chalkboard SE";
+    font-size: 18px;
+    font-weight: bold;
+    height: 384px;
+    margin-left: 7px;
+    position: absolute;
+    text-align: center;
+    top: 126px;
+    width: 40%;
+}
+
+.storypageetg_custom p {
+    color: #03FDFC;
+}
+.storypagetitleetg h1 {
+    color: #000000;
+}
+
+#medieval , #cooking , #marketers , #houses , #village , #wheredeygo , #peopleangkor , #angkorwat , #angkorwater , #daugan , #myths , #mystery {
+ background:url('images/5-8/medieval/medi.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+#everyday {
+ background:url('images/5-8/medieval/everyday.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+#fashion {
+ background:url('images/5-8/medieval/fashion.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+.storypagetitlefashion{
+color: #000000;
+    font-family: "Chalkboard SE";
+    margin-left: 42px;
+    position: absolute;
+    top: 33px;
+}
+.storypagefashion {
+ color: #000000;
+    font-family: "Chalkboard SE";
+    font-size: 18px;
+    font-weight: bold;
+    height: 356px;
+    margin-left: 42px;
+    position: absolute;
+    top: 76px;
+    width: 915px;
+}
+.storypagetitlefashion h1 {
+    color: #000000;
+}
+#worldangkor , #findangkor , #legacy , #religion{
+ background:url('images/5-8/medieval/world.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+.navpeoplebtn1 {
+  position:absolute;
+  left:60px;
+  top:221px;
+}
+
+.navpeoplebtn2 {
+  position:absolute;
+  left:118px;
+  top:449px;
+}
+
+.navpeoplebtn5 {
+  position:absolute;
+  right:64px;
+  top:221px;
+}
+
+.navpeoplebtn5_custom {
+  position:absolute;
+  right:395px;
+  top:221px;
+}
+
+.navpeoplebtn4 {
+  position:absolute;
+  left:690px;
+  top:449px;
+}
+.navpeoplebtn3 {
+  position:absolute;
+  left:405px;
+  top:449px;
+}
+.navpeople-content {
+position: absolute;
+left: 305px;
+top: 263px;
+width: 410px;
+height: 166px;
+text-align: left;
+font-family: comic sans ms;
+font-size: 18px;
+font-weight: normal;
+overflow: auto;
+}
+
+.navpeople-content_custom {
+  position:absolute;
+  left:305px;
+  top:208px;
+  width:410px;
+  height:166px;
+  text-align:left;
+  font-family:"Chalkboard SE";
+  font-size:18px;
+  font-weight:bold;
+}
+.navwherebig-content {
+color: #000000;
+    font-family: "Chalkboard SE";
+    font-size: 18px;
+    font-weight: bold;
+    height: 220px;
+    left: 98px;
+    overflow-y: scroll;
+    position: absolute;
+    text-align: center;
+    top: 251px;
+    width: 830px;
+}
+
+#solvemystry {
+ background:url('images/5-8/scientist/solvemystry.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+#luminouslight{
+ background:url('images/9-12/luminous_light/luminouslight.png') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+.navseabtn1 {
+    left: 60px;
+    position: absolute;
+    top: 326px;
+}
+.navseabtn3 {
+    right: 60px;
+    position: absolute;
+    top: 326px;
+}
+ #humans{
+ background:url('images/9-12/The_Natural_World/Deep_Blue_Sea/ocean.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+.storypagetitlehuman {
+	color: #000000;
+    font-family: "Chalkboard SE";
+    margin-left: 243px;
+    position: absolute;
+    top: 33px;
+}
+
+.storypagetitlehuman_electromagnetic{
+	color: #000000;
+    font-family: "Comic Sans MS";
+    margin-left: 134px;
+    position: absolute;
+    top: 10px;
+}
+
+.storypagetitlehuman_electromagnetic h1{
+    color: #02FEFF;
+    font-family: "Comic Sans MS";
+    font-weight: normal;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    text-transform: uppercase;
+}
+
+.storypagetitlehuman_sunset{
+	color: #000000;
+    font-family: "Chalkboard SE";
+    margin-left: 256px;
+    position: absolute;
+    top: 10px;
+}
+
+.storypagetitlehuman_sunset h1 {
+    color: #ffffff;
+    font-family: "Comic Sans MS";
+    font-weight: normal;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    text-transform: uppercase;
+}
+.storypagetitlehuman_lookingback {
+    color: #000000;
+    font-family: "comic sans";
+    margin-left: 534px;
+    position: absolute;
+    top: 69px;
+}
+.storypagetitlehuman_lookingback h1{
+    color: #FFFFFF;
+    font-family: "Comic Sans MS";
+    font-weight: normal;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    text-transform: uppercase;
+}
+.storypagetitlehuman_nolight_nolife{
+	color: #000000;
+    font-family: "Chalkboard SE";
+    margin-left: 345px;
+    position: absolute;
+    top: 33px;
+}
+.storypagetitlehuman_custom {
+	color: #000000;
+    font-family: "Chalkboard SE";
+    margin-left: 243px;
+    position: absolute;
+    top: 33px;
+}
+
+.storypagetitlehuman_custom h1{
+	color: #03FDFC;
+    font-family: "Chalkboard SE";
+    font-weight: normal;
+    margin-bottom: 0;
+    margin-left: 48px;
+    margin-right: 0;
+    margin-top: 10px;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    text-transform: uppercase;
+}
+
+
+#whalepoo{
+  background:url('images/9-12/The_Natural_World/Deep_Blue_Sea/The_Future/todo.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+
+.why-become-scientist-title {
+    color: #000000;
+    font-family: "Chalkboard SE";
+    margin-left: 42px;
+    position: absolute;
+    text-align: center;
+    top: 53px;
+    width: 100%;
+}
+
+
+.storypageetg {
+    color: #000000;
+    font-family: "Chalkboard SE";
+    font-size: 18px;
+    font-weight: bold;
+    height: 356px;
+    margin-left: 142px;
+    position: absolute;
+    text-align: center;
+    top: 126px;
+    width: 70%;
+}
+
+.storypageetg_electromagnetic{
+	color: #00FFFE;
+    font-family: "Comic Sans MS";
+    font-size: 18px;
+    height: 356px;
+    margin-left: 0;
+    position: absolute;
+    text-align: center;
+    top: 373px;
+    width: 50%;
+}
+
+.storypageetg_lookingback {
+    color: #FFFFFF;
+    font-family: "Comic Sans MS";
+    font-size: 18px;
+    height: 356px;
+    margin-left: 526px;
+    position: absolute;
+    text-align: center;
+    top: 155px;
+    width: 42%;
+}
+.storypageetg_nolight_nolife{
+	color: #000000;
+    font-family: "Chalkboard SE";
+    font-size: 18px;
+    font-weight: bold;
+    height: 356px;
+    margin-left: 26px;
+    position: absolute;
+    text-align: center;
+    top: 101px;
+    width: 70%;
+}
+
+.why-become-scientist-content {
+font-family: "comic sans ms";
+    font-size: 18px;
+    font-weight: normal;
+    height: 229px;
+    left: 169px;
+    position: absolute;
+    text-align: justify;
+    top: 126px;
+    width: 681px; }
+
+#invisible{
+  background:url('images/9-12/luminous_light/invisible/invisible.png') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+/* -------------------- sleeps and dreams section ---------------------- 
+#sleeps , #broken , #bodyclock , #bodyclocks , #socialjetlag , #messing , #parasomnias , #notsleeping , #brokensleep , #meaningofdreams , #openeyes , #rememberingdreams , #sleepcultures , #sleepstructure , #earlybirds , #sleeptime , #howsleep , #whywesleep{
+  background:url('images/5-8/sleeps_dreams/sleeps.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+} */
+
+
+#lookingback{
+  background:url('images/9-12/luminous_light/seeing/looking_back/lookingback.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+
+
+
+
+
+
+
+
+.storypagetitleforms {
+ font-family: "Chalkboard SE";
+    left: 245px;
+    position: absolute; 
+    text-align: center;
+    top: 4px;
+}
+.storypagetitleforms h1 { color:#ffffff;}
+
+.storypageforms {
+    color: #ffffff;
+    font-family: "Chalkboard SE";
+    position: absolute;
+    top: 113px;
+    width: 390px;
+	 overflow-y:scroll;
+}
+
+#geography {
+  background:url('images/5-8/weather/geography.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+.storypagegeography {
+    color: #ffffff;
+    font-family: "Chalkboard SE";
+    position: absolute;
+    top: 56px;
+}

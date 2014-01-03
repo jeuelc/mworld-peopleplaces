@@ -1,0 +1,46 @@
+<!-- i-C-a -->
+<div data-role="page" id="peopleplaces2">
+  <div data-role="content" style="overflow:hidden !important;">
+    
+    <div id="titleb-holder"><h1 style="margin-top:184px;">People and Places</h1></div>
+    
+    <div style="width:90%;margin:auto;">
+      <div class="aclink"><a href="#" data-transition="slide" id="agmovielink"><img src="css/images/9-12/People_and_Places/megacitiesbtn.png"></a></div>
+      <div class="aclink"><a href="#" data-transition="slide"><img src="css/images/9-12/People_and_Places/asiabtn.png"></a></div>
+      <div class="aclink"><a href="sub-changing-places.html" data-transition="slide" id="changingplaces"><img src="css/images/9-12/People_and_Places/travellersbtn.png"></a></div>
+      <div class="aclink"><a href="#" data-transition="slide"><img src="css/images/9-12/People_and_Places/coolplacesbtn.png"></a></div><br>
+      <div class="aclink"><a href="#" data-transition="slide"><img src="css/images/9-12/People_and_Places/europebtn.png"></a></div>
+      <div class="aclink"><a href="#" data-transition="slide"><img src="css/images/9-12/People_and_Places/landmarksbtn.png"></a></div>
+      <div class="aclink"><a href="#" data-transition="slide"><img src="css/images/9-12/People_and_Places/inventorsbtn.png"></a></div>
+      <div class="aclink"><a href="#" data-transition="slide"><img src="css/images/9-12/People_and_Places/historymakersbtn.png"></a></div>
+    </div>
+    <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/bottomhome.png"></a></div>
+  </div> <!-- end content -->  
+    <script>
+				$(function() {
+					$("#peopleplaces2").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+				});
+        
+    function goBack() {
+      $.mobile.changePage("home.html");
+      peopleplacessoundbg.pause(); peopleplacessoundbg.currentTime = 0; 
+      mainaudiobg.play();
+    }
+    
+    $('.homelinkbh').on('tap', function() { 
+      mainaudiobg.play(); peopleplacessoundbg.pause(); peopleplacessoundbg.currentTime = 0; 
+    });
+	
+	$(document).ready(function(e) {
+		  $('.aclink>a').on('tap', function(event) {
+			var subjectId = $(this).attr("id");
+			if(subjectId == "changingplaces") {
+				bgsoundChangingPlaces.play();
+				peopleplacessoundbg.pause();
+				peopleplacessoundbg.currentTime = 0;
+			} 
+		});
+	});
+	
+	</script>
+</div>

@@ -1,0 +1,27 @@
+<!-- i-C-a -->
+<div id="profilepage" data-role="page">
+  <div style="width:70%;margin:auto;text-align:center;">
+    <div data-role="fieldcontain">
+      <label for="username">Fullname:</label>
+      <input type="text" id="username" name="username" value="imong nawong"><br>
+    </div>
+    <div data-role="fieldcontain">
+      <label for="username">Birthdate:</label>
+      <input type="text" id="username" name="username"><br>
+    </div>
+    <div data-role="fieldcontain">
+      <label for="username">Email:</label>
+      <input type="text" id="username" name="username"><br>
+    </div>
+    <input type="submit" value="Save" id="saveprofile" />
+    <input type="button" value="Back" id="backtoindex">
+  </div>
+  <script>
+    $(function() {
+      
+    });
+    $('#backtoindex').on('tap', function() {
+      $.mobile.changePage('index.html', {transition: "flip"});
+    });
+  </script>
+</div>

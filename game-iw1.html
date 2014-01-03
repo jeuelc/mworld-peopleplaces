@@ -1,0 +1,47 @@
+<!-- i-C-a -->
+<div data-role="page" id="game-iw1">  
+  <div data-role="content">
+    <div id="overlay" style="position:absolute;width:1024px;height:748px;top:0;left:0;z-index:-1;">
+    </div>
+    <div id="wrapper">
+      <div style="width:198px;height:130px;position:absolute;top:540px;left:0px;z-index:9"><img src="css/images/9-12/The_Wonders_of_Science/Invisible_World/game/backbtn.png" id="backbtn"></div>
+      <div id="topquark" class="quarks" style="top:127px;left:638px;"><img id="extopquark" src="css/images/9-12/The_Wonders_of_Science/Invisible_World/game/ex.png" style="margin-top:6px;display:none;margin:auto;"></div>
+      <div id="upquark" class="quarks" style="top:201px;left:638px;"><img id="exupquark" src="css/images/9-12/The_Wonders_of_Science/Invisible_World/game/ex.png" style="margin-top:6px;display:none;margin:auto;"></div>
+      <div id="downquark" class="quarks" style="top:287px;left:638px;"><img id="exdownquark" src="css/images/9-12/The_Wonders_of_Science/Invisible_World/game/ex.png" style="margin-top:6px;display:none;margin:auto;"></div>
+      <div id="strangequark" class="quarks" style="top:361px;left:638px;"><img id="exstrangequark" src="css/images/9-12/The_Wonders_of_Science/Invisible_World/game/ex.png" style="margin-top:6px;display:none;margin:auto;"></div>
+      <div id="charmquark" class="quarks" style="top:435px;left:638px;"><img id="excharmquark" src="css/images/9-12/The_Wonders_of_Science/Invisible_World/game/ex.png" style="margin-top:6px;display:none;margin:auto;"></div>
+      
+    </div>
+    <div class="v-spacer"></div>
+    <div id="bonusq" style="display:none;">
+      <div id="titleb-holder"><h1>How else can a black hole be formed?</h1></div>
+      <span style="color:#FFFFFF;margin:auto;font-size:10px;">Clue: Have a look at the screen titled 'From Supergiant to Black Hole'</span>
+      <div style="width:350px;margin:20px auto 0;"><input type="text" id="bqanswer" style="text-align:center;"></div>
+      <div style="width:250px;margin:0 auto;">
+        <a href="#" id="submitbqans" data-role="button" style="width:100px;float:left;">Submit</a>
+        <a href="#" id="cancelbqans" data-role="button" style="width:100px;float:right;">Cancel</a>
+      </div>
+    </div><!--/bonusq-->
+  </div> <!-- end content -->  
+  <script>
+    var answers = 0;
+    $('#backbtn').on('tap', function() {
+      //whatamimp3.pause();bgsoundbh.play();
+      $.mobile.changePage("sub-wonderscience.html");
+    });
+    
+    $('.quarks').on('tap', function() {
+      answers = answers + 1;
+      $(this).css('background-position', '0px -74px');
+      var thisid = $(this).attr('id');
+      var ex = setTimeout(function() { 
+          $("#ex"+thisid).css('display', 'block'); 
+          $(this).unbind('click');
+          $(this).unbind('tap');
+          if(answers == 5) {
+            alert("you got it all wrong");
+          }
+        }, 2000);
+    });
+  </script>
+</div>

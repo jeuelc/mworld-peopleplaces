@@ -1,0 +1,475 @@
+/********* cometsasteroidsmeteors In Peril **********/
+
+/* Main common basic pages */
+#sub-comets-asteroids-meteors,#sub-comets-asteroids-meteors-searching-the-solar-system,#sub-comets-asteroids-meteors-searching-the-solar-system-looking-down,#sub-comets-asteroids-meteors-searching-the-solar-system-looking-for-visitors,#sub-comets-asteroids-meteors-searching-the-solar-system-looking-further,#sub-comets-asteroids-meteors-searching-the-solar-system-looking-further-lf-1-2-3,#sub-comets-asteroids-meteors-searching-the-solar-system-looking-up,#sub-comets-asteroids-meteors-visiting-small-worlds,#sub-comets-asteroids-meteors-visiting-small-worlds-asteroids-and-astronauts,#sub-comets-asteroids-meteors-visiting-small-worlds-first-look,#sub-comets-asteroids-meteors-visiting-small-worlds-getting-closer{
+  background:url('images/9-12/Space/Comets_Asteroids_Meteors/Comets_Asteroids_Meteors_BG.png') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+/* Custom Pages Style */
+#sub-comets-asteroids-meteors-impact{
+  background:url('images/9-12/Space/Comets_Asteroids_Meteors/Impact/Impact_BG.png') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+#sub-comets-asteroids-meteors-small-worlds{
+  background:url('images/9-12/Space/Comets_Asteroids_Meteors/Small_Worlds/Small_Worlds_BG.png') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+#sub-comets-asteroids-meteors-visiting-small-worlds-halleys-comet{
+  background:url('images/9-12/Space/Comets_Asteroids_Meteors/Visiting_Small_Worlds/Halleys_Comet/Halleys_Commet_BG.png') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+#sub-comets-asteroids-meteors-impact-craters{
+  background:url('images/9-12/Space/Comets_Asteroids_Meteors/Impact/Craters/Craters_BG.png') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+#sub-comets-asteroids-meteors-impact-chelyabinsk-near-misses{
+  background:url('images/9-12/Space/Comets_Asteroids_Meteors/Impact/Chelyabinsk/Near_Misses/Near_Misses_BG.png') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+/* Custom Pages Style Ends here */
+
+/* Common Button Design */
+.plcometsasteroidsmeteors, .pscometsasteroidsmeteors, .bcometsasteroidsmeteors, .fcometsasteroidsmeteors {
+  position:absolute;
+  top:670px;
+  left:1024px;
+  z-index:20;
+}
+
+.micbtncometsasteroidsmeteors {
+  background:url('images/9-12/Space/micsp.png') no-repeat 0 -81px;
+  height:81px;
+  width:81px;
+}
+
+.rwcometsasteroidsmeteors {
+  background:url('images/9-12/Space/rwsp.png') no-repeat 0 -73px;
+  height:73px;
+  width:73px;
+}
+
+.plpscometsasteroidsmeteors {
+  background:url('images/9-12/Space/playsp.png') no-repeat 0 -73px;
+  height:73px;
+  width:73px;
+}
+
+.fwcometsasteroidsmeteors {
+  background:url('images/9-12/Space/fwsp.png') no-repeat 0 -73px;
+  height:73px;
+  width:73px;
+}
+
+.menubtncometsasteroidsmeteors {
+  background:url('images/9-12/Space/menusp.png') no-repeat 0 -90px;
+  height:90px;
+  width:90px;
+}
+
+
+.homebtncometsasteroidsmeteors {
+  background:url('images/9-12/Space/mapsp.png') no-repeat 0 -74px;
+  height:74px;
+  width:80px;
+}
+
+.mpbtncometsasteroidsmeteors {
+  background:url('images/9-12/Space/mpointssp.png') no-repeat 0 -84px;
+  height:79px;
+  width:80px;
+}
+
+.cpbtncometsasteroidsmeteors {
+  background:url('images/9-12/Space/ctrlpnlsp.png') no-repeat 0 -74px;
+  height:74px;
+  width:74px;
+}
+
+.infobtncometsasteroidsmeteors {
+  background:url('images/9-12/Space/infosp.png') no-repeat 0 -74px;
+  height:74px;
+  width:74px;
+}
+
+.credsbtncometsasteroidsmeteors {
+  background:url('images/9-12/Space/creditssp.png') no-repeat 0 -74px;
+  height:74px;
+  width:74px;
+}
+/* Common Button Design Ends Here */
+
+
+.navcometsasteroidsmeteors-content {
+	position: absolute;
+	left: 305px;
+	top: 275px;
+	width: 410px;
+	height: 359px;
+	overflow: auto;
+	text-align: center;
+	font-family: "comic sans ms";
+	font-size: 18px;
+	font-weight: normal;
+	color: #000000;
+}
+
+/* Some pages needs different style for text content */
+.navcometsasteroidsmeteors-looingup {
+	position: absolute;
+	left: 305px;
+	top: 346px;
+	width: 410px;
+	height: 275px;
+	overflow: auto;
+	text-align: center;
+	font-family: "comic sans ms";
+	font-size: 18px;
+	font-weight: normal;
+	color: #000000;
+}
+
+
+.navcometsasteroidsmeteorsbtn1{
+	left: 134px;
+    position: absolute;
+    top: 405px;
+}
+
+.navcometsasteroidsmeteorsbtn2 {
+    left: 394px;
+    position: absolute;
+    top: 435px;
+}
+.navcometsasteroidsmeteorsbtn3 {
+    left: 657px;
+    position: absolute;
+    top: 405px;
+}
+
+/* Common Header Div Design */
+#sub-comets-asteroids-meteors .bptitleholder,#sub-comets-asteroids-meteors-searching-the-solar-system .bptitleholder,#sub-comets-asteroids-meteors-searching-the-solar-system-looking-down .bptitleholder,#sub-comets-asteroids-meteors-searching-the-solar-system-looking-for-visitors .bptitleholder,#sub-comets-asteroids-meteors-searching-the-solar-system-looking-further .bptitleholder,#sub-comets-asteroids-meteors-searching-the-solar-system-looking-further-lf-1-2-3 .bptitleholder,#sub-comets-asteroids-meteors-searching-the-solar-system-looking-up .bptitleholder,#sub-comets-asteroids-meteors-visiting-small-worlds .bptitleholder,#sub-comets-asteroids-meteors-visiting-small-worlds-asteroids-and-astronauts .bptitleholder,#sub-comets-asteroids-meteors-visiting-small-worlds-first-look .bptitleholder,#sub-comets-asteroids-meteors-visiting-small-worlds-getting-closer .bptitleholder{
+	width: 627px;
+	height: 68px;
+	text-align: center;
+	line-height: 28px;
+	position: absolute;
+	top: 155px;
+	left: 194px;
+}
+
+.impact_craters{
+	height: 95px;
+	width: 241px;
+	top: 568px;
+	position: absolute;
+	left: 704px;
+}
+.impact_near_misses{
+	height: 193px;
+	width: 144px;
+	top: 348px;
+	position: absolute;
+	left: 842px;
+}
+
+.impact_death_of_the_dinosaurs{
+	height: 174px;
+	width: 193px;
+	top: 502px;
+	position: absolute;
+	left: 194px;
+	
+}
+.impact_tunguska{
+	height: 40px;
+	width: 118px;
+	top: 48px;
+	position: absolute;
+	left: 90px;
+}
+.impact_sudan{
+	height: 108px;
+	width: 90px;
+	top: 351px;
+	position: absolute;
+	left: 98px;
+}
+.impact_comet_crash{
+	height: 160px;
+	width: 284px;
+	top: 17px;
+	position: absolute;
+	left: 305px;
+}
+.impact_chelyabinsk{
+	height: 168px;
+	width: 197px;
+	top: 61px;
+	position: absolute;
+	left: 774px;
+}
+.impact_defence{
+	height: 96px;
+	width: 103px;
+	top: 553px;
+	position: absolute;
+	left: 510px;
+}
+.craters_manicouagan{
+	position: absolute;
+	height: 85px;
+	width: 176px;
+	left: 50px;
+	top: 584px;
+}
+.craters_mind_blowing{
+	position: absolute;
+	height: 85px;
+	width: 176px;
+	left: 798px;
+	top: 584px;
+}
+.near_misses_2012{
+	background: url('images/9-12/Space/Comets_Asteroids_Meteors/Impact/Chelyabinsk/Near_Misses/Button_Inac.png') no-repeat;
+	position: absolute;
+	height: 117px;
+	width: 246px;
+	left: 346px;
+	top: 300px;
+}
+/* Custom Header Div Design */
+#sub-comets-asteroids-meteors-impact .bptitleholder{
+	width: 490px;
+	height: 68px;
+	text-align: center;
+	line-height: 28px;
+	position: absolute;
+	top: 170px;
+	left: 347px;
+}
+
+#sub-comets-asteroids-meteors-small-worlds .bptitleholder{
+	width: 490px;
+	height: 68px;
+	text-align: center;
+	line-height: 28px;
+	position: absolute;
+	top: 250px;
+	left: 451px;
+}
+
+#sub-comets-asteroids-meteors-visiting-small-worlds-halleys-comet .bptitleholder{
+	width: 490px;
+	height: 68px;
+	text-align: center;
+	line-height: 28px;
+	position: absolute;
+	top: 250px;
+	left: 451px;
+}
+#sub-comets-asteroids-meteors-impact-craters .bptitleholder{
+	width: 490px;
+	height: 68px;
+	text-align: center;
+	line-height: 28px;
+	position: absolute;
+	top: 18px;
+	left: 270px;
+}
+#sub-comets-asteroids-meteors-impact-chelyabinsk-near-misses .bptitleholder{
+	width: 490px;
+	height: 68px;
+	text-align: center;
+	line-height: 28px;
+	position: absolute;
+	top: 18px;
+	left: 536px;
+}
+
+/* Common Header Design h1 */
+#sub-comets-asteroids-meteors .bptitleholder h1,#sub-comets-asteroids-meteors-impact .bptitleholder h1,#sub-comets-asteroids-meteors-searching-the-solar-system .bptitleholder h1,#sub-comets-asteroids-meteors-searching-the-solar-system-looking-down .bptitleholder h1,#sub-comets-asteroids-meteors-searching-the-solar-system-looking-for-visitors .bptitleholder h1,#sub-comets-asteroids-meteors-searching-the-solar-system-looking-further .bptitleholder h1,#sub-comets-asteroids-meteors-searching-the-solar-system-looking-further-lf-1-2-3 .bptitleholder h1,#sub-comets-asteroids-meteors-searching-the-solar-system-looking-up .bptitleholder h1,#sub-comets-asteroids-meteors-visiting-small-worlds .bptitleholder h1,#sub-comets-asteroids-meteors-visiting-small-worlds-asteroids-and-astronauts .bptitleholder h1,#sub-comets-asteroids-meteors-visiting-small-worlds-first-look .bptitleholder h1,#sub-comets-asteroids-meteors-visiting-small-worlds-getting-closer .bptitleholder h1{
+	text-transform: uppercase;
+	color: #ffffff !important;
+	font-family: "comic sans ms" !important;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+/* Custom Page Header Design h1 */
+#sub-life-and-how-it-works-evolution-and-natural-selection-mutants-what-were-mutants .bptitleholder h1{
+	text-transform: uppercase;
+	color: #000000 !important;
+	font-family: "comic sans ms" !important;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;	
+}
+#sub-life-and-how-it-works-evolution-and-natural-selection-mutants-what-were-mutants .bptitleholder h1,#sub-comets-asteroids-meteors-small-worlds .bptitleholder h1{
+	text-transform: uppercase;
+	color: #000000 !important;
+	font-family: "comic sans ms" !important;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;	
+}
+#sub-comets-asteroids-meteors-visiting-small-worlds-halleys-comet .bptitleholder h1{
+	text-transform: uppercase;
+	color: #FFFFFF !important;
+	font-family: "comic sans ms" !important;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;	
+}
+
+#sub-comets-asteroids-meteors-impact-craters .bptitleholder h1{
+	text-transform: uppercase;
+	color: #FFFFFF !important;
+	font-family: "comic sans ms" !important;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;	
+}
+#sub-comets-asteroids-meteors-impact-chelyabinsk-near-misses .bptitleholder h1{
+	text-transform: uppercase;
+	color: #FFFFFF !important;
+	font-family: "comic sans ms" !important;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;	
+}
+
+.bpcontentcometsasteroidsmeteors{
+	color: #000000;
+    font-family: "comic sans ms";
+    font-size: 18px;
+    font-weight: normal;
+    height: 356px;
+    left: 550px;
+    overflow-y: auto;
+    position: absolute;
+    text-align: left;
+    top: 266px;
+    width: 413px;
+}
+
+.bpcontent_messing_body_clock {
+	color: #ffffff;
+	font-family: "comic sans ms";
+	font-size: 18px;
+	font-weight: normal;
+	height: 356px;
+	margin-left: 0px;
+	position: absolute;
+	text-align: center;
+	top: 65px;
+	width: 94%;
+}
+
+.navcometsasteroidsmeteors-content3{
+  position:absolute;
+  left:59px;
+  top:263px;
+  width:920px;
+  height:160px;
+  overflow-y:scroll;
+  text-align:left;
+  font-family:"comic sans ms";
+  font-size:18px;
+  font-weight:normal;
+  color:#000000;
+}
+.navevolutionandnaturalselectionbtn1{
+	position: absolute;
+	left: 134px;
+}
+.navevolutionandnaturalselectionbtn2{
+	position: absolute;
+	left: 394px;
+}
+.navevolutionandnaturalselectionbtn3{
+	position: absolute;
+	left: 657px;
+}
+
+/* Custom content */
+.navcometsasteroidsmeteors-impact{
+	position: absolute;
+	left: 393px;
+	top: 211px;
+	width: 431px;
+	height: 535px;
+	overflow: auto;
+	text-align: left;
+	font-family: comic sans ms;
+	font-size: 18px;
+	font-weight: normal;
+	color: #FFFFFF;
+}
+.navcometsasteroidsmeteors-halleyscomet{
+	position: absolute;
+	left: 495px;
+	top: 294px;
+	width: 444px;
+	height: 535px;
+	overflow: auto;
+	text-align: left;
+	font-family: comic sans ms;
+	font-size: 18px;
+	font-weight: normal;
+	color: #FFFFFF;
+}
+.navcometsasteroidsmeteors-smallworlds{
+	position: absolute;
+	left: 495px;
+	top: 294px;
+	width: 444px;
+	height: 535px;
+	overflow: auto;
+	text-align: left;
+	font-family: comic sans ms;
+	font-size: 18px;
+	font-weight: normal;
+	color: #FFFFFF;
+}
+.navcometsasteroidsmeteors-craters{
+	position: absolute;
+	left: 53px;
+	top: 75px;
+	width: 924px;
+	height: 249px;
+	overflow: auto;
+	text-align: left;
+	font-family: comic sans ms;
+	font-size: 18px;
+	font-weight: normal;
+	color: #FFFFFF;
+}
+.navcometsasteroidsmeteors-nearmisses{
+	position: absolute;
+	left: 594px;
+	top: 75px;
+	width: 400px;
+	height: 277px;
+	overflow: auto;
+	text-align: left;
+	font-family: comic sans ms;
+	font-size: 18px;
+	font-weight: normal;
+	color: #FFFFFF;
+}

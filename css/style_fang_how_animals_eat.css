@@ -1,0 +1,344 @@
+/********* Fang How Animals Eat **********/
+
+#sub-fang-how-animals-eat, #sub-fang-how-animals-eat-who-eats-who, #sub-fang-how-animals-eat-who-eats-who-carnivores, #sub-fang-how-animals-eat-who-eats-who-herbivores, #sub-fang-how-animals-eat-who-eats-who-symbionts-and-parasites, #sub-fang-how-animals-eat-weird-and-wonderful-eat-your-own-poo, #sub-fang-how-animals-eat-weird-and-wonderful-spear-time, #sub-fang-how-animals-eat-weird-and-wonderful-stomachs-stones-starfish-snakes, #sub-fang-how-animals-eat-you-are-what-you-eat-dinner-or-your-life, #sub-fang-how-animals-eat-you-are-what-you-eat-how-big-can-I-get, #sub-fang-how-animals-eat-you-are-what-you-eat-teeth-or-not, #sub-fang-how-animals-eat-you-are-what-you-eat-teeth-or-not-Bite-Force, #sub-fang-how-animals-eat-you-are-what-you-eat-us-and-eating {
+  background:url('images/9-12/Animals/Fang_How_Animals_Eat/Fang-How-Animals-Eat-BG.png') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+#sub-fang-how-animals-eat-you-are-what-you-eat-friends-or-no-friends{
+  background:url('images/9-12/Animals/Fang_How_Animals_Eat/you_Are_What_You_Eat/Friends_Or_No_Friends/Friends_Or_No_Friends_BG.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+#sub-fang-how-animals-eat-you-are-what-you-eat{
+  background:url('images/9-12/Animals/Fang_How_Animals_Eat/you_Are_What_You_Eat/You_Are_What_You_Eat_BG.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+#sub-fang-how-animals-eat-weird-and-wonderful-spit-on-food{
+  background:url('images/9-12/Animals/Fang_How_Animals_Eat/Weird_And_Wonderful/Spit_On_Your_Food/Spit_On_Your_Food_BG.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+#sub-fang-how-animals-eat-who-eats-who-dirt-and-floating-bits{
+  background:url('images/9-12/Animals/Fang_How_Animals_Eat/Who_Eats_Who/Dirt_And_Floating_Bits/Dirt_And_Floating_Bits_BG.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+#sub-fang-how-animals-eat-weird-and-wonderful {
+  background:url('images/9-12/Animals/Fang_How_Animals_Eat/Weird_And_Wonderful/Weird_And_Wonderful_BG.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+#sub-fang-how-animals-eat-weird-and-wonderful-blood-and-honey {
+  background:url('images/9-12/Animals/Fang_How_Animals_Eat/Weird_And_Wonderful/Blood_And_Honey/Blood_And_Honey_BG.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+.plFangAnimals, .psFangAnimals, .bFangAnimals, .fFangAnimals {
+  position:absolute;
+  top:670px;
+  left:1024px;
+  z-index:20;
+}
+
+.micbtnFangAnimals {
+  background:url('images/9-12/Animals/micani.png') no-repeat 0 -81px;
+  height:81px;
+  width:81px;
+}
+
+.rwFangAnimals {
+  background:url('images/9-12/Animals/rwani.png') no-repeat 0 -73px;
+  height:73px;
+  width:73px;
+}
+
+.plpsFangAnimals {
+  background:url('images/9-12/Animals/playani.png') no-repeat 0 -73px;
+  height:73px;
+  width:73px;
+}
+
+.fwFangAnimals {
+  background:url('images/9-12/Animals/fwani.png') no-repeat 0 -73px;
+  height:73px;
+  width:73px;
+}
+
+.menubtnFangAnimals {
+  background:url('images/9-12/Animals/menuani.png') no-repeat 0 -90px;
+  height:90px;
+  width:90px;
+}
+
+
+.homebtnFangAnimals {
+  background:url('images/9-12/Animals/mapani.png') no-repeat 0 -74px;
+  height:74px;
+  width:80px;
+}
+
+.mpbtnFangAnimals {
+  background:url('images/9-12/Animals/mpointsani.png') no-repeat 0 -84px;
+  height:79px;
+  width:80px;
+}
+
+.cpbtnFangAnimals {
+  background:url('images/9-12/Animals/ctrlpnlani.png') no-repeat 0 -74px;
+  height:74px;
+  width:74px;
+}
+
+.infobtnFangAnimals {
+  background:url('images/9-12/Animals/infoani.png') no-repeat 0 -74px;
+  height:74px;
+  width:74px;
+}
+
+.credsbtnFangAnimals {
+  background:url('images/9-12/Animals/creditsani.png') no-repeat 0 -74px;
+  height:74px;
+  width:74px;
+}
+
+.navtitleholderFangAnimals{
+	width: 435px;
+	height: 68px;
+	position: absolute;
+	top: 169px;
+	left: 295px;
+	text-align: center;
+	line-height: 32px;
+}
+
+.navtitleholderFangAnimals h1{
+	text-transform: uppercase;
+	color: #FFF;
+	font-family: comic sans ms;
+	padding: 0;
+	margin: 0;
+	font-weight: bold;
+}
+
+.bptitleholderFangAnimals {
+  width:627px;
+  height:68px;
+  text-align:center;
+  line-height:28px;
+  position:absolute;
+  top:169px;
+  left:194px;
+}
+
+.bptitleholderFangAnimals h1
+ {
+  text-transform:uppercase;
+  color: #FFFFFF;
+  font-family:"comic sans ms";
+  font-weight:bold;
+  padding:0;
+  margin:0;
+}
+
+.navFangAnimals-content{
+  position:absolute;
+  left:305px;
+  top:263px;
+  width:410px;
+  height:359px;
+  /*overflow-y:scroll;*/
+  overflow:auto;
+  text-align:center;
+  font-family:"comic sans ms";
+  font-size:18px;
+  font-weight:normal;
+  color:#000000;
+}
+.navFangAnimals-content p {
+  margin-top:0 !important;
+}
+
+.navFangAnimals-content3 {
+  position:absolute;
+  left:59px;
+  top:263px;
+  width:920px;
+  height:160px;
+  overflow-y:scroll;
+  text-align:left;
+  font-family:"comic sans ms";
+  font-size:18px;
+  font-weight:normal;
+  color:#000000;
+}
+
+.bpcontentFangAnimals{
+  width:413px;
+  height:356px;
+  position:absolute;
+  left:550px;
+  top:266px;
+  overflow:auto;
+  font-family:"comic sans ms";
+  font-size:18px;
+  font-weight:normal;
+  text-align:left;
+  color:#000000;
+}
+
+.bpcontentFangAnimals-dirt{
+  width:413px;
+  height: 400px;
+  position:absolute;
+  left:532px;
+  top:223px;
+  overflow:auto;
+  font-family:"comic sans ms";
+  font-size:18px;
+  font-weight:normal;
+  text-align:left;
+  color:#000000;
+}
+
+.bpcontentFangAnimals-weird{
+    width: 870px;
+	height: 115px;
+	position: absolute;
+	left: 80px;
+	top: 75px;
+	overflow: auto;
+	font-family: "comic sans ms";
+	font-size: 18px;
+	font-weight: normal;
+	text-align: left;
+	color: #000000;
+}
+
+.bpcontentFangAnimals-whatyoueat{
+	width: 870px;
+	height: 160px;
+	position: absolute;
+	left: 80px;
+	top: 75px;
+	overflow: auto;
+	font-family: "comic sans ms";
+	font-size: 18px;
+	font-weight: normal;
+	text-align: left;
+	color: #000000;
+}
+
+.bpcontentFangAnimals-blood{
+	width: 433px;
+	height: 539px;
+	position: absolute;
+	left: 524px;
+	top: 142px;
+	overflow: auto;
+	font-family: "comic sans ms";
+	font-size: 18px;
+	font-weight: normal;
+	text-align: left;
+	color: #000000;
+}
+
+.bpcontentFangAnimals-food{
+	width: 371px;
+	height: 560px;
+	position: absolute;
+	left: 586px;
+	top: 101px;
+	overflow: auto;
+	font-family: "comic sans ms";
+	font-size: 18px;
+	font-weight: normal;
+	text-align: left;
+	color: #000000;
+}
+
+.bpcontentFangAnimals-friends{
+	width: 371px;
+	height: 560px;
+	position: absolute;
+	left: 544px;
+	top: 101px;
+	overflow: auto;
+	font-family: "comic sans ms";
+	font-size: 18px;
+	font-weight: normal;
+	text-align: left;
+	color: #000000;
+}
+
+#sub-fang-how-animals-eat .bptitleholder h1, #sub-fang-how-animals-eat-who-eats-who .bptitleholder h1, #sub-fang-how-animals-eat-who-eats-who-carnivores .bptitleholder h1, #sub-fang-how-animals-eat-who-eats-who-herbivores .bptitleholder h1, #sub-fang-how-animals-eat-who-eats-who-symbionts-and-parasites .bptitleholder h1, #sub-fang-how-animals-eat-who-eats-who-dirt-and-floating-bits .bptitleholder h1, #sub-fang-how-animals-eat-weird-and-wonderful-blood-and-honey .bptitleholder h1, #sub-fang-how-animals-eat-weird-and-wonderful-eat-your-own-poo .bptitleholder h1, #sub-fang-how-animals-eat-weird-and-wonderful-spear-time .bptitleholder h1, #sub-fang-how-animals-eat-weird-and-wonderful-stomachs-stones-starfish-snakes .bptitleholder h1, #sub-fang-how-animals-eat-you-are-what-you-eat-dinner-or-your-life .bptitleholder h1, #sub-fang-how-animals-eat-you-are-what-you-eat-how-big-can-I-get .bptitleholder h1, #sub-fang-how-animals-eat-you-are-what-you-eat-teeth-or-not .bptitleholder h1, #sub-fang-how-animals-eat-you-are-what-you-eat-teeth-or-not-Bite-Force .bptitleholder h1, #sub-fang-how-animals-eat-you-are-what-you-eat-us-and-eating .bptitleholder h1{
+	text-transform: uppercase;
+	color: #ffffff !important;
+	font-family: "comic sans ms";
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#sub-fang-how-animals-eat-you-are-what-you-eat .bptitleholder h1{
+	text-transform: uppercase;
+	color: #000000 !important;
+	font-family: "comic sans ms";
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#sub-fang-how-animals-eat-weird-and-wonderful .bptitleholder h1{
+	text-transform: uppercase;
+	color: #000000 !important;
+	font-family: "comic sans ms";
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#sub-fang-how-animals-eat-you-are-what-you-eat .bptitleholder{
+	width: 627px;
+	height: 68px;
+	text-align: center;
+	line-height: 28px;
+	position: absolute;
+	top: 15px;
+	left: 194px;
+}
+
+#sub-fang-how-animals-eat-weird-and-wonderful .bptitleholder {
+	width: 627px;
+	height: 68px;
+	text-align: center;
+	line-height: 28px;
+	position: absolute;
+	top: 15px;
+	left: 194px;
+}
+
+#sub-fang-how-animals-eat-weird-and-wonderful-stomachs-stones-starfish-snakes .bptitleholder {
+	width: 627px;
+	height: 68px;
+	text-align: center;
+	line-height: 35px;
+	position: absolute;
+	top: 160px;
+	left: 194px;
+}

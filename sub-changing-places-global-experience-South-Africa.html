@@ -1,0 +1,140 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-changing-places-global-experience-South-Africa">
+  <script src="js/hammer.js"></script>
+  <script src="js/jquery.hammer.js"></script>
+  <script src="js/slidebar_changing_places.js"></script>
+  <link rel="stylesheet" href="css/style_changing_places.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnChangingPlaces"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnChangingPlaces"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnChangingPlaces"></div></div>
+  <div class="infobtnholder"><div class="infobtnChangingPlaces"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnChangingPlaces"></div></div>
+  <div class="menubtnholder"><div class="menubtnChangingPlaces"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:0px;"><h1>South Africa</h1></div>
+  <div id="spacechar">&nbsp;
+    <div data-role="content" class="kidzcontent">
+      <div class="v-spacer"></div>
+      <div class="sidebarleft-half">
+        <a id="skillslink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Changing_Places/A_Global_Experience/South_Africa/Refugees_From_Zimbabwe_Hi_Res.jpg', 'Refugees from Zimbabwe wait in a rugby pitch that has been transformed into a refugee camp in South Africa.');">click here</a>
+		
+        <a id="immigrationlink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Changing_Places/A_Global_Experience/South_Africa/South_Africa_Camp_Hi_Res.jpg', 'This camp on the outskirts of Johannesburg, South Africa, is one of many that have sprung up around the Johannesburg area. They house mainly immigrants from Zimbabwe who have crossed the border in search of employment.');">click here</a>
+		
+		<a id="graphlink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Changing_Places/A_Global_Experience/South_Africa/South_Africa_Graph_Hi_Res.jpg', 'A large proportion of immigrants to South Africa come from other countries in Africa.');">click here</a>
+        
+		<div id="zoomwrapper">
+          <div id="pol1" class="pPiece" style="left:100px;top:270px;">
+            <img src="css/images/9-12/People_and_Places/Changing_Places/A_Global_Experience/South_Africa/Refugees_From_Zimbabwe.jpg" alt="" />
+          </div>
+          <div id="pol2"class="pPiece" style="left:75px;top:290px;">
+             <img src="css/images/9-12/People_and_Places/Changing_Places/A_Global_Experience/South_Africa/South_Africa_Camp.jpg" alt="" />
+          </div>
+		  <div id="pol3"class="pPiece" style="left:80px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Changing_Places/A_Global_Experience/South_Africa/South_Africa_Graph.jpg" alt="" />
+          </div>
+        </div><!--/zoomwrapper-->
+      </div>
+      
+      <div class="bpcontentChangingPlaces">
+        <p>South Africa has a long history of immigration from Europe and neighbouring African countries. Labour migration  where people would come to South Africa to work on farms or the gold mines  has been around since the 19th century and continues to this day.  Since the 1990s, migrants have made up a large proportion of the mining workforce.  Immigrants working in the mines have mostly come from the neighbouring countries of Lesotho, Swaziland and Mozambique.</p>
+		<p>Some would say that South Africas recent history of immigration has been a troubled one.  'Xenophobia', which is the fear of anything foreign or unknown, is commonplace in South Africa and many other countries around the world.</p>
+      </div>
+       
+      <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+    </div> <!-- end content -->  
+  </div><!--/spacechar-->        
+  
+    <div class="micbtnholder"><div class="micbtnChangingPlaces" id="playstopSouthAfrica"></div></div>
+    <div class="bChangingPlaces"><div class="rwChangingPlaces" id="SouthAfricaaudiobbtn"></div></div>
+    <div class="plChangingPlaces"><div class="plpsChangingPlaces" id="SouthAfricaaudioplbtn"></div></div>
+    <div class="fChangingPlaces"><div class="fwChangingPlaces" id="SouthAfricaaudiofbtn"></div></div>
+    <div id="actualaudio-SouthAfrica" style="visibility:hidden;"></div>
+  <!-- </div> -->
+  
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+ 
+	var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      $('div#pol2').css("z-index", 2);
+      $('div#pol1').css("z-index", 1);
+      $('div#pol1 > img').css("-webkit-transform", "rotate(0deg)");
+      $('div#pol2 > img').css("-webkit-transform", "rotate(5deg)");
+      $('div#pol3 > img').css("-webkit-transform", "rotate(-3deg)");
+      if(sound.canPlayType('audio/mpeg')) {
+        $('#actualaudio-SouthAfrica').html('<audio id="SouthAfricaaudio" controls preload onpause="playsChangingPlaces()" onplay="pauseChangingPlaces()"><source src="audio/Changing_Places/South_Africa.mp3" type="audio/mpeg"></audio>');
+      }             
+      $("#sub-changing-places-global-experience-South-Africa").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+    })();
+    
+    $('.homelinkbh').on('tap', function() { mainaudiobg.play(); bgsoundChangingPlaces.pause(); bgsoundChangingPlaces.currentTime = 0;});
+    
+    $("#pol1").on('tap', function() {
+      $('#skillslink')[0].click();
+    });
+    $("#pol2").on('tap', function() {
+      $('#immigrationlink')[0].click();
+    });
+	$("#pol3").on('tap', function() {
+      $('#graphlink')[0].click();
+    });
+	
+    function goBack() {
+      $.mobile.changePage("sub-changing-places-global-experience.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsChangingPlaces() {
+         bgsoundChangingPlaces.play();
+    }
+       
+    function pauseChangingPlaces() {
+         bgsoundChangingPlaces.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+    $("#playstopSouthAfrica").on('tap', function() {
+      if(!playing) {
+        SouthAfricaaudio.play();
+        $('.micbtnChangingPlaces').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        SouthAfricaaudio.pause(); SouthAfricaaudio.currentTime = 0;
+        $('.micbtnChangingPlaces').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#SouthAfricaaudioplbtn").on('tap', function() {
+      if(!paused) {
+        SouthAfricaaudio.pause();
+        paused = true;
+      } else {
+        SouthAfricaaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#SouthAfricaaudiofbtn").on('tap', function() {
+      var ctime = SouthAfricaaudio.currentTime;
+      SouthAfricaaudio.currentTime = ctime + 10;
+    });
+    
+    $("#SouthAfricaaudiobbtn").on('tap', function() {
+      var ctime = SouthAfricaaudio.currentTime;
+      SouthAfricaaudio.currentTime = ctime - 10;
+    });
+    
+    $("#SouthAfricaaudiopsbtn").on('tap', function() {
+      SouthAfricaaudio.pause();
+    });
+  </script>
+  <script src="js/threecardLogic.js"></script>  <!-- for card dragging effects -->
+</div> <!--//home-->

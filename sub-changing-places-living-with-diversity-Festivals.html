@@ -1,0 +1,140 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-changing-places-living-with-diversity-Festivals">
+  <script src="js/hammer.js"></script>
+  <script src="js/jquery.hammer.js"></script>
+  <script src="js/slidebar_changing_places.js"></script>
+  <link rel="stylesheet" href="css/style_changing_places.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnChangingPlaces"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnChangingPlaces"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnChangingPlaces"></div></div>
+  <div class="infobtnholder"><div class="infobtnChangingPlaces"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnChangingPlaces"></div></div>
+  <div class="menubtnholder"><div class="menubtnChangingPlaces"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:0px;"><h1>Festivals</h1></div>
+  <div id="spacechar">&nbsp;
+    <div data-role="content" class="kidzcontent">
+      <div class="v-spacer"></div>
+      <div class="sidebarleft-half">
+        <a id="skillslink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Changing_Places/Living_With_Diversity/Festivals/Cinco_Di_Mayo_Hi_Res.jpg', 'Folk dancers in the Cinco de Mayo Parade in New York (Courtesy: Richard Levine / Alamy)');">click here</a>
+		
+        <a id="immigrationlink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Changing_Places/Living_With_Diversity/Festivals/St_Pats_Hi_Res.jpg', 'Chicago River turned green for Saint Patrick\'s Day celebrations.');">click here</a>
+		
+		<a id="graphlink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Changing_Places/Living_With_Diversity/Festivals/C_NY_Hi_Res.jpg', 'Chinese or Lunar New Year celebrations in Manhattan, New York City (Courtesy: dbimages/Alarmy)');">click here</a>
+        
+		<div id="zoomwrapper">
+          <div id="pol1" class="pPiece" style="left:100px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Changing_Places/Living_With_Diversity/Festivals/Cinco_Di_Mayo.jpg" alt="" />
+          </div>
+          <div id="pol2"class="pPiece" style="left:75px;top:290px;">
+             <img src="css/images/9-12/People_and_Places/Changing_Places/Living_With_Diversity/Festivals/St_Pats.jpg" alt="" />
+          </div>
+		  <div id="pol3"class="pPiece" style="left:80px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Changing_Places/Living_With_Diversity/Festivals/C_NY.jpg" alt="" />
+          </div>
+        </div><!--/zoomwrapper-->
+      </div>
+      
+      <div class="bpcontentChangingPlaces">
+        <p>For many immigrant groups, annual festivals are a great way for a community to show its culture to the broader society and celebrate its ethnic heritage.  The Irish have St Patricks Day, the Chinese have Chinese New Year celebrations and West Indians in New York City have a colourful street parade that attracts more than two million spectators on the Labor Day holiday in September.</p>
+		<p>For people of Mexican origin, the Cinco de Mayo (Fifth of May) festivities are a celebration of Mexican heritage and pride.  Cinco de Mayo is celebrated both in Mexico and in American cities that have large populations of Mexican immigrants and their descendants.  The city of Denver runs a popular two-day festival called Celebrate Culture with events including a parade, Chihuahua dog races, a green chili cook-off and musical performances.</p>
+      </div>
+       
+      <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+    </div> <!-- end content -->  
+  </div><!--/spacechar-->        
+  
+    <div class="micbtnholder"><div class="micbtnChangingPlaces" id="playstopFestivals"></div></div>
+    <div class="bChangingPlaces"><div class="rwChangingPlaces" id="Festivalsaudiobbtn"></div></div>
+    <div class="plChangingPlaces"><div class="plpsChangingPlaces" id="Festivalsaudioplbtn"></div></div>
+    <div class="fChangingPlaces"><div class="fwChangingPlaces" id="Festivalsaudiofbtn"></div></div>
+    <div id="actualaudio-Festivals" style="visibility:hidden;"></div>
+  <!-- </div> -->
+  
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+ 
+	var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      $('div#pol2').css("z-index", 2);
+      $('div#pol1').css("z-index", 1);
+      $('div#pol1 > img').css("-webkit-transform", "rotate(0deg)");
+      $('div#pol2 > img').css("-webkit-transform", "rotate(5deg)");
+      $('div#pol3 > img').css("-webkit-transform", "rotate(-3deg)");
+      if(sound.canPlayType('audio/mpeg')) {
+        $('#actualaudio-Festivals').html('<audio id="Festivalsaudio" controls preload onpause="playsChangingPlaces()" onplay="pauseChangingPlaces()"><source src="audio/Changing_Places/Festivals.mp3" type="audio/mpeg"></audio>');
+      }             
+      $("#sub-changing-places-living-with-diversity-Festivals").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+    })();
+    
+    $('.homelinkbh').on('tap', function() { mainaudiobg.play(); bgsoundChangingPlaces.pause(); bgsoundChangingPlaces.currentTime = 0;});
+    
+    $("#pol1").on('tap', function() {
+      $('#skillslink')[0].click();
+    });
+    $("#pol2").on('tap', function() {
+      $('#immigrationlink')[0].click();
+    });
+	$("#pol3").on('tap', function() {
+      $('#graphlink')[0].click();
+    });
+	
+    function goBack() {
+      $.mobile.changePage("sub-changing-places-living-with-diversity.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsChangingPlaces() {
+         bgsoundChangingPlaces.play();
+    }
+       
+    function pauseChangingPlaces() {
+         bgsoundChangingPlaces.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+    $("#playstopFestivals").on('tap', function() {
+      if(!playing) {
+        Festivalsaudio.play();
+        $('.micbtnChangingPlaces').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        Festivalsaudio.pause(); Festivalsaudio.currentTime = 0;
+        $('.micbtnChangingPlaces').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#Festivalsaudioplbtn").on('tap', function() {
+      if(!paused) {
+        Festivalsaudio.pause();
+        paused = true;
+      } else {
+        Festivalsaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#Festivalsaudiofbtn").on('tap', function() {
+      var ctime = Festivalsaudio.currentTime;
+      Festivalsaudio.currentTime = ctime + 10;
+    });
+    
+    $("#Festivalsaudiobbtn").on('tap', function() {
+      var ctime = Festivalsaudio.currentTime;
+      Festivalsaudio.currentTime = ctime - 10;
+    });
+    
+    $("#Festivalsaudiopsbtn").on('tap', function() {
+      Festivalsaudio.pause();
+    });
+  </script>
+  <script src="js/threecardLogic.js"></script>  <!-- for card dragging effects -->
+</div> <!--//home-->

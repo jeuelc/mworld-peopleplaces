@@ -1,0 +1,192 @@
+<!-- i-C-a -->
+<div data-role="page" id="game-ag1">  
+  <script src="js/hammer.js"></script>
+  <script src="js/jquery.hammer.js"></script>
+  <div data-role="content">
+    <div id="wrapper">
+      <div style="width:94px;height:38px;position:absolute;top:130px;left:900px;z-index:999"><img src="css/images/5-8/Ancient_Civilizations/Greece/game/coin-save.png" id="submitsoln"></div>
+      <div style="width:94px;height:38px;position:absolute;top:160px;left:905px;z-index:999"><img src="css/images/5-8/Ancient_Civilizations/Greece/game/coin-back.png" id="backbtn"></div>
+      <div style="width:94px;height:38px;position:absolute;top:200px;left:910px;z-index:999"><img src="css/images/5-8/Ancient_Civilizations/Greece/game/coin-reset.png" id="resetbtn"></div>
+      <div id="zoomwrapper">
+        <!--icons-->
+        <div id="jpiece1" class="aggame1Piece" style="left:629px;top:496px;width:224px;height:152px;">
+           <img src="css/images/5-8/Ancient_Civilizations/Greece/game/icon-ag.png" alt="" width="224" height="152" />
+        </div>
+        <div id="jpiece2"class="aggame1Piece" style="left:919px;top:238px;width:113px;height:218px;">
+           <img src="css/images/5-8/Ancient_Civilizations/Greece/game/icon-persia.png" alt="" width="113" height="218" />
+        </div>
+        <div id="jpiece3" class="aggame1Piece" style="left:862px;top:505px;width:112px;height:151px;">
+           <img src="css/images/5-8/Ancient_Civilizations/Greece/game/icon-egypt.png" alt="" width="112" height="151" />
+        </div><!--/icons-->
+        <!--ag-pieces-->
+        <div id="jpiece4" class="aggame1Piece" style="left:291px;top:144px;width:63px;height:51px;">
+           <img src="css/images/5-8/Ancient_Civilizations/Greece/game/gp1.png" alt="" width="63" height="51" />
+        </div>
+        <div id="jpiece5" class="aggame1Piece" style="left:342px;top:183px;width:46px;height:44px;">
+           <img src="css/images/5-8/Ancient_Civilizations/Greece/game/gp2.png" alt="" width="46" height="44" />
+        </div>
+        <div id="jpiece6" class="aggame1Piece" style="left:288px;top:179px;width:67px;height:35px;">
+           <img src="css/images/5-8/Ancient_Civilizations/Greece/game/gp3.png" alt="" width="67" height="35" />
+        </div>
+        <div id="jpiece7" class="aggame1Piece" style="left:130px;top:76px;width:61px;height:49px;">
+           <img src="css/images/5-8/Ancient_Civilizations/Greece/game/gp4.png" alt="" width="61" height="49" />
+        </div><!--/ag-pieces-->
+        <!--egypt-pieces-->
+        <div id="jpiece8" class="aggame1Piece" style="left:103px;top:162px;width:85px;height:48px;">
+           <img src="css/images/5-8/Ancient_Civilizations/Greece/game/ep1.png" alt="" width="85" height="48" />
+        </div>
+        <div id="jpiece9" class="aggame1Piece" style="left:122px;top:211px;width:42px;height:55px;">
+           <img src="css/images/5-8/Ancient_Civilizations/Greece/game/ep2.png" alt="" width="42" height="55" />
+        </div>
+        <div id="jpiece10" class="aggame1Piece" style="left:181px;top:167px;width:34px;height:67px;">
+           <img src="css/images/5-8/Ancient_Civilizations/Greece/game/ep3.png" alt="" width="34" height="67" />
+        </div>
+        <div id="jpiece11" class="aggame1Piece" style="left:202px;top:112px;width:69px;height:53px;">
+           <img src="css/images/5-8/Ancient_Civilizations/Greece/game/ep4.png" alt="" width="69" height="53" />
+        </div>
+        <div id="jpiece12" class="aggame1Piece" style="left:88px;top:58px;width:48px;height:52px;">
+           <img src="css/images/5-8/Ancient_Civilizations/Greece/game/ep5.png" alt="" width="48" height="52" />
+        </div>
+        <div id="jpiece13" class="aggame1Piece" style="left:146px;top:161px;width:59px;height:70px;">
+           <img src="css/images/5-8/Ancient_Civilizations/Greece/game/ep6.png" alt="" width="59" height="70" />
+        </div><!--/egypt-pieces-->
+        <!--persia-pieces-->
+        <div id="jpiece14" class="aggame1Piece" style="left:134px;top:124px;width:112px;height:54px;">
+           <img src="css/images/5-8/Ancient_Civilizations/Greece/game/pp1.png" alt="" width="112" height="54" />
+        </div>
+        <div id="jpiece15" class="aggame1Piece" style="left:223px;top:63px;width:134px;height:62px;">
+           <img src="css/images/5-8/Ancient_Civilizations/Greece/game/pp2.png" alt="" width="134" height="62" />
+        </div>
+        <div id="jpiece16" class="aggame1Piece" style="left:110px;top:92px;width:131px;height:85px;">
+           <img src="css/images/5-8/Ancient_Civilizations/Greece/game/pp3.png" alt="" width="131" height="85" />
+        </div>
+        <div id="jpiece17" class="aggame1Piece" style="left:285px;top:115px;width:78px;height:63px;">
+           <img src="css/images/5-8/Ancient_Civilizations/Greece/game/pp4.png" alt="" width="78" height="63" />
+        </div>
+        <div id="jpiece18" class="aggame1Piece" style="left:185px;top:146px;width:101px;height:135px;">
+           <img src="css/images/5-8/Ancient_Civilizations/Greece/game/pp5.png" alt="" width="101" height="135" />
+        </div>
+        <div id="jpiece19" class="aggame1Piece" style="left:80px;top:26px;width:159px;height:122px;">
+           <img src="css/images/5-8/Ancient_Civilizations/Greece/game/pp6.png" alt="" width="159" height="122" />
+        </div>
+        <div id="jpiece20" class="aggame1Piece" style="left:15px;top:33px;width:157px;height:122px;">
+           <img src="css/images/5-8/Ancient_Civilizations/Greece/game/pp7.png" alt="" width="157" height="122" />
+        </div>
+        <div id="jpiece21" class="aggame1Piece" style="left:111px;top:83px;width:81px;height:59px;">
+           <img src="css/images/5-8/Ancient_Civilizations/Greece/game/pp8.png" alt="" width="81" height="59" />
+        </div>
+        <div id="jpiece22" class="aggame1Piece" style="left:128px;top:49px;width:130px;height:63px;">
+           <img src="css/images/5-8/Ancient_Civilizations/Greece/game/pp9.png" alt="" width="130" height="63" />
+        </div>
+        <div id="jpiece23" class="aggame1Piece" style="left:165px;top:84px;width:68px;height:72px;">
+           <img src="css/images/5-8/Ancient_Civilizations/Greece/game/pp10.png" alt="" width="68" height="72" />
+        </div><!--/persia-pieces-->
+      </div><!--/zoomwrapper-->
+    </div>
+    <div class="v-spacer"></div>
+    <div id="bonusq" style="display:none;">
+      <div id="titleb-holder"><h1>How else can a black hole be formed?</h1></div>
+      <span style="color:#FFFFFF;margin:auto;font-size:10px;">Clue: Have a look at the screen titled 'From Supergiant to Black Hole'</span>
+      <div style="width:350px;margin:20px auto 0;"><input type="text" id="bqanswer" style="text-align:center;"></div>
+      <div style="width:250px;margin:0 auto;">
+        <a href="#" id="submitbqans" data-role="button" style="width:100px;float:left;">Submit</a>
+        <a href="#" id="cancelbqans" data-role="button" style="width:100px;float:right;">Cancel</a>
+      </div>
+    </div><!--/bonusq-->
+  </div> <!-- end content -->  
+  <script>
+    $(function() {
+      
+    });
+    
+    $('#bqlink').on('tap', function() {
+      if($('#lock').is(":visible")) {
+        alert("You need to complete the process of creating a black hole before you can answer the bonus question.");
+      } else {
+        $('#bonusq').fadeIn();
+        $('#bonusq').css('z-index', '999');
+      }
+    });
+    
+    $('#backbtn').on('tap', function() {
+      $.mobile.changePage("sub-ac-greece-agschool.html");
+      mapmakerbg.pause(); mapmakerbg.currentTime = 0;
+      agsoundbg.play();
+    });
+    
+    $('#resetbtn').on('tap', function() {
+      $('#jpiece1').css({'left':629, 'top':496});
+      $('#jpiece2').css({'left':919, 'top':238});
+      $('#jpiece3').css({'left':862, 'top':505});
+      $('#jpiece4').css({'left':291, 'top':144});
+      $('#jpiece5').css({'left':342, 'top':183});
+      $('#jpiece6').css({'left':288, 'top':179});
+      $('#jpiece7').css({'left':130, 'top':76});
+      $('#jpiece8').css({'left':103, 'top':162});
+      $('#jpiece9').css({'left':122, 'top':211});
+      $('#jpiece10').css({'left':181, 'top':167});
+      $('#jpiece11').css({'left':202, 'top':112});
+      $('#jpiece12').css({'left':88, 'top':58});
+      $('#jpiece13').css({'left':146, 'top':161});
+      $('#jpiece14').css({'left':134, 'top':124});
+      $('#jpiece15').css({'left':223, 'top':63});
+      $('#jpiece16').css({'left':110, 'top':92});
+      $('#jpiece17').css({'left':285, 'top':115});
+      $('#jpiece18').css({'left':185, 'top':146});
+      $('#jpiece19').css({'left':80, 'top':26});
+      $('#jpiece20').css({'left':15, 'top':33});
+      $('#jpiece21').css({'left':111, 'top':83});
+      $('#jpiece22').css({'left':128, 'top':49});
+      $('#jpiece23').css({'left':165, 'top':84});
+    });
+    
+    $('#submitsoln').on('tap', function() {
+      if(($('#jpiece4').css('left') == "301px" && $('#jpiece4').css('top') == "307px")
+        && ($('#jpiece5').css('left') == "350px" && $('#jpiece5').css('top') == "302px")
+        && ($('#jpiece6').css('left') == "307px" && $('#jpiece6').css('top') == "339px")
+        && ($('#jpiece7').css('left') == "362px" && $('#jpiece7').css('top') == "333px")
+        && ($('#jpiece8').css('left') == "380px" && $('#jpiece8').css('top') == "394px")
+        && ($('#jpiece9').css('left') == "446px" && $('#jpiece9').css('top') == "399px")
+        && ($('#jpiece10').css('left') == "436px" && $('#jpiece10').css('top') == "438px")
+        && ($('#jpiece11').css('left') == "449px" && $('#jpiece11').css('top') == "436px")
+        && ($('#jpiece12').css('left') == "442px" && $('#jpiece12').css('top') == "487px")
+        && ($('#jpiece13').css('left') == "469px" && $('#jpiece13').css('top') == "469px")
+        && ($('#jpiece14').css('left') == "378px" && $('#jpiece14').css('top') == "283px")
+        && ($('#jpiece15').css('left') == "465px" && $('#jpiece15').css('top') == "281px")
+        && ($('#jpiece16').css('left') == "593px" && $('#jpiece16').css('top') == "246px")
+        && ($('#jpiece17').css('left') == "697px" && $('#jpiece17').css('top') == "242px")
+        && ($('#jpiece18').css('left') == "706px" && $('#jpiece18').css('top') == "279px")
+        && ($('#jpiece19').css('left') == "578px" && $('#jpiece19').css('top') == "303px")
+        && ($('#jpiece20').css('left') == "468px" && $('#jpiece20').css('top') == "316px")
+        && ($('#jpiece21').css('left') == "414px" && $('#jpiece21').css('top') == "308px")
+        && ($('#jpiece22').css('left') == "632px" && $('#jpiece22').css('top') == "396px")
+        && ($('#jpiece23').css('left') == "736px" && $('#jpiece23').css('top') == "387px")
+        ) {
+        if(($('#jpiece1').css('left') == "250px" && $('#jpiece1').css('top') == "240px")
+          && ($('#jpiece2').css('left') == "670px" && $('#jpiece2').css('top') == "240px")
+          && ($('#jpiece3').css('left') == "420px" && $('#jpiece3').css('top') == "380px")) {
+          alert("Congratulations!\nYou have earned the maximum points for this game!");
+        } else {
+          alert("Congratulations!\nYou have arranged the puzzle!\nNow, place the civilisation names and icons to its proper location.");
+        }
+        //$('#lock').animate({ display: "none" }, 1000 );
+        //$('#lock').fadeOut(1000);
+      } else {
+        alert("Sorry, the pieces are not in their correct placement.");
+      }
+    });
+    
+    $('#cancelbqans').on('tap', function() {
+      $('#bonusq').fadeOut();
+      //$('#bonusq').css('z-index', '-1');
+    });
+    
+    $('#submitbqans').on('tap', function() {
+      var answer = $('#bqanswer').val();
+      if(answer.toLowerCase() == "by the collision of two neutron stars") {
+        alert("Congratulations! You are correct!");
+      }
+    });
+  </script>
+  <script src="js/gameag1Logic.js"></script>
+</div>

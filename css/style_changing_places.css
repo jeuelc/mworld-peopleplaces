@@ -1,0 +1,276 @@
+/********* Changing Places **********/
+
+#sub-changing-places, #sub-changing-places-global-experience, #sub-changing-places-global-experience-Australia, #sub-changing-places-global-experience-European-Union, #sub-changing-places-global-experience-South-Africa, #sub-changing-places-living-with-diversity-Coming-Together, #sub-changing-places-living-with-diversity-Media, #sub-changing-places-living-with-diversity-Festivals, #sub-changing-places-living-with-diversity-Language, #sub-changing-places-new-americans, #sub-changing-places-new-americans-New-York, #sub-changing-places-new-americans-settling-in, #sub-changing-places-new-americans-settling-in-high-achievers{
+  background:url('images/9-12/People_and_Places/Changing_Places/Changing_Places_BG.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+#sub-changing-places-big-decision{
+  background:url('images/9-12/People_and_Places/Changing_Places/A_Big_Decision/A_Big_Decision_BG.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+#sub-changing-places-living-with-diversity{
+  background:url('images/9-12/People_and_Places/Changing_Places/Living_With_Diversity/Living_With_Diversity.png') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+.plChangingPlaces, .psChangingPlaces, .bChangingPlaces, .fChangingPlaces {
+  position:absolute;
+  top:670px;
+  left:1024px;
+  z-index:20;
+}
+
+.micbtnChangingPlaces {
+  background:url('images/9-12/People_and_Places/micpp.png') no-repeat 0 -81px;
+  height:81px;
+  width:81px;
+}
+
+.rwChangingPlaces {
+  background:url('images/9-12/People_and_Places/rwpp.png') no-repeat 0 -73px;
+  height:73px;
+  width:73px;
+}
+
+.plpsChangingPlaces {
+  background:url('images/9-12/People_and_Places/playpp.png') no-repeat 0 -73px;
+  height:73px;
+  width:73px;
+}
+
+.fwChangingPlaces {
+  background:url('images/9-12/People_and_Places/fwpp.png') no-repeat 0 -73px;
+  height:73px;
+  width:73px;
+}
+
+.menubtnChangingPlaces {
+  background:url('images/9-12/People_and_Places/menupp.png') no-repeat 0 -90px;
+  height:90px;
+  width:90px;
+}
+
+
+.homebtnChangingPlaces {
+  background:url('images/9-12/People_and_Places/mappp.png') no-repeat 0 -74px;
+  height:74px;
+  width:80px;
+}
+
+.mpbtnChangingPlaces {
+  background:url('images/9-12/People_and_Places/mpointspp.png') no-repeat 0 -84px;
+  height:79px;
+  width:80px;
+}
+
+.cpbtnChangingPlaces {
+  background:url('images/9-12/People_and_Places/ctrlpnlpp.png') no-repeat 0 -74px;
+  height:74px;
+  width:74px;
+}
+
+.infobtnChangingPlaces {
+  background:url('images/9-12/People_and_Places/infopp.png') no-repeat 0 -74px;
+  height:74px;
+  width:74px;
+}
+
+.credsbtnChangingPlaces {
+  background:url('images/9-12/People_and_Places/creditspp.png') no-repeat 0 -74px;
+  height:74px;
+  width:74px;
+}
+
+.navtwobtn1{
+	left: 60px;
+    position: absolute;
+    top: 310px;
+}
+
+.navtwobtn3 {
+    right: 60px;
+    position: absolute;
+    top: 310px;
+}
+
+.navtitleholderChangingPlaces{
+	width: 435px;
+	height: 68px;
+	position: absolute;
+	top: 169px;
+	left: 295px;
+	text-align: center;
+	line-height: 32px;
+}
+
+.navtitleholderChangingPlaces h1{
+	text-transform: uppercase;
+	color: #FFF;
+	font-family: comic sans ms;
+	padding: 0;
+	margin: 0;
+	font-weight: bold;
+}
+
+.bptitleholderChangingPlaces {
+  width:627px;
+  height:68px;
+  text-align:center;
+  line-height:28px;
+  position:absolute;
+  top:169px;
+  left:194px;
+}
+
+.bptitleholderChangingPlaces h1
+ {
+  text-transform:uppercase;
+  color: #FFFFFF;
+  font-family:"comic sans ms";
+  font-weight:bold;
+  padding:0;
+  margin:0;
+}
+
+.navChangingPlaces-content{
+  position:absolute;
+  left:305px;
+  top:263px;
+  width:410px;
+  height:359px;
+  overflow:auto;
+  text-align:center;
+  font-family:"comic sans ms";
+  font-size:18px;
+  font-weight:normal;
+  color:#000000;
+}
+
+.navChangingPlaces-content p {
+  margin-top:0 !important;
+}
+
+.navChangingPlaces-content3 {
+  position:absolute;
+  left:59px;
+  top:245px;
+  width:920px;
+  height:160px;
+  overflow-y:scroll;
+  text-align:left;
+  font-family:"comic sans ms";
+  font-size:18px;
+  font-weight:normal;
+  color:#000000;
+}
+
+.bpcontentChangingPlaces{
+  width:413px;
+  height:356px;
+  position:absolute;
+  left:550px;
+  top:266px;
+  overflow:auto;
+  font-family:"comic sans ms";
+  font-size:18px;
+  font-weight:normal;
+  text-align:left;
+  color:#000000;
+}
+
+.bpcontentChangingPlaces-dirt{
+  width:413px;
+  height: 400px;
+  position:absolute;
+  left:532px;
+  top:223px;
+  overflow:auto;
+  font-family:"comic sans ms";
+  font-size:18px;
+  font-weight:normal;
+  text-align:left;
+  color:#000000;
+}
+
+.navChangingPlaces-bigdecision{
+    width: 885px;
+	height: 320px;
+	position: absolute;
+	left: 88px;
+	top: 400px;
+	overflow: auto;
+	font-family: "comic sans ms";
+	font-size: 18px;
+	font-weight: normal;
+	text-align: left;
+	color: #000000;
+}
+
+.navChangingPlaces-LivingDiversity{
+    width: 870px;
+	height: 165px;
+	position: absolute;
+	left: 75px;
+	top: 80px;
+	overflow: auto;
+	font-family: "comic sans ms";
+	font-size: 18px;
+	font-weight: normal;
+	text-align: left;
+	color: #000000;
+}
+
+#sub-changing-places .bptitleholder h1, #sub-changing-places-global-experience .bptitleholder h1, #sub-changing-places-global-experience-Australia .bptitleholder h1, #sub-changing-places-global-experience-European-Union .bptitleholder h1, #sub-changing-places-global-experience-South-Africa .bptitleholder h1, #sub-changing-places-living-with-diversity-Coming-Together .bptitleholder h1, #sub-changing-places-living-with-diversity-Media .bptitleholder h1, #sub-changing-places-living-with-diversity-Festivals .bptitleholder h1, #sub-changing-places-living-with-diversity-Language .bptitleholder h1, #sub-changing-places-new-americans .bptitleholder h1, #sub-changing-places-new-americans-New-York .bptitleholder h1, #sub-changing-places-new-americans-settling-in .bptitleholder h1, #sub-changing-places-new-americans-settling-in-high-achievers .bptitleholder h1{
+	text-transform: uppercase;
+	color: #ffffff !important;
+	font-family: "comic sans ms";
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#sub-changing-places-living-with-diversity .bptitleholder h1{
+	text-transform: uppercase;
+	color: #000000 !important;
+	font-family: "comic sans ms";
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#sub-changing-places-big-decision .bptitleholder h1{
+	text-transform: uppercase;
+	color: #000000 !important;
+	font-family: "comic sans ms";
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#sub-changing-places-big-decision .bptitleholder{
+	width: 627px;
+	height: 68px;
+	text-align: center;
+	line-height: 28px;
+	position: absolute;
+	top: 360px;
+	left: 194px;
+}
+
+#sub-changing-places-living-with-diversity .bptitleholder{
+	width: 627px;
+	height: 68px;
+	text-align: center;
+	line-height: 28px;
+	position: absolute;
+	top: 26px;
+	left: 194px;
+}

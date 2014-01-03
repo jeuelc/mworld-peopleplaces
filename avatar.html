@@ -1,0 +1,250 @@
+<!DOCTYPE html> 
+<!-- i-C-a -->
+<html>
+<head> 
+	<title>Kidz First</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="css/jquery.mobile-1.2.1.min.css" />
+	<link rel="stylesheet" href="css/avatar.css" >
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/jquery.mobile-1.2.1.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="js/index.js"></script>
+  <script type="text/javascript" charset="utf-8" src="js/preloadCssImages.jQuery_v5.js"></script>  
+  <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+  <script>
+  $(document).ready(function() {
+    $.preloadCssImages();
+  });
+  </script>
+</head> 
+<body> 
+  <div data-role="page" style="padding:15px;">
+    <div id="avatarholder" style="float:left;width:350px;height:500px;">
+      <h2>Your avatar</h2>
+      <div id="avatarbody">
+        <div id="avatarhair"></div>
+        <div id="avatareyes"></div>
+        <div id="avatarnose"></div>
+        <div id="avatarmouth"></div>
+      </div><!--/avatarbody-->
+    </div><!--/avatarholder-->
+    <div id="editavatar" style="float:left;width:600px;height:500px;overflow:hidden;scroll:auto;">
+      <br><span>Customize your avatar</span><br>
+      <a href="#" id="bodyopts">Body</a>
+      <a href="#" id="hairopts">Hair</a>
+      <a href="#" id="eyesopts">Eyes</a>
+      <a href="#" id="noseopts">Nose</a>
+      <a href="#" id="mouthopts">Mouth</a>
+      <div id="bodyoptscontainer" class="optscontainer">
+        <h3>Body</h3><br>
+        <div id="fat" class="bodychoice"><img src="css/images/avatar/fatbody.png"><br>fat</div>
+        <div id="medium" class="bodychoice"><img src="css/images/avatar/mediumbuilt.png"><br>Medium</div>
+        <div id="skinny" class="bodychoice"><img src="css/images/avatar/skinnybody.png"><br>Skinny</div>
+      </div>
+      <div id="hairoptscontainer" class="optscontainer" style="display:none;">
+        <h3>Hair</h3><br>
+        <div id="bs" class="hairchoice"><img src="css/images/avatar/bshair.png"><br>Black-short</div>
+        <div id="rs" class="hairchoice"><img src="css/images/avatar/rshair.png"><br>Red-short</div>
+        <div id="bl" class="hairchoice"><img src="css/images/avatar/blhair.png"><br>Black-long</div>
+        <div id="rl" class="hairchoice"><img src="css/images/avatar/rlhair.png"><br>Red-long</div>
+      </div>
+      <div id="eyesoptscontainer" class="optscontainer" style="display:none;">
+        <h3>Eyes</h3><br>
+        <div id="bkeyes" class="eyechoice"><img src="css/images/avatar/blackeyes.png"><br>Black</div>
+        <div id="breyes" class="eyechoice"><img src="css/images/avatar/browneyes.png"><br>Brown</div>
+        <div id="bleyes" class="eyechoice"><img src="css/images/avatar/blueeyes.png"><br>Blue</div>
+      </div>
+      <div id="noseoptscontainer" class="optscontainer" style="display:none;">
+        <h3>Nose</h3><br>
+        <div id="nose1" class="nosechoice"><img src="css/images/avatar/nose1.png"><br>Nose 1</div>
+        <div id="nose2" class="nosechoice"><img src="css/images/avatar/nose2.png"><br>Nose 2</div>
+      </div>
+      <div id="mouthoptscontainer" class="optscontainer" style="display:none;">
+        <h3>Mouth</h3><br>
+        <div id="mouth1" class="mouthchoice"><img src="css/images/avatar/mouth1.png"><br>Mouth 1</div>
+        <div id="mouth2" class="mouthchoice"><img src="css/images/avatar/mouth2.png"><br>Mouth 2</div>
+        <div id="mouth3" class="mouthchoice"><img src="css/images/avatar/mouth3.png"><br>Mouth 3</div>
+      </div>
+    </div><!--/editavatar-->
+ </div><!-- /page -->
+ <script>
+ $('#bodyopts').on('tap', function() {
+    $('#bodyoptscontainer').show('slow');
+    $('#hairoptscontainer').hide('fast');
+    $('#eyesoptscontainer').hide('fast');
+    $('#noseoptscontainer').hide('fast');
+    $('#mouthoptscontainer').hide('fast');
+ });
+ $('#hairopts').on('tap', function() {
+    $('#hairoptscontainer').show('slow');
+    $('#bodyoptscontainer').hide('fast');
+    $('#eyesoptscontainer').hide('fast');
+    $('#noseoptscontainer').hide('fast');
+    $('#mouthoptscontainer').hide('fast');
+ });
+ $('#eyesopts').on('tap', function() {
+    $('#eyesoptscontainer').show('slow');
+    $('#hairoptscontainer').hide('fast');
+    $('#bodyoptscontainer').hide('fast');
+    $('#noseoptscontainer').hide('fast');
+    $('#mouthoptscontainer').hide('fast');
+ });
+ $('#noseopts').on('tap', function() {
+    $('#noseoptscontainer').show('slow');
+    $('#hairoptscontainer').hide('fast');
+    $('#eyesoptscontainer').hide('fast');
+    $('#bodyoptscontainer').hide('fast');
+    $('#mouthoptscontainer').hide('fast');
+ });
+ $('#mouthopts').on('tap', function() {
+    $('#mouthoptscontainer').show('slow');
+    $('#hairoptscontainer').hide('fast');
+    $('#eyesoptscontainer').hide('fast');
+    $('#noseoptscontainer').hide('fast');
+    $('#bodyoptscontainer').hide('fast');
+ });
+ $('#skinny').on('tap', function() {
+  $('#avatarbody').css('background-image', 'url("css/images/avatar/skinnybody.png")');
+  $('#avatarbody').css('background-repeat', 'no-repeat');
+  $('#avatarbody').css('background-position', 'center center');
+ });
+ $('#medium').on('tap', function() {
+  $('#avatarbody').css('background-image', 'url("css/images/avatar/mediumbuilt.png")');
+  $('#avatarbody').css('background-repeat', 'no-repeat');
+  $('#avatarbody').css('background-position', 'center center');
+ });
+ $('#fat').on('tap', function() {
+  $('#avatarbody').css('background-image', 'url("css/images/avatar/fatbody.png")');
+  $('#avatarbody').css('background-repeat', 'no-repeat');
+  $('#avatarbody').css('background-position', 'center center');
+ });
+ $('#bs').on('tap', function() {
+  $('#avatarhair').css('background-image', 'url("css/images/avatar/bshair.png")');
+  $('#avatarhair').css('background-repeat', 'no-repeat');
+  $('#avatarhair').css('background-position', 'center center');
+ });
+ $('#rs').on('tap', function() {
+  $('#avatarhair').css('background-image', 'url("css/images/avatar/rshair.png")');
+  $('#avatarhair').css('background-repeat', 'no-repeat');
+  $('#avatarhair').css('background-position', 'center center');
+ });
+ $('#bl').on('tap', function() {
+  $('#avatarhair').css('background-image', 'url("css/images/avatar/blhair.png")');
+  $('#avatarhair').css('background-repeat', 'no-repeat');
+  $('#avatarhair').css('background-position', 'center center');
+ });
+ $('#rl').on('tap', function() {
+  $('#avatarhair').css('background-image', 'url("css/images/avatar/rlhair.png")');
+  $('#avatarhair').css('background-repeat', 'no-repeat');
+  $('#avatarhair').css('background-position', 'center center');
+ });
+ 
+ $('#bkeyes').on('tap', function() {
+  $('#avatareyes').css('background-image', 'url("css/images/avatar/blackeyes.png")');
+  $('#avatareyes').css('background-repeat', 'no-repeat');
+  $('#avatareyes').css('background-position', 'center center');
+ });
+ $('#breyes').on('tap', function() {
+  $('#avatareyes').css('background-image', 'url("css/images/avatar/browneyes.png")');
+  $('#avatareyes').css('background-repeat', 'no-repeat');
+  $('#avatareyes').css('background-position', 'center center');
+ });
+ $('#bleyes').on('tap', function() {
+  $('#avatareyes').css('background-image', 'url("css/images/avatar/blueeyes.png")');
+  $('#avatareyes').css('background-repeat', 'no-repeat');
+  $('#avatareyes').css('background-position', 'center center');
+ });
+ 
+ $('#nose1').on('tap', function() {
+  $('#avatarnose').css('background-image', 'url("css/images/avatar/nose1.png")');
+  $('#avatarnose').css('background-repeat', 'no-repeat');
+  $('#avatarnose').css('background-position', 'center center');
+ });
+ $('#nose2').on('tap', function() {
+  $('#avatarnose').css('background-image', 'url("css/images/avatar/nose2.png")');
+  $('#avatarnose').css('background-repeat', 'no-repeat');
+  $('#avatarnose').css('background-position', 'center center');
+ });
+ 
+ $('#mouth1').on('tap', function() {
+  $('#avatarmouth').css('background-image', 'url("css/images/avatar/mouth1.png")');
+  $('#avatarmouth').css('background-repeat', 'no-repeat');
+  $('#avatarmouth').css('background-position', 'center center');
+ });
+ $('#mouth2').on('tap', function() {
+  $('#avatarmouth').css('background-image', 'url("css/images/avatar/mouth2.png")');
+  $('#avatarmouth').css('background-repeat', 'no-repeat');
+  $('#avatarmouth').css('background-position', 'center center');
+ });
+ $('#mouth3').on('tap', function() {
+  $('#avatarmouth').css('background-image', 'url("css/images/avatar/mouth3.png")');
+  $('#avatarmouth').css('background-repeat', 'no-repeat');
+  $('#avatarmouth').css('background-position', 'center center');
+ });
+ 
+ (function() {
+  //alert("andam na ang tanan");
+  aau = setTimeout(animateAvatarUp, 500);
+  eyesblink = setTimeout(animateEyesBlink, 6000);
+  mouthopen = setTimeout(animateMouthOpen, 8000);
+ })();
+ 
+ function animateAvatarUp() {
+  $('#avatarbody').css('top', '0px');
+  aad = setTimeout(animateAvatarDown, 500);
+ }
+ 
+ function animateAvatarDown() {
+  $('#avatarbody').css('top', '6px');
+  aau = setTimeout(animateAvatarUp, 500);
+ }
+ 
+ function animateMouthOpen() {
+  var mouth = $('#avatarmouth').css('background-image');
+  if(mouth != "none") {
+    mo = openMouth(mouth);
+  }
+  openmouth = setTimeout(animateMouthOpen, 8000);
+ }
+ 
+ function openMouth(mouth) {
+  $('#avatarmouth').css('background-image', 'url("css/images/avatar/openmouth.png")');
+  closemouth = setTimeout(closeMouth, 450, mouth);
+ }
+ 
+ function closeMouth(mouth) {
+  $('#avatarmouth').css('background-image', mouth)
+ }
+ 
+ function animateEyesBlink() {
+  var eyes = $('#avatareyes').css('background-image');
+  if(eyes != "none") {
+    be = blinkEyes(eyes);
+  }
+  eyesblink = setTimeout(animateEyesBlink, 6000);
+ }
+ 
+ function blinkEyes(eyes) {
+  var eyeslink = eyes;
+  $('#avatareyes').css('background-image', 'url("css/images/avatar/blinkeyes.png")');
+  eyeopen = setTimeout(openEyes, 200, eyes);
+ }
+ 
+ function openEyes(eyes) {
+  $('#avatareyes').css('background-image', eyes)
+  eyesblink = setTimeout(blinkEyesOnce, 200, eyes);
+ }
+ 
+ function blinkEyesOnce(eyes) {
+  var eyeslink = eyes;
+  $('#avatareyes').css('background-image', 'url("css/images/avatar/blinkeyes.png")');
+  eyeopen = setTimeout(openEyesOnce, 200, eyes);
+ }
+ 
+ function openEyesOnce(eyes) {
+  $('#avatareyes').css('background-image', eyes)
+  //eyesblink = setTimeout(blinkEyesOnce, 300, eyes);
+ }
+ </script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!-- i-C-a -->
+<div data-role="page" id="game-bh1">  
+  <script src="js/hammer.js"></script>
+  <script src="js/jquery.hammer.js"></script>
+  <div data-role="content">
+    <div id="wrapper">
+      <div id="titleb-holder"><h1>Black Hole Creator</h1></div>
+      <div id="arrow1" style="width:82px;height:87px;position:relative;overflow:hidden;top:121px;left:347px;">&nbsp;</div>
+      <div id="arrow2" style="width:82px;height:87px;position:relative;overflow:hidden;top:82px;left:538px;">&nbsp;</div>
+      <div id="arrow3" style="width:82px;height:87px;position:relative;overflow:hidden;top:106px;left:531px;">&nbsp;</div>
+      <div style="width:151px;height:63px;position:absolute;top:40px;left:50px;z-index:999"><img src="css/images/5-8/Space/Black_Holes/game/backbtn.png" id="backbtn"></div>
+      <div style="width:151px;height:63px;position:absolute;top:110px;left:50px;z-index:999"><img src="css/images/5-8/Space/Black_Holes/game/resetbtn.png" id="resetbtn"></div>
+      <div style="width:151px;height:63px;position:absolute;top:40px;left:800px;z-index:999"><img src="css/images/5-8/Space/Black_Holes/game/submitsoln.png" id="submitsoln"></div>
+      <div id="bqlink" style="width:102px;height:112px;position:absolute;top:620px;left:700px;z-index:998;">&nbsp;
+        <div id="lock" style="position:relative;top:10px;left:7px;"><img src="css/images/5-8/Space/Black_Holes/game/lock.png"></div>
+      </div>
+      <div id="zoomwrapper">
+          <div id="jpiece1" class="bhgame1Piece" style="left:15px;top:585px;">
+             <img src="css/images/5-8/Space/Black_Holes/game/supernova.png" alt="" width="173" height="186" />
+          </div>
+          <div id="jpiece2"class="bhgame1Piece" style="left:139px;top:585px;">
+             <img src="css/images/5-8/Space/Black_Holes/game/neutronstar.png" alt="" width="173" height="186" />
+          </div>
+          <div id="jpiece3" class="bhgame1Piece" style="left:259px;top:585px;">
+             <img src="css/images/5-8/Space/Black_Holes/game/blackhole.png" alt="" width="173" height="186" />
+          </div>
+          <div id="jpiece4" class="bhgame1Piece" style="left:389px;top:585px;">
+             <img src="css/images/5-8/Space/Black_Holes/game/supergiant.png" alt="" width="173" height="186" />
+          </div>
+      </div><!--/zoomwrapper-->
+    </div>
+    <div class="v-spacer"></div>
+    <div id="bonusq" style="display:none;">
+      <div id="titleb-holder"><h1>How else can a black hole be formed?</h1></div>
+      <span style="color:#FFFFFF;margin:auto;font-size:10px;">Clue: Have a look at the screen titled 'From Supergiant to Black Hole'</span>
+      <div style="width:350px;margin:20px auto 0;"><input type="text" id="bqanswer" style="text-align:center;"></div>
+      <div style="width:250px;margin:0 auto;">
+        <a href="#" id="submitbqans" data-role="button" style="width:100px;float:left;">Submit</a>
+        <a href="#" id="cancelbqans" data-role="button" style="width:100px;float:right;">Cancel</a>
+      </div>
+    </div><!--/bonusq-->
+  </div> <!-- end content -->  
+  <script>
+    $(function() {
+      animatearrows = setTimeout(moveArrows, 500);
+    });
+    
+    $('#bqlink').on('tap', function() {
+      if($('#lock').is(":visible")) {
+        alert("You need to complete the process of creating a black hole before you can answer the bonus question.");
+      } else {
+        $('#bonusq').fadeIn();
+        $('#bonusq').css('z-index', '999');
+      }
+    });
+    
+    $('#backbtn').on('tap', function() {
+      $.mobile.changePage("sub-space-bh-bhgo.html", {transition:"flip"});
+      bgsoundbh.play();bhcreator.pause();
+    });
+    
+    $('#resetbtn').on('tap', function() {
+      $('#jpiece4').css('top', '585px');
+      $('#jpiece4').css('left', '389px');
+      $('#jpiece3').css('top', '585px');
+      $('#jpiece3').css('left', '259px');
+      $('#jpiece2').css('top', '585px');
+      $('#jpiece2').css('left', '139px');
+      $('#jpiece1').css('top', '585px');
+      $('#jpiece1').css('left', '15px');
+    });
+    
+    $('#submitsoln').on('tap', function() {
+      if(($('#jpiece4').css('top') == "77px" && $('#jpiece4').css('left') == "240px")
+        && ($('#jpiece1').css('top') == "272px" && $('#jpiece1').css('left') == "378px")
+        && ($('#jpiece2').css('top') == "119px" && $('#jpiece2').css('left') == "610px")
+        && ($('#jpiece3').css('top') == "391px" && $('#jpiece3').css('left') == "654px")
+        ) {
+        alert("Congratulations!\nYou have unlocked the bonus question!");
+        //$('#lock').animate({ display: "none" }, 1000 );
+        $('#lock').fadeOut(1000);
+      } else {
+        alert("Sorry, the process is wrong.");
+      }
+    });
+    
+    $('#cancelbqans').on('tap', function() {
+      $('#bonusq').fadeOut();
+      //$('#bonusq').css('z-index', '-1');
+    });
+    
+    $('#submitbqans').on('tap', function() {
+      var answer = $('#bqanswer').val();
+      if(answer.toLowerCase() == "by the collision of two neutron stars") {
+        alert("Congratulations! You are correct!");
+      }
+    });
+    function moveArrows() {
+      $('#arrow1').css('background-position', '-82px center');
+      $('#arrow2').css('background-position', '-82px center');
+      $('#arrow3').css('background-position', '-82px center');
+      setTimeout(function() {
+        $('#arrow1').css('background-position', '-164px center');
+        $('#arrow2').css('background-position', '-164px center');
+        $('#arrow3').css('background-position', '-164px center');
+      }, 400);
+      setTimeout(function() {
+        $('#arrow1').css('background-position', '0px center');
+        $('#arrow2').css('background-position', '0px center');
+        $('#arrow3').css('background-position', '0px center');
+      }, 800);
+      animatearrows = setTimeout(moveArrows, 1200);
+    }
+  </script>
+  <script src="js/gamebh1Logic.js"></script>
+</div>

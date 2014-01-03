@@ -1,0 +1,127 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-changing-places-new-americans-settling-in-high-achievers">
+  <script src="js/hammer.js"></script>
+  <script src="js/jquery.hammer.js"></script>
+  <script src="js/slidebar_changing_places.js"></script>
+  <link rel="stylesheet" href="css/style_changing_places.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnChangingPlaces"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnChangingPlaces"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnChangingPlaces"></div></div>
+  <div class="infobtnholder"><div class="infobtnChangingPlaces"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnChangingPlaces"></div></div>
+  <div class="menubtnholder"><div class="menubtnChangingPlaces"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:0px;"><h1>High Achievers</h1></div>
+  <div id="spacechar">&nbsp;
+    <div data-role="content" class="kidzcontent">
+      <div class="v-spacer"></div>
+      <div class="sidebarleft-half">
+       <div id="zoomwrapper">
+          <div id="polb1" class="pPiece" style="left:100px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Changing_Places/New_Americans/Settling_In/High_Achievers/bonus_Game_Button.png" alt="" />
+          </div>
+        </div><!--/zoomwrapper-->
+      </div>
+      
+      <div class="bpcontentChangingPlaces">
+        <p>America has some remarkable immigrant success stories.  Russian immigrant Sergey Brin co-founded Google; Austrian immigrant Arnold Schwarzenegger became a champion bodybuilder, Hollywood action hero and Californias 38th Governor.  Perhaps America's most famous immigrant is Albert Einstein, the German-born physicist who spent much of his later life living and working in the US.</p>
+		<p>Beyond these famous names, countless immigrants have also achieved a great deal, especially those who are highly skilled, have technical expertise and entrepreneurial drive.  A 2008 US Government study found that immigrants are 30 percent more likely to start a business than people born in America. These businesses create jobs, attract consumers and can be a powerful force in revitalising struggling cities.</p>
+		<p>Why do you think immigrants can be so successful in a new country, and what may be barriers that stop them being successful?</p>
+      </div>
+       
+      <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+    </div><!-- end content -->  
+  </div><!--/spacechar-->        
+  
+    <div class="micbtnholder"><div class="micbtnChangingPlaces" id="playstopHighAchievers"></div></div>
+    <div class="bChangingPlaces"><div class="rwChangingPlaces" id="HighAchieversaudiobbtn"></div></div>
+    <div class="plChangingPlaces"><div class="plpsChangingPlaces" id="HighAchieversaudioplbtn"></div></div>
+    <div class="fChangingPlaces"><div class="fwChangingPlaces" id="HighAchieversaudiofbtn"></div></div>
+    <div id="actualaudio-HighAchievers" style="visibility:hidden;"></div>
+  <!-- </div> -->
+  
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+ 
+	var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      $('div#polb1').css("z-index", 1);
+      $('div#polb1 > img').css("-webkit-transform", "rotate(0deg)");
+      if(sound.canPlayType('audio/mpeg')) {
+        $('#actualaudio-HighAchievers').html('<audio id="HighAchieversaudio" controls preload onpause="playsChangingPlaces()" onplay="pauseChangingPlaces()"><source src="audio/Changing_Places/High_Achievers.mp3" type="audio/mpeg"></audio>');
+      }             
+      $("#sub-changing-places-new-americans-settling-in-high-achievers").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+    })();
+    
+    $('.homelinkbh').on('tap', function() { mainaudiobg.play(); bgsoundChangingPlaces.pause(); bgsoundChangingPlaces.currentTime = 0;});
+	
+    $('#falseans').on('tap', function() {
+      alert("Wrong answer");
+    });
+    $('#trueans').on('tap', function() {
+      alert("Correct answer");
+    });
+    
+    $("#polb1").on('tap', function() {
+      $.mobile.changePage("sub-changing-places-new-americans-settling-in-high-achievers-game.html", {transition: "slide"});
+    });
+    
+    function goBack() {
+      $.mobile.changePage("sub-changing-places-living-with-diversity.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsChangingPlaces() {
+         bgsoundChangingPlaces.play();
+    }
+       
+    function pauseChangingPlaces() {
+         bgsoundChangingPlaces.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+    $("#playstopHighAchievers").on('tap', function() {
+      if(!playing) {
+        HighAchieversaudio.play();
+        $('.micbtnChangingPlaces').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        HighAchieversaudio.pause(); HighAchieversaudio.currentTime = 0;
+        $('.micbtnChangingPlaces').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#HighAchieversaudioplbtn").on('tap', function() {
+      if(!paused) {
+        HighAchieversaudio.pause();
+        paused = true;
+      } else {
+        HighAchieversaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#HighAchieversaudiofbtn").on('tap', function() {
+      var ctime = HighAchieversaudio.currentTime;
+      HighAchieversaudio.currentTime = ctime + 10;
+    });
+    
+    $("#HighAchieversaudiobbtn").on('tap', function() {
+      var ctime = HighAchieversaudio.currentTime;
+      HighAchieversaudio.currentTime = ctime - 10;
+    });
+    
+    $("#HighAchieversaudiopsbtn").on('tap', function() {
+      HighAchieversaudio.pause();
+    });
+  </script>
+  <script src="js/onecardLogicb.js"></script>  <!-- for card dragging effects -->
+</div> <!--//home-->

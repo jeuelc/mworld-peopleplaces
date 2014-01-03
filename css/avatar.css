@@ -1,0 +1,98 @@
+/* i-C-a */
+.optscontainer {
+  margin-top:10px;
+  padding:10px;
+  height:400px;
+  width:570px;
+  overflow-y:scroll;
+  border:2px solid #e6e6e6;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  -border-radius:10px;
+}
+
+.bodychoice {
+  float:left;
+  width:180px;
+  text-align:center;
+}
+
+#avatarbody {
+  width:200px;
+  height:320px;
+  float:left;
+  position:relative;
+  top:6px;
+}
+
+.hairchoice {
+  float:left;
+  width:200px;
+  text-align:center;
+}
+
+#avatarhair {
+  width:198px;
+  height:122px;
+  position:relative;
+  left:12px;
+  top:29px;
+}
+
+#avatarhair-jane {
+  width:198px;
+  height:122px;
+  position:relative;
+  left:12px;
+  top:29px;
+}
+
+.eyechoice {
+  float:left;
+  width:200px;
+  text-align:center;
+}
+
+#avatareyes {
+  width:192px;
+  height:122px;
+  position:relative;
+  left:18px;
+  top:-52px;
+}
+
+#avatareyes-jane {
+  width:192px;
+  height:122px;
+  position:relative;
+  left:18px;
+  top:-52px;
+}
+
+.nosechoice {
+  float:left;
+  width:200px;
+  text-align:center;
+}
+
+#avatarcoat {
+  width:198px;
+  height:122px;
+  position:relative;
+  left:22px;
+  top:-231px;
+}
+
+.coatchoice {
+  float:left;
+  width:200px;
+  text-align:center;
+}
+
+#avatarfh{
+  width:198px;
+  height:122px;
+  position:relative;
+  left:78px;
+  top:-10px;
+}

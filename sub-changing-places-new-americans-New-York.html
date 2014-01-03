@@ -1,0 +1,142 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-changing-places-new-americans-New-York">
+  <script src="js/hammer.js"></script>
+  <script src="js/jquery.hammer.js"></script>
+  <script src="js/slidebar_changing_places.js"></script>
+  <link rel="stylesheet" href="css/style_changing_places.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnChangingPlaces"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnChangingPlaces"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnChangingPlaces"></div></div>
+  <div class="infobtnholder"><div class="infobtnChangingPlaces"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnChangingPlaces"></div></div>
+  <div class="menubtnholder"><div class="menubtnChangingPlaces"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:0px;"><h1>New York</h1></div>
+  <div id="spacechar">&nbsp;
+    <div data-role="content" class="kidzcontent">
+      <div class="v-spacer"></div>
+      <div class="sidebarleft-half">
+        <a id="littleitalylink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Changing_Places/New_Americans/New_York/Little_Italy_Hi_Res.jpg', 'Little Italy in Manhattan New York (Courtesy: dbimages/Alarmy)');">click here</a>
+		
+        <a id="CF51Y0link" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Changing_Places/New_Americans/New_York/CF51Y0_Hi_Res.jpg', 'Chinatown, New York City with many colourful signs for Chinese businesses. (Courtesy: Batchelder/Alamy)');">click here</a>
+		
+		<a id="koreantownlink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Changing_Places/New_Americans/New_York/Koreatown_Hi_Res.jpg', 'Korea Way located in Manhattan\'s Koreatown.');">click here</a>
+        
+		<div id="zoomwrapper">
+          <div id="pol1" class="pPiece" style="left:100px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Changing_Places/New_Americans/New_York/Little_Italy.jpg" alt="" />
+          </div>
+          <div id="pol2"class="pPiece" style="left:75px;top:290px;">
+             <img src="css/images/9-12/People_and_Places/Changing_Places/New_Americans/New_York/CF51Y0.jpg" alt="" />
+          </div>
+		  <div id="pol3"class="pPiece" style="left:80px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Changing_Places/New_Americans/New_York/Koreatown.jpg" alt="" />
+          </div>
+        </div><!--/zoomwrapper-->
+      </div>
+      
+      <div class="bpcontentChangingPlaces">
+        <p>New York City is one of the worlds great immigrant cities and is home to more than three million immigrants.  They come from every part of the world: China, Mexico, Jamaica, the Dominican Republic, Ecuador, Bangladesh, Italy and so on.</p>
+		<p>When immigrants arrive in New York City, they often cluster among people of a similar background, and in turn, they create ethnic neighbourhoods.  These ethnic enclaves are where immigrants can speak in their own language, sell their own foods and establish community organisations and local newspapers.</p>
+		<p>Ethnic enclaves provide immigrants with opportunities for jobs and socialising with other people of their own culture. Some people worry, though, about how they may also encourage ethnic segregation and possibly prevent immigrants from integrating into American society.</p>
+		<p>In New York you find Little Italy, Koreatown and Le Petit Senegal.  The Chinatown in Manhattan is one of the oldest Chinese enclaves outside Asia.</p>
+      </div>
+       
+      <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+    </div> <!-- end content -->  
+  </div><!--/spacechar-->        
+  
+    <div class="micbtnholder"><div class="micbtnChangingPlaces" id="playstopNewYork"></div></div>
+    <div class="bChangingPlaces"><div class="rwChangingPlaces" id="NewYorkaudiobbtn"></div></div>
+    <div class="plChangingPlaces"><div class="plpsChangingPlaces" id="NewYorkaudioplbtn"></div></div>
+    <div class="fChangingPlaces"><div class="fwChangingPlaces" id="NewYorkaudiofbtn"></div></div>
+    <div id="actualaudio-NewYork" style="visibility:hidden;"></div>
+  <!-- </div> -->
+  
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+ 
+	var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      $('div#pol2').css("z-index", 2);
+      $('div#pol1').css("z-index", 1);
+      $('div#pol1 > img').css("-webkit-transform", "rotate(0deg)");
+      $('div#pol2 > img').css("-webkit-transform", "rotate(5deg)");
+      $('div#pol3 > img').css("-webkit-transform", "rotate(-3deg)");
+      if(sound.canPlayType('audio/mpeg')) {
+        $('#actualaudio-NewYork').html('<audio id="NewYorkaudio" controls preload onpause="playsChangingPlaces()" onplay="pauseChangingPlaces()"><source src="audio/Changing_Places/New_York.mp3" type="audio/mpeg"></audio>');
+      }             
+      $("#sub-changing-places-new-americans-New-York").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+    })();
+    
+    $('.homelinkbh').on('tap', function() { mainaudiobg.play(); bgsoundChangingPlaces.pause(); bgsoundChangingPlaces.currentTime = 0;});
+    
+    $("#pol1").on('tap', function() {
+      $('#littleitalylink')[0].click();
+    });
+    $("#pol2").on('tap', function() {
+      $('#CF51Y0link')[0].click();
+    });
+	$("#pol3").on('tap', function() {
+      $('#koreantownlink')[0].click();
+    });
+	
+    function goBack() {
+      $.mobile.changePage("sub-changing-places-new-americans.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsChangingPlaces() {
+         bgsoundChangingPlaces.play();
+    }
+       
+    function pauseChangingPlaces() {
+         bgsoundChangingPlaces.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+    $("#playstopNewYork").on('tap', function() {
+      if(!playing) {
+        NewYorkaudio.play();
+        $('.micbtnChangingPlaces').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        NewYorkaudio.pause(); NewYorkaudio.currentTime = 0;
+        $('.micbtnChangingPlaces').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#NewYorkaudioplbtn").on('tap', function() {
+      if(!paused) {
+        NewYorkaudio.pause();
+        paused = true;
+      } else {
+        NewYorkaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#NewYorkaudiofbtn").on('tap', function() {
+      var ctime = NewYorkaudio.currentTime;
+      NewYorkaudio.currentTime = ctime + 10;
+    });
+    
+    $("#NewYorkaudiobbtn").on('tap', function() {
+      var ctime = NewYorkaudio.currentTime;
+      NewYorkaudio.currentTime = ctime - 10;
+    });
+    
+    $("#NewYorkaudiopsbtn").on('tap', function() {
+      NewYorkaudio.pause();
+    });
+  </script>
+  <script src="js/threecardLogic.js"></script>  <!-- for card dragging effects -->
+</div> <!--//home-->

@@ -1,0 +1,140 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-changing-places-global-experience-Australia">
+  <script src="js/hammer.js"></script>
+  <script src="js/jquery.hammer.js"></script>
+  <script src="js/slidebar_changing_places.js"></script>
+  <link rel="stylesheet" href="css/style_changing_places.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnChangingPlaces"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnChangingPlaces"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnChangingPlaces"></div></div>
+  <div class="infobtnholder"><div class="infobtnChangingPlaces"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnChangingPlaces"></div></div>
+  <div class="menubtnholder"><div class="menubtnChangingPlaces"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:0px;"><h1>Australia</h1></div>
+  <div id="spacechar">&nbsp;
+    <div data-role="content" class="kidzcontent">
+      <div class="v-spacer"></div>
+      <div class="sidebarleft-half">
+        <a id="skillslink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Changing_Places/A_Global_Experience/Australia/Skills_Hi_Res.jpg', 'Many immigrants to Australia have specific skills that there is a need for.');">click here</a>
+		
+        <a id="immigrationlink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Changing_Places/A_Global_Experience/Australia/Immigration_To_Aus_Hi_Res.jpg', '');">click here</a>
+		
+		<a id="graphlink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Changing_Places/A_Global_Experience/Australia/Graph_Hi_Res.jpg', 'This graph shows more and more people are immigrating to Australia from Asia.');">click here</a>
+        
+		<div id="zoomwrapper">
+          <div id="pol1" class="pPiece" style="left:100px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Changing_Places/A_Global_Experience/Australia/Skills.jpg" alt="" />
+          </div>
+          <div id="pol2"class="pPiece" style="left:75px;top:290px;">
+             <img src="css/images/9-12/People_and_Places/Changing_Places/A_Global_Experience/Australia/Immigration_To_Aus.jpg" alt="" />
+          </div>
+		  <div id="pol3"class="pPiece" style="left:80px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Changing_Places/A_Global_Experience/Australia/Graph.jpg" alt="" />
+          </div>
+        </div><!--/zoomwrapper-->
+      </div>
+      
+      <div class="bpcontentChangingPlaces">
+        <p>While there has been much public debate about asylum seekers and unauthorised immigration in Australia in recent years, the Australian Government has maintained a large migration program in the 21st century.  Australia has one of the highest foreign-born populations in the world: more than one in four people were born outside Australia.</p>
+		<p>Australia used to receive lots of immigrants from Europe, especially the UK and Ireland.  Nowadays, however, many immigrants are from Asia or the Middle East.  In fact, India and China were the countries from where most immigrants to Australia in 2012-13 originated.  This trend is likely to continue in the future as the government seeks highly skilled immigrants, especially those with Australian qualifications.</p>
+      </div>
+       
+      <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+    </div> <!-- end content -->  
+  </div><!--/spacechar-->        
+  
+    <div class="micbtnholder"><div class="micbtnChangingPlaces" id="playstopAustralia"></div></div>
+    <div class="bChangingPlaces"><div class="rwChangingPlaces" id="Australiaaudiobbtn"></div></div>
+    <div class="plChangingPlaces"><div class="plpsChangingPlaces" id="Australiaaudioplbtn"></div></div>
+    <div class="fChangingPlaces"><div class="fwChangingPlaces" id="Australiaaudiofbtn"></div></div>
+    <div id="actualaudio-Australia" style="visibility:hidden;"></div>
+  <!-- </div> -->
+  
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+ 
+	var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      $('div#pol2').css("z-index", 2);
+      $('div#pol1').css("z-index", 1);
+      $('div#pol1 > img').css("-webkit-transform", "rotate(0deg)");
+      $('div#pol2 > img').css("-webkit-transform", "rotate(5deg)");
+      $('div#pol3 > img').css("-webkit-transform", "rotate(-3deg)");
+      if(sound.canPlayType('audio/mpeg')) {
+        $('#actualaudio-Australia').html('<audio id="Australiaaudio" controls preload onpause="playsChangingPlaces()" onplay="pauseChangingPlaces()"><source src="audio/Changing_Places/Australia.mp3" type="audio/mpeg"></audio>');
+      }             
+      $("#sub-changing-places-global-experience-Australia").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+    })();
+    
+    $('.homelinkbh').on('tap', function() { mainaudiobg.play(); bgsoundChangingPlaces.pause(); bgsoundChangingPlaces.currentTime = 0;});
+    
+    $("#pol1").on('tap', function() {
+      $('#skillslink')[0].click();
+    });
+    $("#pol2").on('tap', function() {
+      $('#immigrationlink')[0].click();
+    });
+	$("#pol3").on('tap', function() {
+      $('#graphlink')[0].click();
+    });
+	
+    function goBack() {
+      $.mobile.changePage("sub-changing-places-global-experience.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsChangingPlaces() {
+         bgsoundChangingPlaces.play();
+    }
+       
+    function pauseChangingPlaces() {
+         bgsoundChangingPlaces.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+    $("#playstopAustralia").on('tap', function() {
+      if(!playing) {
+        Australiaaudio.play();
+        $('.micbtnChangingPlaces').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        Australiaaudio.pause(); Australiaaudio.currentTime = 0;
+        $('.micbtnChangingPlaces').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#Australiaaudioplbtn").on('tap', function() {
+      if(!paused) {
+        Australiaaudio.pause();
+        paused = true;
+      } else {
+        Australiaaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#Australiaaudiofbtn").on('tap', function() {
+      var ctime = Australiaaudio.currentTime;
+      Australiaaudio.currentTime = ctime + 10;
+    });
+    
+    $("#Australiaaudiobbtn").on('tap', function() {
+      var ctime = Australiaaudio.currentTime;
+      Australiaaudio.currentTime = ctime - 10;
+    });
+    
+    $("#Australiaaudiopsbtn").on('tap', function() {
+      Australiaaudio.pause();
+    });
+  </script>
+  <script src="js/threecardLogic.js"></script>  <!-- for card dragging effects -->
+</div> <!--//home-->

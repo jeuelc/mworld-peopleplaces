@@ -1,0 +1,95 @@
+<!-- i-C-a -->
+<div data-role="page" id="game-ag2">  
+  <script src="js/hammer.js"></script>
+  <script src="js/jquery.hammer.js"></script>
+  <div data-role="content">
+    <div id="wrapper">
+      <div style="width:165px;height:68px;position:absolute;top:160px;left:30px;z-index:999"><img src="css/images/5-8/Ancient_Civilizations/Greece/game/board-back.png" id="backbtn"></div>
+      <div style="width:165px;height:68px;position:absolute;top:240px;left:30px;z-index:999"><img src="css/images/5-8/Ancient_Civilizations/Greece/game/board-reset.png" id="resetbtn"></div>
+      <div style="width:165px;height:68px;position:absolute;top:160px;left:852px;z-index:999"><img src="css/images/5-8/Ancient_Civilizations/Greece/game/board-submit.png" id="submitsoln"></div>
+      <div id="zoomwrapper">
+        <!--icons-->
+        <div id="pots1" class="aggame1Piece" style="left:465px;top:590px;width:116px;height:145px;">
+           <img src="css/images/5-8/Ancient_Civilizations/Greece/game/pot1.png" alt="" width="116" height="145" />
+        </div>
+        <div id="pots2"class="aggame1Piece" style="left:600px;top:590px;width:116px;height:145px;">
+           <img src="css/images/5-8/Ancient_Civilizations/Greece/game/pot2.png" alt="" width="116" height="145" />
+        </div>
+        <div id="pots3" class="aggame1Piece" style="left:880px;top:590px;width:116px;height:145px;">
+           <img src="css/images/5-8/Ancient_Civilizations/Greece/game/pot3.png" alt="" width="116" height="145" />
+        </div>
+        <div id="pots4" class="aggame1Piece" style="left:13px;top:590px;width:116px;height:145px;">
+           <img src="css/images/5-8/Ancient_Civilizations/Greece/game/pot4.png" alt="" width="116" height="145" />
+        </div>
+        <div id="pots5" class="aggame1Piece" style="left:202px;top:590px;width:116px;height:145px;">
+           <img src="css/images/5-8/Ancient_Civilizations/Greece/game/pot5.png" alt="" width="116" height="145" />
+        </div>
+        
+      </div><!--/zoomwrapper-->
+    </div>
+    <div class="v-spacer"></div>
+    <div style="width:629px;height:176px;position:absolute;top:310px;left:223px;overflow:hidden;">
+      <div id="wawcontainer" style="width:629px;height:176px;background:url('css/images/5-8/Ancient_Civilizations/Greece/game/wawboard.png') no-repeat 0 -252px;position:absolute;top:-176px;left:0px;">
+        <div id="wawform" style="width:350px;margin:108px auto 0;"><input type="text" id="wawanswer" style="text-align:center;"></div>
+      </div><!--/bonusq-->
+    </div>
+  </div> <!-- end content -->  
+  <script>
+    $(function() {
+      
+    });
+    
+    $('#bqlink').on('tap', function() {
+      if($('#lock').is(":visible")) {
+        alert("You need to complete the process of creating a black hole before you can answer the bonus question.");
+      } else {
+        $('#bonusq').fadeIn();
+        $('#bonusq').css('z-index', '999');
+      }
+    });
+    
+    $('#backbtn').on('tap', function() {
+      $.mobile.changePage("sub-ac-greece-aroundag.html", { transition: "flip"});
+      agsoundbg.play(); civscrambg.pause(); civscrambg.currentTime = 0; 
+    });
+    
+    $('#resetbtn').on('tap', function() {
+      $('#pots1').css({'left':465, 'top':590});
+      $('#pots2').css({'left':600, 'top':590});
+      $('#pots3').css({'left':880, 'top':590});
+      $('#pots4').css({'left':13, 'top':590});
+      $('#pots5').css({'left':202, 'top':590});
+      $('#wawcontainer').css({'top':'-176px'});
+    });
+    
+    $('#submitsoln').on('tap', function() {
+      if($('#wawcontainer').css('top') == "0px") {
+        var answer = $('#wawanswer').val();
+        if(answer.toLowerCase() == "the persians") {
+          alert("Congratulations! You are correct!");
+        } else {
+          alert("No, we are not "+answer);
+        }
+      } else {
+        if(($('#pots1').css('left') == "129px" && $('#pots1').css('top') == "450px")
+          && ($('#pots2').css('left') == "322px" && $('#pots2').css('top') == "450px")
+          && ($('#pots3').css('left') == "503px" && $('#pots3').css('top') == "458px")
+          && ($('#pots4').css('left') == "657px" && $('#pots4').css('top') == "450px")
+          && ($('#pots5').css('left') == "820px" && $('#pots5').css('top') == "448px")) 
+          {
+            $('#wawcontainer').animate({'top':'0px'}, 1000);
+        } else {
+          alert("Sorry, the pieces are not in their correct placement.");
+        }
+      }
+    });
+    
+    $('#submitbqans').on('tap', function() {
+      var answer = $('#bqanswer').val();
+      if(answer.toLowerCase() == "by the collision of two neutron stars") {
+        alert("Congratulations! You are correct!");
+      }
+    });
+  </script>
+  <script src="js/gameag2Logic.js"></script>
+</div>

@@ -1,0 +1,179 @@
+<!-- i-C-a -->
+<div data-role="page" id="game-bh2">  
+  <script src="js/hammer.js"></script>
+  <script src="js/jquery.hammer.js"></script>
+  <div data-role="content">
+    <div id="wrapper">
+      <div style="width:151px;height:63px;position:absolute;top:40px;left:50px;z-index:999"><img src="css/images/5-8/Space/Black_Holes/game/backbtn.png" id="backbtn"></div>
+      <div style="width:151px;height:63px;position:absolute;top:110px;left:50px;z-index:999"><img src="css/images/5-8/Space/Black_Holes/game/resetbtn.png" id="resetbtn"></div>
+      <div style="width:151px;height:63px;position:absolute;top:40px;left:800px;z-index:999"><img src="css/images/5-8/Space/Black_Holes/game/submitsoln.png" id="submitsoln"></div>
+      <div style="width:241px;height:310px;position:absolute;top:180px;left:-241px;z-index:999" id="clueboardleft">&nbsp;</div>
+      <div style="width:241px;height:310px;position:absolute;top:180px;left:1024px;z-index:999" id="clueboardright">&nbsp;</div>
+      <div style="width:151px;height:63px;position:absolute;top:650px;left:800px;z-index:999;display:none;" id="cancelholder"><img src="css/images/5-8/Space/Black_Holes/game/cancelbtn.png" id="cancelbtn"></div>
+      <div id="waicontainer" style="width:250px;min-height:92px;position:absolute;top:95px;left:206px;display:none;">
+        <div id="urbracket" style="margin-left:0px;"></div>
+        <div id="whatamiboard" style="margin-left:83px;margin-top:-78px;float:left;width:451px;height:92px;">
+          <div id="whatamiform" style="display:none;margin-top:116px;">
+            <div style="width:300px;margin:20px auto 0;"><input type="text" id="bqanswer" style="text-align:center;"></div>
+            <div style="width:250px;margin:0 auto;">
+              <a href="#" id="submitbqans" data-role="button" style="width:100px;margin:auto;">Submit</a>
+            </div>
+          </div>
+        </div>
+        <div id="lrbracket" style="margin-top:-83px;margin-right:0px;"></div>
+      </div>
+      <div id="zoomwrapper">
+          <div id="rocket1" class="bhgame2Q" style="left:89px;top:253px;">
+             <img src="css/images/5-8/Space/Black_Holes/game/rocket1.png" alt="" width="184" height="67" />
+          </div>
+          <div id="rocket2"class="bhgame2Q" style="left:76px;top:416px;">
+             <img src="css/images/5-8/Space/Black_Holes/game/rocket2.png" alt="" width="184" height="67" />
+          </div>
+          <div id="rocket3" class="bhgame2Q" style="left:277px;top:162px;">
+             <img src="css/images/5-8/Space/Black_Holes/game/rocket3.png" alt="" width="184" height="67" />
+          </div>
+          <div id="rocket4" class="bhgame2Q" style="left:278px;top:580px;">
+             <img src="css/images/5-8/Space/Black_Holes/game/rocket4.png" alt="" width="184" height="67" />
+          </div>
+          <div id="rocket5" class="bhgame2Q" style="left:260px;top:351px;">
+             <img src="css/images/5-8/Space/Black_Holes/game/rocket5.png" alt="" width="184" height="67" />
+          </div>
+          <div id="rocket6" class="bhgame2Q" style="left:347px;top:482px;">
+             <img src="css/images/5-8/Space/Black_Holes/game/rocket6.png" alt="" width="184" height="67" />
+          </div>
+          <div id="nozle1" class="bhgame2A" style="left:821px;top:521px;">
+             <img src="css/images/5-8/Space/Black_Holes/game/nozle1.png" alt="" width="103" height="63" />
+          </div>
+          <div id="nozle2"class="bhgame2A" style="left:782px;top:340px;">
+             <img src="css/images/5-8/Space/Black_Holes/game/nozle2.png" alt="" width="103" height="63" />
+          </div>
+          <div id="nozle3" class="bhgame2A" style="left:680px;top:604px;">
+             <img src="css/images/5-8/Space/Black_Holes/game/nozle3.png" alt="" width="103" height="63" />
+          </div>
+          <div id="nozle4" class="bhgame2A" style="left:565px;top:381px;">
+             <img src="css/images/5-8/Space/Black_Holes/game/nozle4.png" alt="" width="103" height="63" />
+          </div>
+          <div id="nozle5" class="bhgame2A" style="left:646px;top:263px;">
+             <img src="css/images/5-8/Space/Black_Holes/game/nozle5.png" alt="" width="103" height="63" />
+          </div>
+          <div id="nozle6" class="bhgame2A" style="left:729px;top:151px;">
+             <img src="css/images/5-8/Space/Black_Holes/game/nozle6.png" alt="" width="103" height="63" />
+          </div>
+      </div><!--/zoomwrapper-->
+    </div>
+    <div class="v-spacer"></div>
+    <div id="bonusq" style="display:none;">
+      <div id="titleb-holder"><h1>How else can a black hole be formed?</h1></div>
+      <span style="color:#FFFFFF;margin:auto;font-size:10px;">Clue: Have a look at the screen titled 'From Supergiant to Black Hole'</span>
+      <div style="width:350px;margin:20px auto 0;"><input type="text" id="bqanswer" style="text-align:center;"></div>
+      <div style="width:250px;margin:0 auto;">
+        <a href="#" id="submitbqans" data-role="button" style="width:100px;float:left;">Submit</a>
+        <a href="#" id="cancelbqans" data-role="button" style="width:100px;float:right;">Cancel</a>
+      </div>
+    </div><!--/bonusq-->
+  </div> <!-- end content -->  
+  <script>
+    $(function() {
+      animateEl = setTimeout(blinkEl, 300);
+      animateElr = setTimeout(blinkElr, 300);
+    });
+    
+    function blinkElr() {
+      $('#lrbracket').css('background-position', "-198px center");
+      setTimeout(function() {$('#lrbracket').css('background-position', '-12px center');}, 300);
+      setTimeout(function() {$('#lrbracket').css('background-position', '-198px center');}, 600);
+      setTimeout(function() {$('#lrbracket').css('background-position', '-384px center');}, 900);
+      animateElr = setTimeout(blinkElr, 1200);
+    }
+    function blinkEl() {
+      $('#urbracket').css('background-position', "-186px center");
+      setTimeout(function() {$('#urbracket').css('background-position', '-372px center');}, 300);
+      setTimeout(function() {$('#urbracket').css('background-position', '-186px center');}, 600);
+      setTimeout(function() {$('#urbracket').css('background-position', '0px center');}, 900);
+      animateEl = setTimeout(blinkEl, 1200);
+    }
+    
+    $('#backbtn').on('tap', function() {
+      whatamimp3.pause();bgsoundbh.play();
+      $.mobile.changePage("sub-space-bh-blackhole.html");
+    });
+    
+    $('#resetbtn').on('tap', function() {
+      $('#rocket1').css({left:'89px', top:'253px'});
+      $('#rocket2').css({left:'76px', top:'416px'});
+      $('#rocket3').css({left:'277px', top:'162px'});
+      $('#rocket4').css({left:'278px', top:'580px'});
+      $('#rocket5').css({left:'260px', top:'351px'});
+      $('#rocket6').css({left:'347px', top:'482px'});
+      $('#nozle1').css({left:'821px', top:'521px'});
+      $('#nozle2').css({left:'782px', top:'340px'});
+      $('#nozle3').css({left:'680px', top:'604px'});
+      $('#nozle4').css({left:'565px', top:'381px'});
+      $('#nozle5').css({left:'646px', top:'263px'});
+      $('#nozle6').css({left:'729px', top:'151px'});
+      $('.bhgame2A').css('background', 'url(css/images/5-8/Space/Black_Holes/game/nozlebooster.png) no-repeat scroll 0 8px');
+    });
+    
+    $('#submitsoln').on('tap', function() {
+      nposition1 = $('#nozle1').position();
+      nposition2 = $('#nozle2').position();
+      nposition3 = $('#nozle3').position();
+      nposition4 = $('#nozle4').position();
+      nposition5 = $('#nozle5').position();
+      nposition6 = $('#nozle6').position();
+      rposition1 = $('#rocket1').position();
+      rposition2 = $('#rocket2').position();
+      rposition3 = $('#rocket3').position();
+      rposition4 = $('#rocket4').position();
+      rposition5 = $('#rocket5').position();
+      rposition6 = $('#rocket6').position();
+      
+      if((rposition1.top == nposition1.top && rposition1.left == nposition1.left - 149)
+        && (rposition2.top == nposition2.top && rposition2.left == nposition2.left - 149)
+        && (rposition3.top == nposition3.top && rposition3.left == nposition3.left - 149)
+        && (rposition4.top == nposition4.top && rposition4.left == nposition4.left - 149)
+        && (rposition5.top == nposition5.top && rposition5.left == nposition5.left - 149)
+        && (rposition6.top == nposition6.top && rposition6.left == nposition6.left - 149))
+      { //solution is correct
+        //alert('pasikati ko');
+        $('#clueboardleft').animate({left: "24px"}, 1000);
+        $('#clueboardright').animate({left: "764px"}, 1000);
+        $('.bhgame2A').fadeOut(100);
+        $('.bhgame2Q').fadeOut(100);
+        $('#cancelholder').fadeIn(100);
+        $('#waicontainer').fadeIn(100, function() {  
+          $('#whatamiboard').animate({height:"265px"}, 500, function() {
+            $('#waicontainer').animate({width:"612px"}, 1000, function(){
+              $('#whatamiboard').css('background', 'url(css/images/5-8/Space/Black_Holes/game/whatami.png) no-repeat center center');
+              $('#whatamiform').fadeIn(500);
+            });
+          });
+        });
+        
+      } else { //solution is wrong
+        alert("Sorry, the clues are mismatched.");
+     }
+    });
+    
+    $("#cancelbtn").on('tap', function() {
+      $('.bhgame2A').fadeIn(500);
+      $('.bhgame2Q').fadeIn(500);
+      $('#clueboardleft').animate({left: "-241px"}, 1000);
+      $('#clueboardright').animate({left: "1024px"}, 1000);
+      $('#cancelholder').fadeOut(100);
+      //$('#whatamiboard').fadeOut(100);
+      $('#waicontainer').fadeOut(100);
+      $('#whatamiform').fadeOut(100);
+      $('#whatamiboard').css({height:"92px", 'background':'none'});
+      $('#waicontainer').css({width:"250px"});
+    });
+    
+    $('#submitbqans').on('tap', function() {
+      var answer = $('#bqanswer').val();
+      if(answer.toLowerCase() == "a supergiant star") {
+        alert("Congratulations! You are correct!");
+      }
+    });
+  </script>
+  <script src="js/gamebh2Logic.js"></script>
+</div>

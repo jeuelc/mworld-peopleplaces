@@ -1,0 +1,138 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-changing-places">
+  <!-- <script src="js/slidebarnat.js"></script> -->
+  <script src="js/slidebar_changing_places.js"></script>
+  <link rel="stylesheet" href="css/style_changing_places.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnChangingPlaces"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnChangingPlaces"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnChangingPlaces"></div></div>
+  <div class="infobtnholder"><div class="infobtnChangingPlaces"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnChangingPlaces"></div></div>
+  <div class="menubtnholder"><div class="menubtnChangingPlaces"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:14px;"><h1>Changing Places</h1></div>
+  
+    <div data-role="content" class="kidzcontent">
+      <div class="navChangingPlaces-content">
+        <p>We live in a world in which people are increasingly mobile.  People leave their home countries for a variety of reasons and in doing so, they become migrants.  Migration has been around for centuries but what is distinct about recent migration is how relatively affordable it is to move between countries and continents.</p>
+		<p>How far back in your family do you need to go to find an immigrant?  Ask your parents if you are unsure.  Do you have any friends who are migrants or children of migrants?</p>
+		<p>There is no doubt that migration will continue in the years ahead. Migration provides both opportunities and challenges for the immigrant and society as a whole.  Let's explore some of the issues of immigration in the United States and a few other countries in more detail.</p>
+      </div>
+        
+      <div class="navbtn1">
+        <p><a href="sub-changing-places-big-decision.html" data-transition="slide"><img src="css/images/9-12/People_and_Places/Changing_Places/A_Big_Decision.png"></a></p>
+      </div>
+      <div class="navbtn2">
+        <p><a href="sub-changing-places-global-experience.html" data-transition="slide"><img src="css/images/9-12/People_and_Places/Changing_Places/A_Global_Experience.png"></a></p>
+      </div>
+      <div class="navbtn3">
+        <p><a href="sub-changing-places-living-with-diversity.html" data-transition="slide"><img src="css/images/9-12/People_and_Places/Changing_Places/Living_With_Diversity.png"></a></p>
+      </div>
+      <div class="navbtn4">
+        <p><a href="sub-changing-places-new-americans.html" data-transition="slide"><img src="css/images/9-12/People_and_Places/Changing_Places/New_Americans.png"></a></p>
+      </div>
+        
+      <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+    </div> <!-- end content -->  
+    
+  
+  <!--<div class="audiopanel">-->
+    <!-- images are in slidebarnat.js -->
+    <div class="micbtnholder"><div class="micbtnChangingPlaces" id="playstopChangingPlaces"></div></div>
+    <div class="bChangingPlaces"><div class="rwChangingPlaces" id="ChangingPlacesaudiobbtn"></div></div>
+    <div class="plChangingPlaces"><div class="plpsChangingPlaces" id="ChangingPlacesaudioplbtn"></div></div>
+    <div class="fChangingPlaces"><div class="fwChangingPlaces" id="ChangingPlacesaudiofbtn"></div></div>
+    <div id="actualaudio-ChangingPlaces" style="visibility:hidden;"></div>
+  <!--</div>-->
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+    var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      if(sound.canPlayType('audio/mpeg')) {
+        $('#actualaudio-ChangingPlaces').html('<audio id="ChangingPlacesaudio" controls preload onpause="playsChangingPlaces()" onplay="pauseChangingPlaces()"><source src="audio/Changing_Places/Changing_Places.mp3" type="audio/mpeg"></audio>');
+      } 
+    
+      $("#sub-changing-places").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+    })();
+    
+    $('.homelinkbh').on('tap', function() { bgsoundChangingPlaces.pause(); bgsoundChangingPlaces.currentTime = 0; mainaudiobg.play(); });
+    
+    function goBack() {
+      $.mobile.changePage("sub-modernworld.html", {transition: "slide", reverse: true });
+      bgsoundChangingPlaces.pause(); 
+      bgsoundChangingPlaces.currentTime = 0;
+      peopleplacessoundbg.play();
+    }
+    
+    function playsChangingPlaces() {
+         bgsoundChangingPlaces.play();
+    }
+       
+    function pauseChangingPlaces() {
+         bgsoundChangingPlaces.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+	
+    $("#playstopChangingPlaces").on('tap', function() {
+      if(!playing) {
+        ChangingPlacesaudio.play();
+        $('.micbtnChangingPlaces').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        ChangingPlacesaudio.pause(); ChangingPlacesaudio.currentTime = 0;
+        $('.micbtnChangingPlaces').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#ChangingPlacesaudioplbtn").on('tap', function() {
+      if(!paused) {
+        ChangingPlacesaudio.pause();
+        paused = true;
+      } else {
+        ChangingPlacesaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#ChangingPlacesaudiofbtn").on('tap', function() {
+      var ctime = ChangingPlacesaudio.currentTime;
+      ChangingPlacesaudio.currentTime = ctime + 10;
+    });
+    
+    $("#ChangingPlacesaudiobbtn").on('tap', function() {
+      var ctime = ChangingPlacesaudio.currentTime;
+      ChangingPlacesaudio.currentTime = ctime - 10;
+    });
+    
+    $("#ChangingPlacesaudiopsbtn").on('tap', function() {
+      ChangingPlacesaudio.pause();
+      //$(".audiopanel").css({"backgroundPosition":"0px 0px"});
+    });
+    
+    $('.navbtn1').on('tap', function() { 
+      nav1Effects(); 
+    });
+    
+    $('.navbtn2').on('tap', function() { 
+      nav2Effects(); 
+    });
+    
+    $('.navbtn3').on('tap', function() { 
+      nav3Effects(); 
+    });
+    
+    $('.navbtn4').on('tap', function() { 
+      nav4Effects(); 
+    });
+  </script>
+</div> <!--//home-->

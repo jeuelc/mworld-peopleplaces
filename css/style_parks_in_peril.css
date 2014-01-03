@@ -1,0 +1,369 @@
+/********* Parks In Peril **********/
+
+#sub-parks-in-peril, #sub-parks-in-peril-parks-and-you, #sub-parks-in-peril-reef-rhinos-re-introduction, #sub-parks-in-peril-parks-and-you-hononrary-rangers,#sub-parks-in-peril-what-is-park-environments, #sub-parks-in-peril-parks-and-you-hack-team, #sub-parks-in-peril-parks-and-you-what-about-my-backyard, #sub-parks-in-peril-what-is-park, #sub-parks-in-peril-protection-Biodiversity, #sub-parks-in-peril-protection-Biodiversity-animals-in-trouble, #sub-parks-in-peril-protection-buffering-and-connecting-parks, #sub-parks-in-peril-protection-how-to-make-a-park, #sub-parks-in-peril-protection-Recreational-Spiritual-and-Cultural-Connection, #sub-parks-in-peril-protection-the-world-on-life-support, #sub-parks-in-peril-protection-the-world-on-life-support-To-Fence-or-not-To-Fence, #sub-parks-in-peril-reef-rhinos-re-introduction-coral-reef-crisis, #sub-parks-in-peril-reef-rhinos-re-introduction-yellowstone{
+  background:url('images/9-12/The_Natural_World/Parks_In_Peril/Parks_In_Peril_BG.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+#sub-parks-in-peril-what-is-park-categories {
+  background:url('images/9-12/The_Natural_World/Parks_In_Peril/What_Is_A_Park/Categories/Categories_BG.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+#sub-parks-in-peril-reef-rhinos-re-introduction-the-big-five{
+  background:url('images/9-12/The_Natural_World/Parks_In_Peril/Reef_Rhinos/The_Big_Five/The_Big_Five_BG.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+#sub-parks-in-peril-protection{
+  background:url('images/9-12/The_Natural_World/Parks_In_Peril/Protection/Protection_BG.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+#sub-parks-in-peril-protection-buffering-and-connecting-parks-Life-of-Ranger{
+  background:url('images/9-12/The_Natural_World/Parks_In_Peril/Protection/Buffering_Connecting_Parks/Life_Of_A_Ranger/Life_Of_A_Ranger_BG.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+#sub-parks-in-peril-what-is-park-what-are-they{
+  background:url('images/9-12/The_Natural_World/Parks_In_Peril/What_Is_A_Park/What_Are_They/Where_Are_They_BG.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+.plparksperil, .psparksperil, .bparksperil, .fparksperil {
+  position:absolute;
+  top:670px;
+  left:1024px;
+  z-index:20;
+}
+
+.micbtnparksperil {
+  background:url('images/9-12/The_Natural_World/mic.png') no-repeat 0 -81px;
+  height:81px;
+  width:81px;
+}
+
+.rwparksperil {
+  background:url('images/9-12/The_Natural_World/rw.png') no-repeat 0 -73px;
+  height:73px;
+  width:73px;
+}
+
+.plpsparksperil {
+  background:url('images/9-12/The_Natural_World/play.png') no-repeat 0 -73px;
+  height:73px;
+  width:73px;
+}
+
+.fwparksperil {
+  background:url('images/9-12/The_Natural_World/fw.png') no-repeat 0 -73px;
+  height:73px;
+  width:73px;
+}
+
+.menubtnparksperil {
+  background:url('images/9-12/The_Natural_World/menu.png') no-repeat 0 -90px;
+  height:90px;
+  width:90px;
+}
+
+
+.homebtnparksperil {
+  background:url('images/9-12/The_Natural_World/map.png') no-repeat 0 -74px;
+  height:74px;
+  width:80px;
+}
+
+.mpbtnparksperil {
+  background:url('images/9-12/The_Natural_World/mpoints.png') no-repeat 0 -84px;
+  height:79px;
+  width:80px;
+}
+
+.cpbtnparksperil {
+  background:url('images/9-12/The_Natural_World/ctrlpnl.png') no-repeat 0 -74px;
+  height:74px;
+  width:74px;
+}
+
+.infobtnparksperil {
+  background:url('images/9-12/The_Natural_World/info.png') no-repeat 0 -74px;
+  height:74px;
+  width:74px;
+}
+
+.credsbtnparksperil {
+  background:url('images/9-12/The_Natural_World/credits.png') no-repeat 0 -74px;
+  height:74px;
+  width:74px;
+}
+
+.navtitleholderparksperil{
+	width: 435px;
+	height: 68px;
+	position: absolute;
+	top: 169px;
+	left: 295px;
+	text-align: center;
+	line-height: 32px;
+}
+
+.navtitleholderparksperil h1{
+	text-transform: uppercase;
+	color: #FFF;
+	font-family: comic sans ms;
+	padding: 0;
+	margin: 0;
+	font-weight: bold;
+}
+
+.bptitleholderparksperil {
+  width:627px;
+  height:68px;
+  text-align:center;
+  line-height:28px;
+  position:absolute;
+  top:169px;
+  left:194px;
+}
+
+.bptitleholderparksperil h1
+ {
+  text-transform:uppercase;
+  color: #FFFFFF;
+  font-family:"comic sans ms";
+  font-weight:bold;
+  padding:0;
+  margin:0;
+}
+
+.navparksperil-content{
+  position:absolute;
+  left:305px;
+  top:263px;
+  width:410px;
+  height:359px;
+  overflow:auto;
+  text-align:center;
+  font-family:"comic sans ms";
+  font-size:18px;
+  font-weight:normal;
+  color:#000000 !important;
+}
+
+.navparksperilprotection-content{
+	position: absolute;
+	left: 300px;
+	top: 205px;
+	width: 455px;
+	height: 430px;
+	overflow: auto;
+	text-align: center;
+	font-family: "comic sans ms";
+	font-size: 18px;
+	font-weight: normal;
+	color: #ffffff !important;
+}
+
+.navparksperil-content p {
+  margin-top:0 !important;
+}
+
+.bpcontentparksperil{
+	color: #000000;
+    font-family: "comic sans ms";
+    font-size: 18px;
+    font-weight: normal;
+    height: 356px;
+    left: 550px;
+    overflow-y: auto;
+    position: absolute;
+    text-align: left;
+    top: 266px;
+    width: 413px;
+}
+
+#sub-parks-in-peril-what-is-park-what-are-they .bptitleholder{
+	width: 627px;
+	height: 68px;
+	text-align: center;
+	line-height: 28px;
+	position: absolute;
+	top: 20px;
+	left: 194px;	
+}
+
+#sub-parks-in-peril .bptitleholder h1, #sub-parks-in-peril-parks-and-you .bptitleholder h1, #sub-parks-in-peril-reef-rhinos-re-introduction .bptitleholder h1, #sub-parks-in-peril-protection .bptitleholder h1,#sub-parks-in-peril-what-is-park-what-are-they .bptitleholder h1, #sub-parks-in-peril-parks-and-you-hononrary-rangers .bptitleholder h1,#sub-parks-in-peril-what-is-park-environments .bptitleholder h1, #sub-parks-in-peril-parks-and-you-hack-team .bptitleholder h1, #sub-parks-in-peril-parks-and-you-what-about-my-backyard .bptitleholder h1, #sub-parks-in-peril-what-is-park-environments .bptitleholder h1, #sub-parks-in-peril-what-is-park .bptitleholder h1, #sub-parks-in-peril-protection-Biodiversity .bptitleholder h1, #sub-parks-in-peril-protection-Biodiversity-animals-in-trouble .bptitleholder h1, #sub-parks-in-peril-protection-buffering-and-connecting-parks .bptitleholder h1, #sub-parks-in-peril-protection-how-to-make-a-park .bptitleholder h1, #sub-parks-in-peril-protection-Recreational-Spiritual-and-Cultural-Connection .bptitleholder h1, #sub-parks-in-peril-protection-the-world-on-life-support .bptitleholder h1, #sub-parks-in-peril-protection-the-world-on-life-support-To-Fence-or-not-To-Fence .bptitleholder h1, #sub-parks-in-peril-reef-rhinos-re-introduction-coral-reef-crisis .bptitleholder h1, #sub-parks-in-peril-reef-rhinos-re-introduction-yellowstone .bptitleholder h1, #sub-parks-in-peril-reef-rhinos-re-introduction-the-big-five .bptitleholder h1, #sub-parks-in-peril-what-is-park-categories .bptitleholder h1{
+	text-transform: uppercase;
+	color: #ffffff !important;
+	font-family: "comic sans ms";
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#sub-parks-in-peril .bptitleholder, #sub-parks-in-peril-what-is-park-environments .bptitleholder, #sub-parks-in-peril-parks-and-you .bptitleholder, #sub-parks-in-peril-protection-Biodiversity-animals-in-trouble .bptitleholder, #sub-parks-in-peril-protection-Biodiversity .bptitleholder, #sub-parks-in-peril-protection-buffering-and-connecting-parks .bptitleholder, #sub-parks-in-peril-protection-how-to-make-a-park .bptitleholder, #sub-parks-in-peril-protection-the-world-on-life-support .bptitleholder, #sub-parks-in-peril-protection-the-world-on-life-support-To-Fence-or-not-To-Fence .bptitleholder, #sub-parks-in-peril-reef-rhinos-re-introduction-coral-reef-crisis .bptitleholder, #sub-parks-in-peril-reef-rhinos-re-introduction-yellowstone .bptitleholder{
+	width: 627px;
+	height: 68px;
+	text-align: center;
+	line-height: 28px;
+	position: absolute;
+	top: 169px;
+	left: 194px;	
+}
+
+#sub-parks-in-peril-what-is-park-categories .bptitleholder{
+	width: 627px;
+	height: 68px;
+	text-align: center;
+	line-height: 28px;
+	position: absolute;
+	top: 28px;
+	left: 194px;
+}
+#sub-parks-in-peril-reef-rhinos-re-introduction-the-big-five .bptitleholder{
+	width: 627px;
+	height: 68px;
+	text-align: center;
+	line-height: 28px;
+	position: absolute;
+	top: 390px;
+	left: 194px;
+}
+
+#sub-parks-in-peril-protection-Recreational-Spiritual-and-Cultural-Connection .bptitleholder{
+	width: 627px;
+	height: 68px;
+	text-align: center;
+	line-height: 35px;
+	position: absolute;
+	top: 175px;
+	left: 194px;	
+}
+
+#sub-parks-in-peril-protection .bptitleholder{
+	width: 627px;
+	height: 68px;
+	text-align: center;
+	line-height: 28px;
+	position: absolute;
+	top: 135px;
+	left: 205px;
+}
+
+#sub-parks-in-peril-what-is-park-what-are-they .bptitleholder{
+	width: 627px;
+	height: 68px;
+	text-align: center;
+	line-height: 28px;
+	position: absolute;
+	top: 25px;
+	left: 205px;
+}
+
+#sub-parks-in-peril-reef-rhinos-re-introduction .bptitleholder{
+	width: 627px;
+	height: 68px;
+	text-align: center;
+	line-height: 40px;
+	position: absolute;
+	top: 145px;
+	left: 194px;
+}
+.navparksperilwhatarethey-content{
+	position: absolute;
+	left: 20px;
+	top: 75px;
+	width: 980px;
+	height: 169px;
+	overflow: auto;
+	text-align: center;
+	font-family: comic sans ms;
+	font-size: 18px;
+	font-weight: normal;
+	color: #000000;
+}
+.navparksperil-content3{
+	position: absolute;
+	left: 98px;
+	top: 251px;
+	width: 830px;
+	height: 145px;
+	overflow: auto;
+	text-align: center;
+	font-family: comic sans ms;
+	font-size: 18px;
+	font-weight: normal;
+	color: #000000;
+}
+
+.navparksperilbigfive-content{
+	position: absolute;
+	left: 48px;
+	top: 431px;
+	width: 925px;
+	height: 228px;
+	overflow: auto;
+	text-align: left;
+	font-family: comic sans ms;
+	font-size: 18px;
+	font-weight: normal;
+	color: #000000;
+}
+
+.navparksperilparkcategories-content{
+	position: absolute;
+	left: 48px;
+	top: 77px;
+	width: 938px;
+	height: 225px;
+	overflow: auto;
+	text-align: left;
+	font-family: comic sans ms;
+	font-size: 18px;
+	font-weight: normal;
+	color: #000000;
+}
+
+.navparksinperilbtn1{
+	left: 134px;
+    position: absolute;
+    top: 405px;
+}
+
+.navparksinperilbtn2{
+	left: 394px;
+    position: absolute;
+    top: 435px;
+}
+
+.navparksinperilbtn3{
+	left: 663px;
+    position: absolute;
+    top: 405px;
+}
+
+.navparksperilprotection-life-of-ranger-content{
+	position: absolute;
+	left: 75px;
+	top: 103px;
+	width: 447px;
+	height: 564px;
+	overflow: auto;
+	text-align: center;
+	font-family: "comic sans ms";
+	font-size: 18px;
+	font-weight: normal;
+	color: #000000 !important;
+}

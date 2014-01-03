@@ -1,0 +1,407 @@
+/********* People In Space **********/
+
+#sub-people-in-space, #sub-people-in-space-dreaming-of-space, #sub-people-in-space-dreaming-of-space-beep-beep, #sub-people-in-space-dreaming-of-space-imagining-space-flight, #sub-people-in-space-dreaming-of-space-orbit, #sub-people-in-space-dreaming-of-space-rockets, #sub-people-in-space-dreaming-of-space-wrong-planet, #sub-people-in-space-living-in-space, #sub-people-in-space-living-in-space-exercise-and-sleep, #sub-people-in-space-living-in-space-food, #sub-people-in-space-living-in-space-repairs, #sub-people-in-space-living-in-space-space-stations, #sub-people-in-space-living-in-space-space-shuttles, #sub-people-in-space-space-race-dangers-and-disasters, #sub-people-in-space-space-race-first-dog-in-orbit, #sub-people-in-space-space-racefirst-person-in-space, #sub-people-in-space-space-race-taking-a-walk, #sub-people-in-space-your-trip-to-space, #sub-people-in-space-your-trip-to-space-lift-off, #sub-people-in-space-your-trip-to-space-re-entry, #sub-people-in-space-your-trip-to-space-training-or-ticket, #sub-people-in-space-your-trip-to-space-weightlessness{
+  background:url('images/9-12/Space/People_In_Space/People_In_Space_BG.png') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+#sub-people-in-space-your-trip-to-space-next-great-leap{
+  background:url('images/9-12/Space/People_In_Space/Your_Trip_Into_Space/The_Next_Great_Lap/The_Next_Great_Lap.png') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+#sub-people-in-space-space-race-on-the-moon{
+  background:url('images/9-12/Space/People_In_Space/Space_Race/On_The_Moon/On_The_Moon_BG.png') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+#sub-people-in-space-space-race{
+  background:url('images/9-12/Space/People_In_Space/Space_Race/Space_Race_BG.png') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+#sub-people-in-space-space-race-a-challenge{
+  background:url('images/9-12/Space/People_In_Space/Space_Race/A_Challenge/A_Challenge_BG.png') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+.plPeopleInSpace, .psPeopleInSpace, .bPeopleInSpace, .fPeopleInSpace {
+  position:absolute;
+  top:670px;
+  left:1024px;
+  z-index:20;
+}
+
+.micbtnPeopleInSpace {
+  background:url('images/9-12/Space/micsp.png') no-repeat 0 -81px;
+  height:81px;
+  width:81px;
+}
+
+.rwPeopleInSpace {
+  background:url('images/9-12/Space/rwsp.png') no-repeat 0 -73px;
+  height:73px;
+  width:73px;
+}
+
+.plpsPeopleInSpace {
+  background:url('images/9-12/Space/playsp.png') no-repeat 0 -73px;
+  height:73px;
+  width:73px;
+}
+
+.fwPeopleInSpace {
+  background:url('images/9-12/Space/fwsp.png') no-repeat 0 -73px;
+  height:73px;
+  width:73px;
+}
+
+.menubtnPeopleInSpace {
+  background:url('images/9-12/Space/menusp.png') no-repeat 0 -90px;
+  height:90px;
+  width:90px;
+}
+
+
+.homebtnPeopleInSpace {
+  background:url('images/9-12/Space/mapsp.png') no-repeat 0 -74px;
+  height:74px;
+  width:80px;
+}
+
+.mpbtnPeopleInSpace {
+  background:url('images/9-12/Space/mpointssp.png') no-repeat 0 -84px;
+  height:79px;
+  width:80px;
+}
+
+.cpbtnPeopleInSpace {
+  background:url('images/9-12/Space/ctrlpnlsp.png') no-repeat 0 -74px;
+  height:74px;
+  width:74px;
+}
+
+.infobtnPeopleInSpace {
+  background:url('images/9-12/Space/infosp.png') no-repeat 0 -74px;
+  height:74px;
+  width:74px;
+}
+
+.credsbtnPeopleInSpace {
+  background:url('images/9-12/Space/creditssp.png') no-repeat 0 -74px;
+  height:74px;
+  width:74px;
+}
+
+.navtwobtn1{
+	left: 60px;
+    position: absolute;
+    top: 310px;
+}
+
+.navtwobtn3 {
+    right: 60px;
+    position: absolute;
+    top: 310px;
+}
+
+.navtitleholderPeopleInSpace{
+	width: 435px;
+	height: 68px;
+	position: absolute;
+	top: 169px;
+	left: 295px;
+	text-align: center;
+	line-height: 32px;
+}
+
+.navtitleholderPeopleInSpace h1{
+	text-transform: uppercase;
+	color: #FFF;
+	font-family: comic sans ms;
+	padding: 0;
+	margin: 0;
+	font-weight: bold;
+}
+
+.bptitleholderPeopleInSpace {
+  width:627px;
+  height:68px;
+  text-align:center;
+  line-height:28px;
+  position:absolute;
+  top:169px;
+  left:194px;
+}
+
+.bptitleholderPeopleInSpace h1
+ {
+  text-transform:uppercase;
+  color: #FFFFFF;
+  font-family:"comic sans ms";
+  font-weight:bold;
+  padding:0;
+  margin:0;
+}
+
+.navPeopleInSpace-content{
+  position:absolute;
+  left:305px;
+  top:263px;
+  width:410px;
+  height:359px;
+  overflow:auto;
+  text-align:center;
+  font-family:"comic sans ms";
+  font-size:18px;
+  font-weight:normal;
+  color:#000000;
+}
+
+.navPeopleInSpace-spacerace{
+    position: absolute;
+	left: 315px;
+	top: 152px;
+	width: 410px;
+	height: 359px;
+	overflow: auto;
+	text-align: left;
+	font-family: "comic sans ms";
+	font-size: 18px;
+	font-weight: normal;
+	color: #ffffff;
+}
+
+.navPeopleInSpace-challenge{
+	position: absolute;
+	left: 305px;
+	top: 303px;
+	width: 410px;
+	height: 320px;
+	overflow: auto;
+	text-align: left;
+	font-family: "comic sans ms";
+	font-size: 18px;
+	font-weight: normal;
+	color: #ffffff;
+}
+
+.navPeopleInSpace-greatleap{
+	position: absolute;
+	left: 250px;
+	top: 57px;
+	width: 426px;
+	height: 508px;
+	overflow: auto;
+	text-align: left;
+	font-family: "comic sans ms";
+	font-size: 18px;
+	font-weight: normal;
+	color: #ffffff;
+}
+.navPeopleInSpace-OnTheMoon{
+	position: absolute;
+	left: 604px;
+	top: 22px;
+	width: 395px;
+	height: 623px;
+	overflow: auto;
+	text-align: left;
+	font-family: "comic sans ms";
+	font-size: 18px;
+	font-weight: normal;
+	color: #ffffff;
+}
+
+.navPeopleInSpace-content5{
+  position:absolute;
+  left:305px;
+  top:245px;
+  width:410px;
+  height:180px;
+  overflow:auto;
+  text-align:center;
+  font-family:"comic sans ms";
+  font-size:18px;
+  font-weight:normal;
+  color:#000000;
+}
+
+.navPeopleInSpace-content p {
+  margin-top:0 !important;
+}
+
+.navPeopleInSpace-content3 {
+  position:absolute;
+  left:59px;
+  top:245px;
+  width:920px;
+  height:160px;
+  overflow-y:scroll;
+  text-align:left;
+  font-family:"comic sans ms";
+  font-size:18px;
+  font-weight:normal;
+  color:#000000;
+}
+
+.bpcontentPeopleInSpace{
+  width:413px;
+  height:356px;
+  position:absolute;
+  left:550px;
+  top:266px;
+  overflow:auto;
+  font-family:"comic sans ms";
+  font-size:18px;
+  font-weight:normal;
+  text-align:left;
+  color:#000000;
+}
+
+.bpcontentPeopleInSpace-dirt{
+  width:413px;
+  height: 400px;
+  position:absolute;
+  left:532px;
+  top:223px;
+  overflow:auto;
+  font-family:"comic sans ms";
+  font-size:18px;
+  font-weight:normal;
+  text-align:left;
+  color:#000000;
+}
+
+.navPeopleInSpace-bigdecision{
+    width: 885px;
+	height: 320px;
+	position: absolute;
+	left: 88px;
+	top: 400px;
+	overflow: auto;
+	font-family: "comic sans ms";
+	font-size: 18px;
+	font-weight: normal;
+	text-align: left;
+	color: #000000;
+}
+
+.navPeopleInSpace-LivingDiversity{
+    width: 870px;
+	height: 165px;
+	position: absolute;
+	left: 75px;
+	top: 80px;
+	overflow: auto;
+	font-family: "comic sans ms";
+	font-size: 18px;
+	font-weight: normal;
+	text-align: left;
+	color: #000000;
+}
+
+#sub-people-in-space .bptitleholder h1, #sub-people-in-space-dreaming-of-space .bptitleholder h1, #sub-people-in-space-dreaming-of-space-beep-beep .bptitleholder h1, #sub-people-in-space-dreaming-of-space-imagining-space-flight .bptitleholder h1, #sub-people-in-space-dreaming-of-space-orbit .bptitleholder h1, #sub-people-in-space-dreaming-of-space-rockets .bptitleholder h1, #sub-people-in-space-dreaming-of-space-wrong-planet .bptitleholder h1, #sub-people-in-space-living-in-space .bptitleholder h1, #sub-people-in-space-living-in-space-exercise-and-sleep .bptitleholder h1, #sub-people-in-space-living-in-space-food .bptitleholder h1, #sub-people-in-space-living-in-space-repairs .bptitleholder h1, #sub-people-in-space-living-in-space-space-stations .bptitleholder h1, #sub-people-in-space-living-in-space-space-shuttles .bptitleholder h1, #sub-people-in-space-space-race .bptitleholder h1, #sub-people-in-space-space-race-a-challenge .bptitleholder h1, #sub-people-in-space-space-race-dangers-and-disasters .bptitleholder h1, #sub-people-in-space-space-race-first-dog-in-orbit .bptitleholder h1, #sub-people-in-space-space-racefirst-person-in-space .bptitleholder h1, #sub-people-in-space-space-race-on-the-moon .bptitleholder h1, #sub-people-in-space-space-race-taking-a-walk .bptitleholder h1, #sub-people-in-space-your-trip-to-space .bptitleholder h1, #sub-people-in-space-your-trip-to-space-lift-off .bptitleholder h1, #sub-people-in-space-your-trip-to-space-re-entry .bptitleholder h1, #sub-people-in-space-your-trip-to-space-training-or-ticket .bptitleholder h1, #sub-people-in-space-your-trip-to-space-weightlessness .bptitleholder h1{
+	text-transform: uppercase;
+	color: #ffffff !important;
+	font-family: "comic sans ms";
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#sub-people-in-space-your-trip-to-space-next-great-leap .bptitleholder h1{
+	text-transform: uppercase;
+	color: #ffffff !important;
+	font-family: "comic sans ms";
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#sub-people-in-space-your-trip-to-space-next-great-leap .bptitleholder{
+	width: 627px;
+	height: 68px;
+	text-align: center;
+	line-height: 28px;
+	position: absolute;
+	top: 185px;
+	left: 194px;
+}
+
+#sub-people-in-space-space-race-on-the-moon .bptitleholder{
+	width: 627px;
+	height: 68px;
+	text-align: center;
+	line-height: 28px;
+	position: absolute;
+	top: 185px;
+	left: 194px;
+}
+
+#sub-people-in-space-dreaming-of-space-imagining-space-flight .bptitleholder{
+	width: 627px;
+	height: 68px;
+	text-align: center;
+	line-height: 28px;
+	position: absolute;
+	top: 185px;
+	left: 194px;
+}
+
+#sub-people-in-space-space-race-a-challenge .bptitleholder{
+	width: 627px;
+	height: 68px;
+	text-align: center;
+	line-height: 28px;
+	position: absolute;
+	top: 185px;
+	left: 194px;
+}
+
+#sub-people-in-space-space-race .bptitleholder{
+	width: 627px;
+	height: 68px;
+	text-align: center;
+	line-height: 28px;
+	position: absolute;
+	top: 48px;
+	left: 194px;
+	font-size: 25px;
+}
+
+.facee {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-border-radius: 25px;
+}
+.facee.back {
+  display: block;
+  -webkit-transform: rotateY(180deg);
+  -webkit-box-sizing: border-box;
+  -moz-transform: rotateY(180deg);
+  -moz-box-sizing: border-box;
+  -o-transform: rotateY(180deg);
+  -o-box-sizing: border-box;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  background-color: #aaa;
+}

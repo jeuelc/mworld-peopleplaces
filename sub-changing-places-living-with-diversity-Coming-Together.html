@@ -1,0 +1,166 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-changing-places-living-with-diversity-Coming-Together">
+  <script src="js/hammer.js"></script>
+  <script src="js/jquery.hammer.js"></script>
+  <script src="js/slidebar_changing_places.js"></script>
+  <link rel="stylesheet" href="css/style_changing_places.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnChangingPlaces"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnChangingPlaces"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnChangingPlaces"></div></div>
+  <div class="infobtnholder"><div class="infobtnChangingPlaces"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnChangingPlaces"></div></div>
+  <div class="menubtnholder"><div class="menubtnChangingPlaces"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:0px;"><h1>Coming Together</h1></div>
+  <div id="spacechar">&nbsp;
+    <div data-role="content" class="kidzcontent">
+      <div class="v-spacer"></div>
+      <div class="sidebarleft-half">
+        <a id="weddinglink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Changing_Places/Living_With_Diversity/Coming_Together/Wedding_Hi_Res.jpg', 'Nearly 10% of all marriages between 2000 and 2010 in the US, are between two people of different ethnic backgrounds.');">click here</a>
+        
+        <div id="f1_container" style="visibility:hidden;position:absolute;left:100px;top:270px;">
+          <div id="f1_card">
+            <div class="front face">
+              <img id="dopple" src="css/images/9-12/People_and_Places/Changing_Places/Living_With_Diversity/Coming_Together/True_Or_False.png">
+            </div>
+            <div id="backofcard" class="back face center" style="background:url(css/images/9-12/People_and_Places/Changing_Places/Living_With_Diversity/Coming_Together/True_Or_False_Reverse.png) no-repeat;">
+              <div class="returncard" style="position:absolute;left:0px;top:0px;width:362px;height:170px;"></div>
+              <div id="trueans" style="position:absolute;left:90px;top:180px;width:70px;height:50px;"></div>
+              <div id="falseans" style="position:absolute;left:200px;top:180px;width:70px;height:50px;"></div>
+            </div>
+          </div><!--/f1+card-->
+        </div><!--/f1_container-->
+		<div id="zoomwrapper">
+          <div id="pol1" class="pPiece" style="left:100px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Changing_Places/Living_With_Diversity/Coming_Together/True_Or_False.png" alt="" />
+          </div>
+          <div id="pol2"class="pPiece" style="left:75px;top:290px;">
+             <img src="css/images/9-12/People_and_Places/Changing_Places/Living_With_Diversity/Coming_Together/Wedding.jpg" alt="" />
+          </div>
+        </div><!--/zoomwrapper-->
+      </div>
+      
+      <div class="bpcontentChangingPlaces">
+        <p>Immigrants and native-born Americans mingle with each other at work, school and in social settings. The amount of cross-cultural interaction among Americans of different backgrounds and ethnic origins is one of the great strengths of that society.</p>
+		<p>One of the really fascinating outcomes of diversity in America is the growth in marriages between people of different ethnic groups and different faiths.  Between 2000 and 2010, nearly 10% of all marriages across the country involved two people of different ethnic backgrounds.  Since about the year 2000, 45% of all marriages involved either two religions or two Christian doctrines that conflicted with each other. Many people who marry across faith lines convert to the religion of their spouse.</p>
+		<p>Cross-cultural interaction is crucial for helping harmony and understanding, especially in a society as diverse as the United States.</p>
+      </div>
+       
+      <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+    </div> <!-- end content -->  
+  </div><!--/spacechar-->        
+  
+    <div class="micbtnholder"><div class="micbtnChangingPlaces" id="playstopComingTogether"></div></div>
+    <div class="bChangingPlaces"><div class="rwChangingPlaces" id="ComingTogetheraudiobbtn"></div></div>
+    <div class="plChangingPlaces"><div class="plpsChangingPlaces" id="ComingTogetheraudioplbtn"></div></div>
+    <div class="fChangingPlaces"><div class="fwChangingPlaces" id="ComingTogetheraudiofbtn"></div></div>
+    <div id="actualaudio-ComingTogether" style="visibility:hidden;"></div>
+  <!-- </div> -->
+  
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+ 
+	var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      $('div#pol1').css("z-index", 2);
+      $('div#pol2').css("z-index", 1);
+      $('div#pol1 > img').css("-webkit-transform", "rotate(0deg)");
+      $('div#pol2 > img').css("-webkit-transform", "rotate(5deg)");
+      if(sound.canPlayType('audio/mpeg')) {
+        $('#actualaudio-ComingTogether').html('<audio id="ComingTogetheraudio" controls preload onpause="playsChangingPlaces()" onplay="pauseChangingPlaces()"><source src="audio/Changing_Places/Coming_Together.mp3" type="audio/mpeg"></audio>');
+      }             
+      $("#sub-changing-places-living-with-diversity-Coming-Together").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+    })();
+    
+    $('.homelinkbh').on('tap', function() { mainaudiobg.play(); bgsoundChangingPlaces.pause(); bgsoundChangingPlaces.currentTime = 0;});
+	
+    $('#falseans').on('tap', function() {
+      alert("Wrong answer");
+    });
+    $('#trueans').on('tap', function() {
+      alert("Correct answer");
+    });
+    
+    $(".returncard").on('tap', function() {
+      $('#f1_card').css({"-webkit-transform": "rotateY(0deg)"});
+      $('#f1_card').css({"-moz-transform": "rotateY(0deg)"});
+      $('#f1_card').css({"-o-transform": "rotateY(0deg)"});
+      $('#f1_card').css({"transform": "rotateY(0deg)"});
+      setTimeout(function() {
+        $("#pol1").css({"visibility":"visible", "z-index":4});
+        $('#f1_container').css({"visibility":"hidden", "z-index":0});
+      }, 1000);
+    });
+    
+    $("#pol1").on('tap', function() {
+      $('#f1_container').css({"visibility":"visible", "z-index":10});
+      $(this).css({"visibility":"hidden"});
+      $('#f1_card').css({"-webkit-transform": "rotateY(180deg)"});
+      $('#f1_card').css({"-moz-transform": "rotateY(180deg)"});
+      $('#f1_card').css({"-o-transform": "rotateY(180deg)"});
+      $('#f1_card').css({"transform": "rotateY(180deg)"});
+    });
+	
+    $("#pol2").on('tap', function() {
+      $('#weddinglink')[0].click();
+    });
+    
+    function goBack() {
+      $.mobile.changePage("sub-changing-places-living-with-diversity.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsChangingPlaces() {
+         bgsoundChangingPlaces.play();
+    }
+       
+    function pauseChangingPlaces() {
+         bgsoundChangingPlaces.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+    $("#playstopComingTogether").on('tap', function() {
+      if(!playing) {
+        ComingTogetheraudio.play();
+        $('.micbtnChangingPlaces').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        ComingTogetheraudio.pause(); ComingTogetheraudio.currentTime = 0;
+        $('.micbtnChangingPlaces').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#ComingTogetheraudioplbtn").on('tap', function() {
+      if(!paused) {
+        ComingTogetheraudio.pause();
+        paused = true;
+      } else {
+        ComingTogetheraudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#ComingTogetheraudiofbtn").on('tap', function() {
+      var ctime = ComingTogetheraudio.currentTime;
+      ComingTogetheraudio.currentTime = ctime + 10;
+    });
+    
+    $("#ComingTogetheraudiobbtn").on('tap', function() {
+      var ctime = ComingTogetheraudio.currentTime;
+      ComingTogetheraudio.currentTime = ctime - 10;
+    });
+    
+    $("#ComingTogetheraudiopsbtn").on('tap', function() {
+      ComingTogetheraudio.pause();
+    });
+  </script>
+  <script src="js/twocardLogic.js"></script>  <!-- for card dragging effects -->
+</div> <!--//home-->

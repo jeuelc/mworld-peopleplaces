@@ -1,0 +1,113 @@
+/********* Deep Blue Sea  **********/
+
+#bluesea , #oceans , #tides , #sun , #beach , #luxury , #bottoms , #downs , #bubbles ,#wonders , #bigblue , #hides , #plants , #krills , #poles ,  #between, #greatest , #apart , #whattodo , #thefuture , #rubbishislands{
+  background:url('images/9-12/The_Natural_World/The_Deep_Blue_Sea/Deep_Blue_Sea_Bg.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+#whalepoo{
+  background:url('images/9-12/The_Natural_World/The_Deep_Blue_Sea/The_Future/Whale_Poo/Whale_Poo_Bg.png') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+.sub_deep_blue_sea_future_whale_poo_text{
+	width: 400px;
+	position: absolute;
+	right: 20px;
+	top: 210px;
+	color: #FFFFFF;
+	font-family: "Chalkboard SE";
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#humans{
+  background:url('images/9-12/The_Natural_World/The_Deep_Blue_Sea/Oceans_And_The_Earth/Humans_And_The_Ocean/Humans_And_The_Oceans_Bg.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+#dive{
+  background:url('images/9-12/The_Natural_World/The_Deep_Blue_Sea/Dive_In/Dive_In_Bg.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+.pldeep, .psdeep, .bdeep, .fdeep {
+  position:absolute;
+  top:670px;
+  left:1024px;
+  z-index:20;
+}
+
+.plpsdeep {
+  background:url('images/9-12/The_Natural_World/play.png') no-repeat 0 -73px;
+  height:73px;
+  width:73px;
+}
+
+.micbtndeep {
+  background:url('images/9-12/The_Natural_World/mic.png') no-repeat 0 -81px;
+  height:81px;
+  width:81px;
+}
+
+.rwdeep {
+  background:url('images/9-12/The_Natural_World/rw.png') no-repeat 0 -73px;
+  height:73px;
+  width:73px;
+}
+
+.plpsdeep {
+  background:url('images/9-12/The_Natural_World/play.png') no-repeat 0 -73px;
+  height:73px;
+  width:73px;
+}
+
+.fwdeep {
+  background:url('images/9-12/The_Natural_World/fw.png') no-repeat 0 -73px;
+  height:73px;
+  width:73px;
+}
+
+.menubtndeep {
+  background:url('images/9-12/The_Natural_World/menu.png') no-repeat 0 -90px;
+  height:90px;
+  width:90px;
+}
+
+
+.homebtndeep {
+  background:url('images/9-12/The_Natural_World/map.png') no-repeat 0 -74px;
+  height:74px;
+  width:80px;
+}
+
+.mpbtndeep {
+  background:url('images/9-12/The_Natural_World/mpoints.png') no-repeat 0 -84px;
+  height:79px;
+  width:80px;
+}
+
+.cpbtndeep {
+  background:url('images/9-12/The_Natural_World/ctrlpnl.png') no-repeat 0 -74px;
+  height:74px;
+  width:74px;
+}
+
+.infobtndeep {
+  background:url('images/9-12/The_Natural_World/info.png') no-repeat 0 -74px;
+  height:74px;
+  width:74px;
+}
+
+.credsbtndeep {
+  background:url('images/9-12/The_Natural_World/credits.png') no-repeat 0 -74px;
+  height:74px;
+  width:74px;
+}
