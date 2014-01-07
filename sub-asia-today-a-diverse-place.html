@@ -1,0 +1,134 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-asia-today-a-diverse-place">
+  <script src="js/slidebar_asia_today.js"></script>
+  <link rel="stylesheet" href="css/style_asia_today.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnAsia"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnAsia"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnAsia"></div></div>
+  <div class="infobtnholder"><div class="infobtnAsia"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnAsia"></div></div>
+  <div class="menubtnholder"><div class="menubtnAsia"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:14px;"><h1>A Diverse Place</h1></div>
+  <div id="indialink" style="position:absolute;left: 114px;top: 371px;width: 98px;height: 75px;"></div>
+  <div id="mongolialink" style="position:absolute;left: 178px;top: 105px;width: 100px;height: 80px;"></div>
+  <div id="indonesialink" style="position:absolute;left: 411px;top: 474px;width: 103px;height: 89px;"></div>
+  <div id="shanghailink" style="position:absolute;left: 330px;top: 253px;width: 96px;height: 84px;"></div>
+  <div id="singaporelink" style="position:absolute;left: 202px;top: 556px;width: 99px;height: 80px;"></div>
+  <div id="bonusquizlink" style="position:absolute;left: 20px;top: 539px;width: 43px;height: 43px;"></div>
+  <div data-role="content" class="kidzcontent">
+	<div class="navAsia-DiversePlace">
+        <p>The use of the word 'Asia' is misleading if it is used to mean that the region shares one single culture.  There's a whole range of different institutions, ideas and value systems present at any given moment.</p>
+		<p>Many of these are distinct in some way or another to the Western world, but none are shared across all people who live in Asia.  And they have evolved out of a combination of environmental concerns, imperial rule, mass migration, conflict, and the spread of religion.</p>
+		<p>These different things include the importance of the extended family and kin network; respect for the importance of learning for its own sake; great respect for the aged; the public roles of women; and the importance of group welfare over individual interest.</p>
+		<p>Let's look more closely at some examples of countries and places in Asia to get a sense of how different, and storied, Asia can be.</p>
+    </div>
+  <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+  </div> <!-- end content -->  
+    
+  
+  <!--<div class="audiopanel">-->
+    <!-- images are in slidebarnat.js 
+         note: change the ids to be able play the narration
+    -->
+    <div class="micbtnholder"><div class="micbtnAsia" id="playstopDiversePlace"></div></div>
+    <div class="bAsia"><div class="rwAsia" id="DiversePlaceaudiobbtn"></div></div>
+    <div class="plAsia"><div class="plpsAsia" id="DiversePlaceaudioplbtn"></div></div>
+    <div class="fAsia"><div class="fwAsia" id="DiversePlaceaudiofbtn"></div></div>
+    <div id="actualaudio-DiversePlace" style="visibility:hidden;"></div>
+  <!--</div>-->
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+    var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      if(sound.canPlayType('audio/mpeg')) {
+        $('#actualaudio-DiversePlace').html('<audio id="DiversePlaceaudio" controls preload onpause="playsAsiaToday()" onplay="pauseAsiaToday()"><source src="audio/Asia_Today/Diverse_Place.mp3" type="audio/mpeg"></audio>');
+      } 
+    
+      $("#sub-asia-today-a-diverse-place").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+    })();
+    
+    $('#indialink').on('tap', function() {
+      $.mobile.changePage("sub-asia-today-a-diverse-place-India.html", {transition: "slide"});
+    });
+    
+    $('#mongolialink').on('tap', function() {
+      $.mobile.changePage("sub-asia-today-a-diverse-place-Mongolia.html", {transition: "slide"});
+    });
+    
+    $('#indonesialink').on('tap', function() {
+      $.mobile.changePage("sub-asia-today-a-diverse-place-Indonesia.html", {transition: "slide"});
+    });
+    
+	$('#shanghailink').on('tap', function() {
+      $.mobile.changePage("sub-asia-today-a-diverse-place-Shanghai.html", {transition: "slide"});
+    });
+	
+	$('#singaporelink').on('tap', function() {
+      $.mobile.changePage("sub-asia-today-a-diverse-place-Singapore.html", {transition: "slide"});
+    });
+	
+	$('#bonusquizlink').on('tap', function() {
+      $.mobile.changePage("sub-asia-today-a-diverse-place-Bonus-Quiz.html", {transition: "slide"});
+    });
+	
+    $('.homelinkbh').on('tap', function() { mainaudiobg.play(); bgsoundAsiaToday.pause(); bgsoundAsiaToday.currentTime = 0;});
+    
+    function goBack() {
+      $.mobile.changePage("sub-asia-today.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsAsiaToday() {
+         bgsoundAsiaToday.play();
+    }
+       
+    function pauseAsiaToday() {
+         bgsoundAsiaToday.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+    $("#playstopDiversePlace").on('tap', function() {
+      if(!playing) {
+        DiversePlaceaudio.play();
+        $('.micbtnAsia').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        DiversePlaceaudio.pause(); DiversePlaceaudio.currentTime = 0;
+        $('.micbtnAsia').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#DiversePlaceaudioplbtn").on('tap', function() {
+      if(!paused) {
+        DiversePlaceaudio.pause();
+        paused = true;
+      } else {
+        DiversePlaceaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#DiversePlaceaudiofbtn").on('tap', function() {
+      var ctime = DiversePlaceaudio.currentTime;
+      DiversePlaceaudio.currentTime = ctime + 10;
+    });
+    
+    $("#DiversePlaceaudiobbtn").on('tap', function() {
+      var ctime = DiversePlaceaudio.currentTime;
+      DiversePlaceaudio.currentTime = ctime - 10;
+    });
+    
+    $("#DiversePlaceaudiopsbtn").on('tap', function() {
+      DiversePlaceaudio.pause();
+    });
+  </script>
+</div> <!--//home-->

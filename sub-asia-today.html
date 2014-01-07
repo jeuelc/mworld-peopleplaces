@@ -1,0 +1,139 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-asia-today">
+  <!-- <script src="js/slidebarnat.js"></script> -->
+  <script src="js/slidebar_asia_today.js"></script>
+  <link rel="stylesheet" href="css/style_asia_today.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnAsia"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnAsia"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnAsia"></div></div>
+  <div class="infobtnholder"><div class="infobtnAsia"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnAsia"></div></div>
+  <div class="menubtnholder"><div class="menubtnAsia"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:14px;"><h1>Asia Today</h1></div>
+  
+    <div data-role="content" class="kidzcontent">
+      <div class="navAsia-content">
+        <p>What is Asia?  This might seem like a strange thing to ask.  After all, people talk about Asia all the time.  Asian food. Asian culture.  Asian migrants.  Asian countries.  But which countries belong to Asia?  And apart from geography, does 'Asia' share anything more?  Is there such a thing as a general Asian culture, for example?</p>
+		<p>The answer is quite simple: no.  China, for example, is as different from India as Japan is different from Indonesia.  Asia spans an incredibly varying range of countries, cultures, people and geography.</p>
+		<p>What you will see is that 'Asia' means different things to different people.  It changes, depending on who is doing the defining, when they are defining it, and even who they are speaking to.  In a way, Asia is imagined.</p>
+		<p>So, where did the idea of a single 'Asia' come from?</p>
+      </div>
+        
+      <div class="navbtn1">
+        <p><a href="sub-asia-today-a-diverse-place.html" data-transition="slide"><img src="css/images/9-12/People_and_Places/Asia_Today/Diverse_Place.png"></a></p>
+      </div>
+      <div class="navbtn2">
+        <p><a href="sub-asia-today-imagining-Asia.html" data-transition="slide"><img src="css/images/9-12/People_and_Places/Asia_Today/Imagining_Asia.png"></a></p>
+      </div>
+      <div class="navbtn3">
+        <p><a href="sub-asia-today-looking-to-future.html" data-transition="slide"><img src="css/images/9-12/People_and_Places/Asia_Today/Looking_to_Future.png"></a></p>
+      </div>
+      <div class="navbtn4">
+        <p><a href="sub-asia-today-Movements-and-Migrations.html" data-transition="slide"><img src="css/images/9-12/People_and_Places/Asia_Today/Movements_Migrations.png"></a></p>
+      </div>
+        
+      <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+    </div> <!-- end content -->  
+    
+  
+  <!--<div class="audiopanel">-->
+    <!-- images are in slidebarnat.js -->
+    <div class="micbtnholder"><div class="micbtnAsia" id="playstopAsiaToday"></div></div>
+    <div class="bAsia"><div class="rwAsia" id="AsiaTodayaudiobbtn"></div></div>
+    <div class="plAsia"><div class="plpsAsia" id="AsiaTodayaudioplbtn"></div></div>
+    <div class="fAsia"><div class="fwAsia" id="AsiaTodayaudiofbtn"></div></div>
+    <div id="actualaudio-AsiaToday" style="visibility:hidden;"></div>
+  <!--</div>-->
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+    var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      if(sound.canPlayType('audio/mpeg')) {
+        $('#actualaudio-AsiaToday').html('<audio id="AsiaTodayaudio" controls preload onpause="playsAsiaToday()" onplay="pauseAsiaToday()"><source src="audio/Asia_Today/Asia_Today.mp3" type="audio/mpeg"></audio>');
+      } 
+    
+      $("#sub-asia-today").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+    })();
+    
+    $('.homelinkbh').on('tap', function() { bgsoundAsiaToday.pause(); bgsoundAsiaToday.currentTime = 0; mainaudiobg.play(); });
+    
+    function goBack() {
+      $.mobile.changePage("sub-peopleplaces.html", {transition: "slide", reverse: true });
+      bgsoundAsiaToday.pause(); 
+      bgsoundAsiaToday.currentTime = 0;
+      peopleplacessoundbg.play();
+    }
+    
+    function playsAsiaToday() {
+         bgsoundAsiaToday.play();
+    }
+       
+    function pauseAsiaToday() {
+         bgsoundAsiaToday.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+	
+    $("#playstopAsiaToday").on('tap', function() {
+      if(!playing) {
+        AsiaTodayaudio.play();
+        $('.micbtnAsia').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        AsiaTodayaudio.pause(); AsiaTodayaudio.currentTime = 0;
+        $('.micbtnAsia').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#AsiaTodayaudioplbtn").on('tap', function() {
+      if(!paused) {
+        AsiaTodayaudio.pause();
+        paused = true;
+      } else {
+        AsiaTodayaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#AsiaTodayaudiofbtn").on('tap', function() {
+      var ctime = AsiaTodayaudio.currentTime;
+      AsiaTodayaudio.currentTime = ctime + 10;
+    });
+    
+    $("#AsiaTodayaudiobbtn").on('tap', function() {
+      var ctime = AsiaTodayaudio.currentTime;
+      AsiaTodayaudio.currentTime = ctime - 10;
+    });
+    
+    $("#AsiaTodayaudiopsbtn").on('tap', function() {
+      AsiaTodayaudio.pause();
+      //$(".audiopanel").css({"backgroundPosition":"0px 0px"});
+    });
+    
+    $('.navbtn1').on('tap', function() { 
+      nav1Effects(); 
+    });
+    
+    $('.navbtn2').on('tap', function() { 
+      nav2Effects(); 
+    });
+    
+    $('.navbtn3').on('tap', function() { 
+      nav3Effects(); 
+    });
+    
+    $('.navbtn4').on('tap', function() { 
+      nav4Effects(); 
+    });
+  </script>
+</div> <!--//home-->

@@ -1,0 +1,352 @@
+/********* Asia Today **********/
+
+#sub-asia-today, #sub-asia-today-a-diverse-place-India, #sub-asia-today-a-diverse-place-Indonesia, #sub-asia-today-a-diverse-place-Mongolia, #sub-asia-today-a-diverse-place-Shanghai, #sub-asia-today-a-diverse-place-Singapore, #sub-asia-today-imagining-Asia{
+  background:url('images/9-12/People_and_Places/Asia_Today/Asia_Today_BG.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+#sub-asia-today-a-diverse-place{
+  background:url('images/9-12/People_and_Places/Asia_Today/A_Diverse_Place/Diverse_Place_BG.png') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+#sub-asia-today-imagining-Asia-Architecture{ 
+  background:url('images/9-12/People_and_Places/Asia_Today/Imagining_Asia/Architecture/Architecture_BG.png') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+#sub-asia-today-imagining-Asia-Food {
+  background:url('images/9-12/People_and_Places/Asia_Today/Imagining_Asia/Food/Food_BG.png') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+#sub-asia-today-imagining-Asia-People{
+  background:url('images/9-12/People_and_Places/Asia_Today/Imagining_Asia/People/People_BG.png') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+.plAsia, .psAsia, .bAsia, .fAsia {
+  position:absolute;
+  top:670px;
+  left:1024px;
+  z-index:20;
+}
+
+.micbtnAsia {
+  background:url('images/9-12/People_and_Places/micpp.png') no-repeat 0 -81px;
+  height:81px;
+  width:81px;
+}
+
+.rwAsia {
+  background:url('images/9-12/People_and_Places/rwpp.png') no-repeat 0 -73px;
+  height:73px;
+  width:73px;
+}
+
+.plpsAsia {
+  background:url('images/9-12/People_and_Places/playpp.png') no-repeat 0 -73px;
+  height:73px;
+  width:73px;
+}
+
+.fwAsia {
+  background:url('images/9-12/People_and_Places/fwpp.png') no-repeat 0 -73px;
+  height:73px;
+  width:73px;
+}
+
+.menubtnAsia {
+  background:url('images/9-12/People_and_Places/menupp.png') no-repeat 0 -90px;
+  height:90px;
+  width:90px;
+}
+
+
+.homebtnAsia {
+  background:url('images/9-12/People_and_Places/mappp.png') no-repeat 0 -74px;
+  height:74px;
+  width:80px;
+}
+
+.mpbtnAsia {
+  background:url('images/9-12/People_and_Places/mpointspp.png') no-repeat 0 -84px;
+  height:79px;
+  width:80px;
+}
+
+.cpbtnAsia {
+  background:url('images/9-12/People_and_Places/ctrlpnlpp.png') no-repeat 0 -74px;
+  height:74px;
+  width:74px;
+}
+
+.infobtnAsia {
+  background:url('images/9-12/People_and_Places/infopp.png') no-repeat 0 -74px;
+  height:74px;
+  width:74px;
+}
+
+.credsbtnAsia {
+  background:url('images/9-12/People_and_Places/creditspp.png') no-repeat 0 -74px;
+  height:74px;
+  width:74px;
+}
+
+.navtwobtn1{
+	left: 60px;
+    position: absolute;
+    top: 310px;
+}
+
+.navtwobtn3 {
+    right: 60px;
+    position: absolute;
+    top: 310px;
+}
+
+.navtitleholderAsia{
+	width: 435px;
+	height: 68px;
+	position: absolute;
+	top: 169px;
+	left: 295px;
+	text-align: center;
+	line-height: 32px;
+}
+
+.navtitleholderAsia h1{
+	text-transform: uppercase;
+	color: #FFF;
+	font-family: comic sans ms;
+	padding: 0;
+	margin: 0;
+	font-weight: bold;
+}
+
+.bptitleholderAsia {
+  width:627px;
+  height:68px;
+  text-align:center;
+  line-height:28px;
+  position:absolute;
+  top:169px;
+  left:194px;
+}
+
+.bptitleholderAsia h1
+ {
+  text-transform:uppercase;
+  color: #FFFFFF;
+  font-family:"comic sans ms";
+  font-weight:bold;
+  padding:0;
+  margin:0;
+}
+
+.navAsia-content{
+  position:absolute;
+  left:305px;
+  top:263px;
+  width:410px;
+  height:359px;
+  overflow:auto;
+  text-align:center;
+  font-family:"comic sans ms";
+  font-size:18px;
+  font-weight:normal;
+  color:#000000;
+}
+
+.navAsia-DiversePlace{
+	position: absolute;
+	left: 595px;
+	top: 265px;
+	width: 410px;
+	height: 300px;
+	overflow: auto;
+	text-align: center;
+	font-family: "comic sans ms";
+	font-size: 18px;
+	font-weight: normal;
+	color: #000000;
+}
+
+.navAsia-Architecture{
+	position: absolute;
+	left: 500px;
+	top: 95px;
+	width: 390px;
+	height: 249px;
+	overflow: auto;
+	text-align: left;
+	font-family: "comic sans ms";
+	font-size: 18px;
+	font-weight: normal;
+	color: #000000;
+}
+
+.navAsia-Food{
+	position: absolute;
+	left: 360px;
+	top: 221px;
+	width: 320px;
+	height: 320px;
+	overflow: auto;
+	text-align: center;
+	font-family: "comic sans ms";
+	font-size: 18px;
+	font-weight: normal;
+	color: #000000;
+}
+
+.navAsia-People{
+	position: absolute;
+	left: 428px;
+	top: 166px;
+	width: 355px;
+	height: 320px;
+	overflow: auto;
+	text-align: left;
+	font-family: "comic sans ms";
+	font-size: 18px;
+	font-weight: normal;
+	color: #000000;
+}
+
+.navAsia-content p {
+  margin-top:0 !important;
+}
+
+.navAsia-content3 {
+  position:absolute;
+  left:59px;
+  top:245px;
+  width:920px;
+  height:160px;
+  overflow-y:scroll;
+  text-align:left;
+  font-family:"comic sans ms";
+  font-size:18px;
+  font-weight:normal;
+  color:#000000;
+}
+
+.bpcontentAsia{
+  width:413px;
+  height:356px;
+  position:absolute;
+  left:550px;
+  top:266px;
+  overflow:auto;
+  font-family:"comic sans ms";
+  font-size:18px;
+  font-weight:normal;
+  text-align:left;
+  color:#000000;
+}
+
+#sub-asia-today .bptitleholder h1, #sub-asia-today-a-diverse-place-India .bptitleholder h1, #sub-asia-today-a-diverse-place-Indonesia .bptitleholder h1, #sub-asia-today-a-diverse-place-Mongolia .bptitleholder h1, #sub-asia-today-a-diverse-place-Shanghai .bptitleholder h1, #sub-asia-today-a-diverse-place-Singapore .bptitleholder h1, #sub-asia-today-imagining-Asia .bptitleholder h1{
+	text-transform: uppercase;
+	color: #ffffff !important;
+	font-family: "comic sans ms";
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#sub-asia-today-a-diverse-place .bptitleholder h1{
+	text-transform: uppercase;
+	color: #ffeecf !important;
+	font-family: "comic sans ms";
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#sub-asia-today-imagining-Asia-Food .bptitleholder h1{
+	text-transform: uppercase;
+	color: #ffeecf !important;
+	font-family: "comic sans ms";
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#sub-asia-today-imagining-Asia-Architecture .bptitleholder h1{
+	text-transform: uppercase;
+	color: #ffeecf !important;
+	font-family: "comic sans ms";
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#sub-asia-today-imagining-Asia-People .bptitleholder h1{
+	text-transform: uppercase;
+	color: #ffeecf !important;
+	font-family: "comic sans ms";
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#sub-asia-today .bptitleholder, #sub-asia-today-a-diverse-place-India .bptitleholder, #sub-asia-today-a-diverse-place-Indonesia .bptitleholder, #sub-asia-today-a-diverse-place-Mongolia .bptitleholder, #sub-asia-today-a-diverse-place-Shanghai .bptitleholder, #sub-asia-today-a-diverse-place-Singapore .bptitleholder, #sub-asia-today-imagining-Asia .bptitleholder{
+	width: 627px;
+	height: 68px;
+	text-align: center;
+	line-height: 28px;
+	position: absolute;
+	top: 169px;
+	left: 194px;
+}
+
+#sub-asia-today-a-diverse-place .bptitleholder{
+	width: 313px;
+	height: 68px;
+	text-align: right;
+	line-height: 40px;
+	position: absolute;
+	top: 130px;
+	left: 670px;
+}
+
+#sub-asia-today-imagining-Asia-Architecture .bptitleholder{
+	width: 313px;
+	height: 68px;
+	text-align: center;
+	line-height: 40px;
+	position: absolute;
+	top: 20px;
+	left: 540px;
+}
+
+#sub-asia-today-imagining-Asia-Food .bptitleholder{
+	width: 313px;
+	height: 68px;
+	text-align: center;
+	line-height: 40px;
+	position: absolute;
+	top: 155px;
+	left: 360px;
+}
+
+#sub-asia-today-imagining-Asia-People .bptitleholder{
+	width: 313px;
+	height: 68px;
+	text-align: center;
+	line-height: 40px;
+	position: absolute;
+	top: 100px;
+	left: 440px;
+}

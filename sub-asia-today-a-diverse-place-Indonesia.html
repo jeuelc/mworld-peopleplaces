@@ -1,0 +1,149 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-asia-today-a-diverse-place-Indonesia">
+  <script src="js/hammer.js"></script>
+  <script src="js/jquery.hammer.js"></script>
+  <script src="js/slidebar_asia_today.js"></script>
+  <link rel="stylesheet" href="css/style_asia_today.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnAsia"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnAsia"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnAsia"></div></div>
+  <div class="infobtnholder"><div class="infobtnAsia"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnAsia"></div></div>
+  <div class="menubtnholder"><div class="menubtnAsia"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:0px;"><h1>Indonesia</h1></div>
+  <div id="spacechar">&nbsp;
+    <div data-role="content" class="kidzcontent">
+      <div class="v-spacer"></div>
+      <div class="sidebarleft-half">
+        <a id="gangalink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Asia_Today/A_Diverse_Place/Indonesia/Jakarta_Hi_Res.jpg', 'Jakarta, the capital of Indonesia.');">click here</a>
+		
+        <a id="techlink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Asia_Today/A_Diverse_Place/Indonesia/Penyengat_Island_Hi_Res.jpg', 'Wooden houses on Penyengat island, Indonesia.');">click here</a>
+		
+		<a id="sarilink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Asia_Today/A_Diverse_Place/Indonesia/Balinese_Marketplace_Hi_Res.jpg', 'A crowded Balinese marketplace.');">click here</a>
+		<a id="salink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Asia_Today/A_Diverse_Place/Indonesia/Minangkabau_King_Place_Hi_Res.jpg', 'Minangkabau King Palace with traditional horned roof.');">click here</a>
+        
+		<div id="zoomwrapper">
+          <div id="pol1" class="pPiece" style="left:100px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Asia_Today/A_Diverse_Place/Indonesia/Jakarta.jpg" alt="" />
+          </div>
+          <div id="pol2"class="pPiece" style="left:75px;top:290px;">
+             <img src="css/images/9-12/People_and_Places/Asia_Today/A_Diverse_Place/Indonesia/Penyengat_Island.jpg" alt="" />
+          </div>
+		  <div id="pol3"class="pPiece" style="left:80px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Asia_Today/A_Diverse_Place/Indonesia/Balinese_Marketplace.jpg" alt="" />
+          </div>
+		  <div id="pol4"class="pPiece" style="left:70px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Asia_Today/A_Diverse_Place/Indonesia/Minangkabau_King_Place.jpg" alt="" />
+          </div>
+        </div><!--/zoomwrapper-->
+      </div>
+      
+      <div class="bpcontentAsia">
+        <p>Indonesia is a country made up of over 17,000 islands!  About 238 million people live across the islands.  The island of Java has been very influential within the archipelago, but most of the communities in the 'outer islands' have distinctive cultural identities.  Indeed, there are over 300 major ethnic groups and nearly 750 known languages and dialects in use!  It is also the world's largest Muslim nation, although minority religions like Hinduism and Buddhism exist in pockets.</p>
+		<p>Indonesia was never meant to be a single country.  Through the years governments have had to deal with secession movements by creating a sense of imagined unity among the country's population.  Some strategies have been harsher than others, but more recently such rules have been relaxed and multicultural attitudes are becoming more accepted.</p>
+      </div>
+       
+      <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+    </div> <!-- end content -->  
+  </div><!--/spacechar-->        
+  
+    <div class="micbtnholder"><div class="micbtnAsia" id="playstopIndonesia"></div></div>
+    <div class="bAsia"><div class="rwAsia" id="Indonesiaaudiobbtn"></div></div>
+    <div class="plAsia"><div class="plpsAsia" id="Indonesiaaudioplbtn"></div></div>
+    <div class="fAsia"><div class="fwAsia" id="Indonesiaaudiofbtn"></div></div>
+    <div id="actualaudio-Indonesia" style="visibility:hidden;"></div>
+  <!-- </div> -->
+  
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+ 
+	var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      $('div#pol1').css("z-index", 3);
+      $('div#pol2').css("z-index", 2);
+      $('div#pol3').css("z-index", 1);
+      $('div#pol1 > img').css("-webkit-transform", "rotate(0deg)");
+      $('div#pol2 > img').css("-webkit-transform", "rotate(5deg)");
+      $('div#pol3 > img').css("-webkit-transform", "rotate(-3deg)");
+      $('div#pol4 > img').css("-webkit-transform", "rotate(-3deg)");
+      
+	  if(sound.canPlayType('audio/mpeg')) {
+        $('#actualaudio-Indonesia').html('<audio id="Indonesiaaudio" controls preload onpause="playsAsiaToday()" onplay="pauseAsiaToday()"><source src="audio/Asia_Today/Indonesia.mp3" type="audio/mpeg"></audio>');
+      }             
+      $("#sub-asia-today-a-diverse-place-Indonesia").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+	})();
+    
+	$('.homelinkbh').on('tap', function() { mainaudiobg.play(); bgsoundAsiaToday.pause(); bgsoundAsiaToday.currentTime = 0;});
+    
+	$("#pol1").on('tap', function(){
+      $('#gangalink')[0].click();
+    });
+    $("#pol2").on('tap', function() {
+      $('#techlink')[0].click();
+    });
+    $("#pol3").on('tap', function() {
+      $('#sarilink')[0].click();
+    });
+	$("#pol4").on('tap', function() {
+      $('#salink')[0].click();
+    });
+    function goBack() {
+      $.mobile.changePage("sub-asia-today-a-diverse-place.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsAsiaToday() {
+         bgsoundAsiaToday.play();
+    }
+       
+    function pauseAsiaToday() {
+         bgsoundAsiaToday.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+    $("#playstopIndonesia").on('tap', function() {
+      if(!playing) {
+        Indonesiaaudio.play();
+        $('.micbtnAsia').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        Indonesiaaudio.pause(); Indonesiaaudio.currentTime = 0;
+        $('.micbtnAsia').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#Indonesiaaudioplbtn").on('tap', function() {
+      if(!paused) {
+        Indonesiaaudio.pause();
+        paused = true;
+      } else {
+        Indonesiaaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#Indonesiaaudiofbtn").on('tap', function() {
+      var ctime = Indonesiaaudio.currentTime;
+      Indonesiaaudio.currentTime = ctime + 10;
+    });
+    
+    $("#Indonesiaaudiobbtn").on('tap', function() {
+      var ctime = Indonesiaaudio.currentTime;
+      Indonesiaaudio.currentTime = ctime - 10;
+    });
+    
+    $("#Indonesiaaudiopsbtn").on('tap', function() {
+      Indonesiaaudio.pause();
+    });
+  </script>
+  <script src="js/fourcardLogic.js"></script>  <!-- for card dragging effects -->
+</div> <!--//home-->

@@ -1,0 +1,174 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-asia-today-a-diverse-place-Mongolia">
+  <script src="js/hammer.js"></script>
+  <script src="js/jquery.hammer.js"></script>
+  <script src="js/slidebar_asia_today.js"></script>
+  <link rel="stylesheet" href="css/style_asia_today.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnAsia"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnAsia"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnAsia"></div></div>
+  <div class="infobtnholder"><div class="infobtnAsia"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnAsia"></div></div>
+  <div class="menubtnholder"><div class="menubtnAsia"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:0px;"><h1>Mongolia</h1></div>
+  <div id="spacechar">&nbsp;
+    <div data-role="content" class="kidzcontent">
+      <div class="v-spacer"></div>
+      <div class="sidebarleft-half">
+        <a id="ulanlink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Asia_Today/A_Diverse_Place/Mongolia/Ulan_Bator_Hi_Res.jpg', 'View of Ulan Bator, the largest city and capital of Mongolia.');">click here</a>
+		
+        <a id="couplelink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Asia_Today/A_Diverse_Place/Mongolia/Couple_Outside_Yurt_Hi_Res.jpg', 'Mongolian couple in national clothing stand outside a \'yurt\', a traditional type of house which is still in use today by some people.');">click here</a>
+		
+		<a id="insidelink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Asia_Today/A_Diverse_Place/Mongolia/Inside_A_Yurt_Hi_Res.jpg', 'Inside a yurt.');">click here</a>
+        
+		<div id="zoomwrapper">
+          <div id="pol1" class="pPiece" style="left:100px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Asia_Today/A_Diverse_Place/Mongolia/Traditional_Mongolian_Music.png" alt="" />
+          </div>
+          <div id="pol2"class="pPiece" style="left:75px;top:290px;">
+             <img src="css/images/9-12/People_and_Places/Asia_Today/A_Diverse_Place/Mongolia/Ulan_Bator.jpg" alt="" />
+          </div>
+		  <div id="pol3"class="pPiece" style="left:80px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Asia_Today/A_Diverse_Place/Mongolia/Couple_Outside_Yurt.jpg" alt="" />
+          </div>
+		  <div id="pol4"class="pPiece" style="left:70px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Asia_Today/A_Diverse_Place/Mongolia/Inside_A_Yurt.jpg" alt="" />
+          </div>
+        </div><!--/zoomwrapper-->
+      </div>
+      
+      <div class="bpcontentAsia">
+        <p>While much of Asia is changing rapidly today, in some parts of the region things haven't changed much over the past few thousand years.  In the plains of Mongolia, while several sophisticated urban settlements exist, more than a third of the population still live nomadic lifestyles, living in 'ger-teregs' (yurts on carts).  Even those who live in the suburban fringes of cities choose to reside in yurts.</p>
+		<p>Mongolia doesn't get much rain and its climate is arid and hostile, so it's no surprise that it's the most sparsely populated country in the world!  There are 2.9 million people spread over a region nearly 1.6 square million kilometres in size.  Among nomadic communities, children often learn to ride on horseback before they can walk properly, and hunting with a bow and arrow at full gallop is an expected skill of young nomadic Mongols.</p>
+      </div>
+       
+      <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+    </div> <!-- end content -->  
+  </div><!--/spacechar-->        
+  
+    <div class="micbtnholder"><div class="micbtnAsia" id="playstopMongolia"></div></div>
+    <div class="bAsia"><div class="rwAsia" id="Mongoliaaudiobbtn"></div></div>
+    <div class="plAsia"><div class="plpsAsia" id="Mongoliaaudioplbtn"></div></div>
+    <div class="fAsia"><div class="fwAsia" id="Mongoliaaudiofbtn"></div></div>
+    <div id="actualaudio-Mongolia" style="visibility:hidden;"></div>
+  <!-- </div> -->
+  <!-- ----------------------- Video embedding --------------------------- -->
+  
+	<div id="watchTraditionalMangolianMusicVideo" style="width:1024px;height:748px;position:absolute;left:0px;top:0px;visibility:hidden;background:#000000;z-index:-1;">
+    <video id="watchTraditionalMangolianMusic" width="1024" height="748" preload>
+      <source src="css/images/9-12/People_and_Places/Asia_Today/A_Diverse_Place/Mongolia/Traditional_Mongolian_Music.mpg" type="video/mp4">
+    </video>
+  </div>
+  
+  <!-- ------------------------------------------------------------------ -->
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+ 
+	var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      $('div#pol1').css("z-index", 3);
+      $('div#pol2').css("z-index", 2);
+      $('div#pol3').css("z-index", 1);
+      $('div#pol1 > img').css("-webkit-transform", "rotate(0deg)");
+      $('#watchTraditionalMangolianMusicVideo').css({"visibility":"hidden", "z-index":-10});		
+      $('div#pol2 > img').css("-webkit-transform", "rotate(5deg)");
+      $('div#pol3 > img').css("-webkit-transform", "rotate(-3deg)");
+      $('div#pol4 > img').css("-webkit-transform", "rotate(-3deg)");
+      
+	  if(sound.canPlayType('audio/mpeg')) {
+        $('#actualaudio-Mongolia').html('<audio id="Mongoliaaudio" controls preload onpause="playsAsiaToday()" onplay="pauseAsiaToday()"><source src="audio/Asia_Today/Mongolia.mp3" type="audio/mpeg"></audio>');
+      }             
+      $("#sub-asia-today-a-diverse-place-Mongolia").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+    })();
+    
+	watchTraditionalMangolianMusic.addEventListener('ended', function() { 
+        $("#watchTraditionalMangolianMusicVideo").css({"visibility":"hidden", "z-index":-1});
+        $("#watchTraditionalMangolianMusic").css({"z-index":-1});
+        bgsoundvol.play(); 
+    });
+    
+    $("#watchTraditionalMangolianMusic").on('tap', function() {
+        $("#watchTraditionalMangolianMusicVideo").css({"visibility":"hidden", "z-index":-1});
+        $("#watchTraditionalMangolianMusic").css({"z-index":-1});
+        bgsoundvol.play();
+        watchTraditionalMangolianMusic.pause();
+        watchTraditionalMangolianMusic.currentTime = 0;
+    });
+	  
+    $('.homelinkbh').on('tap', function() { mainaudiobg.play(); bgsoundAsiaToday.pause(); bgsoundAsiaToday.currentTime = 0;});
+    
+	$("#pol1").on('tap', function(){
+      $("#watchTraditionalMangolianMusicVideo").css({"visibility":"visible", "z-index":10});
+      $("#watchTraditionalMangolianMusic").css({"z-index":9});
+      bgsoundvol.pause();
+      watchTraditionalMangolianMusic.play();
+    });
+    $("#pol2").on('tap', function() {
+      $('#ulanlink')[0].click();
+    });
+    $("#pol3").on('tap', function() {
+      $('#couplelink')[0].click();
+    });
+	$("#pol4").on('tap', function() {
+      $('#insidelink')[0].click();
+    });
+    function goBack() {
+      $.mobile.changePage("sub-asia-today-a-diverse-place.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsAsiaToday() {
+         bgsoundAsiaToday.play();
+    }
+       
+    function pauseAsiaToday() {
+         bgsoundAsiaToday.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+    $("#playstopMongolia").on('tap', function() {
+      if(!playing) {
+        Mongoliaaudio.play();
+        $('.micbtnAsia').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        Mongoliaaudio.pause(); Mongoliaaudio.currentTime = 0;
+        $('.micbtnAsia').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#Mongoliaaudioplbtn").on('tap', function() {
+      if(!paused) {
+        Mongoliaaudio.pause();
+        paused = true;
+      } else {
+        Mongoliaaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#Mongoliaaudiofbtn").on('tap', function() {
+      var ctime = Mongoliaaudio.currentTime;
+      Mongoliaaudio.currentTime = ctime + 10;
+    });
+    
+    $("#Mongoliaaudiobbtn").on('tap', function() {
+      var ctime = Mongoliaaudio.currentTime;
+      Mongoliaaudio.currentTime = ctime - 10;
+    });
+    
+    $("#Mongoliaaudiopsbtn").on('tap', function() {
+      Mongoliaaudio.pause();
+    });
+  </script>
+  <script src="js/fourcardLogic.js"></script>  <!-- for card dragging effects -->
+</div> <!--//home-->

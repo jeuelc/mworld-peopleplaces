@@ -1,0 +1,178 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-asia-today-a-diverse-place-Shanghai">
+  <script src="js/hammer.js"></script>
+  <script src="js/jquery.hammer.js"></script>
+  <script src="js/slidebar_asia_today.js"></script>
+  <link rel="stylesheet" href="css/style_asia_today.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnAsia"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnAsia"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnAsia"></div></div>
+  <div class="infobtnholder"><div class="infobtnAsia"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnAsia"></div></div>
+  <div class="menubtnholder"><div class="menubtnAsia"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:0px;"><h1>Shanghai</h1></div>
+  <div id="spacechar">&nbsp;
+    <div data-role="content" class="kidzcontent">
+      <div class="v-spacer"></div>
+      <div class="sidebarleft-half">
+        <a id="ulanlink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Asia_Today/A_Diverse_Place/Shanghai/Aerial_Of_Shanghai_Hi_Res.jpg', 'Aerial view of Shanghai.');">click here</a>
+		
+        <a id="couplelink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Asia_Today/A_Diverse_Place/Shanghai/Shanghai_Street_Hi_Res.jpg', 'A busy street scene in Shanghai.');">click here</a>
+		
+		<a id="insidelink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Asia_Today/A_Diverse_Place/Shanghai/Yuyuan_Garden_Hi_Res.jpg', 'Yuyuan garden in Shanghai.');">click here</a>
+        
+		<div id="f1_container" style="visibility:hidden;position:absolute;left:100px;top:270px;">
+          <div id="f1_card">
+            <div class="front face">
+              <img id="dopple" src="css/images/9-12/People_and_Places/Asia_Today/A_Diverse_Place/Shanghai/What_Is_A_Yurt.png">
+            </div>
+            <div id="backofcard" class="back face center" style="background:url(css/images/9-12/People_and_Places/Asia_Today/A_Diverse_Place/Shanghai/What_Is_A_Yurt_Reverse.png) no-repeat;">
+              <div class="returncard" style="position:absolute;left:0px;top:0px;width:362px;height:170px;"></div>
+              <div id="trueans" style="position:absolute;left:90px;top:180px;width:70px;height:50px;"></div>
+              <div id="falseans" style="position:absolute;left:200px;top:180px;width:70px;height:50px;"></div>
+            </div>
+          </div><!--/f1+card-->
+        </div><!--/f1_container-->
+		
+		<div id="zoomwrapper">
+          <div id="pol1" class="pPiece" style="left:100px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Asia_Today/A_Diverse_Place/Shanghai/What_Is_A_Yurt.png" alt="" />
+          </div>
+          <div id="pol2"class="pPiece" style="left:75px;top:290px;">
+             <img src="css/images/9-12/People_and_Places/Asia_Today/A_Diverse_Place/Shanghai/Aerial_Of_Shanghai.jpg" alt="" />
+          </div>
+		  <div id="pol3"class="pPiece" style="left:80px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Asia_Today/A_Diverse_Place/Shanghai/Shanghai_Street.jpg" alt="" />
+          </div>
+		  <div id="pol4"class="pPiece" style="left:70px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Asia_Today/A_Diverse_Place/Shanghai/Yuyuan_Garden.jpg" alt="" />
+          </div>
+        </div><!--/zoomwrapper-->
+      </div>
+      
+      <div class="bpcontentAsia">
+        <p>Shanghai is one of the world's biggest cities.  It has over 23 million residents.  Since the late 1800s its importance as a centre of trade into and out of China has been undisputed.</p>
+		<p>The influx of money and goods into the city brought a vibrant entertainment scene, with cabarets and nightclubs galore!  When the Communists came to power in 1949, the 'good times' came to a quick end, at least for a while.</p>
+		<p>When China began to open up economically again in 1978, Shanghai was at the heart of their plans.  By the 1990s, the city had become one of the big financial centres of the world and the site of the world's busiest container port.  Nearly a fifth of all of China's wealth, if you measured it in raw dollars, is located in Shanghai.  Along with its mix of distinctive colonial and modern architecture on its river front (known as the 'bund'), the city is symbolic of the rise of China as an economic superpower.</p>
+      </div>
+       
+      <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+    </div> <!-- end content -->  
+  </div><!--/spacechar-->        
+  
+    <div class="micbtnholder"><div class="micbtnAsia" id="playstopShanghai"></div></div>
+    <div class="bAsia"><div class="rwAsia" id="Shanghaiaudiobbtn"></div></div>
+    <div class="plAsia"><div class="plpsAsia" id="Shanghaiaudioplbtn"></div></div>
+    <div class="fAsia"><div class="fwAsia" id="Shanghaiaudiofbtn"></div></div>
+    <div id="actualaudio-Shanghai" style="visibility:hidden;"></div>
+  <!-- </div> -->
+  
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+ 
+	var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      $('div#pol1').css("z-index", 3);
+      $('div#pol2').css("z-index", 2);
+      $('div#pol3').css("z-index", 1);
+      $('div#pol1 > img').css("-webkit-transform", "rotate(0deg)");
+      $('div#pol2 > img').css("-webkit-transform", "rotate(5deg)");
+      $('div#pol3 > img').css("-webkit-transform", "rotate(-3deg)");
+      $('div#pol4 > img').css("-webkit-transform", "rotate(-3deg)");
+      
+	  if(sound.canPlayType('audio/mpeg')) {
+			$('#actualaudio-Shanghai').html('<audio id="Shanghaiaudio" controls preload onpause="playsAsiaToday()" onplay="pauseAsiaToday()"><source src="audio/Asia_Today/Shanghai.mp3" type="audio/mpeg"></audio>');
+		  }             
+	  $("#sub-asia-today-a-diverse-place-Shanghai").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+	})();
+    
+	$('.homelinkbh').on('tap', function() { mainaudiobg.play(); bgsoundAsiaToday.pause(); bgsoundAsiaToday.currentTime = 0;});
+    
+	$(".returncard").on('tap', function() {
+      $('#f1_card').css({"-webkit-transform": "rotateY(0deg)"});
+      $('#f1_card').css({"-moz-transform": "rotateY(0deg)"});
+      $('#f1_card').css({"-o-transform": "rotateY(0deg)"});
+      $('#f1_card').css({"transform": "rotateY(0deg)"});
+      setTimeout(function() {
+        $("#pol1").css({"visibility":"visible", "z-index":4});
+        $('#f1_container').css({"visibility":"hidden", "z-index":0});
+      }, 1000);
+    });
+    
+    $("#pol1").on('tap', function() {
+      $('#f1_container').css({"visibility":"visible", "z-index":10});
+      $(this).css({"visibility":"hidden"});
+      $('#f1_card').css({"-webkit-transform": "rotateY(180deg)"});
+      $('#f1_card').css({"-moz-transform": "rotateY(180deg)"});
+      $('#f1_card').css({"-o-transform": "rotateY(180deg)"});
+      $('#f1_card').css({"transform": "rotateY(180deg)"});
+    });
+    $("#pol2").on('tap', function() {
+      $('#ulanlink')[0].click();
+    });
+    $("#pol3").on('tap', function() {
+      $('#couplelink')[0].click();
+    });
+	$("#pol4").on('tap', function() {
+      $('#insidelink')[0].click();
+    });
+    function goBack() {
+      $.mobile.changePage("sub-asia-today-a-diverse-place.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsAsiaToday() {
+         bgsoundAsiaToday.play();
+    }
+       
+    function pauseAsiaToday() {
+         bgsoundAsiaToday.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+    $("#playstopShanghai").on('tap', function() {
+      if(!playing) {
+        Shanghaiaudio.play();
+        $('.micbtnAsia').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        Shanghaiaudio.pause(); Shanghaiaudio.currentTime = 0;
+        $('.micbtnAsia').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#Shanghaiaudioplbtn").on('tap', function() {
+      if(!paused) {
+        Shanghaiaudio.pause();
+        paused = true;
+      } else {
+        Shanghaiaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#Shanghaiaudiofbtn").on('tap', function() {
+      var ctime = Shanghaiaudio.currentTime;
+      Shanghaiaudio.currentTime = ctime + 10;
+    });
+    
+    $("#Shanghaiaudiobbtn").on('tap', function() {
+      var ctime = Shanghaiaudio.currentTime;
+      Shanghaiaudio.currentTime = ctime - 10;
+    });
+    
+    $("#Shanghaiaudiopsbtn").on('tap', function() {
+      Shanghaiaudio.pause();
+    });
+  </script>
+  <script src="js/fourcardLogic.js"></script>  <!-- for card dragging effects -->
+</div> <!--//home-->

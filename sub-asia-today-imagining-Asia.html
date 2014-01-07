@@ -1,0 +1,137 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-asia-today-imagining-Asia">
+  <!-- <script src="js/slidebarnat.js"></script> -->
+  <script src="js/slidebar_asia_today.js"></script>
+  <link rel="stylesheet" href="css/style_asia_today.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnAsia"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnAsia"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnAsia"></div></div>
+  <div class="infobtnholder"><div class="infobtnAsia"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnAsia"></div></div>
+  <div class="menubtnholder"><div class="menubtnAsia"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:14px;"><h1>Imagining Asia</h1></div>
+  
+    <div data-role="content" class="kidzcontent">
+      <div class="navAsia-content">
+        <p>Consider this question for a start: where does Asia 'begin' on a map of the world, and where does it 'end'?</p>
+		<p>For some people, Asia stretches from Pakistan in the west to Japan in the east, Mongolia to the north and Indonesia to the south.  Yet until the 13th century, the word 'Asia' was used by Europeans to refer to the countries that, today, make up the Middle East &ndash; Iran, Iraq, Afghanistan, Syria, Palestine, Israel, Jordan, even Turkey.</p>
+		<p>When Marco Polo, and others, travelled to China and brought back stories about the wonders of that kingdom, people in Europe began to include other places into Asia as well.  By the 19th century, this vast region was often simply called Asia.</p>
+		<p>The way we use the word Asia today comes out of this historical evolution of an idea.  Just as importantly, the word was created not by the people that it was describing or categorising, but by Europeans.</p>
+		<p>But using a word like Asia to describe the entire region, while convenient, is problematic.</p>
+      </div>
+        
+      <div class="navbtn1">
+        <p><a href="sub-asia-today-imagining-Asia-People.html" data-transition="slide"><img src="css/images/9-12/People_and_Places/Asia_Today/Imagining_Asia/People.png"></a></p>
+      </div>
+      <div class="navbtn2">
+        <p><a href="sub-asia-today-imagining-Asia-Food.html" data-transition="slide"><img src="css/images/9-12/People_and_Places/Asia_Today/Imagining_Asia/Food.png"></a></p>
+      </div>
+      <div class="navbtn3">
+        <p><a href="sub-asia-today-imagining-Asia-Architecture.html" data-transition="slide"><img src="css/images/9-12/People_and_Places/Asia_Today/Imagining_Asia/Architecture.png"></a></p>
+      </div>
+      <div class="navbtn4">
+        <p><a href="sub-asia-today-imagining-Asia-Pop-Culture.html" data-transition="slide"><img src="css/images/9-12/People_and_Places/Asia_Today/Imagining_Asia/Pop_Culture.png"></a></p>
+      </div>
+        
+      <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+    </div> <!-- end content -->  
+    
+  
+  <!--<div class="audiopanel">-->
+    <!-- images are in slidebarnat.js -->
+    <div class="micbtnholder"><div class="micbtnAsia" id="playstopImaginingAsia"></div></div>
+    <div class="bAsia"><div class="rwAsia" id="ImaginingAsiaaudiobbtn"></div></div>
+    <div class="plAsia"><div class="plpsAsia" id="ImaginingAsiaaudioplbtn"></div></div>
+    <div class="fAsia"><div class="fwAsia" id="ImaginingAsiaaudiofbtn"></div></div>
+    <div id="actualaudio-ImaginingAsia" style="visibility:hidden;"></div>
+  <!--</div>-->
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+    var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      if(sound.canPlayType('audio/mpeg')) {
+        $('#actualaudio-ImaginingAsia').html('<audio id="ImaginingAsiaaudio" controls preload onpause="playsAsiaToday()" onplay="pauseAsiaToday()"><source src="audio/Asia_Today/Imagining_Asia.mp3" type="audio/mpeg"></audio>');
+      } 
+    
+      $("#sub-asia-today-imagining-Asia").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+    })();
+    
+    $('.homelinkbh').on('tap', function() { bgsoundAsiaToday.pause(); bgsoundAsiaToday.currentTime = 0; mainaudiobg.play(); });
+    
+    function goBack() {
+      $.mobile.changePage("sub-peopleplaces.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsAsiaToday() {
+         bgsoundAsiaToday.play();
+    }
+       
+    function pauseAsiaToday() {
+         bgsoundAsiaToday.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+	
+    $("#playstopImaginingAsia").on('tap', function() {
+      if(!playing) {
+        ImaginingAsiaaudio.play();
+        $('.micbtnAsia').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        ImaginingAsiaaudio.pause(); ImaginingAsiaaudio.currentTime = 0;
+        $('.micbtnAsia').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#ImaginingAsiaaudioplbtn").on('tap', function() {
+      if(!paused) {
+        ImaginingAsiaaudio.pause();
+        paused = true;
+      } else {
+        ImaginingAsiaaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#ImaginingAsiaaudiofbtn").on('tap', function() {
+      var ctime = ImaginingAsiaaudio.currentTime;
+      ImaginingAsiaaudio.currentTime = ctime + 10;
+    });
+    
+    $("#ImaginingAsiaaudiobbtn").on('tap', function() {
+      var ctime = ImaginingAsiaaudio.currentTime;
+      ImaginingAsiaaudio.currentTime = ctime - 10;
+    });
+    
+    $("#ImaginingAsiaaudiopsbtn").on('tap', function() {
+      ImaginingAsiaaudio.pause();
+      //$(".audiopanel").css({"backgroundPosition":"0px 0px"});
+    });
+    
+    $('.navbtn1').on('tap', function() { 
+      nav1Effects(); 
+    });
+    
+    $('.navbtn2').on('tap', function() { 
+      nav2Effects(); 
+    });
+    
+    $('.navbtn3').on('tap', function() { 
+      nav3Effects(); 
+    });
+    
+    $('.navbtn4').on('tap', function() { 
+      nav4Effects(); 
+    });
+  </script>
+</div> <!--//home-->

@@ -6,7 +6,7 @@
     
     <div style="width:90%;margin:auto;">
       <div class="aclink"><a href="#" data-transition="slide" id="agmovielink"><img src="css/images/9-12/People_and_Places/megacitiesbtn.png"></a></div>
-      <div class="aclink"><a href="#" data-transition="slide"><img src="css/images/9-12/People_and_Places/asiabtn.png"></a></div>
+      <div class="aclink"><a href="sub-asia-today.html" data-transition="slide" id="asiatoday"><img src="css/images/9-12/People_and_Places/asiabtn.png"></a></div>
       <div class="aclink"><a href="sub-changing-places.html" data-transition="slide" id="changingplaces"><img src="css/images/9-12/People_and_Places/travellersbtn.png"></a></div>
       <div class="aclink"><a href="#" data-transition="slide"><img src="css/images/9-12/People_and_Places/coolplacesbtn.png"></a></div><br>
       <div class="aclink"><a href="#" data-transition="slide"><img src="css/images/9-12/People_and_Places/europebtn.png"></a></div>
@@ -38,7 +38,12 @@
 				bgsoundChangingPlaces.play();
 				peopleplacessoundbg.pause();
 				peopleplacessoundbg.currentTime = 0;
-			} 
+			}
+			if(subjectId == "asiatoday") {
+				bgsoundAsiaToday.play();
+				peopleplacessoundbg.pause();
+				peopleplacessoundbg.currentTime = 0;
+			}
 		});
 	});
 	

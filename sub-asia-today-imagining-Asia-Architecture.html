@@ -1,0 +1,109 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-asia-today-imagining-Asia-Architecture">
+  <script src="js/slidebar_asia_today.js"></script>
+  <link rel="stylesheet" href="css/style_asia_today.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnAsia"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnAsia"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnAsia"></div></div>
+  <div class="infobtnholder"><div class="infobtnAsia"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnAsia"></div></div>
+  <div class="menubtnholder"><div class="menubtnAsia"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:14px;"><h1>Architecture</h1></div>
+  <!-- <div id="buddhalink" style="position:absolute;left: 114px;top: 371px;width: 98px;height: 75px;"></div>
+  <div id="aeriallink" style="position:absolute;left: 178px;top: 105px;width: 100px;height: 80px;"></div>
+  <div id="honenlink" style="position:absolute;left: 411px;top: 474px;width: 103px;height: 89px;"></div>
+  <div id="singaporelink" style="position:absolute;left: 330px;top: 253px;width: 96px;height: 84px;"></div>
+  <div id="templelink" style="position:absolute;left: 202px;top: 556px;width: 99px;height: 80px;"></div> -->
+  
+  <div data-role="content" class="kidzcontent">
+	<div class="navAsia-Architecture">
+        <p>Mention Asia and it is hard not to think about its buildings, especially the skyscrapers of cities such as Shanghai and Tokyo.  Half a century ago, it was very different.  In 1960, barely 15% of the population of Asia lived in cities.  Today, that has risen to 45% as people move into the cities for work.</p>
+		<p>Steel and glass structures are not the only architectural features of Asia, of course.  Between the 17th and 20th centuries, much of Asia was colonised by the Dutch, British, Spanish, French, and Portuguese empires.  Before that, empires from India ruled over parts of the region.</p>
+		<p>This history has left a physical legacy.  The ruins of Borobudur and Angkor, for example; lush European-style bungalows; and iconic public buildings like the Raffles Hotel hint at Asia's many histories.  In more remote parts, yurts (portable huts used by nomads in Central Asia) and kampong houses (wooden huts, often high up from the ground to protect from floods and wild animals) are the norm.</p>
+    </div>
+    <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+  </div> <!-- end content -->  
+    
+  
+  <!--<div class="audiopanel">-->
+    <!-- images are in slidebarnat.js 
+         note: change the ids to be able play the narration
+    -->
+    <div class="micbtnholder"><div class="micbtnAsia" id="playstopArchitecture"></div></div>
+    <div class="bAsia"><div class="rwAsia" id="Architectureaudiobbtn"></div></div>
+    <div class="plAsia"><div class="plpsAsia" id="Architectureaudioplbtn"></div></div>
+    <div class="fAsia"><div class="fwAsia" id="Architectureaudiofbtn"></div></div>
+    <div id="actualaudio-Architecture" style="visibility:hidden;"></div>
+  <!--</div>-->
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+    var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      if(sound.canPlayType('audio/mpeg')) {
+        $('#actualaudio-Architecture').html('<audio id="Architectureaudio" controls preload onpause="playsAsiaToday()" onplay="pauseAsiaToday()"><source src="audio/Asia_Today/Architecture.mp3" type="audio/mpeg"></audio>');
+      } 
+    
+      $("#sub-asia-today-imagining-Asia-Architecture").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+    })();
+    
+    $('.homelinkbh').on('tap', function() { mainaudiobg.play(); bgsoundAsiaToday.pause(); bgsoundAsiaToday.currentTime = 0;});
+    
+    function goBack() {
+      $.mobile.changePage("sub-asia-today-imagining-Asia.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsAsiaToday() {
+         bgsoundAsiaToday.play();
+    }
+       
+    function pauseAsiaToday() {
+         bgsoundAsiaToday.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+    $("#playstopArchitecture").on('tap', function() {
+      if(!playing) {
+        Architectureaudio.play();
+        $('.micbtnAsia').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        Architectureaudio.pause(); Architectureaudio.currentTime = 0;
+        $('.micbtnAsia').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#Architectureaudioplbtn").on('tap', function() {
+      if(!paused) {
+        Architectureaudio.pause();
+        paused = true;
+      } else {
+        Architectureaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#Architectureaudiofbtn").on('tap', function() {
+      var ctime = Architectureaudio.currentTime;
+      Architectureaudio.currentTime = ctime + 10;
+    });
+    
+    $("#Architectureaudiobbtn").on('tap', function() {
+      var ctime = Architectureaudio.currentTime;
+      Architectureaudio.currentTime = ctime - 10;
+    });
+    
+    $("#Architectureaudiopsbtn").on('tap', function() {
+      Architectureaudio.pause();
+    });
+  </script>
+</div> <!--//home-->

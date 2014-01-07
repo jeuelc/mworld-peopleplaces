@@ -1,0 +1,174 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-asia-today-a-diverse-place-India">
+  <script src="js/hammer.js"></script>
+  <script src="js/jquery.hammer.js"></script>
+  <script src="js/slidebar_asia_today.js"></script>
+  <link rel="stylesheet" href="css/style_asia_today.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnAsia"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnAsia"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnAsia"></div></div>
+  <div class="infobtnholder"><div class="infobtnAsia"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnAsia"></div></div>
+  <div class="menubtnholder"><div class="menubtnAsia"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:0px;"><h1>India</h1></div>
+  <div id="spacechar">&nbsp;
+    <div data-role="content" class="kidzcontent">
+      <div class="v-spacer"></div>
+      <div class="sidebarleft-half">
+        <a id="gangalink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Asia_Today/A_Diverse_Place/INDIA/Ganga_River_Hi_Res.jpg', 'The Ganges River is used for everything, from drinking and cooking to washing clothes. The water is considered to be holy, and it is also used for ritual bathing and purification.');">click here</a>
+		
+        <a id="techlink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Asia_Today/A_Diverse_Place/INDIA/Tech_Park_Hi_Res.jpg', 'Information Technology (IT) parks such as Bagmane Tech Park near Bangalore are modern business facilities that are evidence of India\'s economic growth.');">click here</a>
+		
+		<a id="sarilink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Asia_Today/A_Diverse_Place/INDIA/Sari_Shop_Hi_Res.jpg', 'Women selecting a sari in a shop.');">click here</a>
+        
+		<div id="zoomwrapper">
+          <div id="pol1" class="pPiece" style="left:100px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Asia_Today/A_Diverse_Place/INDIA/Street_Traffic_Mumbai.png" alt="" />
+          </div>
+          <div id="pol2"class="pPiece" style="left:75px;top:290px;">
+             <img src="css/images/9-12/People_and_Places/Asia_Today/A_Diverse_Place/INDIA/Ganga_River.jpg" alt="" />
+          </div>
+		  <div id="pol3"class="pPiece" style="left:80px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Asia_Today/A_Diverse_Place/INDIA/Tech_Park.JPG" alt="" />
+          </div>
+		  <div id="pol4"class="pPiece" style="left:70px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Asia_Today/A_Diverse_Place/INDIA/Sari_Shop.jpg" alt="" />
+          </div>
+        </div><!--/zoomwrapper-->
+      </div>
+      
+      <div class="bpcontentAsia">
+        <p>Did you know India is the planet's largest democracy?  It has more than 1.2 billion people.  It is also a country that is changing rapidly.  Its economy is the 11th largest in the world, and over 35% of all professional positions are filled by women &ndash; three decades ago, this figure was just 4%.</p>
+		<p>India has had an undeniable influence on the rest of Asia.  Much of this has had to do with historical patterns of emigration dating back as early as the 5th century CE (common era).  Merchants and soldiers, priests and monks all helped spread Hinduism and Buddhism across the region.   You can see the legacies of this today.  For example, Bali is a Hindu island amid a Muslim nation, and in China, a localised form of Buddhism has evolved over the centuries.   Today, elements of Indian culture have spread all around the world &ndash; from Bollywood movies and yoga to tandoori chicken and masala.</p>
+      </div>
+       
+      <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+    </div> <!-- end content -->  
+  </div><!--/spacechar-->        
+  
+    <div class="micbtnholder"><div class="micbtnAsia" id="playstopIndia"></div></div>
+    <div class="bAsia"><div class="rwAsia" id="Indiaaudiobbtn"></div></div>
+    <div class="plAsia"><div class="plpsAsia" id="Indiaaudioplbtn"></div></div>
+    <div class="fAsia"><div class="fwAsia" id="Indiaaudiofbtn"></div></div>
+    <div id="actualaudio-India" style="visibility:hidden;"></div>
+  <!-- </div> -->
+  <!-- ----------------------- Video embedding --------------------------- -->
+  
+	<div id="watchStreetTrafficVideo" style="width:1024px;height:748px;position:absolute;left:0px;top:0px;visibility:hidden;background:#000000;z-index:-1;">
+    <video id="watchStreetTraffic" width="1024" height="748" preload>
+      <source src="css/images/9-12/People_and_Places/Asia_Today/A_Diverse_Place/INDIA/Street_Traffic_Mumbai_video.mpg" type="video/mp4">
+    </video>
+  </div>
+  
+  <!-- ------------------------------------------------------------------ -->
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+ 
+	var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      $('div#pol1').css("z-index", 3);
+      $('div#pol2').css("z-index", 2);
+      $('div#pol3').css("z-index", 1);
+      $('div#pol1 > img').css("-webkit-transform", "rotate(0deg)");
+      $('#watchStreetTrafficVideo').css({"visibility":"hidden", "z-index":-10});		
+      $('div#pol2 > img').css("-webkit-transform", "rotate(5deg)");
+      $('div#pol3 > img').css("-webkit-transform", "rotate(-3deg)");
+      $('div#pol4 > img').css("-webkit-transform", "rotate(-3deg)");
+      
+	  if(sound.canPlayType('audio/mpeg')) {
+        $('#actualaudio-India').html('<audio id="Indiaaudio" controls preload onpause="playsAsiaToday()" onplay="pauseAsiaToday()"><source src="audio/Asia_Today/India.mp3" type="audio/mpeg"></audio>');
+      }             
+      $("#sub-asia-today-a-diverse-place-India").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+    })();
+    
+	watchStreetTraffic.addEventListener('ended', function() { 
+        $("#watchStreetTrafficVideo").css({"visibility":"hidden", "z-index":-1});
+        $("#watchStreetTraffic").css({"z-index":-1});
+        bgsoundvol.play(); 
+    });
+    
+    $("#watchStreetTraffic").on('tap', function() {
+        $("#watchStreetTrafficVideo").css({"visibility":"hidden", "z-index":-1});
+        $("#watchStreetTraffic").css({"z-index":-1});
+        bgsoundvol.play();
+        watchStreetTraffic.pause();
+        watchStreetTraffic.currentTime = 0;
+    });
+	  
+    $('.homelinkbh').on('tap', function() { mainaudiobg.play(); bgsoundAsiaToday.pause(); bgsoundAsiaToday.currentTime = 0;});
+    
+	$("#pol1").on('tap', function(){
+      $("#watchStreetTrafficVideo").css({"visibility":"visible", "z-index":10});
+      $("#watchStreetTraffic").css({"z-index":9});
+      bgsoundvol.pause();
+      watchStreetTraffic.play();
+    });
+    $("#pol2").on('tap', function() {
+      $('#gangalink')[0].click();
+    });
+    $("#pol3").on('tap', function() {
+      $('#techlink')[0].click();
+    });
+	$("#pol4").on('tap', function() {
+      $('#sarilink')[0].click();
+    });
+    function goBack() {
+      $.mobile.changePage("sub-asia-today-a-diverse-place.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsAsiaToday() {
+         bgsoundAsiaToday.play();
+    }
+       
+    function pauseAsiaToday() {
+         bgsoundAsiaToday.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+    $("#playstopIndia").on('tap', function() {
+      if(!playing) {
+        Indiaaudio.play();
+        $('.micbtnAsia').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        Indiaaudio.pause(); Indiaaudio.currentTime = 0;
+        $('.micbtnAsia').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#Indiaaudioplbtn").on('tap', function() {
+      if(!paused) {
+        Indiaaudio.pause();
+        paused = true;
+      } else {
+        Indiaaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#Indiaaudiofbtn").on('tap', function() {
+      var ctime = Indiaaudio.currentTime;
+      Indiaaudio.currentTime = ctime + 10;
+    });
+    
+    $("#Indiaaudiobbtn").on('tap', function() {
+      var ctime = Indiaaudio.currentTime;
+      Indiaaudio.currentTime = ctime - 10;
+    });
+    
+    $("#Indiaaudiopsbtn").on('tap', function() {
+      Indiaaudio.pause();
+    });
+  </script>
+  <script src="js/fourcardLogic.js"></script>  <!-- for card dragging effects -->
+</div> <!--//home-->

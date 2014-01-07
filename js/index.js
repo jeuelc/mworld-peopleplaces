@@ -834,3 +834,11 @@ bgsoundManga.addEventListener('ended', function() { bgsoundManga.play(); });
 
 function pauseManga() { bgsoundManga.pause() }
 function playsManga() { bgsoundManga.play(); $(".audiopanel").css({"backgroundPosition":"0px 0px"}); }
+
+/************************ Asia Today *******************************/
+var bgsoundAsiaToday = new Audio();
+bgsoundAsiaToday.src = "audio/Asia_Today/Asia_Today_BG.mp3";
+bgsoundAsiaToday.addEventListener('ended', function() { bgsoundAsiaToday.play(); });
+
+function pauseAsiaToday() { bgsoundAsiaToday.pause() }
+function playsAsiaToday() { bgsoundAsiaToday.play(); $(".audiopanel").css({"backgroundPosition":"0px 0px"}); }
