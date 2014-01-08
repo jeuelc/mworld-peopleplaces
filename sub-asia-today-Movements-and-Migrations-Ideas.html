@@ -1,0 +1,143 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-asia-today-Movements-and-Migrations-Ideas">
+  <script src="js/hammer.js"></script>
+  <script src="js/jquery.hammer.js"></script>
+  <script src="js/slidebar_asia_today.js"></script>
+  <link rel="stylesheet" href="css/style_asia_today.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnAsia"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnAsia"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnAsia"></div></div>
+  <div class="infobtnholder"><div class="infobtnAsia"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnAsia"></div></div>
+  <div class="menubtnholder"><div class="menubtnAsia"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:0px;"><h1>Ideas</h1></div>
+  <div id="spacechar">&nbsp;
+    <div data-role="content" class="kidzcontent">
+      <div class="v-spacer"></div>
+      <div class="sidebarleft-half">
+        <a id="theanlink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Asia_Today/Movements_And_Migrations/Goods/Ideas/Thean_Hi_Res.jpg', 'Thean Hou temple in Kuala Lumpur, Malaysia.');">click here</a>
+		
+		<a id="jokhanlink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Asia_Today/Movements_And_Migrations/Goods/Ideas/Jokhan_Hi_Res.jpg', 'Jokhang temple in Lhasa, China.');">click here</a>
+		
+        <a id="phrathatlink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Asia_Today/Movements_And_Migrations/Goods/Ideas/Phrathat_Hi_Res.jpg', 'Wat Phrathat Doi Suthep temple in Chiang Mai, Thailand.');">click here</a>
+		
+		<div id="zoomwrapper">
+          <div id="pol1" class="pPiece" style="left:100px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Asia_Today/Movements_And_Migrations/Goods/Ideas/Thean.jpg" alt="" />
+          </div>
+          <div id="pol2"class="pPiece" style="left:75px;top:290px;">
+             <img src="css/images/9-12/People_and_Places/Asia_Today/Movements_And_Migrations/Goods/Ideas/Jokhan.jpg" alt="" />
+          </div>
+		  <div id="pol3"class="pPiece" style="left:80px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Asia_Today/Movements_And_Migrations/Goods/Ideas/Phrathat.jpg" alt="" />
+          </div>
+		</div><!--/zoomwrapper-->
+      </div>
+      
+      <div class="bpcontentAsia">
+        <p>What are the dominant religions in your country and where did they come from?</p>
+		<p>Few things highlight movement across Asia better than the spread of religions.  Hinduism and Buddhism emerged from ancient India, for instance, and radiated out to the rest of the region where they quickly became important in cultural and political life.</p>
+		<p>As these ideas encountered new communities, they were often interpreted differently &dash; or adjusted to suit local needs.  This has resulted in lots of different forms of what outsiders often think of as the same religion.  Buddhism in Cambodia, Laos, Burma, Thailand and Sri Lanka, for example, is known as 'Theravada'.  Buddhism in China, Korea, Japan, Singapore and much of island Southeast Asia is known as 'Mahayana'.</p>
+		<p>The arrival of Islam and Christianity, as well as the appeal of local 'animistic' religions (the worship of natural entities), added to the changing of ideas too.  So in Asia today, while it looks like the same few religions are practised right across the region, in reality there are actually scores, if not hundreds, of distinctive strands of each religion.</p>
+      </div>
+       
+      <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+    </div> <!-- end content -->  
+  </div><!--/spacechar-->        
+  
+    <div class="micbtnholder"><div class="micbtnAsia" id="playstopIdeas"></div></div>
+    <div class="bAsia"><div class="rwAsia" id="Ideasaudiobbtn"></div></div>
+    <div class="plAsia"><div class="plpsAsia" id="Ideasaudioplbtn"></div></div>
+    <div class="fAsia"><div class="fwAsia" id="Ideasaudiofbtn"></div></div>
+    <div id="actualaudio-Ideas" style="visibility:hidden;"></div>
+  <!-- </div> -->
+  
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+ 
+	var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      $('div#pol2').css("z-index", 2);
+      $('div#pol1').css("z-index", 1);
+      $('div#pol1 > img').css("-webkit-transform", "rotate(0deg)");
+      $('div#pol2 > img').css("-webkit-transform", "rotate(5deg)");
+      $('div#pol3 > img').css("-webkit-transform", "rotate(-3deg)");
+      
+	  if(sound.canPlayType('audio/mpeg')) {
+        $('#actualaudio-Ideas').html('<audio id="Ideasaudio" controls preload onpause="playsAsiaToday()" onplay="pauseAsiaToday()"><source src="audio/Asia_Today/Ideas.mp3" type="audio/mpeg"></audio>');
+      }             
+      $("#sub-asia-today-Movements-and-Migrations-Ideas").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+	})();
+    
+	$('.homelinkbh').on('tap', function() { mainaudiobg.play(); bgsoundAsiaToday.pause(); bgsoundAsiaToday.currentTime = 0;});
+    
+	$("#pol1").on('tap', function(){
+      $('#theanlink')[0].click();
+    });
+    $("#pol2").on('tap', function() {
+      $('#jokhanlink')[0].click();
+    });
+    $("#pol3").on('tap', function() {
+      $('#phrathatlink')[0].click();
+    });
+	
+    function goBack() {
+      $.mobile.changePage("sub-asia-today-Movements-and-Migrations.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsAsiaToday() {
+         bgsoundAsiaToday.play();
+    }
+       
+    function pauseAsiaToday() {
+         bgsoundAsiaToday.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+    $("#playstopIdeas").on('tap', function() {
+      if(!playing) {
+        Ideasaudio.play();
+        $('.micbtnAsia').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        Ideasaudio.pause(); Ideasaudio.currentTime = 0;
+        $('.micbtnAsia').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#Ideasaudioplbtn").on('tap', function() {
+      if(!paused) {
+        Ideasaudio.pause();
+        paused = true;
+      } else {
+        Ideasaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#Ideasaudiofbtn").on('tap', function() {
+      var ctime = Ideasaudio.currentTime;
+      Ideasaudio.currentTime = ctime + 10;
+    });
+    
+    $("#Ideasaudiobbtn").on('tap', function() {
+      var ctime = Ideasaudio.currentTime;
+      Ideasaudio.currentTime = ctime - 10;
+    });
+    
+    $("#Ideasaudiopsbtn").on('tap', function() {
+      Ideasaudio.pause();
+    });
+  </script>
+  <script src="js/threecardLogic.js"></script>  <!-- for card dragging effects -->
+</div> <!--//home-->

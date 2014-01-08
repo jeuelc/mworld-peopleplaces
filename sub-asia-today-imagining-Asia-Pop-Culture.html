@@ -1,0 +1,141 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-asia-today-imagining-Asia-Pop-Culture">
+  <script src="js/slidebar_asia_today.js"></script>
+  <link rel="stylesheet" href="css/style_asia_today.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnAsia"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnAsia"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnAsia"></div></div>
+  <div class="infobtnholder"><div class="infobtnAsia"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnAsia"></div></div>
+  <div class="menubtnholder"><div class="menubtnAsia"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:14px;"><h1>Pop Culture</h1></div>
+  <!-- <div id="buddhalink" style="position:absolute;left: 114px;top: 371px;width: 98px;height: 75px;"></div> -->
+  <div id="bollywoodlink"></div>
+  <div id="hatsunelink"></div>
+  <div id="gangnamlink"></div>
+  <div id="bollywoodbutton" style="position:absolute;left: 588px;top: 448px;width: 16px;height: 16px;"></div>
+  <div id="hatsunebutton" style="position:absolute;left: 622px;top: 448px;width: 16px;height: 16px;"></div>
+  <div id="gangnambutton" style="position:absolute;left: 656px;top: 448px;width: 15px;height: 16px;"></div>
+  
+  <div data-role="content" class="kidzcontent">
+	<div class="navAsia-PopCulture">
+        <p>Increasingly, Asia is where much of the world's popular culture comes from.  Pop culture from countries like Japan, South Korea, China, India, Taiwan and Hong Kong is enjoyed by fans across the rest of Asia, and also in the West.</p>
+		<p>Japanese cartoon and video game characters such as Astro Boy, Mario, and Pokmon have been extremely popular in Australia, the UK and the US.  Hong Kong cinema has a cult following worldwide, and its ideas have given rise to blockbuster franchises like The Matrix.  And India's film industry, Bollywood, has vast audiences &dash; much bigger than its American counterpart, Hollywood!</p>
+		<p>The internet has had a huge impact on the spread of Asian pop culture.  For example, South Korean musician Psy made a splash internationally in 2012 with his pop hit Gangnam Style which became an internet sensation.</p>
+    </div>
+    <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+  </div> <!-- end content -->  
+    
+  
+  <!--<div class="audiopanel">-->
+    <!-- images are in slidebarnat.js 
+         note: change the ids to be able play the narration
+    -->
+    <div class="micbtnholder"><div class="micbtnAsia" id="playstopPopCulture"></div></div>
+    <div class="bAsia"><div class="rwAsia" id="PopCultureaudiobbtn"></div></div>
+    <div class="plAsia"><div class="plpsAsia" id="PopCultureaudioplbtn"></div></div>
+    <div class="fAsia"><div class="fwAsia" id="PopCultureaudiofbtn"></div></div>
+    <div id="actualaudio-PopCulture" style="visibility:hidden;"></div>
+  <!--</div>-->
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+    var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      if(sound.canPlayType('audio/mpeg')) {
+        $('#actualaudio-PopCulture').html('<audio id="PopCultureaudio" controls preload onpause="playsAsiaToday()" onplay="pauseAsiaToday()"><source src="audio/Asia_Today/Pop_Culture.mp3" type="audio/mpeg"></audio>');
+      } 
+    
+      $("#sub-asia-today-imagining-Asia-Pop-Culture").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+    })();
+    
+    $('.homelinkbh').on('tap', function() { mainaudiobg.play(); bgsoundAsiaToday.pause(); bgsoundAsiaToday.currentTime = 0;});
+    
+    function goBack() {
+      $.mobile.changePage("sub-asia-today-imagining-Asia.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsAsiaToday() {
+         bgsoundAsiaToday.play();
+    }
+       
+    function pauseAsiaToday() {
+         bgsoundAsiaToday.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+    $("#playstopPopCulture").on('tap', function() {
+      if(!playing) {
+        PopCultureaudio.play();
+        $('.micbtnAsia').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        PopCultureaudio.pause(); PopCultureaudio.currentTime = 0;
+        $('.micbtnAsia').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#PopCultureaudioplbtn").on('tap', function() {
+      if(!paused) {
+        PopCultureaudio.pause();
+        paused = true;
+      } else {
+        PopCultureaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#PopCultureaudiofbtn").on('tap', function() {
+      var ctime = PopCultureaudio.currentTime;
+      PopCultureaudio.currentTime = ctime + 10;
+    });
+    
+    $("#PopCultureaudiobbtn").on('tap', function() {
+      var ctime = PopCultureaudio.currentTime;
+      PopCultureaudio.currentTime = ctime - 10;
+    });
+    
+    $("#PopCultureaudiopsbtn").on('tap', function() {
+      PopCultureaudio.pause();
+    });
+	
+	$("#bollywoodbutton").on('tap', function() {
+		$('#hatsunelink').css('display','none');
+		$('#bollywoodlink').css('display','block');
+		$('#gangnamlink').css('display','none');
+		
+		/*$('#bollywoodbutton').addClass('activebtn');
+		$('#hatsunebutton').removeClass('activebtn');
+		$('#gangnambutton').removeClass('activebtn');*/
+	});
+	
+	$("#hatsunebutton").on('tap', function() {
+		$('#hatsunelink').css('display','block');
+		$('#bollywoodlink').css('display','none');
+		$('#gangnamlink').css('display','none');
+		
+		/*$('#bollywoodbutton').removeClass('activebtn');
+		$('#hatsunebutton').addClass('activebtn');
+		$('#gangnambutton').removeClass('activebtn');*/
+	});
+	
+	$("#gangnambutton").on('tap', function() {
+		$('#hatsunelink').css('display','none');
+		$('#bollywoodlink').css('display','none');
+		$('#gangnamlink').css('display','block');	
+		
+		/*$('#bollywoodbutton').removeClass('activebtn');
+		$('#hatsunebutton').removeClass('activebtn');
+		$('#gangnambutton').addClass('activebtn');*/
+	});
+  </script>
+</div> <!--//home-->

@@ -1,0 +1,129 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-asia-today-Movements-and-Migrations">
+  <script src="js/slidebar_asia_today.js"></script>
+  <link rel="stylesheet" href="css/style_asia_today.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnAsia"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnAsia"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnAsia"></div></div>
+  <div class="infobtnholder"><div class="infobtnAsia"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnAsia"></div></div>
+  <div class="menubtnholder"><div class="menubtnAsia"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:14px;"><h1>Movements and Migrations</h1></div>
+  
+    <div data-role="content" class="kidzcontent">
+      <div class="navAsia-content3">
+        <p>Migration runs through the story of much of humanity, so it isn't surprising that the movement of people &dash; and therefore of goods and ideas &dash; has been central to enduring change across Asia.</p>
+		<p>Economic transformations, changing environments, the spread of new political ideas and religions, population changes, and even the spread of cooking styles... these have all been propelled by the movement of people &dash; not so much from Asia to 'the outside world', but within Asia. This is what scholars call 'intra-Asian migration'.</p>
+		<p>A feature of intra-Asian migration was something called 'circular migration'.  Agricultural colonists, labourers, or priests alike maintained close ties with their home regions even as they moved away. When it was possible they travelled back home, and then back again to the places where they had found work.  Circular migration meant that ideas did not just move in one direction, but two or sometimes more, which accounts for much of Asia's diversity.</p>
+      </div>
+        
+      <div class="navbtn1" style="top:420px;">
+        <p><a href="sub-asia-today-Movements-and-Migrations-Goods.html" data-transition="slide"><img src="css/images/9-12/People_and_Places/Asia_Today/Movements_And_Migrations/Goods.png"></a></p>
+      </div>
+      <div class="navbtn2" style="left:400px;">
+        <p><a href="sub-asia-today-Movements-and-Migrations-Ideas.html" data-transition="slide"><img src="css/images/9-12/People_and_Places/Asia_Today/Movements_And_Migrations/Ideas.png"></a></p>
+      </div>
+      <div class="navbtn3" style="top:420px;">
+        <p><a href="sub-asia-today-Movements-and-Migrations-People.html" data-transition="slide"><img src="css/images/9-12/People_and_Places/Asia_Today/Movements_And_Migrations/People.png"></a></p>
+      </div>
+        
+      <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/The_Modern_World/bottomhomemw.png"></a></div>
+    </div> <!-- end content -->  
+    
+  
+  <!--<div class="audiopanel">-->
+    <!-- images are in slidebarnat.js 
+         note: change the ids to be able play the narration
+    -->
+    <div class="micbtnholder"><div class="micbtnAsia" id="playstopMovementsMigrations"></div></div>
+    <div class="bAsia"><div class="rwAsia" id="MovementsMigrationsaudiobbtn"></div></div>
+    <div class="plAsia"><div class="plpsAsia" id="MovementsMigrationsaudioplbtn"></div></div>
+    <div class="fAsia"><div class="fwAsia" id="MovementsMigrationsaudiofbtn"></div></div>
+    <div id="actualaudio-MovementsMigrations" style="visibility:hidden;"></div>
+  <!--</div>-->
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+    var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      if(sound.canPlayType('audio/mpeg')) {
+        $('#actualaudio-MovementsMigrations').html('<audio id="MovementsMigrationsaudio" controls preload onpause="playsAsiaToday()" onplay="pauseAsiaToday()"><source src="audio/Asia_Today/Movements_Migrations.mp3" type="audio/mpeg"></audio>');
+      } 
+    
+      $("#sub-asia-today-Movements-and-Migrations").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+    })();
+    
+    $('.homelinkbh').on('tap', function() { bgsoundAsiaToday.pause(); bgsoundAsiaToday.currentTime = 0; mainaudiobg.play(); });
+    
+    function goBack() {
+      $.mobile.changePage("sub-asia-today.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsAsiaToday() {
+         bgsoundAsiaToday.play();
+    }
+       
+    function pauseAsiaToday() {
+         bgsoundAsiaToday.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+    $("#playstopMovementsMigrations").on('tap', function() {
+      if(!playing) {
+        MovementsMigrationsaudio.play();
+        $('.micbtnAsia').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        MovementsMigrationsaudio.pause(); MovementsMigrationsaudio.currentTime = 0;
+        $('.micbtnAsia').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#MovementsMigrationsaudioplbtn").on('tap', function() {
+      if(!paused) {
+        MovementsMigrationsaudio.pause();
+        paused = true;
+      } else {
+        MovementsMigrationsaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#MovementsMigrationsaudiofbtn").on('tap', function() {
+      var ctime = MovementsMigrationsaudio.currentTime;
+      MovementsMigrationsaudio.currentTime = ctime + 10;
+    });
+    
+    $("#MovementsMigrationsaudiobbtn").on('tap', function() {
+      var ctime = MovementsMigrationsaudio.currentTime;
+      MovementsMigrationsaudio.currentTime = ctime - 10;
+    });
+    
+    $("#MovementsMigrationsaudiopsbtn").on('tap', function() {
+      MovementsMigrationsaudio.pause();
+      //$(".audiopanel").css({"backgroundPosition":"0px 0px"});
+    });
+    
+    $('.navbtn1').on('tap', function() { 
+      nav1Effects(); 
+    });
+    
+    $('.navbtn2').on('tap', function() { 
+      nav2Effects(); 
+    });
+    
+    $('.navbtn3').on('tap', function() { 
+      nav3Effects(); 
+    });
+    
+  </script>
+</div> <!--//home-->

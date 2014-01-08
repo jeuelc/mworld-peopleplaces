@@ -1,6 +1,6 @@
 /********* Asia Today **********/
 
-#sub-asia-today, #sub-asia-today-a-diverse-place-India, #sub-asia-today-a-diverse-place-Indonesia, #sub-asia-today-a-diverse-place-Mongolia, #sub-asia-today-a-diverse-place-Shanghai, #sub-asia-today-a-diverse-place-Singapore, #sub-asia-today-imagining-Asia{
+#sub-asia-today, #sub-asia-today-a-diverse-place-India, #sub-asia-today-a-diverse-place-Indonesia, #sub-asia-today-a-diverse-place-Mongolia, #sub-asia-today-a-diverse-place-Shanghai, #sub-asia-today-a-diverse-place-Singapore, #sub-asia-today-imagining-Asia, #sub-asia-today-looking-to-future, #sub-asia-today-looking-to-future-developmental-challenges, #sub-asia-today-looking-to-future-economic-boom, #sub-asia-today-Movements-and-Migrations, #sub-asia-today-Movements-and-Migrations-Goods, #sub-asia-today-Movements-and-Migrations-Goods-Peranakan-Culture, #sub-asia-today-Movements-and-Migrations-Ideas, #sub-asia-today-Movements-and-Migrations-People{
   background:url('images/9-12/People_and_Places/Asia_Today/Asia_Today_BG.jpg') no-repeat;
   height:748px !important;
   overflow:hidden !important;
@@ -35,6 +35,48 @@
   width:1024px !important;
 }
 
+#sub-asia-today-imagining-Asia-Pop-Culture{
+  background:url('images/9-12/People_and_Places/Asia_Today/Imagining_Asia/Pop_Culture/Bollywood_Slider.png') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+#bollywoodlink{
+	background:url('images/9-12/People_and_Places/Asia_Today/Imagining_Asia/Pop_Culture/bolly.png') no-repeat;
+	width: 602px;
+	height: 370px;
+	position:absolute;
+	left: 329px;
+	top: 59px;
+	display:block;
+}
+
+#hatsunelink{
+	background:url('images/9-12/People_and_Places/Asia_Today/Imagining_Asia/Pop_Culture/hat.png') no-repeat;
+	width: 602px;
+	height: 370px;
+	position:absolute;
+	left: 330px;
+	top: 57px;
+	display:none;
+}
+
+#gangnamlink{
+	background:url('images/9-12/People_and_Places/Asia_Today/Imagining_Asia/Pop_Culture/gang.png') no-repeat;
+	width: 602px;
+	height: 370px;
+	position:absolute;
+	left: 334px;
+	top: 57px;
+	display:none;
+}
+.activebtn{
+	background:url('images/9-12/People_and_Places/Asia_Today/Imagining_Asia/Pop_Culture/activebutton.png') no-repeat -2px -2px;
+}
+.inactivebtn{
+	background:url('images/9-12/People_and_Places/Asia_Today/Imagining_Asia/Pop_Culture/inactivebutton.png') no-repeat -2px -2px;	
+}
 .plAsia, .psAsia, .bAsia, .fAsia {
   position:absolute;
   top:670px;
@@ -224,6 +266,20 @@
 	color: #000000;
 }
 
+.navAsia-PopCulture{
+	position: absolute;
+	left: 42px;
+	top: 486px;
+	width: 952px;
+	height: 160px;
+	overflow: auto;
+	text-align: left;
+	font-family: "comic sans ms";
+	font-size: 18px;
+	font-weight: normal;
+	color: #000000;
+}
+
 .navAsia-content p {
   margin-top:0 !important;
 }
@@ -256,7 +312,7 @@
   color:#000000;
 }
 
-#sub-asia-today .bptitleholder h1, #sub-asia-today-a-diverse-place-India .bptitleholder h1, #sub-asia-today-a-diverse-place-Indonesia .bptitleholder h1, #sub-asia-today-a-diverse-place-Mongolia .bptitleholder h1, #sub-asia-today-a-diverse-place-Shanghai .bptitleholder h1, #sub-asia-today-a-diverse-place-Singapore .bptitleholder h1, #sub-asia-today-imagining-Asia .bptitleholder h1{
+#sub-asia-today .bptitleholder h1, #sub-asia-today-a-diverse-place-India .bptitleholder h1, #sub-asia-today-a-diverse-place-Indonesia .bptitleholder h1, #sub-asia-today-a-diverse-place-Mongolia .bptitleholder h1, #sub-asia-today-a-diverse-place-Shanghai .bptitleholder h1, #sub-asia-today-a-diverse-place-Singapore .bptitleholder h1, #sub-asia-today-imagining-Asia .bptitleholder h1, #sub-asia-today-looking-to-future .bptitleholder h1, #sub-asia-today-looking-to-future-developmental-challenges .bptitleholder h1, #sub-asia-today-looking-to-future-economic-boom .bptitleholder h1, #sub-asia-today-Movements-and-Migrations .bptitleholder h1, #sub-asia-today-Movements-and-Migrations-Goods .bptitleholder h1, #sub-asia-today-Movements-and-Migrations-Goods-Peranakan-Culture .bptitleholder h1, #sub-asia-today-Movements-and-Migrations-Ideas .bptitleholder h1, #sub-asia-today-Movements-and-Migrations-People .bptitleholder h1{
 	text-transform: uppercase;
 	color: #ffffff !important;
 	font-family: "comic sans ms";
@@ -301,7 +357,16 @@
 	margin: 0;
 }
 
-#sub-asia-today .bptitleholder, #sub-asia-today-a-diverse-place-India .bptitleholder, #sub-asia-today-a-diverse-place-Indonesia .bptitleholder, #sub-asia-today-a-diverse-place-Mongolia .bptitleholder, #sub-asia-today-a-diverse-place-Shanghai .bptitleholder, #sub-asia-today-a-diverse-place-Singapore .bptitleholder, #sub-asia-today-imagining-Asia .bptitleholder{
+#sub-asia-today-imagining-Asia-Pop-Culture .bptitleholder h1{
+	text-transform: uppercase;
+	color: #ffeecf !important;
+	font-family: "comic sans ms";
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#sub-asia-today .bptitleholder, #sub-asia-today-a-diverse-place-India .bptitleholder, #sub-asia-today-a-diverse-place-Indonesia .bptitleholder, #sub-asia-today-a-diverse-place-Mongolia .bptitleholder, #sub-asia-today-a-diverse-place-Shanghai .bptitleholder, #sub-asia-today-a-diverse-place-Singapore .bptitleholder, #sub-asia-today-imagining-Asia .bptitleholder, #sub-asia-today-looking-to-future .bptitleholder, #sub-asia-today-looking-to-future-developmental-challenges .bptitleholder, #sub-asia-today-looking-to-future-economic-boom .bptitleholder, #sub-asia-today-Movements-and-Migrations .bptitleholder, #sub-asia-today-Movements-and-Migrations-Goods .bptitleholder, #sub-asia-today-Movements-and-Migrations-Goods-Peranakan-Culture .bptitleholder, #sub-asia-today-Movements-and-Migrations-Ideas .bptitleholder, #sub-asia-today-Movements-and-Migrations-People .bptitleholder{
 	width: 627px;
 	height: 68px;
 	text-align: center;
@@ -349,4 +414,14 @@
 	position: absolute;
 	top: 100px;
 	left: 440px;
+}
+
+#sub-asia-today-imagining-Asia-Pop-Culture .bptitleholder{
+	width: 313px;
+	height: 68px;
+	text-align: center;
+	line-height: 40px;
+	position: absolute;
+	top: 419px;
+	left: 3px;
 }

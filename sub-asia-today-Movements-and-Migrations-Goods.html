@@ -1,0 +1,139 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-asia-today-Movements-and-Migrations-Goods">
+  <script src="js/hammer.js"></script>
+  <script src="js/jquery.hammer.js"></script>
+  <script src="js/slidebar_asia_today.js"></script>
+  <link rel="stylesheet" href="css/style_asia_today.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnAsia"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnAsia"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnAsia"></div></div>
+  <div class="infobtnholder"><div class="infobtnAsia"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnAsia"></div></div>
+  <div class="menubtnholder"><div class="menubtnAsia"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:0px;"><h1>Goods</h1></div>
+  <div id="spacechar">&nbsp;
+    <div data-role="content" class="kidzcontent">
+      <div class="v-spacer"></div>
+      <div class="sidebarleft-half">
+        <a id="techlink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Asia_Today/Movements_And_Migrations/Goods/Spice_Powder_Hi_Res.jpg', 'Coloured spice powder in a market.');">click here</a>
+		
+        <a id="sarilink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Asia_Today/Movements_And_Migrations/Goods/Textile_Hi_Res.jpg', 'Many Asian counties have emerged as industrial nations, producing goods that are exported around the world.  But the pay is often low for long hours of work in poor conditions.');">click here</a>
+		
+		<div id="zoomwrapper">
+          <div id="pol1" class="pPiece" style="left:100px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Asia_Today/Movements_And_Migrations/Goods/Peranakan_Culture.png" alt="" />
+          </div>
+          <div id="pol2"class="pPiece" style="left:75px;top:290px;">
+             <img src="css/images/9-12/People_and_Places/Asia_Today/Movements_And_Migrations/Goods/Spice_Powder.jpg" alt="" />
+          </div>
+		  <div id="pol3"class="pPiece" style="left:80px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Asia_Today/Movements_And_Migrations/Goods/Textile.jpg" alt="" />
+          </div>
+		</div><!--/zoomwrapper-->
+      </div>
+      
+      <div class="bpcontentAsia">
+        <p>You might often hear the term 'Asian cuisine', but it isn't a very useful description.  Even where a country's food is described as a category, such as 'Chinese cuisine' or 'Indian cuisine', you find far more diversity than those simple labels suggest.  For example, culinary practices in the Chinese of Szechuan or among the Uighur people of Xinjiang, are as different from Cantonese cooking as they might be from French cooking.</p>
+		<p>A lot of culinary differences come from climate and farming styles, but perhaps most important is the movement of spices.  Important spices such as cinnamon, nutmeg, cloves and mace only grew in specific parts of Asia, such as the Maluku Islands in eastern Indonesia.  As these 'exotic' spices were shipped across Asia by traders, they began to be used a lot in the cooking of the markets they were sold to.  The 'Asian food' that you see today is not so much the product of local practices, but of thousands of years of encounters, trade, and experimentation.</p>
+      </div>
+       
+      <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+    </div> <!-- end content -->  
+  </div><!--/spacechar-->        
+  
+    <div class="micbtnholder"><div class="micbtnAsia" id="playstopGoods"></div></div>
+    <div class="bAsia"><div class="rwAsia" id="Goodsaudiobbtn"></div></div>
+    <div class="plAsia"><div class="plpsAsia" id="Goodsaudioplbtn"></div></div>
+    <div class="fAsia"><div class="fwAsia" id="Goodsaudiofbtn"></div></div>
+    <div id="actualaudio-Goods" style="visibility:hidden;"></div>
+  <!-- </div> -->
+  
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+ 
+	var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      $('div#pol2').css("z-index", 2);
+      $('div#pol1').css("z-index", 1);
+      $('div#pol1 > img').css("-webkit-transform", "rotate(0deg)");
+      $('div#pol2 > img').css("-webkit-transform", "rotate(5deg)");
+      $('div#pol3 > img').css("-webkit-transform", "rotate(-3deg)");
+      
+	  if(sound.canPlayType('audio/mpeg')) {
+        $('#actualaudio-Goods').html('<audio id="Goodsaudio" controls preload onpause="playsAsiaToday()" onplay="pauseAsiaToday()"><source src="audio/Asia_Today/Goods.mp3" type="audio/mpeg"></audio>');
+      }             
+      $("#sub-asia-today-Movements-and-Migrations-Goods").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+	})();
+    
+	$('.homelinkbh').on('tap', function() { mainaudiobg.play(); bgsoundAsiaToday.pause(); bgsoundAsiaToday.currentTime = 0;});
+    
+	$("#pol1").on('tap', function(){
+      $.mobile.changePage("sub-asia-today-Movements-and-Migrations-Goods-Peranakan-Culture.html", {transition: "slide"});
+    });
+    $("#pol2").on('tap', function() {
+      $('#techlink')[0].click();
+    });
+    $("#pol3").on('tap', function() {
+      $('#sarilink')[0].click();
+    });
+	
+    function goBack() {
+      $.mobile.changePage("sub-asia-today-Movements-and-Migrations.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsAsiaToday() {
+         bgsoundAsiaToday.play();
+    }
+       
+    function pauseAsiaToday() {
+         bgsoundAsiaToday.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+    $("#playstopGoods").on('tap', function() {
+      if(!playing) {
+        Goodsaudio.play();
+        $('.micbtnAsia').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        Goodsaudio.pause(); Goodsaudio.currentTime = 0;
+        $('.micbtnAsia').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#Goodsaudioplbtn").on('tap', function() {
+      if(!paused) {
+        Goodsaudio.pause();
+        paused = true;
+      } else {
+        Goodsaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#Goodsaudiofbtn").on('tap', function() {
+      var ctime = Goodsaudio.currentTime;
+      Goodsaudio.currentTime = ctime + 10;
+    });
+    
+    $("#Goodsaudiobbtn").on('tap', function() {
+      var ctime = Goodsaudio.currentTime;
+      Goodsaudio.currentTime = ctime - 10;
+    });
+    
+    $("#Goodsaudiopsbtn").on('tap', function() {
+      Goodsaudio.pause();
+    });
+  </script>
+  <script src="js/threecardLogic.js"></script>  <!-- for card dragging effects -->
+</div> <!--//home-->
