@@ -12,13 +12,23 @@
   
   <div class="bptitleholder" style="padding-top:14px;"><h1>Pop Culture</h1></div>
   <!-- <div id="buddhalink" style="position:absolute;left: 114px;top: 371px;width: 98px;height: 75px;"></div> -->
-  <div id="bollywoodlink"></div>
-  <div id="hatsunelink"></div>
-  <div id="gangnamlink"></div>
-  <div id="bollywoodbutton" style="position:absolute;left: 588px;top: 448px;width: 16px;height: 16px;"></div>
-  <div id="hatsunebutton" style="position:absolute;left: 622px;top: 448px;width: 16px;height: 16px;"></div>
-  <div id="gangnambutton" style="position:absolute;left: 656px;top: 448px;width: 15px;height: 16px;"></div>
+
+
+	<ul id="slider_buttons" style="list-style:none;">
+		<li id="bollywoodbutton" style="position:absolute;left: 588px;top: 448px;width: 16px;height: 16px;"></li>
+		<li id="hatsunebutton" style="position:absolute;left: 622px;top: 448px;width: 16px;height: 16px;"></li>
+		<li id="gangnambutton" style="position:absolute;left: 656px;top: 448px;width: 15px;height: 16px;"></li>
+	</ul>
+  <ul style="list-style:none;" id="custom_slider">
+	<li id="bollywoodlink" class="current"></li>
+	<li id="hatsunelink"></li>
+	<li id="gangnamlink"></li>
+  </ul>
+
   
+  <div id="previousbutton" style="position:absolute;left: 262px;top: 197px;width: 30px;height: 51px;"></div>
+  <div id="nextbutton" style="position:absolute;left: 968px;top: 198px;width: 30px;height: 50px;"></div>
+
   <div data-role="content" class="kidzcontent">
 	<div class="navAsia-PopCulture">
         <p>Increasingly, Asia is where much of the world's popular culture comes from.  Pop culture from countries like Japan, South Korea, China, India, Taiwan and Hong Kong is enjoyed by fans across the rest of Asia, and also in the West.</p>
@@ -108,34 +118,32 @@
       PopCultureaudio.pause();
     });
 	
-	$("#bollywoodbutton").on('tap', function() {
-		$('#hatsunelink').css('display','none');
-		$('#bollywoodlink').css('display','block');
-		$('#gangnamlink').css('display','none');
-		
-		/*$('#bollywoodbutton').addClass('activebtn');
-		$('#hatsunebutton').removeClass('activebtn');
-		$('#gangnambutton').removeClass('activebtn');*/
+	$('#nextbutton').on('tap',function(){
+		$('#custom_slider').find("li").css('display','none');
+		if($('#custom_slider').find("li.current").is(':last-child')){
+			$('#custom_slider').find("li").removeClass('current');
+			$('#custom_slider li').first().addClass('current').css('display','block');
+		}
+		else{
+			$('#custom_slider').find("li.current").removeClass('current').next().css('display','block').addClass('current');
+		}
 	});
+	$('#previousbutton').on('tap',function(){
+		$('#custom_slider').find("li").css('display','none');
+		if($('#custom_slider').find("li.current").is(':first-child')){
+			$('#custom_slider').find("li").removeClass('current');
+			$('#custom_slider li').last().addClass('current').css('display','block');
+		}
+		else{
+			$('#custom_slider').find("li.current").removeClass('current').prev().css('display','block').addClass('current');
+		}
+	});	
 	
-	$("#hatsunebutton").on('tap', function() {
-		$('#hatsunelink').css('display','block');
-		$('#bollywoodlink').css('display','none');
-		$('#gangnamlink').css('display','none');
-		
-		/*$('#bollywoodbutton').removeClass('activebtn');
-		$('#hatsunebutton').addClass('activebtn');
-		$('#gangnambutton').removeClass('activebtn');*/
-	});
-	
-	$("#gangnambutton").on('tap', function() {
-		$('#hatsunelink').css('display','none');
-		$('#bollywoodlink').css('display','none');
-		$('#gangnamlink').css('display','block');	
-		
-		/*$('#bollywoodbutton').removeClass('activebtn');
-		$('#hatsunebutton').removeClass('activebtn');
-		$('#gangnambutton').addClass('activebtn');*/
+	$('#slider_buttons li').on('tap',function(e){
+		var index		=	$(this).index()+1;
+		$('#custom_slider').find("li").css('display','none');
+		$('#custom_slider').find("li").removeClass('current');
+		$("#custom_slider li:nth-child("+index+")").addClass('current').css('display','block');
 	});
   </script>
 </div> <!--//home-->

@@ -43,33 +43,33 @@
 }
 
 #bollywoodlink{
-	background:url('images/9-12/People_and_Places/Asia_Today/Imagining_Asia/Pop_Culture/bolly.png') no-repeat;
-	width: 602px;
-	height: 370px;
-	position:absolute;
-	left: 329px;
-	top: 59px;
-	display:block;
+	background: url('images/9-12/People_and_Places/Asia_Today/Imagining_Asia/Pop_Culture/bollyy.png') no-repeat;
+	width: 575px;
+	height: 325px;
+	position: absolute;
+	left: 343px;
+	top: 68px;
+	display:none;
 }
 
 #hatsunelink{
-	background:url('images/9-12/People_and_Places/Asia_Today/Imagining_Asia/Pop_Culture/hat.png') no-repeat;
-	width: 602px;
-	height: 370px;
-	position:absolute;
-	left: 330px;
-	top: 57px;
-	display:none;
+	background: url('images/9-12/People_and_Places/Asia_Today/Imagining_Asia/Pop_Culture/hatt.png') no-repeat;
+	width: 579px;
+	height: 330px;
+	position: absolute;
+	left: 342px;
+	top: 66px;
+	display: none;
 }
 
 #gangnamlink{
-	background:url('images/9-12/People_and_Places/Asia_Today/Imagining_Asia/Pop_Culture/gang.png') no-repeat;
-	width: 602px;
-	height: 370px;
-	position:absolute;
-	left: 334px;
-	top: 57px;
-	display:none;
+	background: url('images/9-12/People_and_Places/Asia_Today/Imagining_Asia/Pop_Culture/gangg.png') no-repeat;
+	width: 580px;
+	height: 330px;
+	position: absolute;
+	left: 340px;
+	top: 66px;
+	display: none;
 }
 .activebtn{
 	background:url('images/9-12/People_and_Places/Asia_Today/Imagining_Asia/Pop_Culture/activebutton.png') no-repeat -2px -2px;
