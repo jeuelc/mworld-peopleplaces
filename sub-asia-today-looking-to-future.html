@@ -1,0 +1,106 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-asia-today-looking-to-future">
+  <script src="js/slidebar_asia_today.js"></script>
+  <link rel="stylesheet" href="css/style_asia_today.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnAsia"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnAsia"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnAsia"></div></div>
+  <div class="infobtnholder"><div class="infobtnAsia"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnAsia"></div></div>
+  <div class="menubtnholder"><div class="menubtnAsia"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:14px;"><h1>Looking to the Future</h1></div>
+  
+  <div data-role="content" class="kidzcontent">
+      <div class="navAsia-content">
+        <p>What will the Asia of tomorrow look like?  More precisely, how will people think of or imagine Asia in the future?  Many predictions involve economics and business: the rise of China and India to the status of 'economic powerhouses' comes to mind right away.  China is already the world's second-largest economy, with a value of more than $8 trillion!  It is the world's biggest importer and exporter of goods.  Since about 1980, it has had the fastest growth rate of any major economy in human history.  It also has the world's biggest population.</p>
+		<p>But you have to be careful about predictions!  In the 1980s, everyone thought Japan would be the world's new BIG economic power.  It was growing almost as fast as China is today, and was then the world's second-largest economy too.  But Japanese real estate values and its stock market collapsed in 1991-92, and Japan's economy hasn't fully recovered yet.</p>
+      </div>
+        
+      <div class="navbtn1" style="top:320px;">
+        <p><a href="sub-asia-today-looking-to-future-economic-boom.html" data-transition="slide"><img src="css/images/9-12/People_and_Places/Asia_Today/Lookinh_To_The_Future/Economic_Boom.png"></a></p>
+      </div>
+      <div class="navbtn3" style="top:320px;">
+        <p><a href="sub-asia-today-looking-to-future-developmental-challenges.html" data-transition="slide" ><img src="css/images/9-12/People_and_Places/Asia_Today/Lookinh_To_The_Future/Developmental_Challenges.png"></a></p>
+      </div>
+      <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+    </div> <!-- end content -->  
+  
+  <!--<div class="audiopanel">-->
+    <div class="micbtnholder"><div class="micbtnAsia" id="playstopLookingFuture"></div></div>
+    <div class="bAsia"><div class="rwAsia" id="LookingFutureaudiobbtn"></div></div>
+    <div class="plAsia"><div class="plpsAsia" id="LookingFutureaudioplbtn"></div></div>
+    <div class="fAsia"><div class="fwAsia" id="LookingFutureaudiofbtn"></div></div>
+    <div id="actualaudio-LookingFuture" style="visibility:hidden;"></div>
+  <!--</div>-->
+  <script>
+    sound = new Audio(); // 'sound' is now an audio object
+    var playing;
+    (function() {
+      playing = false;
+      if(sound.canPlayType('audio/mpeg')) {
+        $('#actualaudio-LookingFuture').html('<audio id="LookingFutureaudio" controls preload onpause="playsAsiaToday()" onplay="pauseAsiaToday()"><source src="audio/Asia_Today/Looking_Future.mp3" type="audio/mpeg"></audio>');
+      } 
+    
+      $("#sub-asia-today-looking-to-future").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+    })();
+    
+    $('.homelinkbh').on('tap', function() { mainaudiobg.play(); bgsoundAsiaToday.pause(); bgsoundAsiaToday.currentTime = 0;});
+    
+    function goBack() {
+      $.mobile.changePage("sub-asia-today.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsAsiaToday() {
+         bgsoundAsiaToday.play();
+    }
+       
+    function pauseAsiaToday() {
+         bgsoundAsiaToday.pause();
+    }
+    /* ******************** */
+    $("#playstopLookingFuture").on('tap', function() {
+      if(!playing) {
+        LookingFutureaudio.play();
+        $('.micbtnAsia').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        LookingFutureaudio.pause(); LookingFutureaudio.currentTime = 0;
+        $('.micbtnAsia').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#LookingFutureaudioplbtn").on('tap', function() {
+      if(!paused) {
+        LookingFutureaudio.pause();
+        paused = true;
+      } else {
+        LookingFutureaudio.play();
+        paused = false;
+      }
+    });
+    
+    $("#LookingFutureaudiofbtn").on('tap', function() {
+      var ctime = LookingFutureaudio.currentTime;
+      LookingFutureaudio.currentTime = ctime + 10;
+    });
+    
+    $("#LookingFutureaudiobbtn").on('tap', function() {
+      var ctime = LookingFutureaudio.currentTime;
+      LookingFutureaudio.currentTime = ctime - 10;
+    }); 
+    
+	$('.navbtn1').on('tap', function() { 
+      nav1Effects(); 
+    });
+    
+    $('.navbtn3').on('tap', function() { 
+      nav2Effects(); 
+    });
+	
+  </script>
+</div> <!--//home-->

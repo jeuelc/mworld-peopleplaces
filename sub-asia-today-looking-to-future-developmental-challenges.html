@@ -1,0 +1,180 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-asia-today-looking-to-future-developmental-challenges">
+  <script src="js/hammer.js"></script>
+  <script src="js/jquery.hammer.js"></script>
+  <script src="js/slidebar_asia_today.js"></script>
+  <link rel="stylesheet" href="css/style_asia_today.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnAsia"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnAsia"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnAsia"></div></div>
+  <div class="infobtnholder"><div class="infobtnAsia"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnAsia"></div></div>
+  <div class="menubtnholder"><div class="menubtnAsia"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:0px;"><h1>Developmental Challenges</h1></div>
+  <div id="spacechar">&nbsp;
+    <div data-role="content" class="kidzcontent">
+      <div class="v-spacer"></div>
+      <div class="sidebarleft-half">
+        <a id="ulanlink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Asia_Today/Lookinh_To_The_Future/Developmental_Challenges/Shanghai_Smog_Hi_Res.jpg', 'A smoggy day in Shanghai caused by air pollution.');">click here</a>
+		
+        <a id="couplelink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Asia_Today/Lookinh_To_The_Future/Developmental_Challenges/Dhaka_Water_Pollution_Hi_Res.jpg', 'Water pollution in Dhaka, the capital city of Bangladesh.');">click here</a>
+		
+		<a id="insidelink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Asia_Today/Lookinh_To_The_Future/Developmental_Challenges/Business_Women_Hi_Res.jpg', 'Gender equality is a rising issue in many Asian nations.');">click here</a>
+        
+		<div id="f1_container" style="visibility:hidden;position:absolute;left:100px;top:270px;">
+          <div id="f1_card">
+            <div class="front face">
+              <img id="dopple" src="css/images/9-12/People_and_Places/Asia_Today/Lookinh_To_The_Future/Developmental_Challenges/Peranakan_Culture.png">
+            </div>
+            <div id="backofcard" class="back face center" style="background:url(css/images/9-12/People_and_Places/Asia_Today/Lookinh_To_The_Future/Developmental_Challenges/Peranakan_Culture_Reverse.png) no-repeat;">
+              <div class="returncard" style="position:absolute;left:0px;top:0px;width:362px;height:170px;"></div>
+              <div id="trueans" style="position:absolute;left:90px;top:180px;width:70px;height:50px;"></div>
+              <div id="falseans" style="position:absolute;left:200px;top:180px;width:70px;height:50px;"></div>
+            </div>
+          </div><!--/f1+card-->
+        </div><!--/f1_container-->
+		
+		<div id="zoomwrapper">
+          <div id="pol1" class="pPiece" style="left:100px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Asia_Today/Lookinh_To_The_Future/Developmental_Challenges/Peranakan_Culture.png" alt="" />
+          </div>
+          <div id="pol2"class="pPiece" style="left:75px;top:290px;">
+             <img src="css/images/9-12/People_and_Places/Asia_Today/Lookinh_To_The_Future/Developmental_Challenges/Shanghai_Smog.jpg" alt="" />
+          </div>
+		  <div id="pol3"class="pPiece" style="left:80px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Asia_Today/Lookinh_To_The_Future/Developmental_Challenges/Dhaka_Water_Pollution.jpg" alt="" />
+          </div>
+		  <div id="pol4"class="pPiece" style="left:70px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Asia_Today/Lookinh_To_The_Future/Developmental_Challenges/Business_Women.jpg" alt="" />
+          </div>
+        </div><!--/zoomwrapper-->
+      </div>
+      
+      <div class="bpcontentAsia">
+        <p>Asia's challenges in the 21st century are as varied as the countries that make up the region.</p>
+		<p>Many struggle with problems that stem from rapid industrialisation and development, such as pollution and environmental damage.  In northern China, deforestation of a forest belt that used to capture the sand of the Gobi Desert means that cities like Beijing are often blanketed by smog and sandstorms.  In Bangladesh, industrial waste dumped into rivers has caused severe threats to human health. In Pacific islands such as Fiji, rising sea levels threatens the very existence of whole communities.</p>
+		<p>Families relate to each other differently as communities change with new developments.</p>
+		<p>In many Asian countries, the norm for families is changing from traditionally large, multigenerational groups, to smaller families of just parents and their children.</p>
+		<p>Society is also changing from male dominated, to a more equal situation for men and women.  Women have increased access to education and wealth, and a third of all new millionaires each year in China are women.</p>
+      </div>
+       
+      <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+    </div> <!-- end content -->  
+  </div><!--/spacechar-->        
+  
+    <div class="micbtnholder"><div class="micbtnAsia" id="playstopDevelopmental"></div></div>
+    <div class="bAsia"><div class="rwAsia" id="Developmentalaudiobbtn"></div></div>
+    <div class="plAsia"><div class="plpsAsia" id="Developmentalaudioplbtn"></div></div>
+    <div class="fAsia"><div class="fwAsia" id="Developmentalaudiofbtn"></div></div>
+    <div id="actualaudio-Developmental" style="visibility:hidden;"></div>
+  <!-- </div> -->
+  
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+ 
+	var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      $('div#pol1').css("z-index", 3);
+      $('div#pol2').css("z-index", 2);
+      $('div#pol3').css("z-index", 1);
+      $('div#pol1 > img').css("-webkit-transform", "rotate(0deg)");
+      $('div#pol2 > img').css("-webkit-transform", "rotate(5deg)");
+      $('div#pol3 > img').css("-webkit-transform", "rotate(-3deg)");
+      $('div#pol4 > img').css("-webkit-transform", "rotate(-3deg)");
+      
+	  if(sound.canPlayType('audio/mpeg')) {
+			$('#actualaudio-Developmental').html('<audio id="Developmentalaudio" controls preload onpause="playsAsiaToday()" onplay="pauseAsiaToday()"><source src="audio/Asia_Today/Developmental_Challenges.mp3" type="audio/mpeg"></audio>');
+		  }             
+	  $("#sub-asia-today-looking-to-future-developmental-challenges").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+	})();
+    
+	$('.homelinkbh').on('tap', function() { mainaudiobg.play(); bgsoundAsiaToday.pause(); bgsoundAsiaToday.currentTime = 0;});
+    
+	$(".returncard").on('tap', function() {
+      $('#f1_card').css({"-webkit-transform": "rotateY(0deg)"});
+      $('#f1_card').css({"-moz-transform": "rotateY(0deg)"});
+      $('#f1_card').css({"-o-transform": "rotateY(0deg)"});
+      $('#f1_card').css({"transform": "rotateY(0deg)"});
+      setTimeout(function() {
+        $("#pol1").css({"visibility":"visible", "z-index":4});
+        $('#f1_container').css({"visibility":"hidden", "z-index":0});
+      }, 1000);
+    });
+    
+    $("#pol1").on('tap', function() {
+      $('#f1_container').css({"visibility":"visible", "z-index":10});
+      $(this).css({"visibility":"hidden"});
+      $('#f1_card').css({"-webkit-transform": "rotateY(180deg)"});
+      $('#f1_card').css({"-moz-transform": "rotateY(180deg)"});
+      $('#f1_card').css({"-o-transform": "rotateY(180deg)"});
+      $('#f1_card').css({"transform": "rotateY(180deg)"});
+    });
+    $("#pol2").on('tap', function() {
+      $('#ulanlink')[0].click();
+    });
+    $("#pol3").on('tap', function() {
+      $('#couplelink')[0].click();
+    });
+	$("#pol4").on('tap', function() {
+      $('#insidelink')[0].click();
+    });
+    function goBack() {
+      $.mobile.changePage("sub-asia-today-looking-to-future.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsAsiaToday() {
+         bgsoundAsiaToday.play();
+    }
+       
+    function pauseAsiaToday() {
+         bgsoundAsiaToday.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+    $("#playstopDevelopmental").on('tap', function() {
+      if(!playing) {
+        Developmentalaudio.play();
+        $('.micbtnAsia').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        Developmentalaudio.pause(); Developmentalaudio.currentTime = 0;
+        $('.micbtnAsia').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#Developmentalaudioplbtn").on('tap', function() {
+      if(!paused) {
+        Developmentalaudio.pause();
+        paused = true;
+      } else {
+        Developmentalaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#Developmentalaudiofbtn").on('tap', function() {
+      var ctime = Developmentalaudio.currentTime;
+      Developmentalaudio.currentTime = ctime + 10;
+    });
+    
+    $("#Developmentalaudiobbtn").on('tap', function() {
+      var ctime = Developmentalaudio.currentTime;
+      Developmentalaudio.currentTime = ctime - 10;
+    });
+    
+    $("#Developmentalaudiopsbtn").on('tap', function() {
+      Developmentalaudio.pause();
+    });
+  </script>
+  <script src="js/fourcardLogic.js"></script>  <!-- for card dragging effects -->
+</div> <!--//home-->

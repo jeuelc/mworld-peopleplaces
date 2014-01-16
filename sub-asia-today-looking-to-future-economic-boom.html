@@ -1,0 +1,160 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-asia-today-looking-to-future-economic-boom">
+  <script src="js/hammer.js"></script>
+  <script src="js/jquery.hammer.js"></script>
+  <script src="js/slidebar_asia_today.js"></script>
+  <link rel="stylesheet" href="css/style_asia_today.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnAsia"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnAsia"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnAsia"></div></div>
+  <div class="infobtnholder"><div class="infobtnAsia"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnAsia"></div></div>
+  <div class="menubtnholder"><div class="menubtnAsia"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:0px;"><h1>Economic Boom</h1></div>
+  <div id="spacechar">&nbsp;
+    <div data-role="content" class="kidzcontent">
+      <div class="v-spacer"></div>
+      <div class="sidebarleft-half">
+		<a id="skylink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Asia_Today/Lookinh_To_The_Future/Economic_Boom/Korean_Factories_Hi_Res.jpg', 'Factories in Seoul, Korea.');">click here</a>
+		
+        <a id="skylinelink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Asia_Today/Lookinh_To_The_Future/Economic_Boom/Hong_Kong_Aerial_Hi_Res.jpg', 'Hong Kong is the city with the most skyscrapers in the world.');">click here</a>
+		
+        <a id="toothlink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Asia_Today/Lookinh_To_The_Future/Economic_Boom/Slum_Hi_Res.jpg', 'Makeshift housing in a slum area of the Philippines. Places like this illustrate the extreme gap between rich and poor in some regions.');">click here</a>
+		
+		<a id="supertreelink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Asia_Today/Lookinh_To_The_Future/Economic_Boom/Textile_Hi_Res.jpg', 'Garment factories throughout many Asian nations supply clothing to stores around the world. But with no minimum wage in a lot of countries, many workers are paid very little.');">click here</a>
+        
+		<div id="zoomwrapper" >
+          <div id="pol1" class="pPiece" style="left:100px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Asia_Today/Lookinh_To_The_Future/Economic_Boom/Korean_Factories.jpg" alt="" />
+          </div>
+          <div id="pol2"class="pPiece" style="left:75px;top:290px;">
+             <img src="css/images/9-12/People_and_Places/Asia_Today/Lookinh_To_The_Future/Economic_Boom/Hong_Kong_Aerial.jpg" alt="" />
+          </div>
+		  <div id="pol3"class="pPiece" style="left:80px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Asia_Today/Lookinh_To_The_Future/Economic_Boom/Slum.jpg" alt="" />
+          </div>
+		  <div id="pol4"class="pPiece" style="left:70px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Asia_Today/Lookinh_To_The_Future/Economic_Boom/Textile.jpg" alt="" />
+          </div>
+        </div><!--/zoomwrapper-->
+      </div>
+      
+      <div class="bpcontentAsia">
+        <p>Economic development across Asia is very uneven.  Much of the wealth and investment that is going into the region goes into a relative few areas.</p>
+		<p>The province of Zhejiang in eastern China, for example, generates more wealth than the 10 western most provinces of the country combined.  But there are also areas that are very poor.  For example 43% of the population in Bangladesh live on less than the equivalent of $1.25 a day per person!  Nine out of 10 countries in Asia have no law that guarantees a <a href="#minimunWage" data-rel="popup">minimum wage</a> for people.</p>
+		<p>Wealth in India is concentrated in states which produce a lot of goods for export such as Gujarat and Maharashtra along the west coast, as well as Punjab and Haryana to the north.  In contrast, states such as Uttar Pradesh and Rajasthan make some money from agriculture, but there is little noticeable growth in the amount of money that most people earn.</p>
+      </div>
+       
+      <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+    </div> <!-- end content -->  
+  </div><!--/spacechar-->  
+  
+	<!------------------------------------- Definition box ----------------------------------- -->
+	<div data-role="popup" id="minimunWage" data-position-to="window" data-overlay-theme="a" style="text-align:center;">
+		<div id="node-pop">
+			<p>Minimun Wage</p>
+			<p>A minimum wage is the lowest amount that employers may pay to their workers according to law or a special agreement (such as one with a labour union).  Where no minimum wage exists, there is nothing legally stopping employers from offering such extremely low pay that it is not enough for people to live on.</p>
+		</div>
+    </div>
+	<!---------------------------------------------------------------------------------------- -->
+    
+	<div class="micbtnholder"><div class="micbtnAsia" id="playstopEconomic"></div></div>
+    <div class="bAsia"><div class="rwAsia" id="Economicaudiobbtn"></div></div>
+    <div class="plAsia"><div class="plpsAsia" id="Economicaudioplbtn"></div></div>
+    <div class="fAsia"><div class="fwAsia" id="Economicaudiofbtn"></div></div>
+    <div id="actualaudio-Economic" style="visibility:hidden;"></div>
+  <!-- </div> -->
+  
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+ 
+	var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      $('div#pol1').css("z-index", 3);
+      $('div#pol2').css("z-index", 2);
+      $('div#pol3').css("z-index", 1);
+      $('div#pol1 > img').css("-webkit-transform", "rotate(0deg)");
+      $('div#pol2 > img').css("-webkit-transform", "rotate(5deg)");
+      $('div#pol3 > img').css("-webkit-transform", "rotate(-3deg)");
+      $('div#pol4 > img').css("-webkit-transform", "rotate(-3deg)");
+      
+	  if(sound.canPlayType('audio/mpeg')) {
+			$('#actualaudio-Economic').html('<audio id="Economicaudio" controls preload onpause="playsAsiaToday()" onplay="pauseAsiaToday()"><source src="audio/Asia_Today/Economic_Boom.mp3" type="audio/mpeg"></audio>');
+		  }             
+	  $("#sub-asia-today-looking-to-future-economic-boom").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+	})();
+    
+	$('.homelinkbh').on('tap', function() { mainaudiobg.play(); bgsoundAsiaToday.pause(); bgsoundAsiaToday.currentTime = 0;});
+    
+	$("#pol1").on('tap', function() {
+      $('#skylink')[0].click();
+    });
+    $("#pol2").on('tap', function() {
+      $('#skylinelink')[0].click();
+    });
+    $("#pol3").on('tap', function() {
+      $('#toothlink')[0].click();
+    });
+	$("#pol4").on('tap', function() {
+      $('#supertreelink')[0].click();
+    });
+    function goBack() {
+      $.mobile.changePage("sub-asia-today-looking-to-future.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsAsiaToday() {
+         bgsoundAsiaToday.play();
+    }
+       
+    function pauseAsiaToday() {
+         bgsoundAsiaToday.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+    $("#playstopEconomic").on('tap', function() {
+      if(!playing) {
+        Economicaudio.play();
+        $('.micbtnAsia').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        Economicaudio.pause(); Economicaudio.currentTime = 0;
+        $('.micbtnAsia').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#Economicaudioplbtn").on('tap', function() {
+      if(!paused) {
+        Economicaudio.pause();
+        paused = true;
+      } else {
+        Economicaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#Economicaudiofbtn").on('tap', function() {
+      var ctime = Economicaudio.currentTime;
+      Economicaudio.currentTime = ctime + 10;
+    });
+    
+    $("#Economicaudiobbtn").on('tap', function() {
+      var ctime = Economicaudio.currentTime;
+      Economicaudio.currentTime = ctime - 10;
+    });
+    
+    $("#Economicaudiopsbtn").on('tap', function() {
+      Economicaudio.pause();
+    });
+  </script>
+  <script src="js/fourcardLogic.js"></script>  <!-- for card dragging effects -->
+</div> <!--//home-->
