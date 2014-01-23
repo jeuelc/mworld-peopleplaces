@@ -1,0 +1,135 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-designing-places-your-future-home">
+  <script src="js/slidebar_designing_places.js"></script>
+  <link rel="stylesheet" href="css/style_designing_places.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnDesigningPlaces"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnDesigningPlaces"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnDesigningPlaces"></div></div>
+  <div class="infobtnholder"><div class="infobtnDesigningPlaces"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnDesigningPlaces"></div></div>
+  <div class="menubtnholder"><div class="menubtnDesigningPlaces"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:14px;"><h1>Your Future Home?</h1></div>
+  <div id="dragonslink" style="position:absolute;left: 500px;top: 143px;width: 493px;height: 145px;"></div>
+  <div id="federationlink" style="position:absolute;left: 630px;top: 520px;width: 362px;height: 130px;"></div>
+  <div id="guggenheimlink" style="position:absolute;left: 25px;top: 537px;width: 508px;height: 118px;"></div>
+  <div id="highlifelink" style="position:absolute;left: 25px;top: 348px;width: 445px;height: 150px;"></div>
+  <div id="seattlelink" style="position:absolute;left: 565px;top: 333px;width: 430px;height: 135px;"></div>
+  <div id="waterfallslink" style="position:absolute;left: 24px;top: 158px;width: 385px;height: 160px;"></div>
+  <div data-role="content" class="kidzcontent">
+	<div class="navDesigningPlaces-FutureHome">
+        <p>What do you think your home will be like when you grow-up?  Where will you live?</p>
+		<p>The architecture of the future could look radically different from the way it does now.  New technologies and new materials might mean we are able to build all kinds of crazy looking buildings and places.  We might connect with our houses differently  touch screens might take up whole walls  or perhaps we will be sending people to live on Mars or the Moon!  What do you think it might be like to live in these places?</p>
+		<p>The architecture of the future might look very similar to today's architecture.  New technologies might not greatly change the 'look' of architecture and some of the things we like about the spaces we inhabit have not changed in a very long time.</p>
+		<p>Architects need to make places for all of the things that we love about our cities and homes.</p>
+		<p>What do you think the future of architecture will be?</p>
+    </div>
+  <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+  </div> <!-- end content -->  
+    
+  
+  <!--<div class="audiopanel">-->
+    <!-- images are in slidebarnat.js 
+         note: change the ids to be able play the narration
+    -->
+    <div class="micbtnholder"><div class="micbtnDesigningPlaces" id="playstopFutureHome"></div></div>
+    <div class="bDesigningPlaces"><div class="rwDesigningPlaces" id="FutureHomeaudiobbtn"></div></div>
+    <div class="plDesigningPlaces"><div class="plpsDesigningPlaces" id="FutureHomeaudioplbtn"></div></div>
+    <div class="fDesigningPlaces"><div class="fwDesigningPlaces" id="FutureHomeaudiofbtn"></div></div>
+    <div id="actualaudio-FutureHome" style="visibility:hidden;"></div>
+  <!--</div>-->
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+    var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      if(sound.canPlayType('audio/mpeg')) {
+        $('#actualaudio-FutureHome').html('<audio id="FutureHomeaudio" controls preload onpause="playsDesigningPlaces()" onplay="pauseDesigningPlaces()"><source src="audio/Designing_Places/Future_Home.mp3" type="audio/mpeg"></audio>');
+      } 
+    
+      $("#sub-designing-places-your-future-home").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+    })();
+    
+    $('#dragonslink').on('tap', function() {
+      $.mobile.changePage("sub-designing-places-your-future-home-Dragons-and-Gryphons.html", {transition: "slide"});
+    });
+    
+    $('#federationlink').on('tap', function() {
+      $.mobile.changePage("sub-designing-places-your-future-home-Federation-Square.html", {transition: "slide"});
+    });
+    
+    $('#guggenheimlink').on('tap', function() {
+      $.mobile.changePage("sub-designing-places-your-future-home-Guggenheim-Bilbao.html", {transition: "slide"});
+    });
+    
+	$('#highlifelink').on('tap', function() {
+      $.mobile.changePage("sub-designing-places-your-future-home-Living-the-High-Life.html", {transition: "slide"});
+    });
+	
+	$('#seattlelink').on('tap', function() {
+      $.mobile.changePage("sub-designing-places-your-future-home-Seattle-Central-Library.html", {transition: "slide"});
+    });
+	
+	$('#waterfallslink').on('tap', function() {
+      $.mobile.changePage("sub-designing-places-your-future-home-Waterfalls-and-Tree-Houses.html", {transition: "slide"});
+    });
+	
+    $('.homelinkbh').on('tap', function() { mainaudiobg.play(); bgsoundDesigningPlaces.pause(); bgsoundDesigningPlaces.currentTime = 0;});
+    
+    function goBack() {
+      $.mobile.changePage("sub-designing-places.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsDesigningPlace() {
+         bgsoundDesigningPlaces.play();
+    }
+       
+    function pauseDesigningPlace() {
+         bgsoundDesigningPlaces.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+    $("#playstopFutureHome").on('tap', function() {
+      if(!playing) {
+        FutureHomeaudio.play();
+        $('.micbtnDesigningPlaces').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        FutureHomeaudio.pause(); FutureHomeaudio.currentTime = 0;
+        $('.micbtnDesigningPlaces').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#FutureHomeaudioplbtn").on('tap', function() {
+      if(!paused) {
+        FutureHomeaudio.pause();
+        paused = true;
+      } else {
+        FutureHomeaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#FutureHomeaudiofbtn").on('tap', function() {
+      var ctime = FutureHomeaudio.currentTime;
+      FutureHomeaudio.currentTime = ctime + 10;
+    });
+    
+    $("#FutureHomeaudiobbtn").on('tap', function() {
+      var ctime = FutureHomeaudio.currentTime;
+      FutureHomeaudio.currentTime = ctime - 10;
+    });
+    
+    $("#FutureHomeaudiopsbtn").on('tap', function() {
+      FutureHomeaudio.pause();
+    });
+  </script>
+</div> <!--//home-->

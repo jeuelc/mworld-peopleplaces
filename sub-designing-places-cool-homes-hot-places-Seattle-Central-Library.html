@@ -1,0 +1,152 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-designing-places-cool-homes-hot-places-Seattle-Central-Library">
+  <script src="js/hammer.js"></script>
+  <script src="js/jquery.hammer.js"></script>
+  <script src="js/slidebar_designing_places.js"></script>
+  <link rel="stylesheet" href="css/style_designing_places.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnDesigningPlaces"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnDesigningPlaces"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnDesigningPlaces"></div></div>
+  <div class="infobtnholder"><div class="infobtnDesigningPlaces"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnDesigningPlaces"></div></div>
+  <div class="menubtnholder"><div class="menubtnDesigningPlaces"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:0px;"><h1>Seattle Central Library</h1></div>
+  <div id="spacechar">&nbsp;
+    <div data-role="content" class="kidzcontent">
+      <div class="v-spacer"></div>
+      <div class="sidebarleft-half">
+		<a id="exlink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Designing_Places/Cool_Homes_Hot_Places/Seattle_Central_Library/Reading_Room_Hi_Res.jpg', 'The Seattle library celebrates books, but we know that books arent just on paper!  You can get all sorts of media here  music, films, books and more!');">click here</a>
+		
+        <a id="externallink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Designing_Places/Cool_Homes_Hot_Places/Seattle_Central_Library/Open_Spaces_Hi_Res.jpg', 'Libraries arent just for reading, we also need places for kids, education and places to listen to stories. They should be calm and open, not solemn and quiet.');">click here</a>
+		
+        <a id="closelink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Designing_Places/Cool_Homes_Hot_Places/Seattle_Central_Library/Seattle_Library_External_Hi_Res.jpg', 'If you look at it from the outside this library looks like it\'s doing the twist!  That\'s because the architect wanted to capture the beautiful views of Seattle.');">click here</a>
+		
+		<a id="sculpturelink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Designing_Places/Cool_Homes_Hot_Places/Seattle_Central_Library/Lobby_Hi_Res.jpg', 'Libraries just need a place to hold books and somewhere to talk to a librarian right?  The architect of the Seattle Central Library thought they needed much, much more!');">click here</a>
+        
+		<div id="zoomwrapper">
+          <div id="pol1" class="pPiece" style="left:100px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Designing_Places/Cool_Homes_Hot_Places/Seattle_Central_Library/Reading_Room.png" alt="" />
+          </div>
+          <div id="pol2"class="pPiece" style="left:75px;top:290px;">
+             <img src="css/images/9-12/People_and_Places/Designing_Places/Cool_Homes_Hot_Places/Seattle_Central_Library/Open_Spaces.png" alt="" />
+          </div>
+		  <div id="pol3"class="pPiece" style="left:80px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Designing_Places/Cool_Homes_Hot_Places/Seattle_Central_Library/Seattle_Library_External.png" alt="" />
+          </div>
+		  <div id="pol4"class="pPiece" style="left:70px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Designing_Places/Cool_Homes_Hot_Places/Seattle_Central_Library/Lobby.png" alt="" />
+          </div>
+        </div><!--/zoomwrapper-->
+      </div>
+      
+      <div class="bpcontentDesigningPlaces">
+        <p>Have you been to the library recently?  What do you think of first when you think of a library  books right?  But libraries are changing.</p>
+		<p>This amazing library in Seattle by OMA has turned how we think about designing and using libraries on its head.  It still has books  lots and lots of them - but it has many more things as well.</p>
+		<p>The Seattle Central Library is vibrant and colourful on the inside and from the outside it looks like it is doing the twist!  This is because the architects have rotated the spaces inside to look at the different views of Seattle you can see from the building.</p>
+		<p>This library is a living room for the whole city of Seattle!</p>
+      </div>
+       
+      <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+    </div> <!-- end content -->  
+  </div><!--/spacechar-->        
+  
+    <div class="micbtnholder"><div class="micbtnDesigningPlaces" id="playstopSeattleCentralLibrary"></div></div>
+    <div class="bDesigningPlaces"><div class="rwDesigningPlaces" id="SeattleCentralLibraryaudiobbtn"></div></div>
+    <div class="plDesigningPlaces"><div class="plpsDesigningPlaces" id="SeattleCentralLibraryaudioplbtn"></div></div>
+    <div class="fDesigningPlaces"><div class="fwDesigningPlaces" id="SeattleCentralLibraryaudiofbtn"></div></div>
+    <div id="actualaudio-SeattleCentralLibrary" style="visibility:hidden;"></div>
+  <!-- </div> -->
+  
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+ 
+	var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      $('div#pol1').css("z-index", 3);
+      $('div#pol2').css("z-index", 2);
+      $('div#pol3').css("z-index", 1);
+      $('div#pol1 > img').css("-webkit-transform", "rotate(0deg)");
+      $('div#pol2 > img').css("-webkit-transform", "rotate(5deg)");
+      $('div#pol3 > img').css("-webkit-transform", "rotate(-3deg)");
+      $('div#pol4 > img').css("-webkit-transform", "rotate(-3deg)");
+      
+	  if(sound.canPlayType('audio/mpeg')) {
+			$('#actualaudio-SeattleCentralLibrary').html('<audio id="SeattleCentralLibraryaudio" controls preload onpause="playsDesigningPlaces()" onplay="pauseDesigningPlaces()"><source src="audio/Designing_Places/Seattle_Central_Library.mp3" type="audio/mpeg"></audio>');
+		  }             
+	  $("#sub-designing-places-cool-homes-hot-places-Seattle-Central-Library").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+	})();
+    
+	$('.homelinkbh').on('tap', function() { mainaudiobg.play(); bgsoundDesigningPlacesToday.pause(); bgsoundDesigningPlacesToday.currentTime = 0;});
+    
+	$("#pol1").on('tap', function() {
+      $('#exlink')[0].click();
+    });
+    $("#pol2").on('tap', function() {
+      $('#externallink')[0].click();
+    });
+    $("#pol3").on('tap', function() {
+      $('#closelink')[0].click();
+    });
+	$("#pol4").on('tap', function() {
+      $('#sculpturelink')[0].click();
+    });
+    function goBack() {
+      $.mobile.changePage("sub-designing-places-cool-homes-hot-places.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsDesigningPlace() {
+         bgsoundDesigningPlaces.play();
+    }
+       
+    function pauseDesigningPlace() {
+         bgsoundDesigningPlaces.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+    $("#playstopSeattleCentralLibrary").on('tap', function() {
+      if(!playing) {
+        SeattleCentralLibraryaudio.play();
+        $('.micbtnDesigningPlaces').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        SeattleCentralLibraryaudio.pause(); SeattleCentralLibraryaudio.currentTime = 0;
+        $('.micbtnDesigningPlaces').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#SeattleCentralLibraryaudioplbtn").on('tap', function() {
+      if(!paused) {
+        SeattleCentralLibraryaudio.pause();
+        paused = true;
+      } else {
+        SeattleCentralLibraryaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#SeattleCentralLibraryaudiofbtn").on('tap', function() {
+      var ctime = SeattleCentralLibraryaudio.currentTime;
+      SeattleCentralLibraryaudio.currentTime = ctime + 10;
+    });
+    
+    $("#SeattleCentralLibraryaudiobbtn").on('tap', function() {
+      var ctime = SeattleCentralLibraryaudio.currentTime;
+      SeattleCentralLibraryaudio.currentTime = ctime - 10;
+    });
+    
+    $("#SeattleCentralLibraryaudiopsbtn").on('tap', function() {
+      SeattleCentralLibraryaudio.pause();
+    });
+  </script>
+  <script src="js/fourcardLogic.js"></script>  <!-- for card dragging effects -->
+</div> <!--//home-->

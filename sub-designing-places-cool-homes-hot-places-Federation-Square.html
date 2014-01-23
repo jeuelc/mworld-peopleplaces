@@ -1,0 +1,150 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-designing-places-cool-homes-hot-places-Federation-Square">
+  <script src="js/hammer.js"></script>
+  <script src="js/jquery.hammer.js"></script>
+  <script src="js/slidebar_designing_places.js"></script>
+  <link rel="stylesheet" href="css/style_designing_places.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnDesigningPlaces"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnDesigningPlaces"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnDesigningPlaces"></div></div>
+  <div class="infobtnholder"><div class="infobtnDesigningPlaces"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnDesigningPlaces"></div></div>
+  <div class="menubtnholder"><div class="menubtnDesigningPlaces"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:0px;"><h1>Federation Square</h1></div>
+  <div id="spacechar">&nbsp;
+    <div data-role="content" class="kidzcontent">
+      <div class="v-spacer"></div>
+      <div class="sidebarleft-half">
+        <a id="ulanlink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Designing_Places/Cool_Homes_Hot_Places/Federation_Square/Fed_Square_Interior_Hi_Res.jpg', 'Federation square contains places to eat, drink and just get together. It was controversial at first, but now it has become a central part of Melbourne.');">click here</a>
+		
+        <a id="couplelink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Designing_Places/Cool_Homes_Hot_Places/Federation_Square/Fed_Square_Exterior_Hi_Res.jpg', 'What do you think about how Federation Square looks?  Everyone experiences architecture differently, what is awesome to you might be awful to someone else!');">click here</a>
+		
+		<a id="insidelink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Designing_Places/Cool_Homes_Hot_Places/Federation_Square/Fractal_Geomentry_Hi_Res.jpg', 'If you look closely at the building you can see that it has been designed around \'fractal\' geometry - this makes the bulding look very different!');">click here</a>
+        
+		<div id="zoomwrapper">
+          <div id="pol1" class="pPiece" style="left:100px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Designing_Places/Cool_Homes_Hot_Places/Federation_Square/Fed_Square_Interior.png" alt="" />
+          </div>
+          <div id="pol2"class="pPiece" style="left:75px;top:290px;">
+             <img src="css/images/9-12/People_and_Places/Designing_Places/Cool_Homes_Hot_Places/Federation_Square/Fed_Square_Exterior.png" alt="" />
+          </div>
+		  <div id="pol3"class="pPiece" style="left:80px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Designing_Places/Cool_Homes_Hot_Places/Federation_Square/Fractal_Geomentry.png" alt="" />
+          </div>
+		</div><!--/zoomwrapper-->
+      </div>
+      
+      <div class="bpcontentDesigningPlaces">
+        <p>This is Federation Square in Melbourne, Australia.  It is a collection of public buildings arranged around a gently sloping public square.  The triangular pattern on the skin of the building is inspired by <a href="#fractal_geometry" data-rel="popup">fractal geometry</a> and is made of sandstone, glass and zinc.  There is a lot to do at Federation Square.  It has an art gallery, a film centre, a visitor centre, offices, restaurants and bars.  It has two main public spaces  the outdoor Square and the enclosed Atrium  and a beautiful lecture theatre with a great view of the Yarra River, which runs through the city.</p>
+		<p>Until Federation Square was built, Melbourne didn't have many great public outdoor spaces.  Now, Federation Square is one of Melbourne's most important public places.</p>
+		<p>Not everyone likes the look of it, but most people agree that when you are there it is a brilliant place to be.  Something is always happening at Federation Square.</p>
+      </div>
+       
+      <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+    </div> <!-- end content -->  
+  </div><!--/spacechar-->        
+	
+	<!------------------------------------- Definition box ----------------------------------- -->
+	<div data-role="popup" id="fractal_geometry" data-position-to="window" data-overlay-theme="a" style="text-align:center;">
+		<div id="node-pop">
+			<p>Fractal Geometry</p>
+			<p>A fractal is a shape that is rough, or broken up into smaller parts. In art, these shapes are often made by computers, not by hand.</p>
+		</div>
+    </div>
+	<!---------------------------------------------------------------------------------------- -->
+	
+    <div class="micbtnholder"><div class="micbtnDesigningPlaces" id="playstopFederationSquare"></div></div>
+    <div class="bDesigningPlaces"><div class="rwDesigningPlaces" id="FederationSquareaudiobbtn"></div></div>
+    <div class="plDesigningPlaces"><div class="plpsDesigningPlaces" id="FederationSquareaudioplbtn"></div></div>
+    <div class="fDesigningPlaces"><div class="fwDesigningPlaces" id="FederationSquareaudiofbtn"></div></div>
+    <div id="actualaudio-FederationSquare" style="visibility:hidden;"></div>
+  <!-- </div> -->
+  
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+ 
+	var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      $('div#pol2').css("z-index", 2);
+      $('div#pol1').css("z-index", 1);
+      $('div#pol1 > img').css("-webkit-transform", "rotate(0deg)");
+      $('div#pol2 > img').css("-webkit-transform", "rotate(5deg)");
+      $('div#pol3 > img').css("-webkit-transform", "rotate(-3deg)");
+      
+	  if(sound.canPlayType('audio/mpeg')) {
+			$('#actualaudio-FederationSquare').html('<audio id="FederationSquareaudio" controls preload onpause="playsDesigningPlaces()" onplay="pauseDesigningPlaces()"><source src="audio/Designing_Places/Federation_Square.mp3" type="audio/mpeg"></audio>');
+		  }             
+	  $("#sub-designing-places-cool-homes-hot-places-Federation-Square").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+	})();
+    
+	$('.homelinkbh').on('tap', function() { mainaudiobg.play(); bgsoundDesigningPlacesToday.pause(); bgsoundDesigningPlacesToday.currentTime = 0;});
+    
+	$("#pol1").on('tap', function() {
+      $('#ulanlink')[0].click();
+    });
+    $("#pol2").on('tap', function() {
+      $('#couplelink')[0].click();
+    });
+	$("#pol3").on('tap', function() {
+      $('#insidelink')[0].click();
+    });
+    function goBack() {
+      $.mobile.changePage("sub-designing-places-cool-homes-hot-places.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsDesigningPlace() {
+         bgsoundDesigningPlaces.play();
+    }
+       
+    function pauseDesigningPlace() {
+         bgsoundDesigningPlaces.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+    $("#playstopFederationSquare").on('tap', function() {
+      if(!playing) {
+        FederationSquareaudio.play();
+        $('.micbtnDesigningPlaces').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        FederationSquareaudio.pause(); FederationSquareaudio.currentTime = 0;
+        $('.micbtnDesigningPlaces').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#FederationSquareaudioplbtn").on('tap', function() {
+      if(!paused) {
+        FederationSquareaudio.pause();
+        paused = true;
+      } else {
+        FederationSquareaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#FederationSquareaudiofbtn").on('tap', function() {
+      var ctime = FederationSquareaudio.currentTime;
+      FederationSquareaudio.currentTime = ctime + 10;
+    });
+    
+    $("#FederationSquareaudiobbtn").on('tap', function() {
+      var ctime = FederationSquareaudio.currentTime;
+      FederationSquareaudio.currentTime = ctime - 10;
+    });
+    
+    $("#FederationSquareaudiopsbtn").on('tap', function() {
+      FederationSquareaudio.pause();
+    });
+  </script>
+  <script src="js/threecardLogic.js"></script>  <!-- for card dragging effects -->
+</div> <!--//home-->

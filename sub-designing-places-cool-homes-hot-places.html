@@ -1,0 +1,134 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-designing-places-cool-homes-hot-places">
+  <script src="js/slidebar_designing_places.js"></script>
+  <link rel="stylesheet" href="css/style_designing_places.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnDesigningPlaces"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnDesigningPlaces"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnDesigningPlaces"></div></div>
+  <div class="infobtnholder"><div class="infobtnDesigningPlaces"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnDesigningPlaces"></div></div>
+  <div class="menubtnholder"><div class="menubtnDesigningPlaces"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:14px;"><h1>A Diverse Place</h1></div>
+  <div id="dragonslink" style="position:absolute;left: 500px;top: 143px;width: 493px;height: 145px;"></div>
+  <div id="federationlink" style="position:absolute;left: 630px;top: 520px;width: 362px;height: 130px;"></div>
+  <div id="guggenheimlink" style="position:absolute;left: 25px;top: 537px;width: 508px;height: 118px;"></div>
+  <div id="highlifelink" style="position:absolute;left: 25px;top: 348px;width: 445px;height: 150px;"></div>
+  <div id="seattlelink" style="position:absolute;left: 565px;top: 333px;width: 430px;height: 135px;"></div>
+  <div id="waterfallslink" style="position:absolute;left: 24px;top: 158px;width: 385px;height: 160px;"></div>
+  <div data-role="content" class="kidzcontent">
+	<div class="navDesigningPlaces-CoolHomesHotPlaces">
+        <p>The use of the word 'DesigningPlaces' is misleading if it is used to mean that the region shares one single culture.  There's a whole range of different institutions, ideas and value systems present at any given moment.</p>
+		<p>Many of these are distinct in some way or another to the Western world, but none are shared across all people who live in DesigningPlaces.  And they have evolved out of a combination of environmental concerns, imperial rule, mass migration, conflict, and the spread of religion.</p>
+		<p>These different things include the importance of the extended family and kin network; respect for the importance of learning for its own sake; great respect for the aged; the public roles of women; and the importance of group welfare over individual interest.</p>
+		<p>Let's look more closely at some examples of countries and places in DesigningPlaces to get a sense of how different, and storied, DesigningPlaces can be.</p>
+    </div>
+  <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+  </div> <!-- end content -->  
+    
+  
+  <!--<div class="audiopanel">-->
+    <!-- images are in slidebarnat.js 
+         note: change the ids to be able play the narration
+    -->
+    <div class="micbtnholder"><div class="micbtnDesigningPlaces" id="playstopCoolHomesHotPlaces"></div></div>
+    <div class="bDesigningPlaces"><div class="rwDesigningPlaces" id="CoolHomesHotPlacesaudiobbtn"></div></div>
+    <div class="plDesigningPlaces"><div class="plpsDesigningPlaces" id="CoolHomesHotPlacesaudioplbtn"></div></div>
+    <div class="fDesigningPlaces"><div class="fwDesigningPlaces" id="CoolHomesHotPlacesaudiofbtn"></div></div>
+    <div id="actualaudio-CoolHomesHotPlaces" style="visibility:hidden;"></div>
+  <!--</div>-->
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+    var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      if(sound.canPlayType('audio/mpeg')) {
+        $('#actualaudio-CoolHomesHotPlaces').html('<audio id="CoolHomesHotPlacesaudio" controls preload onpause="playsDesigningPlaces()" onplay="pauseDesigningPlaces()"><source src="audio/Designing_Places/Cool_Homes_Hot_Places.mp3" type="audio/mpeg"></audio>');
+      } 
+    
+      $("#sub-designing-places-cool-homes-hot-places").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+    })();
+    
+    $('#dragonslink').on('tap', function() {
+      $.mobile.changePage("sub-designing-places-cool-homes-hot-places-Dragons-and-Gryphons.html", {transition: "slide"});
+    });
+    
+    $('#federationlink').on('tap', function() {
+      $.mobile.changePage("sub-designing-places-cool-homes-hot-places-Federation-Square.html", {transition: "slide"});
+    });
+    
+    $('#guggenheimlink').on('tap', function() {
+      $.mobile.changePage("sub-designing-places-cool-homes-hot-places-Guggenheim-Bilbao.html", {transition: "slide"});
+    });
+    
+	$('#highlifelink').on('tap', function() {
+      $.mobile.changePage("sub-designing-places-cool-homes-hot-places-Living-the-High-Life.html", {transition: "slide"});
+    });
+	
+	$('#seattlelink').on('tap', function() {
+      $.mobile.changePage("sub-designing-places-cool-homes-hot-places-Seattle-Central-Library.html", {transition: "slide"});
+    });
+	
+	$('#waterfallslink').on('tap', function() {
+      $.mobile.changePage("sub-designing-places-cool-homes-hot-places-Waterfalls-and-Tree-Houses.html", {transition: "slide"});
+    });
+	
+    $('.homelinkbh').on('tap', function() { mainaudiobg.play(); bgsoundDesigningPlaces.pause(); bgsoundDesigningPlaces.currentTime = 0;});
+    
+    function goBack() {
+      $.mobile.changePage("sub-designing-places.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsDesigningPlace() {
+         bgsoundDesigningPlaces.play();
+    }
+       
+    function pauseDesigningPlace() {
+         bgsoundDesigningPlaces.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+    $("#playstopCoolHomesHotPlaces").on('tap', function() {
+      if(!playing) {
+        CoolHomesHotPlacesaudio.play();
+        $('.micbtnDesigningPlaces').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        CoolHomesHotPlacesaudio.pause(); CoolHomesHotPlacesaudio.currentTime = 0;
+        $('.micbtnDesigningPlaces').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#CoolHomesHotPlacesaudioplbtn").on('tap', function() {
+      if(!paused) {
+        CoolHomesHotPlacesaudio.pause();
+        paused = true;
+      } else {
+        CoolHomesHotPlacesaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#CoolHomesHotPlacesaudiofbtn").on('tap', function() {
+      var ctime = CoolHomesHotPlacesaudio.currentTime;
+      CoolHomesHotPlacesaudio.currentTime = ctime + 10;
+    });
+    
+    $("#CoolHomesHotPlacesaudiobbtn").on('tap', function() {
+      var ctime = CoolHomesHotPlacesaudio.currentTime;
+      CoolHomesHotPlacesaudio.currentTime = ctime - 10;
+    });
+    
+    $("#CoolHomesHotPlacesaudiopsbtn").on('tap', function() {
+      CoolHomesHotPlacesaudio.pause();
+    });
+  </script>
+</div> <!--//home-->

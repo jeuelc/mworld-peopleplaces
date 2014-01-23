@@ -1,0 +1,135 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-designing-places-what-does-an-architect-do">
+  <!-- <script src="js/slidebarnat.js"></script> -->
+  <script src="js/slidebar_designing_places.js"></script>
+  <link rel="stylesheet" href="css/style_designing_places.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnDesigningPlaces"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnDesigningPlaces"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnDesigningPlaces"></div></div>
+  <div class="infobtnholder"><div class="infobtnDesigningPlaces"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnDesigningPlaces"></div></div>
+  <div class="menubtnholder"><div class="menubtnDesigningPlaces"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:14px;"><h1>What Does an Architect Do?</h1></div>
+  
+    <div data-role="content" class="kidzcontent">
+      <div class="navDesigningPlaces-content">
+        <p>Have you ever wondered what an architect does?</p>
+		<p>Designing a really great place is complicated and involves many people.  Architects work together with a team of people and their job involves many different things.</p>
+		<p>Architects listen to what people want and need in the spaces they design.  They observe and analyse the site where the project will be located.  They research, experiment and imagine.  They sketch, draw and make models.  They coordinate, collaborate and create.</p>
+      </div>
+        
+      <div class="navbtn1">
+        <p><a href="sub-designing-places-what-does-an-architect-do-the-Architects-tools.html" data-transition="slide"><img src="css/images/9-12/People_and_Places/Designing_Places/What_Does_Architect_Do/Architect_Tools.png"></a></p>
+      </div>
+      <div class="navbtn2">
+        <p><a href="sub-designing-places-what-does-an-architect-do-from-sketches-to-technical-details.html" data-transition="slide"><img src="css/images/9-12/People_and_Places/Designing_Places/What_Does_Architect_Do/Sketches_To_Technical.png"></a></p>
+      </div>
+      <div class="navbtn3">
+        <p><a href="sub-designing-places-what-does-an-architect-do-on-the-construction-site.html" data-transition="slide"><img src="css/images/9-12/People_and_Places/Designing_Places/What_Does_Architect_Do/On_Construction_Site.png"></a></p>
+      </div>
+      <div class="navbtn4">
+        <p><a href="sub-designing-places-what-does-an-architect-do-how-many-people-does-it-take.html" data-transition="slide"><img src="css/images/9-12/People_and_Places/Designing_Places/What_Does_Architect_Do/How_Many_People_Does_It_Take.png"></a></p>
+      </div>
+        
+      <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+    </div> <!-- end content -->  
+    
+  
+  <!--<div class="audiopanel">-->
+    <!-- images are in slidebarnat.js -->
+    <div class="micbtnholder"><div class="micbtnDesigningPlaces" id="playstopArchitectDo"></div></div>
+    <div class="bDesigningPlaces"><div class="rwDesigningPlaces" id="ArchitectDoaudiobbtn"></div></div>
+    <div class="plDesigningPlaces"><div class="plpsDesigningPlaces" id="ArchitectDoaudioplbtn"></div></div>
+    <div class="fDesigningPlaces"><div class="fwDesigningPlaces" id="ArchitectDoaudiofbtn"></div></div>
+    <div id="actualaudio-ArchitectDo" style="visibility:hidden;"></div>
+  <!--</div>-->
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+    var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      if(sound.canPlayType('audio/mpeg')) {
+        $('#actualaudio-ArchitectDo').html('<audio id="ArchitectDoaudio" controls preload onpause="playsDesigningPlaces()" onplay="pauseDesigningPlaces()"><source src="audio/Designing_Places/Designing_Places.mp3" type="audio/mpeg"></audio>');
+      } 
+    
+      $("#sub-designing-places-what-does-an-architect-do").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+    })();
+    
+    $('.homelinkbh').on('tap', function() { bgsoundDesigningPlaces.pause(); bgsoundDesigningPlaces.currentTime = 0; mainaudiobg.play(); });
+    
+    function goBack() {
+      $.mobile.changePage("sub-designing-places.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsDesigningPlace() {
+         bgsoundDesigningPlaces.play();
+    }
+       
+    function pauseDesigningPlace() {
+         bgsoundDesigningPlaces.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+	
+    $("#playstopArchitectDo").on('tap', function() {
+      if(!playing) {
+        ArchitectDoaudio.play();
+        $('.micbtnDesigningPlaces').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        ArchitectDoaudio.pause(); ArchitectDoaudio.currentTime = 0;
+        $('.micbtnDesigningPlaces').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#ArchitectDoaudioplbtn").on('tap', function() {
+      if(!paused) {
+        ArchitectDoaudio.pause();
+        paused = true;
+      } else {
+        ArchitectDoaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#ArchitectDoaudiofbtn").on('tap', function() {
+      var ctime = ArchitectDoaudio.currentTime;
+      ArchitectDoaudio.currentTime = ctime + 10;
+    });
+    
+    $("#ArchitectDoaudiobbtn").on('tap', function() {
+      var ctime = ArchitectDoaudio.currentTime;
+      ArchitectDoaudio.currentTime = ctime - 10;
+    });
+    
+    $("#ArchitectDoaudiopsbtn").on('tap', function() {
+      ArchitectDoaudio.pause();
+      //$(".audiopanel").css({"backgroundPosition":"0px 0px"});
+    });
+    
+    $('.navbtn1').on('tap', function() { 
+      nav1Effects(); 
+    });
+    
+    $('.navbtn2').on('tap', function() { 
+      nav2Effects(); 
+    });
+    
+    $('.navbtn3').on('tap', function() { 
+      nav3Effects(); 
+    });
+    
+    $('.navbtn4').on('tap', function() { 
+      nav4Effects(); 
+    });
+  </script>
+</div> <!--//home-->

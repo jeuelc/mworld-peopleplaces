@@ -842,3 +842,11 @@ bgsoundAsiaToday.addEventListener('ended', function() { bgsoundAsiaToday.play();
 
 function pauseAsiaToday() { bgsoundAsiaToday.pause() }
 function playsAsiaToday() { bgsoundAsiaToday.play(); $(".audiopanel").css({"backgroundPosition":"0px 0px"}); }
+
+/************************ Desiginng Places *******************************/
+var bgsoundDesigningPlaces = new Audio();
+bgsoundDesigningPlaces.src = "audio/Designing_Places/Designing_Places_BG.mp3";
+bgsoundDesigningPlaces.addEventListener('ended', function() { bgsoundDesigningPlaces.play(); });
+
+function pauseDesigningPlaces() { bgsoundDesigningPlaces.pause() }
+function playsDesigningPlaces() { bgsoundDesigningPlaces.play(); $(".audiopanel").css({"backgroundPosition":"0px 0px"}); }

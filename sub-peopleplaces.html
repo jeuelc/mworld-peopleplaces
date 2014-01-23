@@ -11,7 +11,7 @@
       <div class="aclink"><a href="#" data-transition="slide"><img src="css/images/9-12/People_and_Places/coolplacesbtn.png"></a></div><br>
       <div class="aclink"><a href="#" data-transition="slide"><img src="css/images/9-12/People_and_Places/europebtn.png"></a></div>
       <div class="aclink"><a href="#" data-transition="slide"><img src="css/images/9-12/People_and_Places/landmarksbtn.png"></a></div>
-      <div class="aclink"><a href="#" data-transition="slide"><img src="css/images/9-12/People_and_Places/inventorsbtn.png"></a></div>
+      <div class="aclink"><a href="sub-designing-places.html" data-transition="slide" id="designingplaces"><img src="css/images/9-12/People_and_Places/inventorsbtn.png"></a></div>
       <div class="aclink"><a href="#" data-transition="slide"><img src="css/images/9-12/People_and_Places/historymakersbtn.png"></a></div>
     </div>
     <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/bottomhome.png"></a></div>
@@ -41,6 +41,11 @@
 			}
 			if(subjectId == "asiatoday") {
 				bgsoundAsiaToday.play();
+				peopleplacessoundbg.pause();
+				peopleplacessoundbg.currentTime = 0;
+			}
+			if(subjectId == "designingplaces") {
+				bgsoundDesigningPlaces.play();
 				peopleplacessoundbg.pause();
 				peopleplacessoundbg.currentTime = 0;
 			}

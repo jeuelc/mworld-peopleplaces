@@ -1,0 +1,150 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-designing-places-cool-homes-hot-places-Living-the-High-Life">
+  <script src="js/hammer.js"></script>
+  <script src="js/jquery.hammer.js"></script>
+  <script src="js/slidebar_designing_places.js"></script>
+  <link rel="stylesheet" href="css/style_designing_places.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnDesigningPlaces"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnDesigningPlaces"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnDesigningPlaces"></div></div>
+  <div class="infobtnholder"><div class="infobtnDesigningPlaces"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnDesigningPlaces"></div></div>
+  <div class="menubtnholder"><div class="menubtnDesigningPlaces"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:0px;"><h1>Living the High Life</h1></div>
+  <div id="spacechar">&nbsp;
+    <div data-role="content" class="kidzcontent">
+      <div class="v-spacer"></div>
+      <div class="sidebarleft-half">
+        <a id="parkroyallink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Designing_Places/Cool_Homes_Hot_Places/Living_The_High_Life/PARKROYAL_On_Pickering_Hi_Res.jpg', 'This building is actually a hotel. Most high rise buildings dont include gardens but this is very different. It is in Singapore and was designed by WOHA architects. These architects are very interested in how we might include green spaces and plants in high-rise living. (Courtesy: (c) Patrick Bingham-Hall)');">click here</a>
+		
+        <a id="hakkahouselink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Designing_Places/Cool_Homes_Hot_Places/Living_The_High_Life/Hakka_House_Hi_Res.jpg', 'The Hakka House is circular with a common courtyard at the centre. Everyone lives around the outside. It has shops and public places  everything a circular village might need.  It also has a quiet communal space in the centre for residents to relax.');">click here</a>
+		
+		<a id="mountainlink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Designing_Places/Cool_Homes_Hot_Places/Living_The_High_Life/The_Mountain_Hi_Res.jpg', 'This apartment building is called the Mountain. It is in Copenhagen and was designed by BIG Architects. It faces towards the sun and is terraced to let in light. The architects wanted to combine the density of apartment living with the suburban backyard. What a great idea! (Courtesy: BIG Architecture)');">click here</a>
+        
+		<div id="zoomwrapper">
+          <div id="pol1" class="pPiece" style="left:100px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Designing_Places/Cool_Homes_Hot_Places/Living_The_High_Life/PARKROYAL_On_Pickering.png" alt="" />
+          </div>
+          <div id="pol2"class="pPiece" style="left:75px;top:290px;">
+             <img src="css/images/9-12/People_and_Places/Designing_Places/Cool_Homes_Hot_Places/Living_The_High_Life/Hakka_House.png" alt="" />
+          </div>
+		  <div id="pol3"class="pPiece" style="left:80px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Designing_Places/Cool_Homes_Hot_Places/Living_The_High_Life/The_Mountain.png" alt="" />
+          </div>
+		</div><!--/zoomwrapper-->
+      </div>
+      
+      <div class="bpcontentDesigningPlaces">
+        <p>Do you live in an apartment building?  Is it very, very tall?  Where do you go outside to play?  Do you play in the city or in a park?  More and more people live in apartment buildings and units, especially in cities.  We call this 'high density living'.  Architects are interested in how people live in apartment buildings and how we might make them better places to live.</p>
+		<p>Architects can learn a lot from the way people already live and how they have lived in the past.  The Tulou collective housing project in Guangdong Nanhai, China by URBANUS Architects is based on a traditional <a href="#hakka_house" data-rel="popup">Hakka house</a> or Tulou.</p>
+		<p>Take a look at the image cards to explore some incredible apartments.</p>
+      </div>
+       
+      <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+    </div> <!-- end content -->  
+  </div><!--/spacechar-->        
+	
+	<!------------------------------------- Definition box ----------------------------------- -->
+	<div data-role="popup" id="hakka_house" data-position-to="window" data-overlay-theme="a" style="text-align:center;">
+		<div id="node-pop">
+			<p>Hakka House</p>
+			<p>Traditional Hakka Houses were large, circular buildings which could house entire villages!</p>
+		</div>
+    </div>
+	<!---------------------------------------------------------------------------------------- -->
+	
+    <div class="micbtnholder"><div class="micbtnDesigningPlaces" id="playstopLivingTheHighLife"></div></div>
+    <div class="bDesigningPlaces"><div class="rwDesigningPlaces" id="LivingTheHighLifeaudiobbtn"></div></div>
+    <div class="plDesigningPlaces"><div class="plpsDesigningPlaces" id="LivingTheHighLifeaudioplbtn"></div></div>
+    <div class="fDesigningPlaces"><div class="fwDesigningPlaces" id="LivingTheHighLifeaudiofbtn"></div></div>
+    <div id="actualaudio-LivingTheHighLife" style="visibility:hidden;"></div>
+  <!-- </div> -->
+  
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+ 
+	var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      $('div#pol2').css("z-index", 2);
+      $('div#pol1').css("z-index", 1);
+      $('div#pol1 > img').css("-webkit-transform", "rotate(0deg)");
+      $('div#pol2 > img').css("-webkit-transform", "rotate(5deg)");
+      $('div#pol3 > img').css("-webkit-transform", "rotate(-3deg)");
+      
+	  if(sound.canPlayType('audio/mpeg')) {
+			$('#actualaudio-LivingTheHighLife').html('<audio id="LivingTheHighLifeaudio" controls preload onpause="playsDesigningPlaces()" onplay="pauseDesigningPlaces()"><source src="audio/Designing_Places/Living_the_High_Life.mp3" type="audio/mpeg"></audio>');
+		  }             
+	  $("#sub-designing-places-cool-homes-hot-places-Living-the-High-Life").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+	})();
+    
+	$('.homelinkbh').on('tap', function() { mainaudiobg.play(); bgsoundDesigningPlacesToday.pause(); bgsoundDesigningPlacesToday.currentTime = 0;});
+    
+	$("#pol1").on('tap', function() {
+      $('#parkroyallink')[0].click();
+    });
+    $("#pol2").on('tap', function() {
+      $('#hakkahouselink')[0].click();
+    });
+	$("#pol3").on('tap', function() {
+      $('#mountainlink')[0].click();
+    });
+    function goBack() {
+      $.mobile.changePage("sub-designing-places-cool-homes-hot-places.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsDesigningPlace() {
+         bgsoundDesigningPlaces.play();
+    }
+       
+    function pauseDesigningPlace() {
+         bgsoundDesigningPlaces.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+    $("#playstopLivingTheHighLife").on('tap', function() {
+      if(!playing) {
+        LivingTheHighLifeaudio.play();
+        $('.micbtnDesigningPlaces').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        LivingTheHighLifeaudio.pause(); LivingTheHighLifeaudio.currentTime = 0;
+        $('.micbtnDesigningPlaces').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#LivingTheHighLifeaudioplbtn").on('tap', function() {
+      if(!paused) {
+        LivingTheHighLifeaudio.pause();
+        paused = true;
+      } else {
+        LivingTheHighLifeaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#LivingTheHighLifeaudiofbtn").on('tap', function() {
+      var ctime = LivingTheHighLifeaudio.currentTime;
+      LivingTheHighLifeaudio.currentTime = ctime + 10;
+    });
+    
+    $("#LivingTheHighLifeaudiobbtn").on('tap', function() {
+      var ctime = LivingTheHighLifeaudio.currentTime;
+      LivingTheHighLifeaudio.currentTime = ctime - 10;
+    });
+    
+    $("#LivingTheHighLifeaudiopsbtn").on('tap', function() {
+      LivingTheHighLifeaudio.pause();
+    });
+  </script>
+  <script src="js/threecardLogic.js"></script>  <!-- for card dragging effects -->
+</div> <!--//home-->
