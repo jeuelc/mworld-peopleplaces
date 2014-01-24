@@ -10,15 +10,23 @@
   <div class="credsbtnholder"><div class="credsbtnAsia"></div></div>
   <div class="menubtnholder"><div class="menubtnAsia"></div></div>
   
+  <!-- ------------------ Light Box Images --------------------------------- -->
+  
+	<a id="bolly_link" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Asia_Today/Imagining_Asia/Pop_Culture/Bollywood_Hi_Res.jpg', 'Bollywood productions are especially famous for their glamour and large-scale song and dance scenes. (Courtesy: AF archive/Alamy)');">click here</a>
+	
+	<a id="hat_link" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Asia_Today/Imagining_Asia/Pop_Culture/Hatsune_Hi_Res.jpg', 'Hatsune Miku, a popular character for \'cosplay\' dress up, is a digital persona for synthesizer music software. She even performs at concerts as a hologram. (Courtesy: Frank Deim/Getty Images)');">click here</a>
+	
+	<a id="gang_link" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Asia_Today/Imagining_Asia/Pop_Culture/Gangnam_Hi_Res.jpg', 'South Korean rap artist Psy became a worldwide internet sensation with his song Gangnam Style. (Courtesy: ZUMA Press, Inc./Alamy)');">click here</a>
+		
+  <!-- ---------------------------------------------------------------------- -->
+  
   <div class="bptitleholder" style="padding-top:14px;"><h1>Pop Culture</h1></div>
-  <!-- <div id="buddhalink" style="position:absolute;left: 114px;top: 371px;width: 98px;height: 75px;"></div> -->
-
-
-	<ul id="slider_buttons" style="list-style:none;">
+	
+  <ul id="slider_buttons" style="list-style:none;">
 		<li id="bollywoodbutton" style="position:absolute;left: 588px;top: 448px;width: 16px;height: 16px;"></li>
 		<li id="hatsunebutton" style="position:absolute;left: 622px;top: 448px;width: 16px;height: 16px;"></li>
 		<li id="gangnambutton" style="position:absolute;left: 656px;top: 448px;width: 15px;height: 16px;"></li>
-	</ul>
+  </ul>
   <ul style="list-style:none;" id="custom_slider">
 	<li id="bollywoodlink" class="current"></li>
 	<li id="hatsunelink"></li>
@@ -64,6 +72,32 @@
       $("#sub-asia-today-imagining-Asia-Pop-Culture").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
     })();
     
+	$("#bollywoodlink").on('tap', function() {
+      $('#bolly_link')[0].click();
+    });
+    $("#hatsunelink").on('tap', function() {
+      $('#hat_link')[0].click();
+    });
+	$("#gangnamlink").on('tap', function() {
+      $('#gang_link')[0].click();
+    });
+	
+	$("#familywithcamellink").on('tap', function() {
+      $('#familylink')[0].click();
+    });
+    $("#carryinggoodslink").on('tap', function() {
+      $('#carryinglink')[0].click();
+    });
+	$("#childrenschoollink").on('tap', function() {
+      $('#childrenlink')[0].click();
+    });
+	$("#childrenschoollink").on('tap', function() {
+      $('#childrenlink')[0].click();
+    });
+	$("#childrenschoollink").on('tap', function() {
+      $('#childrenlink')[0].click();
+    });
+	
     $('.homelinkbh').on('tap', function() { mainaudiobg.play(); bgsoundAsiaToday.pause(); bgsoundAsiaToday.currentTime = 0;});
     
     function goBack() {

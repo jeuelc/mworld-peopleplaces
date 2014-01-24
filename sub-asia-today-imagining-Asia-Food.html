@@ -10,12 +10,36 @@
   <div class="credsbtnholder"><div class="credsbtnAsia"></div></div>
   <div class="menubtnholder"><div class="menubtnAsia"></div></div>
   
+  <!-- ------------------ Light Box Images --------------------------------- -->
+  
+	<a id="friedbugslink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Asia_Today/Imagining_Asia/Food/Fried_Bugs_Hi_Res.jpg', 'Fried bugs');">click here</a>
+	
+	<a id="mongolianlink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Asia_Today/Imagining_Asia/Food/Mongolian_Hot_Pots_Hi_Res.jpg', 'Mongolian hot pots.');">click here</a>
+	
+	<a id="ricelink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Asia_Today/Imagining_Asia/Food/Rice_Dumplings_Hi_Res.jpg', 'Rice dumplings.');">click here</a>
+	
+	<a id="sushilink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Asia_Today/Imagining_Asia/Food/Sushi_Hi_Res.jpg', 'Sushi.');">click here</a>
+	
+	<a id="thailink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Asia_Today/Imagining_Asia/Food/Thai_Curry_Hi_Res.jpg', 'Thai green chicken curry.');">click here</a>
+	
+	<a id="indianlink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Asia_Today/Imagining_Asia/Food/Indian_Dishes_Hi.jpg', 'Indian food selection including curries, rice, samosa, and naan bread.');">click here</a>
+	
+	<a id="skewerlink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Asia_Today/Imagining_Asia/Food/Meat_Skewers_Hi_Res.jpg', 'Skewered and grilled meat with satay dipping sauce.');">click here</a>
+	
+	<a id="koreanlink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Asia_Today/Imagining_Asia/Food/Korean_Hotpot_Hi_Res.jpg', 'Korean hotpot with side dishes.');">click here</a>
+		
+  <!-- ---------------------------------------------------------------------- -->
+  
   <div class="bptitleholder" style="padding-top:14px;"><h1>Food</h1></div>
-  <!-- <div id="buddhalink" style="position:absolute;left: 114px;top: 371px;width: 98px;height: 75px;"></div>
-  <div id="aeriallink" style="position:absolute;left: 178px;top: 105px;width: 100px;height: 80px;"></div>
-  <div id="honenlink" style="position:absolute;left: 411px;top: 474px;width: 103px;height: 89px;"></div>
-  <div id="singaporelink" style="position:absolute;left: 330px;top: 253px;width: 96px;height: 84px;"></div>
-  <div id="templelink" style="position:absolute;left: 202px;top: 556px;width: 99px;height: 80px;"></div> -->
+  
+  <div id="friend_bugs_link" style="position:absolute;left: 195px;top: 0px;width: 315px;height: 142px;"></div>
+  <div id="mongolian_link" style="position:absolute;left: 512px;top: 0px;width: 310px;height: 140px;"></div>
+  <div id="rice_link" style="position:absolute;left: 748px;top: 170px;width: 228px;height: 205px;"></div>
+  <div id="sushi_link" style="position:absolute;left: 749px;top: 378px;width: 232px;height: 185px;"></div>
+  <div id="carrying_goods_link" style="position:absolute;left: 510px;top: 593px;width: 320px;height: 155px;"></div>
+  <div id="indian_dishes_link" style="position:absolute;left: 157px;top: 605px;width: 350px;height: 142px;"></div>
+  <div id="skewer_link" style="position:absolute;left: 37px;top: 385px;width: 240px;height: 175px;"></div>
+  <div id="korean_link" style="position:absolute;left: 31px;top: 140px;width: 255px;height: 243px;"></div>
   
   <div data-role="content" class="kidzcontent">
 	<div class="navAsia-Food">
@@ -54,6 +78,31 @@
       $("#sub-asia-today-imagining-Asia-Food").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
     })();
     
+	$("#friend_bugs_link").on('tap', function() {
+      $('#friedbugslink')[0].click();
+    });
+    $("#mongolian_link").on('tap', function() {
+      $('#mongolianlink')[0].click();
+    });
+	$("#rice_link").on('tap', function() {
+      $('#ricelink')[0].click();
+    });
+	$("#sushi_link").on('tap', function() {
+      $('#sushilink')[0].click();
+    });
+    $("#carrying_goods_link").on('tap', function() {
+      $('#thailink')[0].click();
+    });
+	$("#indian_dishes_link").on('tap', function() {
+      $('#indianlink')[0].click();
+    });
+	$("#skewer_link").on('tap', function() {
+      $('#skewerlink')[0].click();
+    });
+	$("#korean_link").on('tap', function() {
+      $('#koreanlink')[0].click();
+    });
+	
     $('.homelinkbh').on('tap', function() { mainaudiobg.play(); bgsoundAsiaToday.pause(); bgsoundAsiaToday.currentTime = 0;});
     
     function goBack() {

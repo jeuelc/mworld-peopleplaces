@@ -10,13 +10,28 @@
   <div class="credsbtnholder"><div class="credsbtnAsia"></div></div>
   <div class="menubtnholder"><div class="menubtnAsia"></div></div>
   
-  <div class="bptitleholder" style="padding-top:14px;"><h1>Architecture</h1></div>
-  <!-- <div id="buddhalink" style="position:absolute;left: 114px;top: 371px;width: 98px;height: 75px;"></div>
-  <div id="aeriallink" style="position:absolute;left: 178px;top: 105px;width: 100px;height: 80px;"></div>
-  <div id="honenlink" style="position:absolute;left: 411px;top: 474px;width: 103px;height: 89px;"></div>
-  <div id="singaporelink" style="position:absolute;left: 330px;top: 253px;width: 96px;height: 84px;"></div>
-  <div id="templelink" style="position:absolute;left: 202px;top: 556px;width: 99px;height: 80px;"></div> -->
+  <!-- ------------------ Light Box Images --------------------------------- -->
   
+	<a id="honenlink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Asia_Today/Imagining_Asia/Architecture/Honen_In_Temple_Hi_Res.jpg','Honen-in Temple in Kyoto, Japan. (Courtesy: James Rampant)');">click here</a>
+	
+	<a id="aeriallink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Asia_Today/Imagining_Asia/Architecture/Aerial_Hi_Res.jpg', 'Aerial view of Shanghai.');">click here</a>
+	
+	<a id="buddhalink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Asia_Today/Imagining_Asia/Architecture/Buddha_Hi_Res.jpg', 'The Buddha tooth relic temple in Singapore.');">click here</a>
+	
+	<a id="singaporelink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Asia_Today/Imagining_Asia/Architecture/Singapore_Hi_Res.jpg', 'Skyline of Singapore\'s financial district.');">click here</a>
+	
+	<a id="bankoklink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Asia_Today/Imagining_Asia/Architecture/Temple_Hi_Res.jpg', 'Wat Benchamabophit temple in Bangkok, Thailand.');">click here</a>
+			
+  <!-- ---------------------------------------------------------------------- -->
+  
+  <div class="bptitleholder" style="padding-top:14px;"><h1>Architecture</h1></div>
+  
+  <div id="honen_link" style="position:absolute;left: 20px;top: 0px;width: 300px;height: 200px;-webkit-transform: rotate(-26deg);"></div>
+  <div id="aerial_link" style="position:absolute;left: -53px;top: 334px;width: 200px;height: 270px;-webkit-transform: rotate(-25deg);"></div>
+  <div id="buddha_link" style="position:absolute;left: 244px;top: 522px;width: 305px;height: 199px;-webkit-transform: rotate(-22deg);"></div>
+  <div id="singapore_link" style="position:absolute;left: 525px;top: 422px;width: 460px;height: 158px;-webkit-transform: rotate(-24deg);"></div>
+  <div id="bankok_link" style="position:absolute;left: 593px;top: 587px;width: 418px;height: 142px;-webkit-transform: rotate(-27deg);"></div>
+    
   <div data-role="content" class="kidzcontent">
 	<div class="navAsia-Architecture">
         <p>Mention Asia and it is hard not to think about its buildings, especially the skyscrapers of cities such as Shanghai and Tokyo.  Half a century ago, it was very different.  In 1960, barely 15% of the population of Asia lived in cities.  Today, that has risen to 45% as people move into the cities for work.</p>
@@ -54,6 +69,22 @@
     
     $('.homelinkbh').on('tap', function() { mainaudiobg.play(); bgsoundAsiaToday.pause(); bgsoundAsiaToday.currentTime = 0;});
     
+	$("#honen_link").on('tap', function() {
+      $('#honenlink')[0].click();
+    });
+    $("#aerial_link").on('tap', function() {
+      $('#aeriallink')[0].click();
+    });
+	$("#buddha_link").on('tap', function() {
+      $('#buddhalink')[0].click();
+    });
+	$("#singapore_link").on('tap', function() {
+      $('#singaporelink')[0].click();
+    });
+    $("#bankok_link").on('tap', function() {
+      $('#bankoklink')[0].click();
+    });
+	
     function goBack() {
       $.mobile.changePage("sub-asia-today-imagining-Asia.html", {transition: "slide", reverse: true });
     }

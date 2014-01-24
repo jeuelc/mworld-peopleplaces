@@ -10,12 +10,31 @@
   <div class="credsbtnholder"><div class="credsbtnAsia"></div></div>
   <div class="menubtnholder"><div class="menubtnAsia"></div></div>
   
+  <!-- ------------------ Light Box Images --------------------------------- -->
+  
+	<a id="businesslink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Asia_Today/Imagining_Asia/People/Business_People_Hi_Res.jpg', 'Office workers in business wear are a common image throughout many Asian countries.');">click here</a>
+	
+	<a id="oldlink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Asia_Today/Imagining_Asia/People/Old_Man_With_Laptop_Hi_Res.jpg', 'An old Rajasthani man uses a laptop.');">click here</a>
+	
+	<a id="younglink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Asia_Today/Imagining_Asia/People/Young_Monks_Hi_Res.jpg', 'Young Buddhist monks.');">click here</a>
+	
+	<a id="familylink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Asia_Today/Imagining_Asia/People/Family_With_Camel_Hi_Res.jpg', 'An Indian Bedouin family with a camel.');">click here</a>
+	
+	<a id="carryinglink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Asia_Today/Imagining_Asia/People/Carrying_Goods_Hi_Res.jpg', 'Vietnamese street vendors.');">click here</a>
+	
+	<a id="childrenlink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Asia_Today/Imagining_Asia/People/Meo_School_Hi_Res.jpg', 'A school lesson for a group of Meo children in the mountains of northern Thailand.');">click here</a>
+		
+  <!-- ---------------------------------------------------------------------- -->
+  
+  
   <div class="bptitleholder" style="padding-top:14px;"><h1>People</h1></div>
-  <!-- <div id="buddhalink" style="position:absolute;left: 114px;top: 371px;width: 98px;height: 75px;"></div>
-  <div id="aeriallink" style="position:absolute;left: 178px;top: 105px;width: 100px;height: 80px;"></div>
-  <div id="honenlink" style="position:absolute;left: 411px;top: 474px;width: 103px;height: 89px;"></div>
-  <div id="singaporelink" style="position:absolute;left: 330px;top: 253px;width: 96px;height: 84px;"></div>
-  <div id="templelink" style="position:absolute;left: 202px;top: 556px;width: 99px;height: 80px;"></div> -->
+  
+  <div id="businesspeoplelink" style="position:absolute;left: 820px;top: 0px;width: 200px;height: 200px;"></div>
+  <div id="oldmanlink" style="position:absolute;left: 795px;top: 465px;width: 200px;height: 194px;"></div>
+  <div id="younkmonkslink" style="position:absolute;left: 373px;top: 522px;width: 220px;height: 155px;"></div>
+  <div id="familywithcamellink" style="position:absolute;left: 0px;top: 434px;width: 285px;height: 225px;"></div>
+  <div id="carryinggoodslink" style="position:absolute;left: 0px;top: 181px;width: 222px;height: 215px;"></div>
+  <div id="childrenschoollink" style="position:absolute;left: 128px;top: 0px;width: 275px;height: 205px;"></div>
   
   <div data-role="content" class="kidzcontent">
 	<div class="navAsia-People">
@@ -54,6 +73,25 @@
     
     $('.homelinkbh').on('tap', function() { mainaudiobg.play(); bgsoundAsiaToday.pause(); bgsoundAsiaToday.currentTime = 0;});
     
+	$("#businesspeoplelink").on('tap', function() {
+      $('#businesslink')[0].click();
+    });
+    $("#oldmanlink").on('tap', function() {
+      $('#oldlink')[0].click();
+    });
+	$("#younkmonkslink").on('tap', function() {
+      $('#younglink')[0].click();
+    });
+	$("#familywithcamellink").on('tap', function() {
+      $('#familylink')[0].click();
+    });
+    $("#carryinggoodslink").on('tap', function() {
+      $('#carryinglink')[0].click();
+    });
+	$("#childrenschoollink").on('tap', function() {
+      $('#childrenlink')[0].click();
+    });
+	
     function goBack() {
       $.mobile.changePage("sub-asia-today-imagining-Asia.html", {transition: "slide", reverse: true });
     }
