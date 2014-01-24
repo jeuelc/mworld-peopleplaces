@@ -1,6 +1,6 @@
 /********* DesigningPlaces Today **********/
 
-#sub-designing-places, #sub-designing-places-cool-homes-hot-places-Dragons-and-Gryphons, #sub-designing-places-cool-homes-hot-places-Federation-Square, #sub-designing-places-cool-homes-hot-places-Guggenheim-Bilbao, #sub-designing-places-cool-homes-hot-places-Living-the-High-Life, #sub-designing-places-cool-homes-hot-places-Seattle-Central-Library, #sub-designing-places-cool-homes-hot-places-Waterfalls-and-Tree-Houses, #sub-designing-places-what-does-an-architect-do{
+#sub-designing-places, #sub-designing-places-cool-homes-hot-places-Dragons-and-Gryphons, #sub-designing-places-cool-homes-hot-places-Federation-Square, #sub-designing-places-cool-homes-hot-places-Guggenheim-Bilbao, #sub-designing-places-cool-homes-hot-places-Living-the-High-Life, #sub-designing-places-cool-homes-hot-places-Seattle-Central-Library, #sub-designing-places-cool-homes-hot-places-Waterfalls-and-Tree-Houses, #sub-designing-places-what-does-an-architect-do, #sub-designing-places-what-does-an-architect-do-from-sketches-to-technical-details, #sub-designing-places-what-does-an-architect-do-how-many-people-does-it-take, #sub-designing-places-what-does-an-architect-do-on-the-construction-site, #sub-designing-places-what-does-an-architect-do-the-Architects-tools, #sub-designing-places-what-do-architects-think-about-designing-for-the-sun, #sub-designing-places-what-do-architects-think-about-how-do-you-live, #sub-designing-places-what-do-architects-think-about-putting-it-all-together, #sub-designing-places-what-do-architects-think-about-thinking-about-energy, #sub-designing-places-what-do-architects-think-about-where-do-you-live{
   background:url('images/9-12/People_and_Places/Designing_Places/Designing_Places.jpg') no-repeat;
   height:748px !important;
   overflow:hidden !important;
@@ -16,6 +16,13 @@
 
 #sub-designing-places-your-future-home{
   background:url('images/9-12/People_and_Places/Designing_Places/Your_Future_Home/Your_Future_Home_Sample2.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+#sub-designing-places-what-do-architects-think-about{
+  background:url('images/9-12/People_and_Places/Designing_Places/What_Do_Architects_Think_About/What_Do_Architects_Think_About_Sample2.jpg') no-repeat;
   height:748px !important;
   overflow:hidden !important;
   width:1024px !important;
@@ -205,10 +212,24 @@
 
 .navDesigningPlaces-CoolHomesHotPlaces{
 	position: absolute;
-	left: 25px;
+	left: 57px;
 	top: 55px;
-	width: 960px;
-	height: 67px;
+	width: 929px;
+	height: 84px;
+	overflow: auto;
+	text-align: left;
+	font-family: "comic sans ms";
+	font-size: 18px;
+	font-weight: normal;
+	color: #000000;
+}
+
+.navDesigningPlaces-ArchitectThinkAbout{
+	position: absolute;
+	left: 525px;
+	top: 100px;
+	width: 446px;
+	height: 530px;
 	overflow: auto;
 	text-align: left;
 	font-family: "comic sans ms";
@@ -277,13 +298,33 @@
   color:#000000;
 }
 
-#sub-designing-places .bptitleholder h1, #sub-designing-places-cool-homes-hot-places-Dragons-and-Gryphons .bptitleholder h1, #sub-designing-places-cool-homes-hot-places-Federation-Square h1, #sub-designing-places-cool-homes-hot-places-Guggenheim-Bilbao .bptitleholder h1, #sub-designing-places-cool-homes-hot-places-Living-the-High-Life .bptitleholder h1, #sub-designing-places-cool-homes-hot-places-Seattle-Central-Library .bptitleholder h1, #sub-designing-places-cool-homes-hot-places-Waterfalls-and-Tree-Houses .bptitleholder h1, #sub-designing-places-what-does-an-architect-do .bptitleholder h1{
+#sub-designing-places .bptitleholder h1, #sub-designing-places-cool-homes-hot-places-Dragons-and-Gryphons .bptitleholder h1, #sub-designing-places-cool-homes-hot-places-Federation-Square h1, #sub-designing-places-cool-homes-hot-places-Guggenheim-Bilbao .bptitleholder h1, #sub-designing-places-cool-homes-hot-places-Living-the-High-Life .bptitleholder h1, #sub-designing-places-cool-homes-hot-places-Seattle-Central-Library .bptitleholder h1, #sub-designing-places-cool-homes-hot-places-Waterfalls-and-Tree-Houses .bptitleholder h1, #sub-designing-places-what-does-an-architect-do .bptitleholder h1, #sub-designing-places-what-does-an-architect-do-on-the-construction-site .bptitleholder h1, #sub-designing-places-what-does-an-architect-do-the-Architects-tools .bptitleholder h1, #sub-designing-places-what-do-architects-think-about-designing-for-the-sun .bptitleholder h1, #sub-designing-places-what-do-architects-think-about-how-do-you-live .bptitleholder h1, #sub-designing-places-what-do-architects-think-about-putting-it-all-together .bptitleholder h1, #sub-designing-places-what-do-architects-think-about-thinking-about-energy .bptitleholder h1, #sub-designing-places-what-do-architects-think-about-where-do-you-live .bptitleholder h1{
 	text-transform: uppercase;
 	color: #ffffff !important;
 	font-family: "comic sans ms";
 	font-weight: bold;
 	padding: 0;
 	margin: 0;
+}
+
+#sub-designing-places-what-does-an-architect-do-from-sketches-to-technical-details .bptitleholder h1{
+	text-transform: uppercase;
+	color: #ffffff !important;
+	font-family: "comic sans ms";
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+	line-height:35px;
+}
+
+#sub-designing-places-what-does-an-architect-do-how-many-people-does-it-take .bptitleholder h1{
+	text-transform: uppercase;
+	color: #ffffff !important;
+	font-family: "comic sans ms";
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+	line-height:35px;
 }
 
 #sub-designing-places-cool-homes-hot-places .bptitleholder h1{
@@ -304,7 +345,16 @@
 	margin: 0;
 }
 
-#sub-designing-places .bptitleholder, #sub-designing-places-cool-homes-hot-places-Dragons-and-Gryphons .bptitleholder, #sub-designing-places-cool-homes-hot-places-Federation-Square .bptitleholder, #sub-designing-places-cool-homes-hot-places-Guggenheim-Bilbao .bptitleholder, #sub-designing-places-cool-homes-hot-places-Living-the-High-Life .bptitleholder, #sub-designing-places-cool-homes-hot-places-Seattle-Central-Library .bptitleholder, #sub-designing-places-cool-homes-hot-places-Waterfalls-and-Tree-Houses .bptitleholder, #sub-designing-places-what-does-an-architect-do .bptitleholder{
+#sub-designing-places-what-do-architects-think-about .bptitleholder h1{
+	text-transform: uppercase;
+	color: #000000 !important;
+	font-family: "comic sans ms";
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#sub-designing-places .bptitleholder, #sub-designing-places-cool-homes-hot-places-Dragons-and-Gryphons .bptitleholder, #sub-designing-places-cool-homes-hot-places-Federation-Square .bptitleholder, #sub-designing-places-cool-homes-hot-places-Guggenheim-Bilbao .bptitleholder, #sub-designing-places-cool-homes-hot-places-Living-the-High-Life .bptitleholder, #sub-designing-places-cool-homes-hot-places-Seattle-Central-Library .bptitleholder, #sub-designing-places-cool-homes-hot-places-Waterfalls-and-Tree-Houses .bptitleholder, #sub-designing-places-what-does-an-architect-do .bptitleholder, #sub-designing-places-what-does-an-architect-do-from-sketches-to-technical-details .bptitleholder, #sub-designing-places-what-does-an-architect-do-how-many-people-does-it-take .bptitleholder, #sub-designing-places-what-does-an-architect-do-on-the-construction-site .bptitleholder, #sub-designing-places-what-does-an-architect-do-the-Architects-tools .bptitleholder, #sub-designing-places-what-do-architects-think-about-designing-for-the-sun .bptitleholder, #sub-designing-places-what-do-architects-think-about-how-do-you-live .bptitleholder, #sub-designing-places-what-do-architects-think-about-putting-it-all-together .bptitleholder, #sub-designing-places-what-do-architects-think-about-thinking-about-energy .bptitleholder, #sub-designing-places-what-do-architects-think-about-where-do-you-live .bptitleholder{
 	width: 627px;
 	height: 68px;
 	text-align: center;
@@ -315,13 +365,13 @@
 }
 
 #sub-designing-places-cool-homes-hot-places .bptitleholder{
-	width: 327px;
+	width: 455px;
 	height: 55px;
 	text-align: left;
 	line-height: 40px;
 	position: absolute;
 	top: 0px;
-	left: 350px;
+	left: 293px;
 	font-size: 15px;
 }
 
@@ -343,4 +393,15 @@
 	position: absolute;
 	top: 28px;
 	left: 467px;
+}
+
+#sub-designing-places-what-do-architects-think-about .bptitleholder{
+	width: 415px;
+	height: 68px;
+	text-align: center;
+	line-height: 30px;
+	position: absolute;
+	top: 28px;
+	left: 528px;
+	font-size: 13px;
 }

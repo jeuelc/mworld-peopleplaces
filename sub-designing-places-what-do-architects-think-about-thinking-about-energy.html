@@ -1,0 +1,152 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-designing-places-what-do-architects-think-about-thinking-about-energy">
+  <script src="js/hammer.js"></script>
+  <script src="js/jquery.hammer.js"></script>
+  <script src="js/slidebar_designing_places.js"></script>
+  <link rel="stylesheet" href="css/style_designing_places.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnDesigningPlaces"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnDesigningPlaces"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnDesigningPlaces"></div></div>
+  <div class="infobtnholder"><div class="infobtnDesigningPlaces"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnDesigningPlaces"></div></div>
+  <div class="menubtnholder"><div class="menubtnDesigningPlaces"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:0px;"><h1>Thinking About Energy</h1></div>
+  <div id="spacechar">&nbsp;
+    <div data-role="content" class="kidzcontent">
+      <div class="v-spacer"></div>
+      <div class="sidebarleft-half">
+        <a id="thermallink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Designing_Places/What_Do_Architects_Think_About/Thinking_About_Energy/Thermal_Image_Hi_Res.jpg', 'Energy is important!  If our house is energy efficient we might save money and help the Earth!  An important part of energy efficiency is keeping heat in when it\'s cold and out when it's hot.  Have a look at this thermal image of a house - is it energy efficient?');">click here</a>
+		
+        <a id="glazinglink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Designing_Places/What_Do_Architects_Think_About/Thinking_About_Energy/Double_Glazing_Hi_Res.jpg', 'Double glazing on windows can help to keep heat in our houses.  They have two panes of glass with special gas between them which stops heat from getting in.');">click here</a>
+		
+		<a id="waterlink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Designing_Places/What_Do_Architects_Think_About/Thinking_About_Energy/Water_Tank_Hi_Res.jpg', 'In countries which don\'t get a lot of rain, thinking about water can be just as important as energy.  We can save rainwater to use on our gardens, in our washing machines or to clean our cars!');">click here</a>
+		
+		<a id="insulationlink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Designing_Places/What_Do_Architects_Think_About/Thinking_About_Energy/Insulation_Hi_Res.jpg', 'Double glazing is one way to keep a building cool or warm, but there are other ways too.  Most houses have insulation, this means that in the summer heat doesn\'t get in and in the winter it stays cosy and warm.');">click here</a>
+        
+		<div id="zoomwrapper">
+          <div id="pol1" class="pPiece" style="left:100px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Designing_Places/What_Do_Architects_Think_About/Thinking_About_Energy/Thermal_Image.png" alt="" />
+          </div>
+          <div id="pol2"class="pPiece" style="left:75px;top:290px;">
+             <img src="css/images/9-12/People_and_Places/Designing_Places/What_Do_Architects_Think_About/Thinking_About_Energy/Double_Glazing.png" alt="" />
+          </div>
+		  <div id="pol3"class="pPiece" style="left:80px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Designing_Places/What_Do_Architects_Think_About/Thinking_About_Energy/Water_Tank.png" alt="" />
+          </div>
+		  <div id="pol4"class="pPiece" style="left:70px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Designing_Places/What_Do_Architects_Think_About/Thinking_About_Energy/Insulation.png" alt="" />
+          </div>
+		</div><!--/zoomwrapper-->
+      </div>
+      
+      <div class="bpcontentDesigningPlaces">
+        <p>Thinking cleverly about how we design and build can help us to use less energy during the construction process and in the long term.</p>
+		<p>Buildings use a lot of energy!  But we can use the wind, the sun and the rain to help us save energy!  We do this using 'passive design principles'.  This means that we use the sun, the wind and the rain to help us lower the energy a building consumes.  What would you do to reduce energy use in a building?</p>
+		<p>Another thing architects can do to create energy efficient buildings is to think about the types of materials they use.   Insulation in the walls and the roof helps keep buildings at an even temperature.  Double-glazed windows keep warm air in and reduce the heat from the sun in summer.   There are also many recycled materials that can be used to make buildings.</p>
+		<p>Buildings stick around for a long time.  If we can work out ways to minimise the energy we use it can be better for the whole planet.</p>
+      </div>
+       
+      <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+    </div> <!-- end content -->  
+  </div><!--/spacechar-->        
+	
+	<div class="micbtnholder"><div class="micbtnDesigningPlaces" id="playstopThinkingaboutEnergy"></div></div>
+    <div class="bDesigningPlaces"><div class="rwDesigningPlaces" id="ThinkingaboutEnergyaudiobbtn"></div></div>
+    <div class="plDesigningPlaces"><div class="plpsDesigningPlaces" id="ThinkingaboutEnergyaudioplbtn"></div></div>
+    <div class="fDesigningPlaces"><div class="fwDesigningPlaces" id="ThinkingaboutEnergyaudiofbtn"></div></div>
+    <div id="actualaudio-ThinkingaboutEnergy" style="visibility:hidden;"></div>
+  <!-- </div> -->
+  
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+ 
+	var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      $('div#pol1').css("z-index", 3);
+      $('div#pol2').css("z-index", 2);
+      $('div#pol3').css("z-index", 1);
+      $('div#pol1 > img').css("-webkit-transform", "rotate(0deg)");
+      $('div#pol2 > img').css("-webkit-transform", "rotate(5deg)");
+      $('div#pol3 > img').css("-webkit-transform", "rotate(-3deg)");
+      $('div#pol4 > img').css("-webkit-transform", "rotate(-3deg)");
+      
+	  if(sound.canPlayType('audio/mpeg')) {
+			$('#actualaudio-ThinkingaboutEnergy').html('<audio id="ThinkingaboutEnergyaudio" controls preload onpause="playsDesigningPlaces()" onplay="pauseDesigningPlaces()"><source src="audio/Designing_Places/Thinking_About_Energy.mp3" type="audio/mpeg"></audio>');
+		  }             
+	  $("#sub-designing-places-what-do-architects-think-about-thinking-about-energy").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+	})();
+    
+	$('.homelinkbh').on('tap', function() { mainaudiobg.play(); bgsoundDesigningPlacesToday.pause(); bgsoundDesigningPlacesToday.currentTime = 0;});
+    
+	$("#pol1").on('tap', function() {
+      $('#thermallink')[0].click();
+    });
+    $("#pol2").on('tap', function() {
+      $('#glazinglink')[0].click();
+    });
+	$("#pol3").on('tap', function() {
+      $('#waterlink')[0].click();
+    });
+	$("#pol4").on('tap', function() {
+      $('#insulationlink')[0].click();
+    });
+    function goBack() {
+      $.mobile.changePage("sub-designing-places-what-do-architects-think-about.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsDesigningPlace() {
+         bgsoundDesigningPlaces.play();
+    }
+       
+    function pauseDesigningPlace() {
+         bgsoundDesigningPlaces.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+    $("#playstopThinkingaboutEnergy").on('tap', function() {
+      if(!playing) {
+        ThinkingaboutEnergyaudio.play();
+        $('.micbtnDesigningPlaces').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        ThinkingaboutEnergyaudio.pause(); ThinkingaboutEnergyaudio.currentTime = 0;
+        $('.micbtnDesigningPlaces').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#ThinkingaboutEnergyaudioplbtn").on('tap', function() {
+      if(!paused) {
+        ThinkingaboutEnergyaudio.pause();
+        paused = true;
+      } else {
+        ThinkingaboutEnergyaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#ThinkingaboutEnergyaudiofbtn").on('tap', function() {
+      var ctime = ThinkingaboutEnergyaudio.currentTime;
+      ThinkingaboutEnergyaudio.currentTime = ctime + 10;
+    });
+    
+    $("#ThinkingaboutEnergyaudiobbtn").on('tap', function() {
+      var ctime = ThinkingaboutEnergyaudio.currentTime;
+      ThinkingaboutEnergyaudio.currentTime = ctime - 10;
+    });
+    
+    $("#ThinkingaboutEnergyaudiopsbtn").on('tap', function() {
+      ThinkingaboutEnergyaudio.pause();
+    });
+  </script>
+  <script src="js/fourcardLogic.js"></script>  <!-- for card dragging effects -->
+</div> <!--//home-->

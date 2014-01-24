@@ -1,0 +1,151 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-designing-places-what-do-architects-think-about-how-do-you-live">
+  <script src="js/hammer.js"></script>
+  <script src="js/jquery.hammer.js"></script>
+  <script src="js/slidebar_designing_places.js"></script>
+  <link rel="stylesheet" href="css/style_designing_places.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnDesigningPlaces"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnDesigningPlaces"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnDesigningPlaces"></div></div>
+  <div class="infobtnholder"><div class="infobtnDesigningPlaces"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnDesigningPlaces"></div></div>
+  <div class="menubtnholder"><div class="menubtnDesigningPlaces"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:0px;"><h1>How Do You Live?</h1></div>
+  <div id="spacechar">&nbsp;
+    <div data-role="content" class="kidzcontent">
+      <div class="v-spacer"></div>
+      <div class="sidebarleft-half">
+        <a id="familylink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Designing_Places/What_Do_Architects_Think_About/How_Do_You_Live/Family_Hi_Res.jpg', 'Different people live in different ways, some might live alone, others with their parents, grandparents aunts and uncles!  Architects need to know what their client needs in a house, before they start designing.');">click here</a>
+		
+        <a id="artlink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Designing_Places/What_Do_Architects_Think_About/How_Do_You_Live/Art_Gallery_Hi_Res.jpg', 'Architects don\'t just make buildings, they need to create spaces that are easy to get around and use.  Would you like walking through an art gallery with lots of narrow corridors and bends?');">click here</a>
+		
+		<a id="cafelink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Designing_Places/What_Do_Architects_Think_About/How_Do_You_Live/Cafe_Hi_Res.jpg', 'A cosy caf can be just perfect for a building like a library or shop. If you were working in an office, would you like a nice place to buy breakfast or lunch?');">click here</a>
+		
+		<a id="librarylink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Designing_Places/What_Do_Architects_Think_About/How_Do_You_Live/Library_Hi_Res.jpg', 'This library has plenty of space to pack in lots of books, but where do the people go?  Can you see a place to sit down and read?');">click here</a>
+        
+		<div id="zoomwrapper">
+          <div id="pol1" class="pPiece" style="left:100px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Designing_Places/What_Do_Architects_Think_About/How_Do_You_Live/Family.png" alt="" />
+          </div>
+          <div id="pol2"class="pPiece" style="left:75px;top:290px;">
+             <img src="css/images/9-12/People_and_Places/Designing_Places/What_Do_Architects_Think_About/How_Do_You_Live/Art_Gallery.png" alt="" />
+          </div>
+		  <div id="pol3"class="pPiece" style="left:80px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Designing_Places/What_Do_Architects_Think_About/How_Do_You_Live/Cafe.png" alt="" />
+          </div>
+		  <div id="pol4"class="pPiece" style="left:70px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Designing_Places/What_Do_Architects_Think_About/How_Do_You_Live/Library.png" alt="" />
+          </div>
+		</div><!--/zoomwrapper-->
+      </div>
+      
+      <div class="bpcontentDesigningPlaces">
+        <p>How do you live?  Do you live with your parents? A brother or a sister?  Imagine if your grandparents moved into your home  do you have enough space for them?  What spaces would you build for them to make them feel a part of your home?</p>
+		<p>Architects need to understand what the place they are designing will be used for, and what the people who will be using it need.  Is it a house?  Is it a library or an art gallery?  Or is it a public place?  If the building is a library do you only need a space for books and a desk for librarians or do you also need a caf&egrave;, offices, places to read, places to chat and places to hear people give talks?  Sometimes the list is short and sometimes the list is long.</p>
+		<p>What people want and need in a place is an important consideration for architects.  They help their client to make this list and when it is complete it is called the 'brief'.  It is from the brief that the architect begins the design process.</p>
+      </div>
+       
+      <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+    </div> <!-- end content -->  
+  </div><!--/spacechar-->        
+	
+	<div class="micbtnholder"><div class="micbtnDesigningPlaces" id="playstopHowDoYouLive"></div></div>
+    <div class="bDesigningPlaces"><div class="rwDesigningPlaces" id="HowDoYouLiveaudiobbtn"></div></div>
+    <div class="plDesigningPlaces"><div class="plpsDesigningPlaces" id="HowDoYouLiveaudioplbtn"></div></div>
+    <div class="fDesigningPlaces"><div class="fwDesigningPlaces" id="HowDoYouLiveaudiofbtn"></div></div>
+    <div id="actualaudio-HowDoYouLive" style="visibility:hidden;"></div>
+  <!-- </div> -->
+  
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+ 
+	var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      $('div#pol1').css("z-index", 3);
+      $('div#pol2').css("z-index", 2);
+      $('div#pol3').css("z-index", 1);
+      $('div#pol1 > img').css("-webkit-transform", "rotate(0deg)");
+      $('div#pol2 > img').css("-webkit-transform", "rotate(5deg)");
+      $('div#pol3 > img').css("-webkit-transform", "rotate(-3deg)");
+      $('div#pol4 > img').css("-webkit-transform", "rotate(-3deg)");
+      
+	  if(sound.canPlayType('audio/mpeg')) {
+			$('#actualaudio-HowDoYouLive').html('<audio id="HowDoYouLiveaudio" controls preload onpause="playsDesigningPlaces()" onplay="pauseDesigningPlaces()"><source src="audio/Designing_Places/How_Do_you_Live.mp3" type="audio/mpeg"></audio>');
+		  }             
+	  $("#sub-designing-places-what-do-architects-think-about-how-do-you-live").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+	})();
+    
+	$('.homelinkbh').on('tap', function() { mainaudiobg.play(); bgsoundDesigningPlacesToday.pause(); bgsoundDesigningPlacesToday.currentTime = 0;});
+    
+	$("#pol1").on('tap', function() {
+      $('#familylink')[0].click();
+    });
+    $("#pol2").on('tap', function() {
+      $('#artlink')[0].click();
+    });
+	$("#pol3").on('tap', function() {
+      $('#cafelink')[0].click();
+    });
+	$("#pol4").on('tap', function() {
+      $('#librarylink')[0].click();
+    });
+    function goBack() {
+      $.mobile.changePage("sub-designing-places-what-do-architects-think-about.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsDesigningPlace() {
+         bgsoundDesigningPlaces.play();
+    }
+       
+    function pauseDesigningPlace() {
+         bgsoundDesigningPlaces.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+    $("#playstopHowDoYouLive").on('tap', function() {
+      if(!playing) {
+        HowDoYouLiveaudio.play();
+        $('.micbtnDesigningPlaces').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        HowDoYouLiveaudio.pause(); HowDoYouLiveaudio.currentTime = 0;
+        $('.micbtnDesigningPlaces').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#HowDoYouLiveaudioplbtn").on('tap', function() {
+      if(!paused) {
+        HowDoYouLiveaudio.pause();
+        paused = true;
+      } else {
+        HowDoYouLiveaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#HowDoYouLiveaudiofbtn").on('tap', function() {
+      var ctime = HowDoYouLiveaudio.currentTime;
+      HowDoYouLiveaudio.currentTime = ctime + 10;
+    });
+    
+    $("#HowDoYouLiveaudiobbtn").on('tap', function() {
+      var ctime = HowDoYouLiveaudio.currentTime;
+      HowDoYouLiveaudio.currentTime = ctime - 10;
+    });
+    
+    $("#HowDoYouLiveaudiopsbtn").on('tap', function() {
+      HowDoYouLiveaudio.pause();
+    });
+  </script>
+  <script src="js/fourcardLogic.js"></script>  <!-- for card dragging effects -->
+</div> <!--//home-->

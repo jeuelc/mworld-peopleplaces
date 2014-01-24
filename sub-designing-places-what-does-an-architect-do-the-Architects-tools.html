@@ -1,0 +1,141 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-designing-places-what-does-an-architect-do-the-Architects-tools">
+  <script src="js/hammer.js"></script>
+  <script src="js/jquery.hammer.js"></script>
+  <script src="js/slidebar_designing_places.js"></script>
+  <link rel="stylesheet" href="css/style_designing_places.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnDesigningPlaces"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnDesigningPlaces"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnDesigningPlaces"></div></div>
+  <div class="infobtnholder"><div class="infobtnDesigningPlaces"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnDesigningPlaces"></div></div>
+  <div class="menubtnholder"><div class="menubtnDesigningPlaces"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:0px;"><h1>The Architect's Tools</h1></div>
+  <div id="spacechar">&nbsp;
+    <div data-role="content" class="kidzcontent">
+      <div class="v-spacer"></div>
+      <div class="sidebarleft-half">
+        <a id="architecttoolslink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Designing_Places/What_Does_Architect_Do/Architects_Tools/Architects_Tools_Hi_Res.jpg', 'What are the architects tools?  Paper, pencils and rulers of course, but to make their ideas reality they need to make careful sketches, designs and models.');">click here</a>
+		
+        <a id="setionlink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Designing_Places/What_Does_Architect_Do/Architects_Tools/Section_Drawings_Hi_Res.jpg', '\'Section\' drawings, like this one, show you what a building looks like on the inside.  It\'s like you've taken off one of the walls!');">click here</a>
+		
+		<a id="modelslink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Designing_Places/What_Does_Architect_Do/Architects_Tools/Models_Hi_Res.jpg', 'Models let us know what the inside of a building will look like.  This is really important when you\'re trying to imagine a space!');">click here</a>
+        
+		<div id="zoomwrapper">
+          <div id="pol1" class="pPiece" style="left:100px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Designing_Places/What_Does_Architect_Do/Architects_Tools/Architects_Tolls.png" alt="" />
+          </div>
+          <div id="pol2"class="pPiece" style="left:75px;top:290px;">
+             <img src="css/images/9-12/People_and_Places/Designing_Places/What_Does_Architect_Do/Architects_Tools/Section_Drawings.png" alt="" />
+          </div>
+		  <div id="pol3"class="pPiece" style="left:80px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Designing_Places/What_Does_Architect_Do/Architects_Tools/Models.png" alt="" />
+          </div>
+		</div><!--/zoomwrapper-->
+      </div>
+      
+      <div class="bpcontentDesigningPlaces">
+        <p>Different professions use different tools.  A writer uses words and a builder might use a hammer.  Architects use drawings and models to get their jobs done.  These are the architect's tools.  They are used to show people how the building or the place will work, how it goes together and to help themselves and others understand what it will feel like to be in the space.</p>
+		<p>Plan drawings show how different spaces relate to each other.  'Section' drawings cut through the building, showing you what is inside.  'Elevation' drawings are side views that tell you where the windows and doors are and what the building is made of.  'Perspective' drawings and images help us to imagine what it might be like to be in the space.  Some drawings are made by hand and some are made by a computer from a virtual 3D model that the architect has created.</p>
+		<p>And finally, physical models are one of the best ways of understanding a project that is yet to be built - they help you to see the whole project in miniature!</p>
+      </div>
+       
+      <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+    </div> <!-- end content -->  
+  </div><!--/spacechar-->        
+	
+	<div class="micbtnholder"><div class="micbtnDesigningPlaces" id="playstopConstructionSite"></div></div>
+    <div class="bDesigningPlaces"><div class="rwDesigningPlaces" id="ConstructionSiteaudiobbtn"></div></div>
+    <div class="plDesigningPlaces"><div class="plpsDesigningPlaces" id="ConstructionSiteaudioplbtn"></div></div>
+    <div class="fDesigningPlaces"><div class="fwDesigningPlaces" id="ConstructionSiteaudiofbtn"></div></div>
+    <div id="actualaudio-ConstructionSite" style="visibility:hidden;"></div>
+  <!-- </div> -->
+  
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+ 
+	var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      $('div#pol2').css("z-index", 2);
+      $('div#pol1').css("z-index", 1);
+      $('div#pol1 > img').css("-webkit-transform", "rotate(0deg)");
+      $('div#pol2 > img').css("-webkit-transform", "rotate(5deg)");
+      $('div#pol3 > img').css("-webkit-transform", "rotate(-3deg)");
+      
+	  if(sound.canPlayType('audio/mpeg')) {
+			$('#actualaudio-ConstructionSite').html('<audio id="ConstructionSiteaudio" controls preload onpause="playsDesigningPlaces()" onplay="pauseDesigningPlaces()"><source src="audio/Designing_Places/Architect_Tools.mp3" type="audio/mpeg"></audio>');
+		  }             
+	  $("#sub-designing-places-what-does-an-architect-do-the-Architects-tools").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+	})();
+    
+	$('.homelinkbh').on('tap', function() { mainaudiobg.play(); bgsoundDesigningPlacesToday.pause(); bgsoundDesigningPlacesToday.currentTime = 0;});
+    
+	$("#pol1").on('tap', function() {
+      $('#architecttoolslink')[0].click();
+    });
+    $("#pol2").on('tap', function() {
+      $('#setionlink')[0].click();
+    });
+	$("#pol3").on('tap', function() {
+      $('#modelslink')[0].click();
+    });
+    function goBack() {
+      $.mobile.changePage("sub-designing-places-what-does-an-architect-do.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsDesigningPlace() {
+         bgsoundDesigningPlaces.play();
+    }
+       
+    function pauseDesigningPlace() {
+         bgsoundDesigningPlaces.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+    $("#playstopConstructionSite").on('tap', function() {
+      if(!playing) {
+        ConstructionSiteaudio.play();
+        $('.micbtnDesigningPlaces').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        ConstructionSiteaudio.pause(); ConstructionSiteaudio.currentTime = 0;
+        $('.micbtnDesigningPlaces').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#ConstructionSiteaudioplbtn").on('tap', function() {
+      if(!paused) {
+        ConstructionSiteaudio.pause();
+        paused = true;
+      } else {
+        ConstructionSiteaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#ConstructionSiteaudiofbtn").on('tap', function() {
+      var ctime = ConstructionSiteaudio.currentTime;
+      ConstructionSiteaudio.currentTime = ctime + 10;
+    });
+    
+    $("#ConstructionSiteaudiobbtn").on('tap', function() {
+      var ctime = ConstructionSiteaudio.currentTime;
+      ConstructionSiteaudio.currentTime = ctime - 10;
+    });
+    
+    $("#ConstructionSiteaudiopsbtn").on('tap', function() {
+      ConstructionSiteaudio.pause();
+    });
+  </script>
+  <script src="js/threecardLogic.js"></script>  <!-- for card dragging effects -->
+</div> <!--//home-->

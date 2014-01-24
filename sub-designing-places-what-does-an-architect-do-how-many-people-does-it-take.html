@@ -1,0 +1,142 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-designing-places-what-does-an-architect-do-how-many-people-does-it-take">
+  <script src="js/hammer.js"></script>
+  <script src="js/jquery.hammer.js"></script>
+  <script src="js/slidebar_designing_places.js"></script>
+  <link rel="stylesheet" href="css/style_designing_places.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnDesigningPlaces"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnDesigningPlaces"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnDesigningPlaces"></div></div>
+  <div class="infobtnholder"><div class="infobtnDesigningPlaces"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnDesigningPlaces"></div></div>
+  <div class="menubtnholder"><div class="menubtnDesigningPlaces"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:0px;"><h1>How Many People Does It Take?</h1></div>
+  <div id="spacechar">&nbsp;
+    <div data-role="content" class="kidzcontent">
+      <div class="v-spacer"></div>
+      <div class="sidebarleft-half">
+        <a id="collagelink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Designing_Places/What_Does_Architect_Do/How_Many_People_Does_It_Take/Collage_Hi_Res.jpg', 'It can take dozens of people to make architecture!  Somebody needs to think out every detail to make sure that the house is comfortable, livable and safe.');">click here</a>
+		
+        <a id="stlink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Designing_Places/What_Does_Architect_Do/How_Many_People_Does_It_Take/St_Isaacs_Cathedral_Hi_Res.jpg', 'This is St Isaac\'s Cathedral - it has a beautiful painting as a central part of its design.  Can you imagine trying to paint a picture on the roof?');">click here</a>
+		
+		<a id="louvrelink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Designing_Places/What_Does_Architect_Do/How_Many_People_Does_It_Take/Louvre_Hi_Res.jpg', 'Here is a very famous piece of architecture where a sculpture is actually a part of the building!  The louvre\'s famous pyramid houses a part of the art gallery\'s collection');">click here</a>
+        
+		<div id="zoomwrapper">
+          <div id="pol1" class="pPiece" style="left:100px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Designing_Places/What_Does_Architect_Do/How_Many_People_Does_It_Take/collage.png" alt="" />
+          </div>
+          <div id="pol2"class="pPiece" style="left:75px;top:290px;">
+             <img src="css/images/9-12/People_and_Places/Designing_Places/What_Does_Architect_Do/How_Many_People_Does_It_Take/St_Isaacs_Cathedral.png" alt="" />
+          </div>
+		  <div id="pol3"class="pPiece" style="left:80px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Designing_Places/What_Does_Architect_Do/How_Many_People_Does_It_Take/Louvre.png" alt="" />
+          </div>
+		</div><!--/zoomwrapper-->
+      </div>
+      
+      <div class="bpcontentDesigningPlaces">
+        <p>Designing and making places is complicated!  It takes a lot of hard work and involves many people all working together.</p>
+		<p>Landscape architects and urban designers help us think about what the spaces between the buildings will look like.  Surveyors map out the land where we are going to build.  Engineers work with architects to determine that the building and its foundations are sufficiently strong.  Town planners help with the rules and regulations.  Interior architects think about the inside of buildings.  Sometimes an architect will work with an artist to incorporate an artwork into the building.  Can you think of any spaces or places near you that have a sculpture or mural as part of the design?</p>
+		<p>Lighting designers make sure that the spaces look fantastic at night and are safe and visible.  Builders construct the places that architects imagine - they work with people like carpenters, electricians and plumbers.</p>
+		<p>Communicating with all of these different types of people is one of the most interesting things about being an architect.  You get to learn a little bit about lots and lots of interesting professions.</p>
+      </div>
+       
+      <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+    </div> <!-- end content -->  
+  </div><!--/spacechar-->        
+	
+	<div class="micbtnholder"><div class="micbtnDesigningPlaces" id="playstopHowManyPeople"></div></div>
+    <div class="bDesigningPlaces"><div class="rwDesigningPlaces" id="HowManyPeopleaudiobbtn"></div></div>
+    <div class="plDesigningPlaces"><div class="plpsDesigningPlaces" id="HowManyPeopleaudioplbtn"></div></div>
+    <div class="fDesigningPlaces"><div class="fwDesigningPlaces" id="HowManyPeopleaudiofbtn"></div></div>
+    <div id="actualaudio-HowManyPeople" style="visibility:hidden;"></div>
+  <!-- </div> -->
+  
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+ 
+	var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      $('div#pol2').css("z-index", 2);
+      $('div#pol1').css("z-index", 1);
+      $('div#pol1 > img').css("-webkit-transform", "rotate(0deg)");
+      $('div#pol2 > img').css("-webkit-transform", "rotate(5deg)");
+      $('div#pol3 > img').css("-webkit-transform", "rotate(-3deg)");
+      
+	  if(sound.canPlayType('audio/mpeg')) {
+			$('#actualaudio-HowManyPeople').html('<audio id="HowManyPeopleaudio" controls preload onpause="playsDesigningPlaces()" onplay="pauseDesigningPlaces()"><source src="audio/Designing_Places/How_Many_People_does_It_Take.mp3" type="audio/mpeg"></audio>');
+		  }             
+	  $("#sub-designing-places-what-does-an-architect-do-how-many-people-does-it-take").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+	})();
+    
+	$('.homelinkbh').on('tap', function() { mainaudiobg.play(); bgsoundDesigningPlacesToday.pause(); bgsoundDesigningPlacesToday.currentTime = 0;});
+    
+	$("#pol1").on('tap', function() {
+      $('#collagelink')[0].click();
+    });
+    $("#pol2").on('tap', function() {
+      $('#stlink')[0].click();
+    });
+	$("#pol3").on('tap', function() {
+      $('#louvrelink')[0].click();
+    });
+    function goBack() {
+      $.mobile.changePage("sub-designing-places-what-does-an-architect-do.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsDesigningPlace() {
+         bgsoundDesigningPlaces.play();
+    }
+       
+    function pauseDesigningPlace() {
+         bgsoundDesigningPlaces.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+    $("#playstopHowManyPeople").on('tap', function() {
+      if(!playing) {
+        HowManyPeopleaudio.play();
+        $('.micbtnDesigningPlaces').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        HowManyPeopleaudio.pause(); HowManyPeopleaudio.currentTime = 0;
+        $('.micbtnDesigningPlaces').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#HowManyPeopleaudioplbtn").on('tap', function() {
+      if(!paused) {
+        HowManyPeopleaudio.pause();
+        paused = true;
+      } else {
+        HowManyPeopleaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#HowManyPeopleaudiofbtn").on('tap', function() {
+      var ctime = HowManyPeopleaudio.currentTime;
+      HowManyPeopleaudio.currentTime = ctime + 10;
+    });
+    
+    $("#HowManyPeopleaudiobbtn").on('tap', function() {
+      var ctime = HowManyPeopleaudio.currentTime;
+      HowManyPeopleaudio.currentTime = ctime - 10;
+    });
+    
+    $("#HowManyPeopleaudiopsbtn").on('tap', function() {
+      HowManyPeopleaudio.pause();
+    });
+  </script>
+  <script src="js/threecardLogic.js"></script>  <!-- for card dragging effects -->
+</div> <!--//home-->

@@ -1,0 +1,130 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-designing-places-what-do-architects-think-about">
+  <script src="js/slidebar_designing_places.js"></script>
+  <link rel="stylesheet" href="css/style_designing_places.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnDesigningPlaces"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnDesigningPlaces"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnDesigningPlaces"></div></div>
+  <div class="infobtnholder"><div class="infobtnDesigningPlaces"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnDesigningPlaces"></div></div>
+  <div class="menubtnholder"><div class="menubtnDesigningPlaces"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:14px;"><h1>What Do Architects Think About?</h1></div>
+  <div id="howdoyoulivelink" style="position:absolute;left: 40px;top: 45px;width: 205px;height: 182px;"></div>
+  <div id="wheredoyoulivelink" style="position:absolute;left: 272px;top: 39px;width: 211px;height: 195px;"></div>
+  <div id="thinkaboutenergylink" style="position:absolute;left: 30px;top: 260px;width: 207px;height: 165px;"></div>
+  <div id="designingforthesunlink" style="position:absolute;left: 264px;top: 263px;width: 213px;height: 170px;"></div>
+  <div id="puttingitalltogetherlink" style="position:absolute;left: 148px;top: 475px;width: 223px;height: 135px;"></div>
+  
+  <div data-role="content" class="kidzcontent">
+	<div class="navDesigningPlaces-ArchitectThinkAbout">
+        <p>What kinds of things do architects think about when they design a building?  What are the important considerations?  Lets look at some of the key issues that architects think about.</p>
+		<p>Architects think about the people who will use the spaces they design and about the site where the project will be located.</p>
+		<p>They also think about how a building can use less energy.  It takes a lot of energy to make a building and once a building is finished it may take a lot of energy to run it. If architects think cleverly about how the sun enters a building it not only makes us feel good but it helps to reduce our heating and cooling bills.</p>
+		<p>Architects also think about how a building fits together and what it is made of.  And all good architects think about creating places that people want to live in.  Architects also need to think about the future  what type of house, town, city or even world will people want to live in then?</p>
+    </div>
+  <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+  </div> <!-- end content -->  
+    
+  
+  <!--<div class="audiopanel">-->
+    <!-- images are in slidebarnat.js 
+         note: change the ids to be able play the narration
+    -->
+    <div class="micbtnholder"><div class="micbtnDesigningPlaces" id="playstopArchitectThinkAbout"></div></div>
+    <div class="bDesigningPlaces"><div class="rwDesigningPlaces" id="ArchitectThinkAboutaudiobbtn"></div></div>
+    <div class="plDesigningPlaces"><div class="plpsDesigningPlaces" id="ArchitectThinkAboutaudioplbtn"></div></div>
+    <div class="fDesigningPlaces"><div class="fwDesigningPlaces" id="ArchitectThinkAboutaudiofbtn"></div></div>
+    <div id="actualaudio-ArchitectThinkAbout" style="visibility:hidden;"></div>
+  <!--</div>-->
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+    var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      if(sound.canPlayType('audio/mpeg')) {
+        $('#actualaudio-ArchitectThinkAbout').html('<audio id="ArchitectThinkAboutaudio" controls preload onpause="playsDesigningPlaces()" onplay="pauseDesigningPlaces()"><source src="audio/Designing_Places/Architetc_Think_About.mp3" type="audio/mpeg"></audio>');
+      } 
+    
+      $("#sub-designing-places-what-do-architects-think-about").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+    })();
+    
+    $('#howdoyoulivelink').on('tap', function() {
+      $.mobile.changePage("sub-designing-places-what-do-architects-think-about-how-do-you-live.html", {transition: "slide"});
+    });
+    
+    $('#wheredoyoulivelink').on('tap', function() {
+      $.mobile.changePage("sub-designing-places-what-do-architects-think-about-where-do-you-live.html", {transition: "slide"});
+    });
+    
+    $('#thinkaboutenergylink').on('tap', function() {
+      $.mobile.changePage("sub-designing-places-what-do-architects-think-about-thinking-about-energy.html", {transition: "slide"});
+    });
+    
+	$('#designingforthesunlink').on('tap', function() {
+      $.mobile.changePage("sub-designing-places-what-do-architects-think-about-designing-for-the-sun.html", {transition: "slide"});
+    });
+	
+	$('#puttingitalltogetherlink').on('tap', function() {
+      $.mobile.changePage("sub-designing-places-what-do-architects-think-about-putting-it-all-together.html", {transition: "slide"});
+    });
+	
+    $('.homelinkbh').on('tap', function() { mainaudiobg.play(); bgsoundDesigningPlaces.pause(); bgsoundDesigningPlaces.currentTime = 0;});
+    
+    function goBack() {
+      $.mobile.changePage("sub-designing-places.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsDesigningPlace() {
+         bgsoundDesigningPlaces.play();
+    }
+       
+    function pauseDesigningPlace() {
+         bgsoundDesigningPlaces.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+    $("#playstopArchitectThinkAbout").on('tap', function() {
+      if(!playing) {
+        ArchitectThinkAboutaudio.play();
+        $('.micbtnDesigningPlaces').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        ArchitectThinkAboutaudio.pause(); ArchitectThinkAboutaudio.currentTime = 0;
+        $('.micbtnDesigningPlaces').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#ArchitectThinkAboutaudioplbtn").on('tap', function() {
+      if(!paused) {
+        ArchitectThinkAboutaudio.pause();
+        paused = true;
+      } else {
+        ArchitectThinkAboutaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#ArchitectThinkAboutaudiofbtn").on('tap', function() {
+      var ctime = ArchitectThinkAboutaudio.currentTime;
+      ArchitectThinkAboutaudio.currentTime = ctime + 10;
+    });
+    
+    $("#ArchitectThinkAboutaudiobbtn").on('tap', function() {
+      var ctime = ArchitectThinkAboutaudio.currentTime;
+      ArchitectThinkAboutaudio.currentTime = ctime - 10;
+    });
+    
+    $("#ArchitectThinkAboutaudiopsbtn").on('tap', function() {
+      ArchitectThinkAboutaudio.pause();
+    });
+  </script>
+</div> <!--//home-->

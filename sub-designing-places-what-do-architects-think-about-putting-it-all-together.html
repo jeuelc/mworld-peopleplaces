@@ -1,0 +1,177 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-designing-places-what-do-architects-think-about-putting-it-all-together">
+  <script src="js/hammer.js"></script>
+  <script src="js/jquery.hammer.js"></script>
+  <script src="js/slidebar_designing_places.js"></script>
+  <link rel="stylesheet" href="css/style_designing_places.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnDesigningPlaces"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnDesigningPlaces"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnDesigningPlaces"></div></div>
+  <div class="infobtnholder"><div class="infobtnDesigningPlaces"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnDesigningPlaces"></div></div>
+  <div class="menubtnholder"><div class="menubtnDesigningPlaces"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:0px;"><h1>Putting It All Together</h1></div>
+  <div id="spacechar">&nbsp;
+    <div data-role="content" class="kidzcontent">
+      <div class="v-spacer"></div>
+      <div class="sidebarleft-half">
+        <a id="pyramidslink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Designing_Places/What_Do_Architects_Think_About/Putting_It_All_Together/Pyramids_Hi_Res.jpg', 'Load bearing construction can be very imposing  and its not new!  People have been making buildings that make us feel strong and secure for a long, long time.');">click here</a>
+		
+        <a id="treehouselink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Designing_Places/What_Do_Architects_Think_About/Putting_It_All_Together/Treehouse_Hi_Res.jpg', 'This house was built using post and beam construction can you spot the beams? These houses are often light and airy, with lots of windows.');">click here</a>
+		
+		<div id="f1_container" style="visibility:hidden;position:absolute;left:100px;top:270px;">
+          <div id="f1_card">
+            <div class="front face">
+              <img id="dopple" src="css/images/9-12/People_and_Places/Designing_Places/What_Do_Architects_Think_About/Putting_It_All_Together/Four_Seasons.png">
+            </div>
+            <div id="backofcard" class="back face center" style="background:url(css/images/9-12/People_and_Places/Designing_Places/What_Do_Architects_Think_About/Putting_It_All_Together/Four_Seasons_Reverse.png) no-repeat;">
+              <div class="returncard" style="position:absolute;left:0px;top:0px;width:362px;height:170px;"></div>
+              <div id="trueans" style="position:absolute;left:90px;top:180px;width:70px;height:50px;"></div>
+              <div id="falseans" style="position:absolute;left:200px;top:180px;width:70px;height:50px;"></div>
+            </div>
+          </div><!--/f1+card-->
+        </div><!--/f1_container-->
+		
+		<div id="zoomwrapper">
+          <div id="pol1" class="pPiece" style="left:100px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Designing_Places/What_Do_Architects_Think_About/Putting_It_All_Together/Four_Seasons.png" alt="" />
+          </div>
+          <div id="pol2"class="pPiece" style="left:75px;top:290px;">
+             <img src="css/images/9-12/People_and_Places/Designing_Places/What_Do_Architects_Think_About/Putting_It_All_Together/Parkitecht.png" alt="" />
+          </div>
+		  <div id="pol3"class="pPiece" style="left:80px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Designing_Places/What_Do_Architects_Think_About/Putting_It_All_Together/Pyramids.png" alt="" />
+          </div>
+		  <div id="pol4"class="pPiece" style="left:70px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Designing_Places/What_Do_Architects_Think_About/Putting_It_All_Together/Treehouse.png" alt="" />
+          </div>
+        </div><!--/zoomwrapper-->
+      </div>
+      
+      <div class="bpcontentDesigningPlaces">
+        <p>Architects have to think about how things go together.  A building needs to stand up and provide shelter for the people who use it.  Two ways to make a building stand up are by using strong materials, like bricks and stone, or to build carefully, with lots of pillars, posts and beams.</p>
+		<p>If you build with bricks and stone your building might look monumental.  It will be heavy and weighty and this can make a building feel important.  If you lived in a house like this it might make you feel cosy and secure.  Can you think of a building near you that makes you feel this way?</p>
+		<p>Buildings made with timber and glass might look bright and airy.   Perhaps you have a fantastic view that you want to look at all day.  If you lived in a house like this you might feel like you were living in the landscape or maybe a fishbowl!  This is called post and beam construction.  It relies on posts or columns and beams to make it stand up.  Often you can see these columns and beams when you walk through the building.</p>
+      </div>
+       
+      <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+    </div> <!-- end content -->  
+  </div><!--/spacechar-->        
+  
+    <div class="micbtnholder"><div class="micbtnDesigningPlaces" id="playstopPuttingItAllTogether"></div></div>
+    <div class="bDesigningPlaces"><div class="rwDesigningPlaces" id="PuttingItAllTogetheraudiobbtn"></div></div>
+    <div class="plDesigningPlaces"><div class="plpsDesigningPlaces" id="PuttingItAllTogetheraudioplbtn"></div></div>
+    <div class="fDesigningPlaces"><div class="fwDesigningPlaces" id="PuttingItAllTogetheraudiofbtn"></div></div>
+    <div id="actualaudio-PuttingItAllTogether" style="visibility:hidden;"></div>
+  <!-- </div> -->
+  
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+ 
+	var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      $('div#pol1').css("z-index", 3);
+      $('div#pol2').css("z-index", 2);
+      $('div#pol3').css("z-index", 1);
+      $('div#pol1 > img').css("-webkit-transform", "rotate(0deg)");
+      $('div#pol2 > img').css("-webkit-transform", "rotate(5deg)");
+      $('div#pol3 > img').css("-webkit-transform", "rotate(-3deg)");
+      $('div#pol4 > img').css("-webkit-transform", "rotate(-3deg)");
+      
+	  if(sound.canPlayType('audio/mpeg')) {
+			$('#actualaudio-PuttingItAllTogether').html('<audio id="PuttingItAllTogetheraudio" controls preload onpause="playsDesigningPlaces()" onplay="pauseDesigningPlaces()"><source src="audio/Designing_Places/Putting_It_All_Together.mp3" type="audio/mpeg"></audio>');
+		  }             
+	  $("#sub-designing-places-what-do-architects-think-about-putting-it-all-together").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+	})();
+    
+	$('.homelinkbh').on('tap', function() { mainaudiobg.play(); bgsoundDesigningPlacesToday.pause(); bgsoundDesigningPlacesToday.currentTime = 0;});
+    
+	$(".returncard").on('tap', function() {
+      $('#f1_card').css({"-webkit-transform": "rotateY(0deg)"});
+      $('#f1_card').css({"-moz-transform": "rotateY(0deg)"});
+      $('#f1_card').css({"-o-transform": "rotateY(0deg)"});
+      $('#f1_card').css({"transform": "rotateY(0deg)"});
+      setTimeout(function() {
+        $("#pol1").css({"visibility":"visible", "z-index":4});
+        $('#f1_container').css({"visibility":"hidden", "z-index":0});
+      }, 1000);
+    });
+    
+    $("#pol1").on('tap', function() {
+      $('#f1_container').css({"visibility":"visible", "z-index":10});
+      $(this).css({"visibility":"hidden"});
+      $('#f1_card').css({"-webkit-transform": "rotateY(180deg)"});
+      $('#f1_card').css({"-moz-transform": "rotateY(180deg)"});
+      $('#f1_card').css({"-o-transform": "rotateY(180deg)"});
+      $('#f1_card').css({"transform": "rotateY(180deg)"});
+    });
+    $("#pol2").on('tap', function() {
+      $.mobile.changePage("sub-designing-places-what-do-architects-think-about-putting-it-all-together-parkitecht.html", {transition: "slide"});
+	});
+    $("#pol3").on('tap', function() {
+      $('#pyramidslink')[0].click();
+    });
+	$("#pol4").on('tap', function() {
+      $('#treehouselink')[0].click();
+    });
+	
+    function goBack() {
+      $.mobile.changePage("sub-designing-places-what-do-architects-think-about.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsDesigningPlace() {
+         bgsoundDesigningPlaces.play();
+    }
+       
+    function pauseDesigningPlace() {
+         bgsoundDesigningPlaces.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+    $("#playstopPuttingItAllTogether").on('tap', function() {
+      if(!playing) {
+        PuttingItAllTogetheraudio.play();
+        $('.micbtnDesigningPlaces').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        PuttingItAllTogetheraudio.pause(); PuttingItAllTogetheraudio.currentTime = 0;
+        $('.micbtnDesigningPlaces').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#PuttingItAllTogetheraudioplbtn").on('tap', function() {
+      if(!paused) {
+        PuttingItAllTogetheraudio.pause();
+        paused = true;
+      } else {
+        PuttingItAllTogetheraudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#PuttingItAllTogetheraudiofbtn").on('tap', function() {
+      var ctime = PuttingItAllTogetheraudio.currentTime;
+      PuttingItAllTogetheraudio.currentTime = ctime + 10;
+    });
+    
+    $("#PuttingItAllTogetheraudiobbtn").on('tap', function() {
+      var ctime = PuttingItAllTogetheraudio.currentTime;
+      PuttingItAllTogetheraudio.currentTime = ctime - 10;
+    });
+    
+    $("#PuttingItAllTogetheraudiopsbtn").on('tap', function() {
+      PuttingItAllTogetheraudio.pause();
+    });
+  </script>
+  <script src="js/fourcardLogic.js"></script>  <!-- for card dragging effects -->
+</div> <!--//home-->

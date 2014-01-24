@@ -1,0 +1,151 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-designing-places-what-do-architects-think-about-designing-for-the-sun">
+  <script src="js/hammer.js"></script>
+  <script src="js/jquery.hammer.js"></script>
+  <script src="js/slidebar_designing_places.js"></script>
+  <link rel="stylesheet" href="css/style_designing_places.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnDesigningPlaces"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnDesigningPlaces"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnDesigningPlaces"></div></div>
+  <div class="infobtnholder"><div class="infobtnDesigningPlaces"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnDesigningPlaces"></div></div>
+  <div class="menubtnholder"><div class="menubtnDesigningPlaces"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:0px;"><h1>Designing For The Sun</h1></div>
+  <div id="spacechar">&nbsp;
+    <div data-role="content" class="kidzcontent">
+      <div class="v-spacer"></div>
+      <div class="sidebarleft-half">
+        <a id="ulanlink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Designing_Places/What_Do_Architects_Think_About/Designing_For_The_World/Solar_Energy_Hi_Res.jpg', 'Solar panels are very complicated!  They convert energy from the sun into electricity that we can use in our houses.  These are great because the energy is renewable - it won\'t run out for billions of years.');">click here</a>
+		
+        <a id="couplelink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Designing_Places/What_Do_Architects_Think_About/Designing_For_The_World/Cappadocia_Hi_Res.jpg', 'In countries where it is very, very hot we might need to get creative to protect ourselves from the sun!  These houses in Cappadocia, Turkey, have been cut out of the rock.  Even when it\'s very hot outside these houses would be cool.');">click here</a>
+		
+		<a id="insidelink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Designing_Places/What_Do_Architects_Think_About/Designing_For_The_World/Veranda_Hi_Res.jpg', 'Verandas are a great way to protect a house from the sun\'s rays.  In summer, when the sun is high the heat will be blocked by the roof.  But when the sun is low in winter, it can shine through the windows to warm the house.');">click here</a>
+        
+		<div id="zoomwrapper">
+          <div id="pol1" class="pPiece" style="left:100px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Designing_Places/What_Do_Architects_Think_About/Designing_For_The_World/Solar_Energy.png" alt="" />
+          </div>
+          <div id="pol2"class="pPiece" style="left:75px;top:290px;">
+             <img src="css/images/9-12/People_and_Places/Designing_Places/What_Do_Architects_Think_About/Designing_For_The_World/Cappadocia.png" alt="" />
+          </div>
+		  <div id="pol3"class="pPiece" style="left:80px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Designing_Places/What_Do_Architects_Think_About/Designing_For_The_World/Veranda.png" alt="" />
+          </div>
+		</div><!--/zoomwrapper-->
+      </div>
+      
+      <div class="bpcontentDesigningPlaces">
+        <p>Do you think about the weather much?  Architects do too!</p>
+		<p>In places that have four seasons, it's important to keep the spaces we design cool in the summer and warm in the winter.  There are many things that can help us do this but the easiest way is to look at the sun!  In summer the sun is high in the sky and in winter it is low.</p>
+		<p>If we think about this in the right way we can save energy by not having to use heaters or air conditioners as much.</p>
+		<p>There are also places where it is cold or hot all year.  In hot climates we can create shady spaces filled with plants, to cool us down with breezes.  When it's cold we can face the windows toward the sun.  If you live in a cold place isn't it nice to sit inside with the sun shining through the window, reading a good book, curled up like a cat?</p>
+      </div>
+       
+      <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+    </div> <!-- end content -->  
+  </div><!--/spacechar-->        
+	
+	<!------------------------------------- Definition box ----------------------------------- -->
+	<div data-role="popup" id="fractal_geometry" data-position-to="window" data-overlay-theme="a" style="text-align:center;">
+		<div id="node-pop">
+			<p>Fractal Geometry</p>
+			<p>A fractal is a shape that is rough, or broken up into smaller parts. In art, these shapes are often made by computers, not by hand.</p>
+		</div>
+    </div>
+	<!---------------------------------------------------------------------------------------- -->
+	
+    <div class="micbtnholder"><div class="micbtnDesigningPlaces" id="playstopDesigningForSun"></div></div>
+    <div class="bDesigningPlaces"><div class="rwDesigningPlaces" id="DesigningForSunaudiobbtn"></div></div>
+    <div class="plDesigningPlaces"><div class="plpsDesigningPlaces" id="DesigningForSunaudioplbtn"></div></div>
+    <div class="fDesigningPlaces"><div class="fwDesigningPlaces" id="DesigningForSunaudiofbtn"></div></div>
+    <div id="actualaudio-DesigningForSun" style="visibility:hidden;"></div>
+  <!-- </div> -->
+  
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+ 
+	var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      $('div#pol2').css("z-index", 2);
+      $('div#pol1').css("z-index", 1);
+      $('div#pol1 > img').css("-webkit-transform", "rotate(0deg)");
+      $('div#pol2 > img').css("-webkit-transform", "rotate(5deg)");
+      $('div#pol3 > img').css("-webkit-transform", "rotate(-3deg)");
+      
+	  if(sound.canPlayType('audio/mpeg')) {
+			$('#actualaudio-DesigningForSun').html('<audio id="DesigningForSunaudio" controls preload onpause="playsDesigningPlaces()" onplay="pauseDesigningPlaces()"><source src="audio/Designing_Places/Designing_For_Sun.mp3" type="audio/mpeg"></audio>');
+		  }             
+	  $("#sub-designing-places-what-do-architects-think-about-designing-for-the-sun").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+	})();
+    
+	$('.homelinkbh').on('tap', function() { mainaudiobg.play(); bgsoundDesigningPlacesToday.pause(); bgsoundDesigningPlacesToday.currentTime = 0;});
+    
+	$("#pol1").on('tap', function() {
+      $('#ulanlink')[0].click();
+    });
+    $("#pol2").on('tap', function() {
+      $('#couplelink')[0].click();
+    });
+	$("#pol3").on('tap', function() {
+      $('#insidelink')[0].click();
+    });
+    function goBack() {
+      $.mobile.changePage("sub-designing-places-what-do-architects-think-about.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsDesigningPlace() {
+         bgsoundDesigningPlaces.play();
+    }
+       
+    function pauseDesigningPlace() {
+         bgsoundDesigningPlaces.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+    $("#playstopDesigningForSun").on('tap', function() {
+      if(!playing) {
+        DesigningForSunaudio.play();
+        $('.micbtnDesigningPlaces').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        DesigningForSunaudio.pause(); DesigningForSunaudio.currentTime = 0;
+        $('.micbtnDesigningPlaces').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#DesigningForSunaudioplbtn").on('tap', function() {
+      if(!paused) {
+        DesigningForSunaudio.pause();
+        paused = true;
+      } else {
+        DesigningForSunaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#DesigningForSunaudiofbtn").on('tap', function() {
+      var ctime = DesigningForSunaudio.currentTime;
+      DesigningForSunaudio.currentTime = ctime + 10;
+    });
+    
+    $("#DesigningForSunaudiobbtn").on('tap', function() {
+      var ctime = DesigningForSunaudio.currentTime;
+      DesigningForSunaudio.currentTime = ctime - 10;
+    });
+    
+    $("#DesigningForSunaudiopsbtn").on('tap', function() {
+      DesigningForSunaudio.pause();
+    });
+  </script>
+  <script src="js/threecardLogic.js"></script>  <!-- for card dragging effects -->
+</div> <!--//home-->
