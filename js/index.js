@@ -850,3 +850,11 @@ bgsoundDesigningPlaces.addEventListener('ended', function() { bgsoundDesigningPl
 
 function pauseDesigningPlaces() { bgsoundDesigningPlaces.pause() }
 function playsDesigningPlaces() { bgsoundDesigningPlaces.play(); $(".audiopanel").css({"backgroundPosition":"0px 0px"}); }
+
+/************************ Latin America Then And Now *******************************/
+var bgsoundLatinAmerica = new Audio();
+bgsoundLatinAmerica.src = "audio/Latin_America/Latin_America_BG_Dummy.mp3";
+bgsoundLatinAmerica.addEventListener('ended', function() { bgsoundLatinAmerica.play(); });
+
+function pauseLatinAmerica() { bgsoundLatinAmerica.pause() }
+function playsLatinAmerica() { bgsoundLatinAmerica.play(); $(".audiopanel").css({"backgroundPosition":"0px 0px"}); }

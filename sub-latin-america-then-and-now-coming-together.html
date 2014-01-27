@@ -1,0 +1,128 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-latin-america-then-and-now-coming-together">
+  <script src="js/slidebar_latin_america_then_and_now.js"></script>
+  <link rel="stylesheet" href="css/style_latin_america_then_and_now.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnLatinAmericas"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnLatinAmericas"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnLatinAmericas"></div></div>
+  <div class="infobtnholder"><div class="infobtnLatinAmericas"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnLatinAmericas"></div></div>
+  <div class="menubtnholder"><div class="menubtnLatinAmericas"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:14px;"><h1>Coming together to create new worlds</h1></div>
+  <div id="africanlink" style="position:absolute;left: 690px;top: 295px;width: 135px;height: 70px;"></div>
+  <div id="europeanlink" style="position:absolute;left: 725px;top: 74px;width: 200px;height: 80px;"></div>
+  <div id="indigenouslink" style="position:absolute;left: 305px;top: 345px;width: 168px;height: 70px;"></div>
+  <div id="mestizolink" style="position:absolute;left: 556px;top: 200px;width: 64px;height: 50px;"></div>
+  <div id="mixinglink" style="position:absolute;left: 563px;top: 545px;width: 218px;height: 45px;"></div>
+  <div id="mulattolink" style="position:absolute;left: 629px;top: 200px;width: 50px;height: 50px;"></div>
+  <div data-role="content" class="kidzcontent">
+	<div class="navLatinAmericas-ComingTogether">
+        <p>Latin America presents a rich tapestry of ethnicities, beliefs, and languages. One of the best words to describe this unique 'mixing' is SYNCRETISM.</p>
+		<p>What is syncretism?</p>
+		<p>Well, at it's heart syncretism means the merging of difference. It is this process of merging  - of peoples, beliefs, languages, histories, cultures, foods, festivals  that shaped the New World into many new worlds.</p>
+    </div>
+  <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+  </div> <!-- end content -->  
+    
+  
+  <!--<div class="audiopanel">-->
+    <!-- images are in slidebarnat.js 
+         note: change the ids to be able play the narration
+    -->
+    <div class="micbtnholder"><div class="micbtnLatinAmericas" id="playstopComingTogether"></div></div>
+    <div class="bLatinAmericas"><div class="rwLatinAmericas" id="ComingTogetheraudiobbtn"></div></div>
+    <div class="plLatinAmericas"><div class="plpsLatinAmericas" id="ComingTogetheraudioplbtn"></div></div>
+    <div class="fLatinAmericas"><div class="fwLatinAmericas" id="ComingTogetheraudiofbtn"></div></div>
+    <div id="actualaudio-ComingTogether" style="visibility:hidden;"></div>
+  <!--</div>-->
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+    var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      if(sound.canPlayType('audio/mpeg')) {
+        $('#actualaudio-ComingTogether').html('<audio id="ComingTogetheraudio" controls preload onpause="playsLatinAmericas()" onplay="pauseLatinAmericas()"><source src="audio/Latin_America/Coming_Together.mp3" type="audio/mpeg"></audio>');
+      } 
+    
+      $("#sub-latin-america-then-and-now-coming-together").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+    })();
+    
+    $('#africanlink').on('tap', function() {
+      $.mobile.changePage("sub-latin-america-then-and-now-coming-together-African.html", {transition: "slide"});
+    });
+	$('#europeanlink').on('tap', function() {
+      $.mobile.changePage("sub-latin-america-then-and-now-coming-together-European.html", {transition: "slide"});
+    });
+	$('#indigenouslink').on('tap', function() {
+      $.mobile.changePage("sub-latin-america-then-and-now-coming-together-Indigenous.html", {transition: "slide"});
+    });
+	$('#mestizolink').on('tap', function() {
+      $.mobile.changePage("sub-latin-america-then-and-now-coming-together-Mestizo.html", {transition: "slide"});
+    });
+	$('#mixinglink').on('tap', function() {
+      $.mobile.changePage("sub-latin-america-then-and-now-coming-together-Mixing-it-all.html", {transition: "slide"});
+    });
+	$('#mulattolink').on('tap', function() {
+      $.mobile.changePage("sub-latin-america-then-and-now-coming-together-Mulatto.html", {transition: "slide"});
+    });
+    
+    $('.homelinkbh').on('tap', function() { mainaudiobg.play(); bgsoundLatinAmerica.pause(); bgsoundLatinAmerica.currentTime = 0;});
+    
+    function goBack() {
+      $.mobile.changePage("sub-latin-america-then-and-now.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsLatinAmerica() {
+         bgsoundLatinAmerica.play();
+    }
+       
+    function pauseLatinAmerica() {
+         bgsoundLatinAmerica.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+    $("#playstopComingTogether").on('tap', function() {
+      if(!playing) {
+        ComingTogetheraudio.play();
+        $('.micbtnLatinAmericas').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        ComingTogetheraudio.pause(); ComingTogetheraudio.currentTime = 0;
+        $('.micbtnLatinAmericas').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#ComingTogetheraudioplbtn").on('tap', function() {
+      if(!paused) {
+        ComingTogetheraudio.pause();
+        paused = true;
+      } else {
+        ComingTogetheraudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#ComingTogetheraudiofbtn").on('tap', function() {
+      var ctime = ComingTogetheraudio.currentTime;
+      ComingTogetheraudio.currentTime = ctime + 10;
+    });
+    
+    $("#ComingTogetheraudiobbtn").on('tap', function() {
+      var ctime = ComingTogetheraudio.currentTime;
+      ComingTogetheraudio.currentTime = ctime - 10;
+    });
+    
+    $("#ComingTogetheraudiopsbtn").on('tap', function() {
+      ComingTogetheraudio.pause();
+    });
+  </script>
+</div> <!--//home-->

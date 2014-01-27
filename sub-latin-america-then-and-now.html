@@ -1,0 +1,137 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-latin-america-then-and-now">
+  <!-- <script src="js/slidebarnat.js"></script> -->
+  <script src="js/slidebar_latin_america_then_and_now.js"></script>
+  <link rel="stylesheet" href="css/style_latin_america_then_and_now.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnLatinAmericas"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnLatinAmericas"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnLatinAmericas"></div></div>
+  <div class="infobtnholder"><div class="infobtnLatinAmericas"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnLatinAmericas"></div></div>
+  <div class="menubtnholder"><div class="menubtnLatinAmericas"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:14px;"><h1>Latin America:  The Old and the New</h1></div>
+  
+    <div data-role="content" class="kidzcontent">
+      <div class="navLatinAmericas-content">
+        <p>Latin-America  not just one nation but a region of the world filled with many different languages, cultures, traditions and nations.</p>
+		<p>Come with us on a journey to find out more about this unique part of the world.  Visit the way it was, explore how it is today and imagine what it might be tomorrow.</p>
+      </div>
+        
+      <div class="navbtn1">
+        <p><a href="sub-latin-america-then-and-now-coming-together.html" data-transition="slide"><img src="css/images/9-12/People_and_Places/Latin_America/coming_Together.png"></a></p>
+      </div>
+      <div class="navbtn2">
+        <p><a href="sub-latin-america-then-and-now-festivals-and-foods.html" data-transition="slide"><img src="css/images/9-12/People_and_Places/Latin_America/Festivals_Foods.png"></a></p>
+      </div>
+      <div class="navbtn3">
+        <p><a href="sub-latin-america-then-and-now-future-world.html" data-transition="slide"><img src="css/images/9-12/People_and_Places/Latin_America/Future_Worlds.png"></a></p>
+      </div>
+      <div class="navbtn4">
+        <p><a href="sub-latin-america-then-and-now-what-is-Latin-America.html" data-transition="slide"><img src="css/images/9-12/People_and_Places/Latin_America/What_Is_Latin_Americas.png"></a></p>
+      </div>
+        
+      <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+    </div> <!-- end content -->  
+    
+  
+  <!--<div class="audiopanel">-->
+    <!-- images are in slidebarnat.js -->
+    <div class="micbtnholder"><div class="micbtnLatinAmericas" id="playstopLatinAmerica"></div></div>
+    <div class="bLatinAmericas"><div class="rwLatinAmericas" id="LatinAmericaaudiobbtn"></div></div>
+    <div class="plLatinAmericas"><div class="plpsLatinAmericas" id="LatinAmericaaudioplbtn"></div></div>
+    <div class="fLatinAmericas"><div class="fwLatinAmericas" id="LatinAmericaaudiofbtn"></div></div>
+    <div id="actualaudio-LatinAmerica" style="visibility:hidden;"></div>
+  <!--</div>-->
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+    var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      if(sound.canPlayType('audio/mpeg')) {
+        $('#actualaudio-LatinAmerica').html('<audio id="LatinAmericaaudio" controls preload onpause="playsLatinAmerica()" onplay="pauseLatinAmerica()"><source src="audio/Latin_America/Latin_America.mp3" type="audio/mpeg"></audio>');
+      } 
+    
+      $("#sub-latin-america-then-and-now").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+    })();
+    
+    $('.homelinkbh').on('tap', function() { bgsoundLatinAmerica.pause(); bgsoundLatinAmerica.currentTime = 0; mainaudiobg.play(); });
+    
+    function goBack() {
+      $.mobile.changePage("sub-peopleplaces.html", {transition: "slide", reverse: true });
+      bgsoundLatinAmerica.pause(); 
+      bgsoundLatinAmerica.currentTime = 0;
+      peopleplacessoundbg.play();
+    }
+    
+    function playsLatinAmerica() {
+         bgsoundLatinAmerica.play();
+    }
+       
+    function pauseLatinAmerica() {
+         bgsoundLatinAmerica.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+	
+    $("#playstopLatinAmerica").on('tap', function() {
+      if(!playing) {
+        LatinAmericaaudio.play();
+        $('.micbtnLatinAmericas').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        LatinAmericaaudio.pause(); LatinAmericaaudio.currentTime = 0;
+        $('.micbtnLatinAmericas').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#LatinAmericaaudioplbtn").on('tap', function() {
+      if(!paused) {
+        LatinAmericaaudio.pause();
+        paused = true;
+      } else {
+        LatinAmericaaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#LatinAmericaaudiofbtn").on('tap', function() {
+      var ctime = LatinAmericaaudio.currentTime;
+      LatinAmericaaudio.currentTime = ctime + 10;
+    });
+    
+    $("#LatinAmericaaudiobbtn").on('tap', function() {
+      var ctime = LatinAmericaaudio.currentTime;
+      LatinAmericaaudio.currentTime = ctime - 10;
+    });
+    
+    $("#LatinAmericaaudiopsbtn").on('tap', function() {
+      LatinAmericaaudio.pause();
+      //$(".audiopanel").css({"backgroundPosition":"0px 0px"});
+    });
+    
+    $('.navbtn1').on('tap', function() { 
+      nav1Effects(); 
+    });
+    
+    $('.navbtn2').on('tap', function() { 
+      nav2Effects(); 
+    });
+    
+    $('.navbtn3').on('tap', function() { 
+      nav3Effects(); 
+    });
+    
+    $('.navbtn4').on('tap', function() { 
+      nav4Effects(); 
+    });
+  </script>
+</div> <!--//home-->

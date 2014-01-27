@@ -68,7 +68,7 @@ $(function(){
       }
 
       this.OnDrag = function(event) {
-        cardSlideSound.play();
+        //cardSlideSound.play();
         this.drag = [];
         var touches = event.originalEvent.touches || [event.originalEvent];
         for(var t=0; t<touches.length; t++) {

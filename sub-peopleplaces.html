@@ -5,7 +5,7 @@
     <div id="titleb-holder"><h1 style="margin-top:184px;">People and Places</h1></div>
     
     <div style="width:90%;margin:auto;">
-      <div class="aclink"><a href="#" data-transition="slide" id="agmovielink"><img src="css/images/9-12/People_and_Places/megacitiesbtn.png"></a></div>
+      <div class="aclink"><a href="sub-latin-america-then-and-now.html" data-transition="slide" id="latinamerica"><img src="css/images/9-12/People_and_Places/megacitiesbtn.png"></a></div>
       <div class="aclink"><a href="sub-asia-today.html" data-transition="slide" id="asiatoday"><img src="css/images/9-12/People_and_Places/asiabtn.png"></a></div>
       <div class="aclink"><a href="sub-changing-places.html" data-transition="slide" id="changingplaces"><img src="css/images/9-12/People_and_Places/travellersbtn.png"></a></div>
       <div class="aclink"><a href="#" data-transition="slide"><img src="css/images/9-12/People_and_Places/coolplacesbtn.png"></a></div><br>
@@ -46,6 +46,11 @@
 			}
 			if(subjectId == "designingplaces") {
 				bgsoundDesigningPlaces.play();
+				peopleplacessoundbg.pause();
+				peopleplacessoundbg.currentTime = 0;
+			}
+			if(subjectId == "latinamerica") {
+				bgsoundLatinAmerica.play();
 				peopleplacessoundbg.pause();
 				peopleplacessoundbg.currentTime = 0;
 			}

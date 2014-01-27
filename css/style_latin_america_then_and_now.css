@@ -1,0 +1,561 @@
+/********* Latin America Then And Now **********/
+
+#sub-latin-america-then-and-now, #sub-latin-america-then-and-now-what-is-Latin-America, #sub-latin-america-then-and-now-festivals-and-foods, #sub-latin-america-then-and-now-festivals-and-foods-Food, #sub-latin-america-then-and-now-festivals-and-foods-Music-and-Dance{
+  background:url('images/9-12/People_and_Places/Latin_America/Latin_America_BG.png') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+#sub-latin-america-then-and-now-coming-together{
+  background:url('images/9-12/People_and_Places/Latin_America/Coming_Together_To_Create_New_Worlds/Coming_Together_BG.png') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+#sub-latin-america-then-and-now-coming-together-African {
+  background:url('images/9-12/People_and_Places/Latin_America/Coming_Together_To_Create_New_Worlds/African/African_BG.png') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+#sub-latin-america-then-and-now-coming-together-European{
+  background:url('images/9-12/People_and_Places/Latin_America/Coming_Together_To_Create_New_Worlds/European/European_BG.png') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+#sub-latin-america-then-and-now-coming-together-Indigenous{
+  background:url('images/9-12/People_and_Places/Latin_America/Coming_Together_To_Create_New_Worlds/Indigenous/Indigenous_Bg.png') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+#sub-latin-america-then-and-now-coming-together-Mestizo{
+  background:url('images/9-12/People_and_Places/Latin_America/Coming_Together_To_Create_New_Worlds/Mestizo/Mestizo_BG.png') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+#sub-latin-america-then-and-now-coming-together-Mulatto{
+  background:url('images/9-12/People_and_Places/Latin_America/Coming_Together_To_Create_New_Worlds/Mullato/Mullato_BG.png') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+#sub-latin-america-then-and-now-coming-together-Mixing-it-all{
+  background:url('images/9-12/People_and_Places/Latin_America/Coming_Together_To_Create_New_Worlds/Mixing_It_Up/Mixing_It_All_BG_Dummy.jpg') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+#sub-latin-america-then-and-now-festivals-and-foods-Carnival {
+  background:url('images/9-12/People_and_Places/Latin_America/Festivals_And_Food/Carnival/Carnival_BG.png') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+#sub-latin-america-then-and-now-festivals-and-foods-the-day-of-the-dead{
+  background:url('images/9-12/People_and_Places/Latin_America/Festivals_And_Food/The_Day_Of_The_Deas/The_Day_Of_The_Dead_BG.png') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+.plLatinAmericas, .psLatinAmericas, .bLatinAmericas, .fLatinAmericas {
+  position:absolute;
+  top:670px;
+  left:1024px;
+  z-index:20;
+}
+
+.micbtnLatinAmericas {
+  background:url('images/9-12/People_and_Places/micpp.png') no-repeat 0 -81px;
+  height:81px;
+  width:81px;
+}
+
+.rwLatinAmericas {
+  background:url('images/9-12/People_and_Places/rwpp.png') no-repeat 0 -73px;
+  height:73px;
+  width:73px;
+}
+
+.plpsLatinAmericas {
+  background:url('images/9-12/People_and_Places/playpp.png') no-repeat 0 -73px;
+  height:73px;
+  width:73px;
+}
+
+.fwLatinAmericas {
+  background:url('images/9-12/People_and_Places/fwpp.png') no-repeat 0 -73px;
+  height:73px;
+  width:73px;
+}
+
+.menubtnLatinAmericas {
+  background:url('images/9-12/People_and_Places/menupp.png') no-repeat 0 -90px;
+  height:90px;
+  width:90px;
+}
+
+
+.homebtnLatinAmericas {
+  background:url('images/9-12/People_and_Places/mappp.png') no-repeat 0 -74px;
+  height:74px;
+  width:80px;
+}
+
+.mpbtnLatinAmericas {
+  background:url('images/9-12/People_and_Places/mpointspp.png') no-repeat 0 -84px;
+  height:79px;
+  width:80px;
+}
+
+.cpbtnLatinAmericas {
+  background:url('images/9-12/People_and_Places/ctrlpnlpp.png') no-repeat 0 -74px;
+  height:74px;
+  width:74px;
+}
+
+.infobtnLatinAmericas {
+  background:url('images/9-12/People_and_Places/infopp.png') no-repeat 0 -74px;
+  height:74px;
+  width:74px;
+}
+
+.credsbtnLatinAmericas {
+  background:url('images/9-12/People_and_Places/creditspp.png') no-repeat 0 -74px;
+  height:74px;
+  width:74px;
+}
+
+.navtwobtn1{
+	left: 60px;
+    position: absolute;
+    top: 310px;
+}
+
+.navtwobtn3 {
+    right: 60px;
+    position: absolute;
+    top: 310px;
+}
+
+.navtitleholderLatinAmericas{
+	width: 435px;
+	height: 68px;
+	position: absolute;
+	top: 169px;
+	left: 295px;
+	text-align: center;
+	line-height: 32px;
+}
+
+.navtitleholderLatinAmericas h1{
+	text-transform: uppercase;
+	color: #FFF;
+	font-family: comic sans ms;
+	padding: 0;
+	margin: 0;
+	font-weight: bold;
+}
+
+.bptitleholderLatinAmericas {
+  width:627px;
+  height:68px;
+  text-align:center;
+  line-height:28px;
+  position:absolute;
+  top:169px;
+  left:194px;
+}
+
+.bptitleholderLatinAmericas h1
+ {
+  text-transform:uppercase;
+  color: #FFFFFF;
+  font-family:"comic sans ms";
+  font-weight:bold;
+  padding:0;
+  margin:0;
+}
+
+.navLatinAmericas-content{
+  position:absolute;
+  left:305px;
+  top:263px;
+  width:410px;
+  height:359px;
+  overflow:auto;
+  text-align:center;
+  font-family:"comic sans ms";
+  font-size:18px;
+  font-weight:normal;
+  color:#000000;
+}
+
+.navLatinAmericas-content p {
+  margin-top:0 !important;
+}
+
+.navLatinAmericas-content3 {
+  position:absolute;
+  left:59px;
+  top:245px;
+  width:920px;
+  height:160px;
+  overflow-y:scroll;
+  text-align:left;
+  font-family:"comic sans ms";
+  font-size:18px;
+  font-weight:normal;
+  color:#000000;
+}
+
+.navLatinAmericas-ComingTogether{
+	position: absolute;
+	left: 106px;
+	top: 132px;
+	width: 430px;
+	height: 200px;
+	overflow: auto;
+	text-align: left;
+	font-family: "comic sans ms";
+	font-size: 18px;
+	font-weight: normal;
+	color: #000000;
+}
+
+.navLatinAmericas-African{
+	position: absolute;
+	left: 127px;
+	top: 145px;
+	width: 405px;
+	height: 230px;
+	overflow: auto;
+	text-align: left;
+	font-family: "comic sans ms";
+	font-size: 18px;
+	font-weight: normal;
+	color: #000000;
+}
+
+.navLatinAmericas-European{
+	position: absolute;
+	left: 642px;
+	top: 235px;
+	width: 290px;
+	height: 350px;
+	overflow: auto;
+	text-align: left;
+	font-family: "comic sans ms";
+	font-size: 18px;
+	font-weight: normal;
+	color: #000000;
+}
+
+.navLatinAmericas-Indigenous{
+	position: absolute;
+	left: 677px;
+	top: 230px;
+	width: 250px;
+	height: 360px;
+	overflow: auto;
+	text-align: left;
+	font-family: "comic sans ms";
+	font-size: 18px;
+	font-weight: normal;
+	color: #000000;
+}
+
+.navLatinAmericas-Mestizo{
+	position: absolute;
+	left: 115px;
+	top: 132px;
+	width: 415px;
+	height: 213px;
+	overflow: auto;
+	text-align: left;
+	font-family: "comic sans ms";
+	font-size: 18px;
+	font-weight: normal;
+	color: #000000;
+}
+
+.navLatinAmericas-Mulatto{
+	position: absolute;
+	left: 114px;
+	top: 132px;
+	width: 417px;
+	height: 232px;
+	overflow: auto;
+	text-align: left;
+	font-family: "comic sans ms";
+	font-size: 18px;
+	font-weight: normal;
+	color: #000000;
+}
+
+.navLatinAmericas-MixingItAll{
+	position: absolute;
+	left: 106px;
+	top: 132px;
+	width: 430px;
+	height: 200px;
+	overflow: auto;
+	text-align: left;
+	font-family: "comic sans ms";
+	font-size: 18px;
+	font-weight: normal;
+	color: #000000;
+}
+
+.navLatinAmericas-Carnival{
+	position: absolute;
+	left: 575px;
+	top: 154px;
+	width: 396px;
+	height: 395px;
+	overflow: auto;
+	text-align: left;
+	font-family: "comic sans ms";
+	font-size: 18px;
+	font-weight: normal;
+	color: #000000;
+}
+
+.navLatinAmericas-DayOfDead{
+	position: absolute;
+	left: 545px;
+	top: 170px;
+	width: 396px;
+	height: 346px;
+	overflow: auto;
+	text-align: left;
+	font-family: "comic sans ms";
+	font-size: 18px;
+	font-weight: normal;
+	color: #000000;
+}
+
+.bpcontentLatinAmericas{
+  width:413px;
+  height:356px;
+  position:absolute;
+  left:550px;
+  top:266px;
+  overflow:auto;
+  font-family:"comic sans ms";
+  font-size:18px;
+  font-weight:normal;
+  text-align:left;
+  color:#000000;
+}
+
+#sub-latin-america-then-and-now .bptitleholder h1, #sub-latin-america-then-and-now-what-is-Latin-America .bptitleholder h1, #sub-latin-america-then-and-now-festivals-and-foods .bptitleholder h1, #sub-latin-america-then-and-now-festivals-and-foods-Food .bptitleholder h1, #sub-latin-america-then-and-now-festivals-and-foods-Music-and-Dance .bptitleholder h1{
+	text-transform: uppercase;
+	color: #ffffff !important;
+	font-family: "comic sans ms";
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#sub-latin-america-then-and-now-coming-together .bptitleholder h1{
+	text-transform: uppercase;
+	color: #f8edd7 !important;
+	font-family: "comic sans ms";
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#sub-latin-america-then-and-now-coming-together-African .bptitleholder h1{
+	text-transform: uppercase;
+	color: #f8edd7 !important;
+	font-family: "comic sans ms";
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#sub-latin-america-then-and-now-coming-together-European .bptitleholder h1{
+	text-transform: uppercase;
+	color: #f8edd7 !important;
+	font-family: "comic sans ms";
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#sub-latin-america-then-and-now-coming-together-Indigenous .bptitleholder h1{
+	text-transform: uppercase;
+	color: #f8edd7 !important;
+	font-family: "comic sans ms";
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#sub-latin-america-then-and-now-coming-together-Mestizo .bptitleholder h1{
+	text-transform: uppercase;
+	color: #f8edd7 !important;
+	font-family: "comic sans ms";
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#sub-latin-america-then-and-now-coming-together-Mulatto .bptitleholder h1{
+	text-transform: uppercase;
+	color: #f8edd7 !important;
+	font-family: "comic sans ms";
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#sub-latin-america-then-and-now-coming-together-Mixing-it-all .bptitleholder h1{
+	text-transform: uppercase;
+	color: #f8edd7 !important;
+	font-family: "comic sans ms";
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#sub-latin-america-then-and-now-festivals-and-foods-Carnival .bptitleholder h1{
+	text-transform: uppercase;
+	color: #f8edd7 !important;
+	font-family: "comic sans ms";
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#sub-latin-america-then-and-now-festivals-and-foods-the-day-of-the-dead .bptitleholder h1{
+	text-transform: uppercase;
+	color: #f8edd7 !important;
+	font-family: "comic sans ms";
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#sub-latin-america-then-and-now .bptitleholder, #sub-latin-america-then-and-now-what-is-Latin-America .bptitleholder, #sub-latin-america-then-and-now-festivals-and-foods .bptitleholder, #sub-latin-america-then-and-now-festivals-and-foods-Food .bptitleholder, #sub-latin-america-then-and-now-festivals-and-foods-Music-and-Dance .bptitleholder{
+	width: 627px;
+	height: 68px;
+	text-align: center;
+	line-height: 37px;
+	position: absolute;
+	top: 155px;
+	left: 194px;
+}
+
+#sub-latin-america-then-and-now-coming-together .bptitleholder{
+	width: 740px;
+	height: 55px;
+	text-align: left;
+	line-height: 40px;
+	position: absolute;
+	top: 26px;
+	left: 19px;
+	font-size: 11px;
+	-webkit-transform: rotate(-5deg);
+}
+
+#sub-latin-america-then-and-now-coming-together-African .bptitleholder{
+	width: 740px;
+	height: 55px;
+	text-align: left;
+	line-height: 40px;
+	position: absolute;
+	top: 26px;
+	left: 19px;
+	font-size: 11px;
+}
+
+#sub-latin-america-then-and-now-coming-together-European .bptitleholder{
+	width: 740px;
+	height: 55px;
+	text-align: left;
+	line-height: 40px;
+	position: absolute;
+	top: 26px;
+	left: 19px;
+	font-size: 11px;
+}
+
+#sub-latin-america-then-and-now-coming-together-Indigenous .bptitleholder{
+	width: 740px;
+	height: 55px;
+	text-align: left;
+	line-height: 40px;
+	position: absolute;
+	top: 26px;
+	left: 19px;
+	font-size: 11px;
+}
+
+#sub-latin-america-then-and-now-coming-together-Mestizo .bptitleholder{
+	width: 740px;
+	height: 55px;
+	text-align: left;
+	line-height: 40px;
+	position: absolute;
+	top: 26px;
+	left: 19px;
+	font-size: 11px;
+}
+
+#sub-latin-america-then-and-now-coming-together-Mulatto .bptitleholder{
+	width: 740px;
+	height: 55px;
+	text-align: left;
+	line-height: 40px;
+	position: absolute;
+	top: 26px;
+	left: 19px;
+	font-size: 11px;
+}
+
+#sub-latin-america-then-and-now-coming-together-Mixing-it-all .bptitleholder{
+	width: 740px;
+	height: 55px;
+	text-align: left;
+	line-height: 40px;
+	position: absolute;
+	top: 26px;
+	left: 19px;
+	font-size: 11px;
+}
+#sub-latin-america-then-and-now-festivals-and-foods-Carnival .bptitleholder{
+	width: 740px;
+	height: 55px;
+	text-align: left;
+	line-height: 40px;
+	position: absolute;
+	top: 26px;
+	left: 19px;
+	font-size: 11px;
+}
+
+#sub-latin-america-then-and-now-festivals-and-foods-the-day-of-the-dead .bptitleholder{
+	width: 740px;
+	height: 55px;
+	text-align: left;
+	line-height: 40px;
+	position: absolute;
+	top: 26px;
+	left: 19px;
+	font-size: 11px;
+}

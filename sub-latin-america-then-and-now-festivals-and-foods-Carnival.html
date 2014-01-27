@@ -1,0 +1,110 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-latin-america-then-and-now-festivals-and-foods-Carnival">
+  <script src="js/slidebar_latin_america_then_and_now.js"></script>
+  <link rel="stylesheet" href="css/style_latin_america_then_and_now.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnLatinAmericas"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnLatinAmericas"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnLatinAmericas"></div></div>
+  <div class="infobtnholder"><div class="infobtnLatinAmericas"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnLatinAmericas"></div></div>
+  <div class="menubtnholder"><div class="menubtnLatinAmericas"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:14px;"><h1></h1></div>
+  <!-- <div id="Carnivallink" style="position:absolute;left: 500px;top: 143px;width: 493px;height: 145px;"></div> -->  
+  <div data-role="content" class="kidzcontent">
+	<div class="navLatinAmericas-Carnival">
+        <p>When most people think of Carnival it is the street parades of Rio de Janeiro that capture their imagination but carnival is something that is celebrated all over the continent.</p>
+		<p>Traditionally, carnival is a celebration after all the fasting a good behaviour of Lent is over.</p>
+		<p>Carnival brings together people, food, music and dance and of course a dazzling array of costumes.</p>
+		<p>Carnival is often thought to be about inverting the world  or getting a chance to dress up and be what you dream of being a king or queen, a mythic god or a fantastical creature.</p>
+		<p>A big change in the Carnival celebrations in Rio happened in the 1980s when they started to show the parades on TV.  This means lots of people in lots of different countries get to see the parades but  on the downside the parade takes place in a restricted area and it can be too expensive for people to attend so they become excluded from their own celebrations.</p>
+    </div>
+  <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+  </div> <!-- end content -->  
+    
+  
+  <!--<div class="audiopanel">-->
+    <!-- images are in slidebarnat.js 
+         note: change the ids to be able play the narration
+    -->
+    <div class="micbtnholder"><div class="micbtnLatinAmericas" id="playstopCarnival"></div></div>
+    <div class="bLatinAmericas"><div class="rwLatinAmericas" id="Carnivalaudiobbtn"></div></div>
+    <div class="plLatinAmericas"><div class="plpsLatinAmericas" id="Carnivalaudioplbtn"></div></div>
+    <div class="fLatinAmericas"><div class="fwLatinAmericas" id="Carnivalaudiofbtn"></div></div>
+    <div id="actualaudio-Carnival" style="visibility:hidden;"></div>
+  <!--</div>-->
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+    var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      if(sound.canPlayType('audio/mpeg')) {
+        $('#actualaudio-Carnival').html('<audio id="Carnivalaudio" controls preload onpause="playsLatinAmericas()" onplay="pauseLatinAmericas()"><source src="audio/Latin_America/Carnival.mp3" type="audio/mpeg"></audio>');
+      } 
+    
+      $("#sub-latin-america-then-and-now-festivals-and-foods-Carnival").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+    })();
+    
+    /* $('#Carnivallink').on('tap', function() {
+      $.mobile.changePage("sub-latin-america-then-and-now-festivals-and-foods-Carnival-Carnival.html", {transition: "slide"});
+    }); */
+	
+    $('.homelinkbh').on('tap', function() { mainaudiobg.play(); bgsoundLatinAmerica.pause(); bgsoundLatinAmerica.currentTime = 0;});
+    
+    function goBack() {
+      $.mobile.changePage("sub-latin-america-then-and-now-festivals-and-foods.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsLatinAmerica() {
+         bgsoundLatinAmerica.play();
+    }
+       
+    function pauseLatinAmerica() {
+         bgsoundLatinAmerica.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+    $("#playstopCarnival").on('tap', function() {
+      if(!playing) {
+        Carnivalaudio.play();
+        $('.micbtnLatinAmericas').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        Carnivalaudio.pause(); Carnivalaudio.currentTime = 0;
+        $('.micbtnLatinAmericas').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#Carnivalaudioplbtn").on('tap', function() {
+      if(!paused) {
+        Carnivalaudio.pause();
+        paused = true;
+      } else {
+        Carnivalaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#Carnivalaudiofbtn").on('tap', function() {
+      var ctime = Carnivalaudio.currentTime;
+      Carnivalaudio.currentTime = ctime + 10;
+    });
+    
+    $("#Carnivalaudiobbtn").on('tap', function() {
+      var ctime = Carnivalaudio.currentTime;
+      Carnivalaudio.currentTime = ctime - 10;
+    });
+    
+    $("#Carnivalaudiopsbtn").on('tap', function() {
+      Carnivalaudio.pause();
+    });
+  </script>
+</div> <!--//home-->

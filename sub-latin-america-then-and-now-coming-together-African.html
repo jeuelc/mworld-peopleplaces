@@ -1,0 +1,108 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-latin-america-then-and-now-coming-together-African">
+  <script src="js/slidebar_latin_america_then_and_now.js"></script>
+  <link rel="stylesheet" href="css/style_latin_america_then_and_now.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnLatinAmericas"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnLatinAmericas"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnLatinAmericas"></div></div>
+  <div class="infobtnholder"><div class="infobtnLatinAmericas"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnLatinAmericas"></div></div>
+  <div class="menubtnholder"><div class="menubtnLatinAmericas"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:14px;"><h1></h1></div>
+  <!-- <div id="africanlink" style="position:absolute;left: 500px;top: 143px;width: 493px;height: 145px;"></div> -->  
+  <div data-role="content" class="kidzcontent">
+	<div class="navLatinAmericas-African">
+        <p>The European colonisers had found the indigenous population didn't make good slave labour, especially when exposed to the hardships of plantation life.</p>
+		<p>The Atlantic slave trade  which saw slaves captured in west Africa and transported by slave traders to the new world - became the key source for labour on sugar cane and coffee plantations throughout Latin America.</p>
+		<p>The slave trade changed the face of Latin America introducing new people with different languages and traditions and transforming the music, food and culture of the continent.</p>
+    </div>
+  <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+  </div> <!-- end content -->  
+    
+  
+  <!--<div class="audiopanel">-->
+    <!-- images are in slidebarnat.js 
+         note: change the ids to be able play the narration
+    -->
+    <div class="micbtnholder"><div class="micbtnLatinAmericas" id="playstopAfrican"></div></div>
+    <div class="bLatinAmericas"><div class="rwLatinAmericas" id="Africanaudiobbtn"></div></div>
+    <div class="plLatinAmericas"><div class="plpsLatinAmericas" id="Africanaudioplbtn"></div></div>
+    <div class="fLatinAmericas"><div class="fwLatinAmericas" id="Africanaudiofbtn"></div></div>
+    <div id="actualaudio-African" style="visibility:hidden;"></div>
+  <!--</div>-->
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+    var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      if(sound.canPlayType('audio/mpeg')) {
+        $('#actualaudio-African').html('<audio id="Africanaudio" controls preload onpause="playsLatinAmericas()" onplay="pauseLatinAmericas()"><source src="audio/Latin_America/African.mp3" type="audio/mpeg"></audio>');
+      } 
+    
+      $("#sub-latin-america-then-and-now-coming-together-African").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+    })();
+    
+    /* $('#africanlink').on('tap', function() {
+      $.mobile.changePage("sub-latin-america-then-and-now-coming-together-African-African.html", {transition: "slide"});
+    }); */
+	
+    $('.homelinkbh').on('tap', function() { mainaudiobg.play(); bgsoundLatinAmerica.pause(); bgsoundLatinAmerica.currentTime = 0;});
+    
+    function goBack() {
+      $.mobile.changePage("sub-latin-america-then-and-now-coming-together.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsLatinAmerica() {
+         bgsoundLatinAmerica.play();
+    }
+       
+    function pauseLatinAmerica() {
+         bgsoundLatinAmerica.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+    $("#playstopAfrican").on('tap', function() {
+      if(!playing) {
+        Africanaudio.play();
+        $('.micbtnLatinAmericas').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        Africanaudio.pause(); Africanaudio.currentTime = 0;
+        $('.micbtnLatinAmericas').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#Africanaudioplbtn").on('tap', function() {
+      if(!paused) {
+        Africanaudio.pause();
+        paused = true;
+      } else {
+        Africanaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#Africanaudiofbtn").on('tap', function() {
+      var ctime = Africanaudio.currentTime;
+      Africanaudio.currentTime = ctime + 10;
+    });
+    
+    $("#Africanaudiobbtn").on('tap', function() {
+      var ctime = Africanaudio.currentTime;
+      Africanaudio.currentTime = ctime - 10;
+    });
+    
+    $("#Africanaudiopsbtn").on('tap', function() {
+      Africanaudio.pause();
+    });
+  </script>
+</div> <!--//home-->

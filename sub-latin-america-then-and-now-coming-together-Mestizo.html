@@ -1,0 +1,110 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-latin-america-then-and-now-coming-together-Mestizo">
+  <script src="js/slidebar_latin_america_then_and_now.js"></script>
+  <link rel="stylesheet" href="css/style_latin_america_then_and_now.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnLatinAmericas"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnLatinAmericas"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnLatinAmericas"></div></div>
+  <div class="infobtnholder"><div class="infobtnLatinAmericas"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnLatinAmericas"></div></div>
+  <div class="menubtnholder"><div class="menubtnLatinAmericas"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:14px;"><h1></h1></div>
+  <!-- <div id="Mestizo" style="position:absolute;left: 500px;top: 143px;width: 493px;height: 145px;"></div> -->  
+  <div data-role="content" class="kidzcontent">
+	<div class="navLatinAmericas-Mestizo">
+        <p>From the very first days of colonisation processes Europeans and indigenous people mixed  and from this mixing a new race of people were born  the Mestizo.</p>
+		<p>In some nations the mestizo became the most important identifier of nationhood or citizenship  such as in the case of Mexico.</p>
+		<p>One of the founding myths of Mexico tells the story of Hern&$225n Cortés (the and La Malinche (his translator)  they had a family together and their children are seen as the first mestizos.</p>
+		<p>They weren't really the first as there were many children born to European and indigenous parents in the first days of colonisation.</p>
+		<p>So, in some places the term mestizo is a sign of pride in a shared heritage but in other countries it is seen as a cause of shame with people trying to hide their links to their own indigenous heritage  this tends to be where indigenous people are still treated very badly.</p>
+    </div>
+  <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+  </div> <!-- end content -->  
+    
+  
+  <!--<div class="audiopanel">-->
+    <!-- images are in slidebarnat.js 
+         note: change the ids to be able play the narration
+    -->
+    <div class="micbtnholder"><div class="micbtnLatinAmericas" id="playstopMestizo"></div></div>
+    <div class="bLatinAmericas"><div class="rwLatinAmericas" id="Mestizoaudiobbtn"></div></div>
+    <div class="plLatinAmericas"><div class="plpsLatinAmericas" id="Mestizoaudioplbtn"></div></div>
+    <div class="fLatinAmericas"><div class="fwLatinAmericas" id="Mestizoaudiofbtn"></div></div>
+    <div id="actualaudio-Mestizo" style="visibility:hidden;"></div>
+  <!--</div>-->
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+    var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      if(sound.canPlayType('audio/mpeg')) {
+        $('#actualaudio-Mestizo').html('<audio id="Mestizoaudio" controls preload onpause="playsLatinAmericas()" onplay="pauseLatinAmericas()"><source src="audio/Latin_America/Mestizo.mp3" type="audio/mpeg"></audio>');
+      } 
+    
+      $("#sub-latin-america-then-and-now-coming-together-Mestizo").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+    })();
+    
+    /* $('#Mestizo').on('tap', function() {
+      $.mobile.changePage("sub-latin-america-then-and-now-coming-together-Mestizo-Mestizo.html", {transition: "slide"});
+    }); */
+	
+    $('.homelinkbh').on('tap', function() { mainaudiobg.play(); bgsoundLatinAmerica.pause(); bgsoundLatinAmerica.currentTime = 0;});
+    
+    function goBack() {
+      $.mobile.changePage("sub-latin-america-then-and-now-coming-together.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsLatinAmerica() {
+         bgsoundLatinAmerica.play();
+    }
+       
+    function pauseLatinAmerica() {
+         bgsoundLatinAmerica.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+    $("#playstopMestizo").on('tap', function() {
+      if(!playing) {
+        Mestizoaudio.play();
+        $('.micbtnLatinAmericas').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        Mestizoaudio.pause(); Mestizoaudio.currentTime = 0;
+        $('.micbtnLatinAmericas').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#Mestizoaudioplbtn").on('tap', function() {
+      if(!paused) {
+        Mestizoaudio.pause();
+        paused = true;
+      } else {
+        Mestizoaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#Mestizoaudiofbtn").on('tap', function() {
+      var ctime = Mestizoaudio.currentTime;
+      Mestizoaudio.currentTime = ctime + 10;
+    });
+    
+    $("#Mestizoaudiobbtn").on('tap', function() {
+      var ctime = Mestizoaudio.currentTime;
+      Mestizoaudio.currentTime = ctime - 10;
+    });
+    
+    $("#Mestizoaudiopsbtn").on('tap', function() {
+      Mestizoaudio.pause();
+    });
+  </script>
+</div> <!--//home-->

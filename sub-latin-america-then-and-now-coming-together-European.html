@@ -1,0 +1,109 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-latin-america-then-and-now-coming-together-European">
+  <script src="js/slidebar_latin_america_then_and_now.js"></script>
+  <link rel="stylesheet" href="css/style_latin_america_then_and_now.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnLatinAmericas"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnLatinAmericas"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnLatinAmericas"></div></div>
+  <div class="infobtnholder"><div class="infobtnLatinAmericas"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnLatinAmericas"></div></div>
+  <div class="menubtnholder"><div class="menubtnLatinAmericas"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:14px;"><h1></h1></div>
+  <!-- <div id="Europeanlink" style="position:absolute;left: 500px;top: 143px;width: 493px;height: 145px;"></div> -->  
+  <div data-role="content" class="kidzcontent">
+	<div class="navLatinAmericas-European">
+        <p>When Christopher Columbus set foot on the beaches of Hispaola (Modern day Dominican Republic/Haiti) little did he know that he was changing not only his own fortunes but those of Spain, Portugal and the rest of the  Europe.</p>
+		<p>After the arrival of the Spanish in the Americas, the Treaty of Tordesillas was signed in 1494. This treaty effectively divided the newly discovered lands between Spain and Portugal long before anyone had even been to most of the places that were divided up!</p>
+		<p>The result of this so-called discovery process was the beginning of an influx of Europeans. While initially dominated by the Spanish and the Portuguese the French, the Dutch and at times the English all tussled for their part of this new colonial pie and the riches that it would bring.</p>
+		<p>At different times there have been large migrations from Europe to the Americas for a whole range of reasons  some of the biggest groups in these later migrations include the Irish and the English, the Italians and the Germans  and all have left their trace in Latin America.</p>
+    </div>
+  <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+  </div> <!-- end content -->  
+    
+  
+  <!--<div class="audiopanel">-->
+    <!-- images are in slidebarnat.js 
+         note: change the ids to be able play the narration
+    -->
+    <div class="micbtnholder"><div class="micbtnLatinAmericas" id="playstopEuropean"></div></div>
+    <div class="bLatinAmericas"><div class="rwLatinAmericas" id="Europeanaudiobbtn"></div></div>
+    <div class="plLatinAmericas"><div class="plpsLatinAmericas" id="Europeanaudioplbtn"></div></div>
+    <div class="fLatinAmericas"><div class="fwLatinAmericas" id="Europeanaudiofbtn"></div></div>
+    <div id="actualaudio-European" style="visibility:hidden;"></div>
+  <!--</div>-->
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+    var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      if(sound.canPlayType('audio/mpeg')) {
+        $('#actualaudio-European').html('<audio id="Europeanaudio" controls preload onpause="playsLatinAmericas()" onplay="pauseLatinAmericas()"><source src="audio/Latin_America/European.mp3" type="audio/mpeg"></audio>');
+      } 
+    
+      $("#sub-latin-america-then-and-now-coming-together-European").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+    })();
+    
+    /* $('#Europeanlink').on('tap', function() {
+      $.mobile.changePage("sub-latin-america-then-and-now-coming-together-European-European.html", {transition: "slide"});
+    }); */
+	
+    $('.homelinkbh').on('tap', function() { mainaudiobg.play(); bgsoundLatinAmerica.pause(); bgsoundLatinAmerica.currentTime = 0;});
+    
+    function goBack() {
+      $.mobile.changePage("sub-latin-america-then-and-now-coming-together.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsLatinAmerica() {
+         bgsoundLatinAmerica.play();
+    }
+       
+    function pauseLatinAmerica() {
+         bgsoundLatinAmerica.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+    $("#playstopEuropean").on('tap', function() {
+      if(!playing) {
+        Europeanaudio.play();
+        $('.micbtnLatinAmericas').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        Europeanaudio.pause(); Europeanaudio.currentTime = 0;
+        $('.micbtnLatinAmericas').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#Europeanaudioplbtn").on('tap', function() {
+      if(!paused) {
+        Europeanaudio.pause();
+        paused = true;
+      } else {
+        Europeanaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#Europeanaudiofbtn").on('tap', function() {
+      var ctime = Europeanaudio.currentTime;
+      Europeanaudio.currentTime = ctime + 10;
+    });
+    
+    $("#Europeanaudiobbtn").on('tap', function() {
+      var ctime = Europeanaudio.currentTime;
+      Europeanaudio.currentTime = ctime - 10;
+    });
+    
+    $("#Europeanaudiopsbtn").on('tap', function() {
+      Europeanaudio.pause();
+    });
+  </script>
+</div> <!--//home-->

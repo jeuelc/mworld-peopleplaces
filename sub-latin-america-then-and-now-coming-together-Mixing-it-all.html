@@ -1,0 +1,107 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-latin-america-then-and-now-coming-together-Mixing-it-all">
+  <script src="js/slidebar_latin_america_then_and_now.js"></script>
+  <link rel="stylesheet" href="css/style_latin_america_then_and_now.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnLatinAmericas"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnLatinAmericas"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnLatinAmericas"></div></div>
+  <div class="infobtnholder"><div class="infobtnLatinAmericas"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnLatinAmericas"></div></div>
+  <div class="menubtnholder"><div class="menubtnLatinAmericas"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:14px;"><h1></h1></div>
+  <!-- <div id="MixingItAlllink" style="position:absolute;left: 500px;top: 143px;width: 493px;height: 145px;"></div> -->  
+  <div data-role="content" class="kidzcontent">
+	<div class="navLatinAmericas-MixingItAll">
+        <p>Despite efforts on the part of the colonial administrators who wanted everyone to stay separate  the Indigenous, the Europeans and the Africans -  it was impossible to keep all these new peoples and cultures separated.</p>
+		<p>Anywhere you look in Latin America today the people are marked by the mega-mix of their inheritance.</p>
+    </div>
+  <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+  </div> <!-- end content -->  
+    
+  
+  <!--<div class="audiopanel">-->
+    <!-- images are in slidebarnat.js 
+         note: change the ids to be able play the narration
+    -->
+    <div class="micbtnholder"><div class="micbtnLatinAmericas" id="playstopMixingItAll"></div></div>
+    <div class="bLatinAmericas"><div class="rwLatinAmericas" id="MixingItAllaudiobbtn"></div></div>
+    <div class="plLatinAmericas"><div class="plpsLatinAmericas" id="MixingItAllaudioplbtn"></div></div>
+    <div class="fLatinAmericas"><div class="fwLatinAmericas" id="MixingItAllaudiofbtn"></div></div>
+    <div id="actualaudio-MixingItAll" style="visibility:hidden;"></div>
+  <!--</div>-->
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+    var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      if(sound.canPlayType('audio/mpeg')) {
+        $('#actualaudio-MixingItAll').html('<audio id="MixingItAllaudio" controls preload onpause="playsLatinAmericas()" onplay="pauseLatinAmericas()"><source src="audio/Latin_America/Mixing_It_All.mp3" type="audio/mpeg"></audio>');
+      } 
+    
+      $("#sub-latin-america-then-and-now-coming-together-Mixing-it-all").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+    })();
+    
+    /* $('#MixingItAlllink').on('tap', function() {
+      $.mobile.changePage("sub-latin-america-then-and-now-coming-together-Mixing-it-all-MixingItAll.html", {transition: "slide"});
+    }); */
+	
+    $('.homelinkbh').on('tap', function() { mainaudiobg.play(); bgsoundLatinAmerica.pause(); bgsoundLatinAmerica.currentTime = 0;});
+    
+    function goBack() {
+      $.mobile.changePage("sub-latin-america-then-and-now-coming-together.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsLatinAmerica() {
+         bgsoundLatinAmerica.play();
+    }
+       
+    function pauseLatinAmerica() {
+         bgsoundLatinAmerica.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+    $("#playstopMixingItAll").on('tap', function() {
+      if(!playing) {
+        MixingItAllaudio.play();
+        $('.micbtnLatinAmericas').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        MixingItAllaudio.pause(); MixingItAllaudio.currentTime = 0;
+        $('.micbtnLatinAmericas').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#MixingItAllaudioplbtn").on('tap', function() {
+      if(!paused) {
+        MixingItAllaudio.pause();
+        paused = true;
+      } else {
+        MixingItAllaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#MixingItAllaudiofbtn").on('tap', function() {
+      var ctime = MixingItAllaudio.currentTime;
+      MixingItAllaudio.currentTime = ctime + 10;
+    });
+    
+    $("#MixingItAllaudiobbtn").on('tap', function() {
+      var ctime = MixingItAllaudio.currentTime;
+      MixingItAllaudio.currentTime = ctime - 10;
+    });
+    
+    $("#MixingItAllaudiopsbtn").on('tap', function() {
+      MixingItAllaudio.pause();
+    });
+  </script>
+</div> <!--//home-->

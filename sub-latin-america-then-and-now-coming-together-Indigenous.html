@@ -1,0 +1,108 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-latin-america-then-and-now-coming-together-Indigenous">
+  <script src="js/slidebar_latin_america_then_and_now.js"></script>
+  <link rel="stylesheet" href="css/style_latin_america_then_and_now.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnLatinAmericas"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnLatinAmericas"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnLatinAmericas"></div></div>
+  <div class="infobtnholder"><div class="infobtnLatinAmericas"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnLatinAmericas"></div></div>
+  <div class="menubtnholder"><div class="menubtnLatinAmericas"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:14px;"><h1></h1></div>
+  <!-- <div id="Indigenouslink" style="position:absolute;left: 500px;top: 143px;width: 493px;height: 145px;"></div> -->  
+  <div data-role="content" class="kidzcontent">
+	<div class="navLatinAmericas-Indigenous">
+        <p>Experts argue about where all the different indigenous groups in Latin America come from.
+The Land Bridge - one of the theories tells how tribes of hunter-gatherers crossed a land bridge that existed many thousands of years ago between the far eastern edge of today's Russia and Alaska.  From this crossing groups gradually continued that migration populating and forming the indigenous groups of North, Central and South America.</p>
+		<p>Before European settlement there were lost of different indigenous groups  some were part of large established communities with cities, colonies and very advanced civilisations (Aztecs, Inca, Maya).  There were also groups often divided into highland groups  that tended to be smaller settled farming communities and lowland groups that moved around a great deal.  Outside the Big civilisations other indigenous groups werent considered as advanced by European standards.</p>
+    </div>
+  <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+  </div> <!-- end content -->  
+    
+  
+  <!--<div class="audiopanel">-->
+    <!-- images are in slidebarnat.js 
+         note: change the ids to be able play the narration
+    -->
+    <div class="micbtnholder"><div class="micbtnLatinAmericas" id="playstopIndigenous"></div></div>
+    <div class="bLatinAmericas"><div class="rwLatinAmericas" id="Indigenousaudiobbtn"></div></div>
+    <div class="plLatinAmericas"><div class="plpsLatinAmericas" id="Indigenousaudioplbtn"></div></div>
+    <div class="fLatinAmericas"><div class="fwLatinAmericas" id="Indigenousaudiofbtn"></div></div>
+    <div id="actualaudio-Indigenous" style="visibility:hidden;"></div>
+  <!--</div>-->
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+    var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      if(sound.canPlayType('audio/mpeg')) {
+        $('#actualaudio-Indigenous').html('<audio id="Indigenousaudio" controls preload onpause="playsLatinAmericas()" onplay="pauseLatinAmericas()"><source src="audio/Latin_America/Indigenous.mp3" type="audio/mpeg"></audio>');
+      } 
+    
+      $("#sub-latin-america-then-and-now-coming-together-Indigenous").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+    })();
+    
+    /* $('#Indigenouslink').on('tap', function() {
+      $.mobile.changePage("sub-latin-america-then-and-now-coming-together-Indigenous-Indigenous.html", {transition: "slide"});
+    }); */
+	
+    $('.homelinkbh').on('tap', function() { mainaudiobg.play(); bgsoundLatinAmerica.pause(); bgsoundLatinAmerica.currentTime = 0;});
+    
+    function goBack() {
+      $.mobile.changePage("sub-latin-america-then-and-now-coming-together.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsLatinAmerica() {
+         bgsoundLatinAmerica.play();
+    }
+       
+    function pauseLatinAmerica() {
+         bgsoundLatinAmerica.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+    $("#playstopIndigenous").on('tap', function() {
+      if(!playing) {
+        Indigenousaudio.play();
+        $('.micbtnLatinAmericas').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        Indigenousaudio.pause(); Indigenousaudio.currentTime = 0;
+        $('.micbtnLatinAmericas').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#Indigenousaudioplbtn").on('tap', function() {
+      if(!paused) {
+        Indigenousaudio.pause();
+        paused = true;
+      } else {
+        Indigenousaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#Indigenousaudiofbtn").on('tap', function() {
+      var ctime = Indigenousaudio.currentTime;
+      Indigenousaudio.currentTime = ctime + 10;
+    });
+    
+    $("#Indigenousaudiobbtn").on('tap', function() {
+      var ctime = Indigenousaudio.currentTime;
+      Indigenousaudio.currentTime = ctime - 10;
+    });
+    
+    $("#Indigenousaudiopsbtn").on('tap', function() {
+      Indigenousaudio.pause();
+    });
+  </script>
+</div> <!--//home-->

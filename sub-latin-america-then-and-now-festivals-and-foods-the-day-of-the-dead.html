@@ -1,0 +1,110 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-latin-america-then-and-now-festivals-and-foods-the-day-of-the-dead">
+  <script src="js/slidebar_latin_america_then_and_now.js"></script>
+  <link rel="stylesheet" href="css/style_latin_america_then_and_now.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnLatinAmericas"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnLatinAmericas"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnLatinAmericas"></div></div>
+  <div class="infobtnholder"><div class="infobtnLatinAmericas"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnLatinAmericas"></div></div>
+  <div class="menubtnholder"><div class="menubtnLatinAmericas"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:14px;"><h1></h1></div>
+  <!-- <div id="DayOfDeadlink" style="position:absolute;left: 500px;top: 143px;width: 493px;height: 145px;"></div> -->  
+  <div data-role="content" class="kidzcontent">
+	<div class="navLatinAmericas-DayOfDead">
+        <p>Celebrated at the same time as All Saints day in the Christian calendar the Day of the Dead is celebrated in Mexico and can be traced back to an Aztec festival.</p>
+		<p>The Day of the Dead is about remembering friends and family who have passed on. 
+People build small altars to remember those they have lost, and they visit grave sites and talk with people who have died.  It is common to take the favourite foods and drinks and to play music that their loved ones enjoyed.</p>
+		<p>The festival is a joyful remembrance of those that have died and people tell a lot of funny and happy stories about the loved ones who have passed on.</p>
+		<p>It is a very different way of interacting with dead people than perhaps what we are used to in Australia but there are similar celebrations held in Asia, Africa and some parts of Europe.</p>
+    </div>
+  <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+  </div> <!-- end content -->  
+    
+  
+  <!--<div class="audiopanel">-->
+    <!-- images are in slidebarnat.js 
+         note: change the ids to be able play the narration
+    -->
+    <div class="micbtnholder"><div class="micbtnLatinAmericas" id="playstopDayOfDead"></div></div>
+    <div class="bLatinAmericas"><div class="rwLatinAmericas" id="DayOfDeadaudiobbtn"></div></div>
+    <div class="plLatinAmericas"><div class="plpsLatinAmericas" id="DayOfDeadaudioplbtn"></div></div>
+    <div class="fLatinAmericas"><div class="fwLatinAmericas" id="DayOfDeadaudiofbtn"></div></div>
+    <div id="actualaudio-DayOfDead" style="visibility:hidden;"></div>
+  <!--</div>-->
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+    var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      if(sound.canPlayType('audio/mpeg')) {
+        $('#actualaudio-DayOfDead').html('<audio id="DayOfDeadaudio" controls preload onpause="playsLatinAmericas()" onplay="pauseLatinAmericas()"><source src="audio/Latin_America/Day_Of_Dead.mp3" type="audio/mpeg"></audio>');
+      } 
+    
+      $("#sub-latin-america-then-and-now-festivals-and-foods-the-day-of-the-dead").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+    })();
+    
+    /* $('#DayOfDeadlink').on('tap', function() {
+      $.mobile.changePage("sub-latin-america-then-and-now-festivals-and-foods-the-day-of-the-dead-DayOfDead.html", {transition: "slide"});
+    }); */
+	
+    $('.homelinkbh').on('tap', function() { mainaudiobg.play(); bgsoundLatinAmerica.pause(); bgsoundLatinAmerica.currentTime = 0;});
+    
+    function goBack() {
+      $.mobile.changePage("sub-latin-america-then-and-now-festivals-and-foods.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsLatinAmerica() {
+         bgsoundLatinAmerica.play();
+    }
+       
+    function pauseLatinAmerica() {
+         bgsoundLatinAmerica.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+    $("#playstopDayOfDead").on('tap', function() {
+      if(!playing) {
+        DayOfDeadaudio.play();
+        $('.micbtnLatinAmericas').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        DayOfDeadaudio.pause(); DayOfDeadaudio.currentTime = 0;
+        $('.micbtnLatinAmericas').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#DayOfDeadaudioplbtn").on('tap', function() {
+      if(!paused) {
+        DayOfDeadaudio.pause();
+        paused = true;
+      } else {
+        DayOfDeadaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#DayOfDeadaudiofbtn").on('tap', function() {
+      var ctime = DayOfDeadaudio.currentTime;
+      DayOfDeadaudio.currentTime = ctime + 10;
+    });
+    
+    $("#DayOfDeadaudiobbtn").on('tap', function() {
+      var ctime = DayOfDeadaudio.currentTime;
+      DayOfDeadaudio.currentTime = ctime - 10;
+    });
+    
+    $("#DayOfDeadaudiopsbtn").on('tap', function() {
+      DayOfDeadaudio.pause();
+    });
+  </script>
+</div> <!--//home-->

@@ -1,0 +1,133 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-latin-america-then-and-now-festivals-and-foods">
+  <!-- <script src="js/slidebarnat.js"></script> -->
+  <script src="js/slidebar_latin_america_then_and_now.js"></script>
+  <link rel="stylesheet" href="css/style_latin_america_then_and_now.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnLatinAmericas"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnLatinAmericas"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnLatinAmericas"></div></div>
+  <div class="infobtnholder"><div class="infobtnLatinAmericas"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnLatinAmericas"></div></div>
+  <div class="menubtnholder"><div class="menubtnLatinAmericas"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:14px;"><h1>Festivals and Food</h1></div>
+  
+    <div data-role="content" class="kidzcontent">
+      <div class="navLatinAmericas-content">
+        <p>The mixing that has marked the history of the people of Latin America has also had a huge cultural impact in the region with everything from belief systems, music, celebrations and food evolving from this melting pot.</p>
+      </div>
+        
+      <div class="navbtn1">
+        <p><a href="sub-latin-america-then-and-now-festivals-and-foods-Carnival.html" data-transition="slide"><img src="css/images/9-12/People_and_Places/Latin_America/Festivals_And_Food/Carnival.png"></a></p>
+      </div>
+      <div class="navbtn2">
+        <p><a href="sub-latin-america-then-and-now-festivals-and-foods-Food.html" data-transition="slide"><img src="css/images/9-12/People_and_Places/Latin_America/Festivals_And_Food/Food.png"></a></p>
+      </div>
+      <div class="navbtn3">
+        <p><a href="sub-latin-america-then-and-now-festivals-and-foods-Music-and-Dance.html" data-transition="slide"><img src="css/images/9-12/People_and_Places/Latin_America/Festivals_And_Food/Music_And_Dance_Dummy.png"></a></p>
+      </div>
+      <div class="navbtn4">
+        <p><a href="sub-latin-america-then-and-now-festivals-and-foods-the-day-of-the-dead.html" data-transition="slide"><img src="css/images/9-12/People_and_Places/Latin_America/Festivals_And_Food/The_Day_Of_Dead.png"></a></p>
+      </div>
+        
+      <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+    </div> <!-- end content -->  
+    
+  
+  <!--<div class="audiopanel">-->
+    <!-- images are in slidebarnat.js -->
+    <div class="micbtnholder"><div class="micbtnLatinAmericas" id="playstopFestivalsAndFoods"></div></div>
+    <div class="bLatinAmericas"><div class="rwLatinAmericas" id="FestivalsAndFoodsaudiobbtn"></div></div>
+    <div class="plLatinAmericas"><div class="plpsLatinAmericas" id="FestivalsAndFoodsaudioplbtn"></div></div>
+    <div class="fLatinAmericas"><div class="fwLatinAmericas" id="FestivalsAndFoodsaudiofbtn"></div></div>
+    <div id="actualaudio-FestivalsAndFoods" style="visibility:hidden;"></div>
+  <!--</div>-->
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+    var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      if(sound.canPlayType('audio/mpeg')) {
+        $('#actualaudio-FestivalsAndFoods').html('<audio id="FestivalsAndFoodsaudio" controls preload onpause="playsLatinAmerica()" onplay="pauseLatinAmerica()"><source src="audio/Latin_America/Festivals_And_Foods.mp3" type="audio/mpeg"></audio>');
+      } 
+    
+      $("#sub-latin-america-then-and-now-festivals-and-foods").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+    })();
+    
+    $('.homelinkbh').on('tap', function() { bgsoundLatinAmerica.pause(); bgsoundLatinAmerica.currentTime = 0; mainaudiobg.play(); });
+    
+    function goBack() {
+      $.mobile.changePage("sub-latin-america-then-and-now.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsLatinAmerica() {
+         bgsoundLatinAmerica.play();
+    }
+       
+    function pauseLatinAmerica() {
+         bgsoundLatinAmerica.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+	
+    $("#playstopFestivalsAndFoods").on('tap', function() {
+      if(!playing) {
+        FestivalsAndFoodsaudio.play();
+        $('.micbtnLatinAmericas').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        FestivalsAndFoodsaudio.pause(); FestivalsAndFoodsaudio.currentTime = 0;
+        $('.micbtnLatinAmericas').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#FestivalsAndFoodsaudioplbtn").on('tap', function() {
+      if(!paused) {
+        FestivalsAndFoodsaudio.pause();
+        paused = true;
+      } else {
+        FestivalsAndFoodsaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#FestivalsAndFoodsaudiofbtn").on('tap', function() {
+      var ctime = FestivalsAndFoodsaudio.currentTime;
+      FestivalsAndFoodsaudio.currentTime = ctime + 10;
+    });
+    
+    $("#FestivalsAndFoodsaudiobbtn").on('tap', function() {
+      var ctime = FestivalsAndFoodsaudio.currentTime;
+      FestivalsAndFoodsaudio.currentTime = ctime - 10;
+    });
+    
+    $("#FestivalsAndFoodsaudiopsbtn").on('tap', function() {
+      FestivalsAndFoodsaudio.pause();
+      //$(".audiopanel").css({"backgroundPosition":"0px 0px"});
+    });
+    
+    $('.navbtn1').on('tap', function() { 
+      nav1Effects(); 
+    });
+    
+    $('.navbtn2').on('tap', function() { 
+      nav2Effects(); 
+    });
+    
+    $('.navbtn3').on('tap', function() { 
+      nav3Effects(); 
+    });
+    
+    $('.navbtn4').on('tap', function() { 
+      nav4Effects(); 
+    });
+  </script>
+</div> <!--//home-->

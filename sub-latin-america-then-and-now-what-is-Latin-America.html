@@ -1,0 +1,134 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-latin-america-then-and-now-what-is-Latin-America">
+  <!-- <script src="js/slidebarnat.js"></script> -->
+  <script src="js/slidebar_latin_america_then_and_now.js"></script>
+  <link rel="stylesheet" href="css/style_latin_america_then_and_now.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnLatinAmericas"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnLatinAmericas"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnLatinAmericas"></div></div>
+  <div class="infobtnholder"><div class="infobtnLatinAmericas"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnLatinAmericas"></div></div>
+  <div class="menubtnholder"><div class="menubtnLatinAmericas"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:14px;"><h1>What is Latin America?</h1></div>
+  
+    <div data-role="content" class="kidzcontent">
+      <div class="navLatinAmericas-content">
+        <p>Is Latin America a continent?  Well, not really.  It's a large part of our world that spans two continents: North America and South America.  Latin America is so much more than tacos, burritos, salsa and samba.  It is an exciting place where one rainforest, the largest on earth, covers eight different countries.  No wonder it's known as 'the lungs of the planet'!</p>
+		<p>But Latin America also has the driest desert on earth.  Before 1971 it hadn't rained there for 400 years!  It looks so much like another planet that filmmakers use it as a location to shoot Mars scenes.  If you travelled around Latin America you would also find the worlds highest waterfall, the widest street, the highest navigable lake, and one of the deadliest frogs.  You can even see one of its rivers from outer space! (But not the pink dolphins that live in it). Talk about diverse!</p>
+      </div>
+        
+      <div class="navbtn1">
+        <p><a href="sub-latin-america-then-and-now-what-is-Latin-America-Latin-America-before-columbus.html" data-transition="slide"><img src="css/images/9-12/People_and_Places/Latin_America/What_Is_Latin_America/Latin_America_Before_Columbs.png"></a></p>
+      </div>
+      <div class="navbtn2">
+        <p><a href="sub-latin-america-then-and-now-what-is-Latin-America-we-all-speak-Spanish.html" data-transition="slide"><img src="css/images/9-12/People_and_Places/Latin_America/What_Is_Latin_America/We_All_Speak_Spanish_Dummy.png"></a></p>
+      </div>
+      <div class="navbtn3">
+        <p><a href="sub-latin-america-then-and-now-what-is-Latin-America-where-is-Latin-America.html" data-transition="slide"><img src="css/images/9-12/People_and_Places/Latin_America/What_Is_Latin_America/Where_Is_Latin_America.png"></a></p>
+      </div>
+      <div class="navbtn4">
+        <p><a href="sub-latin-america-then-and-now-what-is-Latin-America-why-do-we-call-it-Latin-America.html" data-transition="slide"><img src="css/images/9-12/People_and_Places/Latin_America/What_Is_Latin_America/Why_Do_We_Call_It_Latin_Amarica.png"></a></p>
+      </div>
+        
+      <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+    </div> <!-- end content -->  
+    
+  
+  <!--<div class="audiopanel">-->
+    <!-- images are in slidebarnat.js -->
+    <div class="micbtnholder"><div class="micbtnLatinAmericas" id="playstopWhatIsLatinAmerica"></div></div>
+    <div class="bLatinAmericas"><div class="rwLatinAmericas" id="WhatIsLatinAmericaaudiobbtn"></div></div>
+    <div class="plLatinAmericas"><div class="plpsLatinAmericas" id="WhatIsLatinAmericaaudioplbtn"></div></div>
+    <div class="fLatinAmericas"><div class="fwLatinAmericas" id="WhatIsLatinAmericaaudiofbtn"></div></div>
+    <div id="actualaudio-WhatIsLatinAmerica" style="visibility:hidden;"></div>
+  <!--</div>-->
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+    var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      if(sound.canPlayType('audio/mpeg')) {
+        $('#actualaudio-WhatIsLatinAmerica').html('<audio id="WhatIsLatinAmericaaudio" controls preload onpause="playsLatinAmerica()" onplay="pauseLatinAmerica()"><source src="audio/Latin_America/What_Is_Latin_America.mp3" type="audio/mpeg"></audio>');
+      } 
+    
+      $("#sub-latin-america-then-and-now-what-is-Latin-America").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+    })();
+    
+    $('.homelinkbh').on('tap', function() { bgsoundLatinAmerica.pause(); bgsoundLatinAmerica.currentTime = 0; mainaudiobg.play(); });
+    
+    function goBack() {
+      $.mobile.changePage("sub-latin-america-then-and-now.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsLatinAmerica() {
+         bgsoundLatinAmerica.play();
+    }
+       
+    function pauseLatinAmerica() {
+         bgsoundLatinAmerica.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+	
+    $("#playstopWhatIsLatinAmerica").on('tap', function() {
+      if(!playing) {
+        WhatIsLatinAmericaaudio.play();
+        $('.micbtnLatinAmericas').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        WhatIsLatinAmericaaudio.pause(); WhatIsLatinAmericaaudio.currentTime = 0;
+        $('.micbtnLatinAmericas').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#WhatIsLatinAmericaaudioplbtn").on('tap', function() {
+      if(!paused) {
+        WhatIsLatinAmericaaudio.pause();
+        paused = true;
+      } else {
+        WhatIsLatinAmericaaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#WhatIsLatinAmericaaudiofbtn").on('tap', function() {
+      var ctime = WhatIsLatinAmericaaudio.currentTime;
+      WhatIsLatinAmericaaudio.currentTime = ctime + 10;
+    });
+    
+    $("#WhatIsLatinAmericaaudiobbtn").on('tap', function() {
+      var ctime = WhatIsLatinAmericaaudio.currentTime;
+      WhatIsLatinAmericaaudio.currentTime = ctime - 10;
+    });
+    
+    $("#WhatIsLatinAmericaaudiopsbtn").on('tap', function() {
+      WhatIsLatinAmericaaudio.pause();
+      //$(".audiopanel").css({"backgroundPosition":"0px 0px"});
+    });
+    
+    $('.navbtn1').on('tap', function() { 
+      nav1Effects(); 
+    });
+    
+    $('.navbtn2').on('tap', function() { 
+      nav2Effects(); 
+    });
+    
+    $('.navbtn3').on('tap', function() { 
+      nav3Effects(); 
+    });
+    
+    $('.navbtn4').on('tap', function() { 
+      nav4Effects(); 
+    });
+  </script>
+</div> <!--//home-->

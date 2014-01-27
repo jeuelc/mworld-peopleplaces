@@ -1,0 +1,109 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-latin-america-then-and-now-coming-together-Mulatto">
+  <script src="js/slidebar_latin_america_then_and_now.js"></script>
+  <link rel="stylesheet" href="css/style_latin_america_then_and_now.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnLatinAmericas"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnLatinAmericas"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnLatinAmericas"></div></div>
+  <div class="infobtnholder"><div class="infobtnLatinAmericas"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnLatinAmericas"></div></div>
+  <div class="menubtnholder"><div class="menubtnLatinAmericas"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:14px;"><h1></h1></div>
+  <!-- <div id="Mulattolink" style="position:absolute;left: 500px;top: 143px;width: 493px;height: 145px;"></div> -->  
+  <div data-role="content" class="kidzcontent">
+	<div class="navLatinAmericas-Mulatto">
+        <p>The enrichment of Latin America through the presence of so many people from so many places came at a high cost in the case of the African presence in the Americas.  The slave trade which plundered Africa and deposited people across the Americas was cruel and violent and set the course for negative stereotyping of black people across the continents as sub-human.</p>
+		<p>The term Mulatto is in some ways the legacy of this trade, and refers to someone who is of mixed African and European background.</p>
+		<p>Unlike the Mestizo, which has been used as term of national belonging, Mulatto has been used in a negative, racist way to highlight differences between people, both between different countries and also within nations.  The term is no longer used much.</p>
+		<p>Despite its unhappy origins in the slave trade, the cultural inheritance from Africa has played a key part in building national identity in many nations  through music especially, with the percussion rhythms of Africa leaving their mark across the continent.</p>
+    </div>
+  <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+  </div> <!-- end content -->  
+    
+  
+  <!--<div class="audiopanel">-->
+    <!-- images are in slidebarnat.js 
+         note: change the ids to be able play the narration
+    -->
+    <div class="micbtnholder"><div class="micbtnLatinAmericas" id="playstopMulatto"></div></div>
+    <div class="bLatinAmericas"><div class="rwLatinAmericas" id="Mulattoaudiobbtn"></div></div>
+    <div class="plLatinAmericas"><div class="plpsLatinAmericas" id="Mulattoaudioplbtn"></div></div>
+    <div class="fLatinAmericas"><div class="fwLatinAmericas" id="Mulattoaudiofbtn"></div></div>
+    <div id="actualaudio-Mulatto" style="visibility:hidden;"></div>
+  <!--</div>-->
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+    var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      if(sound.canPlayType('audio/mpeg')) {
+        $('#actualaudio-Mulatto').html('<audio id="Mulattoaudio" controls preload onpause="playsLatinAmericas()" onplay="pauseLatinAmericas()"><source src="audio/Latin_America/Mulatto.mp3" type="audio/mpeg"></audio>');
+      } 
+    
+      $("#sub-latin-america-then-and-now-coming-together-Mulatto").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+    })();
+    
+    /* $('#Mulattolink').on('tap', function() {
+      $.mobile.changePage("sub-latin-america-then-and-now-coming-together-Mulatto-Mulatto.html", {transition: "slide"});
+    }); */
+	
+    $('.homelinkbh').on('tap', function() { mainaudiobg.play(); bgsoundLatinAmerica.pause(); bgsoundLatinAmerica.currentTime = 0;});
+    
+    function goBack() {
+      $.mobile.changePage("sub-latin-america-then-and-now-coming-together.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsLatinAmerica() {
+         bgsoundLatinAmerica.play();
+    }
+       
+    function pauseLatinAmerica() {
+         bgsoundLatinAmerica.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+    $("#playstopMulatto").on('tap', function() {
+      if(!playing) {
+        Mulattoaudio.play();
+        $('.micbtnLatinAmericas').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        Mulattoaudio.pause(); Mulattoaudio.currentTime = 0;
+        $('.micbtnLatinAmericas').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#Mulattoaudioplbtn").on('tap', function() {
+      if(!paused) {
+        Mulattoaudio.pause();
+        paused = true;
+      } else {
+        Mulattoaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#Mulattoaudiofbtn").on('tap', function() {
+      var ctime = Mulattoaudio.currentTime;
+      Mulattoaudio.currentTime = ctime + 10;
+    });
+    
+    $("#Mulattoaudiobbtn").on('tap', function() {
+      var ctime = Mulattoaudio.currentTime;
+      Mulattoaudio.currentTime = ctime - 10;
+    });
+    
+    $("#Mulattoaudiopsbtn").on('tap', function() {
+      Mulattoaudio.pause();
+    });
+  </script>
+</div> <!--//home-->
