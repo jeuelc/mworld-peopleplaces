@@ -1,0 +1,153 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-latin-america-then-and-now-future-world">
+  <script src="js/hammer.js"></script>
+  <script src="js/jquery.hammer.js"></script>
+  <script src="js/slidebar_latin_america_then_and_now.js"></script>
+  <link rel="stylesheet" href="css/style_latin_america_then_and_now.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnLatinAmericas"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnLatinAmericas"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnLatinAmericas"></div></div>
+  <div class="infobtnholder"><div class="infobtnLatinAmericas"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnLatinAmericas"></div></div>
+  <div class="menubtnholder"><div class="menubtnLatinAmericas"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:0px;"><h1>Future World</h1></div>
+  <div id="spacechar">&nbsp;
+    <div data-role="content" class="kidzcontent">
+      <div class="v-spacer"></div>
+      <div class="sidebarleft-half">
+        <a id="externallink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Latin_America/Future_World/Columbian_Houses_Hi_Res.jpg', '');">click here</a>
+		
+        <a id="closelink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Latin_America/Future_World/Student_Hi_Res.jpg', '');">click here</a>
+		
+		<a id="sculpturelink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Latin_America/Future_World/Santiago_Hi_Res.jpg', '');">click here</a>
+		
+		<div id="zoomwrapper">
+          <div id="pol1" class="pPiece" style="left:100px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Latin_America/Future_World/Growing_Up_On_The_World_Stage.png" alt="" />
+          </div>
+          <div id="pol2"class="pPiece" style="left:75px;top:290px;">
+             <img src="css/images/9-12/People_and_Places/Latin_America/Future_World/Columbian_Houses.jpg" alt="" />
+          </div>
+		  <div id="pol3"class="pPiece" style="left:80px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Latin_America/Future_World/Student.jpg" alt="" />
+          </div>
+		  <div id="pol4"class="pPiece" style="left:70px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Latin_America/Future_World/Santiago.jpg" alt="" />
+          </div>
+        </div><!--/zoomwrapper-->
+      </div>
+      
+      <div class="bpcontentLatinAmericas">
+        <p>As the 21st century progresses the role of the Latin American nations is becoming more and more important on the world stage.</p>
+		<p>The nations that were once so radically shaped by Europe are now re-shaping the world.</p>
+      </div>
+       
+      <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+    </div> <!-- end content -->  
+  </div><!--/spacechar-->        
+  
+    <div class="micbtnholder"><div class="micbtnLatinAmericas" id="playstopFutureWorld"></div></div>
+    <div class="bLatinAmericas"><div class="rwLatinAmericas" id="FutureWorldaudiobbtn"></div></div>
+    <div class="plLatinAmericas"><div class="plpsLatinAmericas" id="FutureWorldaudioplbtn"></div></div>
+    <div class="fLatinAmericas"><div class="fwLatinAmericas" id="FutureWorldaudiofbtn"></div></div>
+    <div id="actualaudio-FutureWorld" style="visibility:hidden;"></div>
+  <!-- </div> -->
+  
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+ 
+	var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      $('div#pol1').css("z-index", 3);
+      $('div#pol2').css("z-index", 2);
+      $('div#pol3').css("z-index", 1);
+      $('div#pol1 > img').css("-webkit-transform", "rotate(0deg)");
+      $('div#pol2 > img').css("-webkit-transform", "rotate(5deg)");
+      $('div#pol3 > img').css("-webkit-transform", "rotate(-3deg)");
+      $('div#pol4 > img').css("-webkit-transform", "rotate(-3deg)");
+      
+	  if(sound.canPlayType('audio/mpeg')) {
+			$('#actualaudio-FutureWorld').html('<audio id="FutureWorldaudio" controls preload onpause="playsLatinAmericas()" onplay="pauseLatinAmericas()"><source src="audio/Latin_America/Future_World.mp3" type="audio/mpeg"></audio>');
+		  }             
+	  $("#sub-latin-america-then-and-now-future-world").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+	})();
+    
+	$('.homelinkbh').on('tap', function() { mainaudiobg.play(); bgsoundLatinAmericasToday.pause(); bgsoundLatinAmericasToday.currentTime = 0;});
+    
+	$("#pol1").on('tap', function() {
+      $.mobile.changePage("sub-latin-america-then-and-now-future-world-taking-their-place-on-the-world-stage.html", {transition: "slide"});
+    });
+    $("#pol2").on('tap', function() {
+      $('#externallink')[0].click();
+    });
+    $("#pol3").on('tap', function() {
+      $('#closelink')[0].click();
+    });
+	$("#pol4").on('tap', function() {
+      $('#sculpturelink')[0].click();
+    });
+	
+	$("#Light_Box_Image").on('tap', function() {
+      $('#quiz_lightbox')[0].click();
+    });
+	
+	function goBack() {
+      $.mobile.changePage("sub-latin-america-then-and-now.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsDesigningPlace() {
+         bgsoundLatinAmericas.play();
+    }
+       
+    function pauseDesigningPlace() {
+         bgsoundLatinAmericas.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+    $("#playstopFutureWorld").on('tap', function() {
+      if(!playing) {
+        FutureWorldaudio.play();
+        $('.micbtnLatinAmericas').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        FutureWorldaudio.pause(); FutureWorldaudio.currentTime = 0;
+        $('.micbtnLatinAmericas').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#FutureWorldaudioplbtn").on('tap', function() {
+      if(!paused) {
+        FutureWorldaudio.pause();
+        paused = true;
+      } else {
+        FutureWorldaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#FutureWorldaudiofbtn").on('tap', function() {
+      var ctime = FutureWorldaudio.currentTime;
+      FutureWorldaudio.currentTime = ctime + 10;
+    });
+    
+    $("#FutureWorldaudiobbtn").on('tap', function() {
+      var ctime = FutureWorldaudio.currentTime;
+      FutureWorldaudio.currentTime = ctime - 10;
+    });
+    
+    $("#FutureWorldaudiopsbtn").on('tap', function() {
+      FutureWorldaudio.pause();
+    });
+  </script>
+  <script src="js/fourcardLogic.js"></script>  <!-- for card dragging effects -->
+</div> <!--//home-->

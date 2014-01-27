@@ -1,6 +1,6 @@
 /********* Latin America Then And Now **********/
 
-#sub-latin-america-then-and-now, #sub-latin-america-then-and-now-what-is-Latin-America, #sub-latin-america-then-and-now-festivals-and-foods, #sub-latin-america-then-and-now-festivals-and-foods-Food, #sub-latin-america-then-and-now-festivals-and-foods-Music-and-Dance{
+#sub-latin-america-then-and-now, #sub-latin-america-then-and-now-what-is-Latin-America, #sub-latin-america-then-and-now-festivals-and-foods, #sub-latin-america-then-and-now-festivals-and-foods-Food, #sub-latin-america-then-and-now-festivals-and-foods-Music-and-Dance, #sub-latin-america-then-and-now-future-world{
   background:url('images/9-12/People_and_Places/Latin_America/Latin_America_BG.png') no-repeat;
   height:748px !important;
   overflow:hidden !important;
@@ -361,7 +361,7 @@
   color:#000000;
 }
 
-#sub-latin-america-then-and-now .bptitleholder h1, #sub-latin-america-then-and-now-what-is-Latin-America .bptitleholder h1, #sub-latin-america-then-and-now-festivals-and-foods .bptitleholder h1, #sub-latin-america-then-and-now-festivals-and-foods-Food .bptitleholder h1, #sub-latin-america-then-and-now-festivals-and-foods-Music-and-Dance .bptitleholder h1{
+#sub-latin-america-then-and-now .bptitleholder h1, #sub-latin-america-then-and-now-what-is-Latin-America .bptitleholder h1, #sub-latin-america-then-and-now-festivals-and-foods .bptitleholder h1, #sub-latin-america-then-and-now-festivals-and-foods-Food .bptitleholder h1, #sub-latin-america-then-and-now-festivals-and-foods-Music-and-Dance .bptitleholder h1, #sub-latin-america-then-and-now-future-world .bptitleholder h1{
 	text-transform: uppercase;
 	color: #ffffff !important;
 	font-family: "comic sans ms";
@@ -451,7 +451,7 @@
 	margin: 0;
 }
 
-#sub-latin-america-then-and-now .bptitleholder, #sub-latin-america-then-and-now-what-is-Latin-America .bptitleholder, #sub-latin-america-then-and-now-festivals-and-foods .bptitleholder, #sub-latin-america-then-and-now-festivals-and-foods-Food .bptitleholder, #sub-latin-america-then-and-now-festivals-and-foods-Music-and-Dance .bptitleholder{
+#sub-latin-america-then-and-now .bptitleholder, #sub-latin-america-then-and-now-what-is-Latin-America .bptitleholder, #sub-latin-america-then-and-now-festivals-and-foods .bptitleholder, #sub-latin-america-then-and-now-festivals-and-foods-Food .bptitleholder, #sub-latin-america-then-and-now-festivals-and-foods-Music-and-Dance .bptitleholder, #sub-latin-america-then-and-now-future-world .bptitleholder{
 	width: 627px;
 	height: 68px;
 	text-align: center;

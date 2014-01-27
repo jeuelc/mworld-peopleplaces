@@ -64,7 +64,7 @@
       
       <div class="bpcontentLatinAmericas">
         <p>It is impossible to think of Latin America without its rhythms, music and dances.  From the Argentine Tango to the Cuban Rumba, the Mexican Mariachi to the traditional panpipe music of the Andean Highlands and the Colombian Cumbia, Latin American music is incredibly varied and has reached global audiences.</p>
-		<p>How could it be anything but diverse?  The beats and melodies you hear today have come about through an intimate combination of indigenous, European, and African influences over several centuries.  And Latin America's music styles are continuing to evolve.  Take the recent phenomenon of  'Reggaeton': it's a hybrid blend that mixes hip-hop, Caribbean reggae, Puerto Rican Plena and Bomba, Jamaican rhythms as 'well as rapping' in Spanish!</p>
+		<p>How could it be anything but diverse?  The beats and melodies you hear today have come about through an intimate combination of indigenous, European, and African influences over several centuries.  And Latin America's music styles are continuing to evolve.  Take the recent phenomenon of  'Reggaet&oacute;n': it's a hybrid blend that mixes hip-hop, Caribbean reggae, Puerto Rican Plena and Bomba, Jamaican rhythms as 'well as rapping' in Spanish!</p>
       </div>
        
       <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
@@ -87,13 +87,15 @@
     (function() {
       playing = false;
       paused = true;
-      $('div#pol1').css("z-index", 3);
-      $('div#pol2').css("z-index", 2);
-      $('div#pol3').css("z-index", 1);
+      $('div#pol1').css("z-index", 4);
+      $('div#pol2').css("z-index", 3);
+      $('div#pol3').css("z-index", 2);
+	  $('div#pol4').css("z-index", 1);
       $('div#pol1 > img').css("-webkit-transform", "rotate(0deg)");
       $('div#pol2 > img').css("-webkit-transform", "rotate(5deg)");
       $('div#pol3 > img').css("-webkit-transform", "rotate(-3deg)");
       $('div#pol4 > img').css("-webkit-transform", "rotate(-3deg)");
+	  $('div#pol4 > img').css("-webkit-transform", "rotate(-1deg)");
       
 	  if(sound.canPlayType('audio/mpeg')) {
 			$('#actualaudio-MusicAndDance').html('<audio id="MusicAndDanceaudio" controls preload onpause="playsLatinAmericas()" onplay="pauseLatinAmericas()"><source src="audio/Latin_America/Music_And_Dance.mp3" type="audio/mpeg"></audio>');
