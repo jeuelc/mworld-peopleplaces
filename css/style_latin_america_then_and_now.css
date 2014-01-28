@@ -1,6 +1,6 @@
 /********* Latin America Then And Now **********/
 
-#sub-latin-america-then-and-now, #sub-latin-america-then-and-now-what-is-Latin-America, #sub-latin-america-then-and-now-festivals-and-foods, #sub-latin-america-then-and-now-festivals-and-foods-Food, #sub-latin-america-then-and-now-festivals-and-foods-Music-and-Dance, #sub-latin-america-then-and-now-future-world{
+#sub-latin-america-then-and-now, #sub-latin-america-then-and-now-what-is-Latin-America, #sub-latin-america-then-and-now-festivals-and-foods, #sub-latin-america-then-and-now-festivals-and-foods-Food, #sub-latin-america-then-and-now-festivals-and-foods-Music-and-Dance, #sub-latin-america-then-and-now-future-world, #sub-latin-america-then-and-now-future-world-taking-their-place-on-the-world-stage, #sub-latin-america-then-and-now-what-is-Latin-America-Latin-America-before-columbus, #sub-latin-america-then-and-now-what-is-Latin-America-where-is-Latin-America, #sub-latin-america-then-and-now-what-is-Latin-America-why-do-we-call-it-Latin-America, #sub-latin-america-then-and-now-what-is-Latin-America-where-is-Latin-America-two-way-flows{
   background:url('images/9-12/People_and_Places/Latin_America/Latin_America_BG.png') no-repeat;
   height:748px !important;
   overflow:hidden !important;
@@ -65,6 +65,13 @@
 
 #sub-latin-america-then-and-now-festivals-and-foods-the-day-of-the-dead{
   background:url('images/9-12/People_and_Places/Latin_America/Festivals_And_Food/The_Day_Of_The_Deas/The_Day_Of_The_Dead_BG.png') no-repeat;
+  height:748px !important;
+  overflow:hidden !important;
+  width:1024px !important;
+}
+
+#sub-latin-america-then-and-now-what-is-Latin-America-we-all-speak-Spanish{
+  background:url('images/9-12/People_and_Places/Latin_America/What_Is_Latin_America/We_All_Speak_Spanish/We_All_Speak_Spanish_BG.png') no-repeat;
   height:748px !important;
   overflow:hidden !important;
   width:1024px !important;
@@ -347,6 +354,20 @@
 	color: #000000;
 }
 
+.navLatinAmericas-SpeakSpanish{
+	position: absolute;
+	left: 244px;
+	top: 212px;
+	width: 332px;
+	height: 302px;
+	overflow: auto;
+	text-align: left;
+	font-family: "comic sans ms";
+	font-size: 18px;
+	font-weight: normal;
+	color: #ffffff;
+}
+
 .bpcontentLatinAmericas{
   width:413px;
   height:356px;
@@ -361,7 +382,7 @@
   color:#000000;
 }
 
-#sub-latin-america-then-and-now .bptitleholder h1, #sub-latin-america-then-and-now-what-is-Latin-America .bptitleholder h1, #sub-latin-america-then-and-now-festivals-and-foods .bptitleholder h1, #sub-latin-america-then-and-now-festivals-and-foods-Food .bptitleholder h1, #sub-latin-america-then-and-now-festivals-and-foods-Music-and-Dance .bptitleholder h1, #sub-latin-america-then-and-now-future-world .bptitleholder h1{
+#sub-latin-america-then-and-now .bptitleholder h1, #sub-latin-america-then-and-now-what-is-Latin-America .bptitleholder h1, #sub-latin-america-then-and-now-festivals-and-foods .bptitleholder h1, #sub-latin-america-then-and-now-festivals-and-foods-Food .bptitleholder h1, #sub-latin-america-then-and-now-festivals-and-foods-Music-and-Dance .bptitleholder h1, #sub-latin-america-then-and-now-future-world .bptitleholder h1, #sub-latin-america-then-and-now-future-world-taking-their-place-on-the-world-stage .bptitleholder h1, #sub-latin-america-then-and-now-what-is-Latin-America-Latin-America-before-columbus .bptitleholder h1, #sub-latin-america-then-and-now-what-is-Latin-America-where-is-Latin-America .bptitleholder h1, #sub-latin-america-then-and-now-what-is-Latin-America-why-do-we-call-it-Latin-America .bptitleholder h1, #sub-latin-america-then-and-now-what-is-Latin-America-where-is-Latin-America-two-way-flows .bptitleholder h1{
 	text-transform: uppercase;
 	color: #ffffff !important;
 	font-family: "comic sans ms";
@@ -451,13 +472,32 @@
 	margin: 0;
 }
 
-#sub-latin-america-then-and-now .bptitleholder, #sub-latin-america-then-and-now-what-is-Latin-America .bptitleholder, #sub-latin-america-then-and-now-festivals-and-foods .bptitleholder, #sub-latin-america-then-and-now-festivals-and-foods-Food .bptitleholder, #sub-latin-america-then-and-now-festivals-and-foods-Music-and-Dance .bptitleholder, #sub-latin-america-then-and-now-future-world .bptitleholder{
+#sub-latin-america-then-and-now-what-is-Latin-America-we-all-speak-Spanish .bptitleholder h1{
+	text-transform: uppercase;
+	color: #f8edd7 !important;
+	font-family: "comic sans ms";
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#sub-latin-america-then-and-now .bptitleholder, #sub-latin-america-then-and-now-what-is-Latin-America .bptitleholder, #sub-latin-america-then-and-now-festivals-and-foods .bptitleholder, #sub-latin-america-then-and-now-festivals-and-foods-Food .bptitleholder, #sub-latin-america-then-and-now-festivals-and-foods-Music-and-Dance .bptitleholder, #sub-latin-america-then-and-now-future-world .bptitleholder, #sub-latin-america-then-and-now-what-is-Latin-America-Latin-America-before-columbus .bptitleholder, #sub-latin-america-then-and-now-what-is-Latin-America-where-is-Latin-America .bptitleholder, #sub-latin-america-then-and-now-what-is-Latin-America-why-do-we-call-it-Latin-America .bptitleholder, #sub-latin-america-then-and-now-what-is-Latin-America-where-is-Latin-America-two-way-flows .bptitleholder{
 	width: 627px;
 	height: 68px;
 	text-align: center;
 	line-height: 37px;
 	position: absolute;
 	top: 155px;
+	left: 194px;
+}
+
+#sub-latin-america-then-and-now-future-world-taking-their-place-on-the-world-stage .bptitleholder{
+	width: 627px;
+	height: 68px;
+	text-align: center;
+	line-height: 37px;
+	position: absolute;
+	top: 166px;
 	left: 194px;
 }
 
@@ -550,6 +590,17 @@
 }
 
 #sub-latin-america-then-and-now-festivals-and-foods-the-day-of-the-dead .bptitleholder{
+	width: 740px;
+	height: 55px;
+	text-align: left;
+	line-height: 40px;
+	position: absolute;
+	top: 26px;
+	left: 19px;
+	font-size: 11px;
+}
+
+#sub-latin-america-then-and-now-what-is-Latin-America-we-all-speak-Spanish .bptitleholder{
 	width: 740px;
 	height: 55px;
 	text-align: left;

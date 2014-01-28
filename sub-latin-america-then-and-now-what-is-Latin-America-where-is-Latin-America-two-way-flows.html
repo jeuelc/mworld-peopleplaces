@@ -1,0 +1,205 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-latin-america-then-and-now-what-is-Latin-America-where-is-Latin-America-two-way-flows">
+  <script src="js/hammer.js"></script>
+  <script src="js/jquery.hammer.js"></script>
+  <script src="js/slidebar_latin_america_then_and_now.js"></script>
+  <link rel="stylesheet" href="css/style_latin_america_then_and_now.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnLatinAmericas"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnLatinAmericas"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnLatinAmericas"></div></div>
+  <div class="infobtnholder"><div class="infobtnLatinAmericas"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnLatinAmericas"></div></div>
+  <div class="menubtnholder"><div class="menubtnLatinAmericas"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:0px;"><h1>Two way flows</h1></div>
+  <div id="spacechar">&nbsp;
+    <div data-role="content" class="kidzcontent">
+      <div class="v-spacer"></div>
+      <div class="sidebarleft-half">
+        <a id="quiz_lightbox" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Latin_America/What_Is_Latin_America/Where_Is_Latin_America/Two_Way_Flows/Why_Call_It_Latin_America_LightBox.png', '');">click here</a>
+        
+		<div id="f1_container" style="visibility:hidden;position:absolute;left:100px;top:270px;">
+          <div id="f1_card">
+            <div class="front face">
+              <img id="dopple" src="css/images/9-12/People_and_Places/Latin_America/What_Is_Latin_America/Where_Is_Latin_America/Two_Way_Flows/Why_Call_It_Latin_America.png">
+            </div>
+            <div id="backofcard" class="back face center" style="background:url(css/images/9-12/People_and_Places/Latin_America/What_Is_Latin_America/Where_Is_Latin_America/Two_Way_Flows/Why_Call_It_Latin_America_Reverse.png) no-repeat;">
+              <div class="returncard" style="position:absolute;left: 140px;top: 0px;width: 98px;height: 54px;"></div>
+              <div id="trueans" style="position:absolute;left: 171px;top: 103px;width: 157px;height: 28px;"></div>
+              <div id="falseans1" style="position:absolute;left: 171px;top: 140px;width: 157px;height: 29px;"></div>
+			  <div id="falseans2" style="position:absolute;left: 171px;top: 178px;width: 157px;height: 29px;"></div>
+			  <div id="falseans3" style="position:absolute;left: 171px;top: 210px;width: 157px;height: 29px;"></div>
+			  <div id="Light_Box_Image" style="position:absolute;left: 40px;top: 105px;width: 118px;height: 138px;"></div>
+			</div>
+          </div><!--/f1+card-->
+        </div><!--/f1_container-->
+		
+		<div id="zoomwrapper">
+          <div id="polb1" class="pPiece" style="left:100px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Latin_America/What_Is_Latin_America/Where_Is_Latin_America/Two_Way_Flows/Why_Call_It_Latin_America.png" alt="" />
+          </div>
+          <div id="polb2"class="pPiece" style="left:75px;top:290px;">
+             <img src="css/images/9-12/People_and_Places/Latin_America/What_Is_Latin_America/Where_Is_Latin_America/Two_Way_Flows/Weaving_In_Peru.png" alt="" />
+          </div>
+		</div><!--/zoomwrapper-->
+      </div>
+      
+      <div class="bpcontentLatinAmericas">
+        <p>Imagine the North American cowboy or the Argentine gaucho without a horse! Imagine Italian food without tomatoes!</p>
+		<p>Through colonisation, Europe brought horses to the Americas and took tomatoes back with them.  During the colonial era, colonisation usually meant that one dominant, imperial country exerted control over another country and its people, which were usually far away.  Their goal was to make profits by controlling the worlds trade networks.  To do this, the imperial countries also forcefully tried to make colonised peoples more like them, to have them adopt their cultures and speak their languages.</p>
+		<p>But when two peoples come into contact the cultural flows occur in both directions.  Between the Old World and the New, animals, foods, people, diseases and new ideas were exchanged.  Europe introduced rice, onions, cows and the common cold to the Americas, while it received corn, potatoes, tobacco and turkeys in return!</p>
+      </div>
+       
+      <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+    </div> <!-- end content -->  
+  </div><!--/spacechar-->        
+  
+    <div class="micbtnholder"><div class="micbtnLatinAmericas" id="playstopTwoWayFlows"></div></div>
+    <div class="bLatinAmericas"><div class="rwLatinAmericas" id="TwoWayFlowsaudiobbtn"></div></div>
+    <div class="plLatinAmericas"><div class="plpsLatinAmericas" id="TwoWayFlowsaudioplbtn"></div></div>
+    <div class="fLatinAmericas"><div class="fwLatinAmericas" id="TwoWayFlowsaudiofbtn"></div></div>
+    <div id="actualaudio-TwoWayFlows" style="visibility:hidden;"></div>
+  <!-- </div> -->
+  <!-- ----------------------- Video embedding --------------------------- -->
+  
+	<div id="watchWeavingInPeruVideo" style="width:1024px;height:748px;position:absolute;left:0px;top:0px;visibility:hidden;background:#000000;z-index:-1;">
+    <video id="watchWeaving" width="1024" height="748" preload>
+      <source src="css/images/9-12/People_and_Places/Latin_America/What_Is_Latin_America/Where_Is_Latin_America/Two_Way_Flows/Weaving_In_PEru_Video.mov" type="video/mp4">
+    </video>
+  </div>
+  
+  <!-- ------------------------------------------------------------------ -->
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+ 
+	var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      $('div#polb1').css("z-index", 1);
+      $('div#polb2').css("z-index", 2);
+      $('div#polb1 > img').css("-webkit-transform", "rotate(0deg)");
+	  $('#watchWeavingInPeruVideo').css({"visibility":"hidden", "z-index":-10});
+      $('div#polb2 > img').css("-webkit-transform", "rotate(5deg)");
+      
+	  if(sound.canPlayType('audio/mpeg')) {
+			$('#actualaudio-TwoWayFlows').html('<audio id="TwoWayFlowsaudio" controls preload onpause="playsLatinAmericas()" onplay="pauseLatinAmericas()"><source src="audio/Latin_America/Two_Way_Flows.mp3" type="audio/mpeg"></audio>');
+		  }             
+	  $("#sub-latin-america-then-and-now-what-is-Latin-America-where-is-Latin-America-two-way-flows").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+	})();
+    watchWeaving.addEventListener('ended', function() { 
+		$("#watchWeavingInPeruVideo").css({"visibility":"hidden", "z-index":-1});
+		$("#watchWeaving").css({"z-index":-1});
+		bgsoundLatinAmericasToday.play(); 
+	});
+
+	$("#watchWeaving").on('tap', function() {
+		$("#watchWeavingInPeruVideo").css({"visibility":"hidden", "z-index":-1});
+		$("#watchWeaving").css({"z-index":-1});
+		bgsoundLatinAmericasToday.play();
+		watchWeaving.pause();
+		watchWeaving.currentTime = 0;
+	});
+	
+	$('.homelinkbh').on('tap', function() { mainaudiobg.play(); bgsoundLatinAmericasToday.pause(); bgsoundLatinAmericasToday.currentTime = 0;});
+    
+	$('#falseans1').on('tap', function() {
+      alert("Wrong answer");
+    });
+	$('#falseans2').on('tap', function() {
+      alert("Wrong answer");
+    });
+	$('#falseans3').on('tap', function() {
+      alert("Wrong answer");
+    });
+    $('#trueans').on('tap', function() {
+      alert("Correct answer");
+    });
+	
+	$(".returncard").on('tap', function() {
+      $('#f1_card').css({"-webkit-transform": "rotateY(0deg)"});
+      $('#f1_card').css({"-moz-transform": "rotateY(0deg)"});
+      $('#f1_card').css({"-o-transform": "rotateY(0deg)"});
+      $('#f1_card').css({"transform": "rotateY(0deg)"});
+      setTimeout(function() {
+        $("#polb1").css({"visibility":"visible", "z-index":4});
+        $('#f1_container').css({"visibility":"hidden", "z-index":0});
+      }, 1000);
+    });
+    
+    $("#polb1").on('tap', function() {
+      $('#f1_container').css({"visibility":"visible", "z-index":10});
+      $(this).css({"visibility":"hidden"});
+      $('#f1_card').css({"-webkit-transform": "rotateY(180deg)"});
+      $('#f1_card').css({"-moz-transform": "rotateY(180deg)"});
+      $('#f1_card').css({"-o-transform": "rotateY(180deg)"});
+      $('#f1_card').css({"transform": "rotateY(180deg)"});
+    });
+    $("#polb2").on('tap', function() {
+      $("#watchWeavingInPeruVideo").css({"visibility":"visible", "z-index":10});
+      $("#watchWeaving").css({"z-index":9});
+      bgsoundLatinAmericasToday.pause();
+      watchWeaving.play();
+    });
+    
+	$("#Light_Box_Image").on('tap', function() {
+      $('#quiz_lightbox')[0].click();
+    });
+	
+	function goBack() {
+      $.mobile.changePage("sub-latin-america-then-and-now-what-is-Latin-America-where-is-Latin-America.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsDesigningPlace() {
+         bgsoundLatinAmericas.play();
+    }
+       
+    function pauseDesigningPlace() {
+         bgsoundLatinAmericas.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+    $("#playstopTwoWayFlows").on('tap', function() {
+      if(!playing) {
+        TwoWayFlowsaudio.play();
+        $('.micbtnLatinAmericas').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        TwoWayFlowsaudio.pause(); TwoWayFlowsaudio.currentTime = 0;
+        $('.micbtnLatinAmericas').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#TwoWayFlowsaudioplbtn").on('tap', function() {
+      if(!paused) {
+        TwoWayFlowsaudio.pause();
+        paused = true;
+      } else {
+        TwoWayFlowsaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#TwoWayFlowsaudiofbtn").on('tap', function() {
+      var ctime = TwoWayFlowsaudio.currentTime;
+      TwoWayFlowsaudio.currentTime = ctime + 10;
+    });
+    
+    $("#TwoWayFlowsaudiobbtn").on('tap', function() {
+      var ctime = TwoWayFlowsaudio.currentTime;
+      TwoWayFlowsaudio.currentTime = ctime - 10;
+    });
+    
+    $("#TwoWayFlowsaudiopsbtn").on('tap', function() {
+      TwoWayFlowsaudio.pause();
+    });
+  </script>
+  <script src="js/twocardLogicb.js"></script>  <!-- for card dragging effects -->
+</div> <!--//home-->

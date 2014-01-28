@@ -1,0 +1,104 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-latin-america-then-and-now-what-is-Latin-America-we-all-speak-Spanish">
+  <script src="js/slidebar_latin_america_then_and_now.js"></script>
+  <link rel="stylesheet" href="css/style_latin_america_then_and_now.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnLatinAmericas"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnLatinAmericas"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnLatinAmericas"></div></div>
+  <div class="infobtnholder"><div class="infobtnLatinAmericas"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnLatinAmericas"></div></div>
+  <div class="menubtnholder"><div class="menubtnLatinAmericas"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:14px;"><h1></h1></div>
+  <!-- <div id="SpeakSpanishlink" style="position:absolute;left: 500px;top: 143px;width: 493px;height: 145px;"></div> -->  
+  <div data-role="content" class="kidzcontent">
+	<div class="navLatinAmericas-SpeakSpanish">
+        <p>Well, not quite. While the most widely spoken language in Latin America is Spanish, it's not quite as simple as that.</p>
+		<p>If you were born in Brazil your first words would be in Portuguese, and if you had been born in Haiti, in the Caribbean Sea, you would grow up speaking French.  Of course, these are European languages that were imposed upon the peoples of the Americas as a result of European imperialism.</p>
+		<p>Before the arrival of the Europeans, though, there were thousands of indigenous languages and today many of the indigenous peoples of Latin America are bilingual, meaning they speak an indigenous language, like Quechua, Aymara, Guaran, Nahuatl, or one of the Mayan languages as well as Spanish or Portuguese.</p>
+    </div>
+  <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+  </div> <!-- end content -->  
+    
+  
+  <!--<div class="audiopanel">-->
+    <!-- images are in slidebarnat.js 
+         note: change the ids to be able play the narration
+    -->
+    <div class="micbtnholder"><div class="micbtnLatinAmericas" id="playstopSpeakSpanish"></div></div>
+    <div class="bLatinAmericas"><div class="rwLatinAmericas" id="SpeakSpanishaudiobbtn"></div></div>
+    <div class="plLatinAmericas"><div class="plpsLatinAmericas" id="SpeakSpanishaudioplbtn"></div></div>
+    <div class="fLatinAmericas"><div class="fwLatinAmericas" id="SpeakSpanishaudiofbtn"></div></div>
+    <div id="actualaudio-SpeakSpanish" style="visibility:hidden;"></div>
+  <!--</div>-->
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+    var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      if(sound.canPlayType('audio/mpeg')) {
+        $('#actualaudio-SpeakSpanish').html('<audio id="SpeakSpanishaudio" controls preload onpause="playsLatinAmericas()" onplay="pauseLatinAmericas()"><source src="audio/Latin_America/We_All_Speak_Spanish.mp3" type="audio/mpeg"></audio>');
+      } 
+    
+      $("#sub-latin-america-then-and-now-what-is-Latin-America-we-all-speak-Spanish").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+    })();
+    
+    $('.homelinkbh').on('tap', function() { mainaudiobg.play(); bgsoundLatinAmerica.pause(); bgsoundLatinAmerica.currentTime = 0;});
+    
+    function goBack() {
+      $.mobile.changePage("sub-latin-america-then-and-now-what-is-Latin-America.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsLatinAmerica() {
+         bgsoundLatinAmerica.play();
+    }
+       
+    function pauseLatinAmerica() {
+         bgsoundLatinAmerica.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+    $("#playstopSpeakSpanish").on('tap', function() {
+      if(!playing) {
+        SpeakSpanishaudio.play();
+        $('.micbtnLatinAmericas').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        SpeakSpanishaudio.pause(); SpeakSpanishaudio.currentTime = 0;
+        $('.micbtnLatinAmericas').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#SpeakSpanishaudioplbtn").on('tap', function() {
+      if(!paused) {
+        SpeakSpanishaudio.pause();
+        paused = true;
+      } else {
+        SpeakSpanishaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#SpeakSpanishaudiofbtn").on('tap', function() {
+      var ctime = SpeakSpanishaudio.currentTime;
+      SpeakSpanishaudio.currentTime = ctime + 10;
+    });
+    
+    $("#SpeakSpanishaudiobbtn").on('tap', function() {
+      var ctime = SpeakSpanishaudio.currentTime;
+      SpeakSpanishaudio.currentTime = ctime - 10;
+    });
+    
+    $("#SpeakSpanishaudiopsbtn").on('tap', function() {
+      SpeakSpanishaudio.pause();
+    });
+  </script>
+</div> <!--//home-->

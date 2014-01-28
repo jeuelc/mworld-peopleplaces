@@ -1,0 +1,170 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-latin-america-then-and-now-what-is-Latin-America-why-do-we-call-it-Latin-America">
+  <script src="js/hammer.js"></script>
+  <script src="js/jquery.hammer.js"></script>
+  <script src="js/slidebar_latin_america_then_and_now.js"></script>
+  <link rel="stylesheet" href="css/style_latin_america_then_and_now.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnLatinAmericas"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnLatinAmericas"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnLatinAmericas"></div></div>
+  <div class="infobtnholder"><div class="infobtnLatinAmericas"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnLatinAmericas"></div></div>
+  <div class="menubtnholder"><div class="menubtnLatinAmericas"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:0px;"><h1>Why do we call it Latin America?</h1></div>
+  <div id="spacechar">&nbsp;
+    <div data-role="content" class="kidzcontent">
+      <div class="v-spacer"></div>
+      <div class="sidebarleft-half">
+        <a id="quiz_lightbox" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Latin_America/What_Is_Latin_America/Why_Do_We_Call_It_Latin_America/Why_do_We_Call_It_Latin_America_LightBox.png', '');">click here</a>
+        
+		<div id="f1_container" style="visibility:hidden;position:absolute;left:100px;top:270px;">
+          <div id="f1_card">
+            <div class="front face">
+              <img id="dopple" src="css/images/9-12/People_and_Places/Latin_America/What_Is_Latin_America/Why_Do_We_Call_It_Latin_America/Why_do_We_Call_It_Latin_America.png">
+            </div>
+            <div id="backofcard" class="back face center" style="background:url(css/images/9-12/People_and_Places/Latin_America/What_Is_Latin_America/Why_Do_We_Call_It_Latin_America/Why_do_We_Call_It_Latin_America_Reverse.png) no-repeat;">
+              <div class="returncard" style="position:absolute;left: 140px;top: 0px;width: 98px;height: 54px;"></div>
+              <div id="trueans" style="position:absolute;left: 79px;top: 175px;width: 85px;height: 59px;"></div>
+              <div id="falseans1" style="position:absolute;left: 195px;top: 173px;width: 90px;height: 60px;"></div>
+			  <div id="Light_Box_Image" style="position:absolute;left: 46px;top: 89px;width: 270px;height: 70px;"></div>
+			</div>
+          </div><!--/f1+card-->
+        </div><!--/f1_container-->
+		
+		<div id="zoomwrapper">
+          <div id="pol1" class="pPiece" style="left:100px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Latin_America/What_Is_Latin_America/Why_Do_We_Call_It_Latin_America/Why_do_We_Call_It_Latin_America.png" alt="" />
+          </div>
+        </div><!--/zoomwrapper-->
+      </div>
+      
+      <div class="bpcontentLatinAmericas">
+        <p>For the Europeans, Latin America was first called the Indies because Columbus thought he had arrived to India!  Later, having learnt they were not in Asia but a brand new continent, the Europeans called it the 'New World'.</p>
+		<p>The name 'America' is said to come from an Italian explorer called Amerigo Vespucci who made several voyages to the New World in the early 1500s.  Once the Spanish began to extend their empire the region also came to be known as Spanish America.</p>
+		<p>As one of Spain's imperial rivals, though, it was the French who began calling it 'Latin' America in the 1860s, when Napoleon III tried to gain imperial control over Mexico.  Today we still call it Latin America because the region's languages (Spanish, Portuguese and French) all stem from Latin.</p>
+      </div>
+       
+      <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+    </div> <!-- end content -->  
+  </div><!--/spacechar-->        
+  
+    <div class="micbtnholder"><div class="micbtnLatinAmericas" id="playstopFestivalsFoods"></div></div>
+    <div class="bLatinAmericas"><div class="rwLatinAmericas" id="FestivalsFoodsaudiobbtn"></div></div>
+    <div class="plLatinAmericas"><div class="plpsLatinAmericas" id="FestivalsFoodsaudioplbtn"></div></div>
+    <div class="fLatinAmericas"><div class="fwLatinAmericas" id="FestivalsFoodsaudiofbtn"></div></div>
+    <div id="actualaudio-FestivalsFoods" style="visibility:hidden;"></div>
+  <!-- </div> -->
+  
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+ 
+	var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      $('div#pol1').css("z-index", 1);
+      $('div#pol1 > img').css("-webkit-transform", "rotate(0deg)");
+      
+	  if(sound.canPlayType('audio/mpeg')) {
+			$('#actualaudio-FestivalsFoods').html('<audio id="FestivalsFoodsaudio" controls preload onpause="playsLatinAmericas()" onplay="pauseLatinAmericas()"><source src="audio/Latin_America/Why_do_We_Call_It_Latin_America.mp3" type="audio/mpeg"></audio>');
+	  }             
+	  $("#sub-latin-america-then-and-now-what-is-Latin-America-why-do-we-call-it-Latin-America").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+	})();
+    
+	$('.homelinkbh').on('tap', function() { mainaudiobg.play(); bgsoundLatinAmericasToday.pause(); bgsoundLatinAmericasToday.currentTime = 0;});
+    
+	$('#falseans1').on('tap', function() {
+      alert("Wrong answer");
+    });
+	$('#falseans2').on('tap', function() {
+      alert("Wrong answer");
+    });
+	$('#falseans3').on('tap', function() {
+      alert("Wrong answer");
+    });
+    $('#trueans').on('tap', function() {
+      alert("Correct answer");
+    });
+	
+	$(".returncard").on('tap', function() {
+      $('#f1_card').css({"-webkit-transform": "rotateY(0deg)"});
+      $('#f1_card').css({"-moz-transform": "rotateY(0deg)"});
+      $('#f1_card').css({"-o-transform": "rotateY(0deg)"});
+      $('#f1_card').css({"transform": "rotateY(0deg)"});
+      setTimeout(function() {
+        $("#pol1").css({"visibility":"visible", "z-index":4});
+        $('#f1_container').css({"visibility":"hidden", "z-index":0});
+      }, 1000);
+    });
+    
+    $("#pol1").on('tap', function() {
+      $('#f1_container').css({"visibility":"visible", "z-index":10});
+      $(this).css({"visibility":"hidden"});
+      $('#f1_card').css({"-webkit-transform": "rotateY(180deg)"});
+      $('#f1_card').css({"-moz-transform": "rotateY(180deg)"});
+      $('#f1_card').css({"-o-transform": "rotateY(180deg)"});
+      $('#f1_card').css({"transform": "rotateY(180deg)"});
+    });
+    
+	$("#Light_Box_Image").on('tap', function() {
+      $('#quiz_lightbox')[0].click();
+    });
+	
+	function goBack() {
+      $.mobile.changePage("sub-latin-america-then-and-now-what-is-Latin-America.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsDesigningPlace() {
+         bgsoundLatinAmericas.play();
+    }
+       
+    function pauseDesigningPlace() {
+         bgsoundLatinAmericas.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+    $("#playstopFestivalsFoods").on('tap', function() {
+      if(!playing) {
+        FestivalsFoodsaudio.play();
+        $('.micbtnLatinAmericas').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        FestivalsFoodsaudio.pause(); FestivalsFoodsaudio.currentTime = 0;
+        $('.micbtnLatinAmericas').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#FestivalsFoodsaudioplbtn").on('tap', function() {
+      if(!paused) {
+        FestivalsFoodsaudio.pause();
+        paused = true;
+      } else {
+        FestivalsFoodsaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#FestivalsFoodsaudiofbtn").on('tap', function() {
+      var ctime = FestivalsFoodsaudio.currentTime;
+      FestivalsFoodsaudio.currentTime = ctime + 10;
+    });
+    
+    $("#FestivalsFoodsaudiobbtn").on('tap', function() {
+      var ctime = FestivalsFoodsaudio.currentTime;
+      FestivalsFoodsaudio.currentTime = ctime - 10;
+    });
+    
+    $("#FestivalsFoodsaudiopsbtn").on('tap', function() {
+      FestivalsFoodsaudio.pause();
+    });
+  </script>
+  <script src="js/onecardLogic.js"></script>  <!-- for card dragging effects -->
+</div> <!--//home-->

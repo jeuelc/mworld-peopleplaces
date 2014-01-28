@@ -1,0 +1,142 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-latin-america-then-and-now-what-is-Latin-America-where-is-Latin-America">
+  <script src="js/hammer.js"></script>
+  <script src="js/jquery.hammer.js"></script>
+  <script src="js/slidebar_latin_america_then_and_now.js"></script>
+  <link rel="stylesheet" href="css/style_latin_america_then_and_now.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnLatinAmericas"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnLatinAmericas"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnLatinAmericas"></div></div>
+  <div class="infobtnholder"><div class="infobtnLatinAmericas"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnLatinAmericas"></div></div>
+  <div class="menubtnholder"><div class="menubtnLatinAmericas"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:0px;"><h1>Where is Latin America?</h1></div>
+  <div id="spacechar">&nbsp;
+    <div data-role="content" class="kidzcontent">
+      <div class="v-spacer"></div>
+      <div class="sidebarleft-half">
+        <a id="maplink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Latin_America/What_Is_Latin_America/Where_Is_Latin_America/Map_Of_Latin_America_Hi_Res.jpg', 'Map of Latin America, surrounded by coffee beans which are traded around the world.');">click here</a>
+		
+        <a id="bolivianlink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Latin_America/What_Is_Latin_America/Where_Is_Latin_America/Bolivian_Costume_Hi_Res.jpg', 'A Bolivian woman dresses in costume.');">click here</a>
+		
+		<a id="ancientlink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Latin_America/What_Is_Latin_America/Where_Is_Latin_America/Ancient_GOD_Hi_Res_New.jpg', '
+The face of an ancient GOD in a pre-Columbian city.');">click here</a>
+		
+		<div id="zoomwrapper">
+          <div id="polb1" class="pPiece" style="left:100px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Latin_America/What_Is_Latin_America/Where_Is_Latin_America/Map_Of_Latin_America.jpg" alt="" />
+          </div>
+          <div id="polb2"class="pPiece" style="left:75px;top:290px;">
+             <img src="css/images/9-12/People_and_Places/Latin_America/What_Is_Latin_America/Where_Is_Latin_America/Bolivian_Costume.jpg" alt="" />
+          </div>
+		  <div id="polb3"class="pPiece" style="left:80px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Latin_America/What_Is_Latin_America/Where_Is_Latin_America/Ancient_GOD_New.jpg" alt="" />
+          </div>
+		</div><!--/zoomwrapper-->
+      </div>
+      
+      <div class="bpcontentLatinAmericas">
+        <p>You can find Latin America sandwiched between the Atlantic Ocean and the Pacific Ocean.  But because its made up of the Spanish and Portuguese-speaking parts of the Americas (and sometimes the French parts) it's not exactly all of South America or all of North America.</p>
+		<p>Roughly speaking, Latin America stretches from the tip of South America to the north of Mexico, including some islands in the Caribbean Sea.  But borders are funny things.  Today there are so many Spanish-speakers in the southern United States and in New York (called 'Latinos') that we could say that Latin America also includes parts of the US.</p>
+      </div>
+       
+      <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+    </div> <!-- end content -->  
+  </div><!--/spacechar-->        
+  
+    <div class="micbtnholder"><div class="micbtnLatinAmericas" id="playstopWhereIsLatinAmerica"></div></div>
+    <div class="bLatinAmericas"><div class="rwLatinAmericas" id="WhereIsLatinAmericaaudiobbtn"></div></div>
+    <div class="plLatinAmericas"><div class="plpsLatinAmericas" id="WhereIsLatinAmericaaudioplbtn"></div></div>
+    <div class="fLatinAmericas"><div class="fwLatinAmericas" id="WhereIsLatinAmericaaudiofbtn"></div></div>
+    <div id="actualaudio-WhereIsLatinAmerica" style="visibility:hidden;"></div>
+  <!-- </div> -->
+  
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+ 
+	var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      $('div#polb1').css("z-index", 2);
+      $('div#polb2').css("z-index", 1);
+      $('div#polb1 > img').css("-webkit-transform", "rotate(0deg)");
+      $('div#polb2 > img').css("-webkit-transform", "rotate(5deg)");
+      $('div#polb3 > img').css("-webkit-transform", "rotate(-3deg)");
+      
+	  if(sound.canPlayType('audio/mpeg')) {
+			$('#actualaudio-WhereIsLatinAmerica').html('<audio id="WhereIsLatinAmericaaudio" controls preload onpause="playsLatinAmericas()" onplay="pauseLatinAmericas()"><source src="audio/Latin_America/Where_Is_Latin_America.mp3" type="audio/mpeg"></audio>');
+		  }             
+	  $("#sub-latin-america-then-and-now-what-is-Latin-America-where-is-Latin-America").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+	})();
+    
+	$('.homelinkbh').on('tap', function() { mainaudiobg.play(); bgsoundLatinAmericasToday.pause(); bgsoundLatinAmericasToday.currentTime = 0;});
+    
+	$("#polb1").on('tap', function() {
+      $('#maplink')[0].click();
+    });
+    $("#polb2").on('tap', function() {
+      $('#bolivianlink')[0].click();
+    });
+	$("#polb3").on('tap', function() {
+      $('#ancientlink')[0].click();
+    });
+	
+	function goBack() {
+      $.mobile.changePage("sub-latin-america-then-and-now-what-is-Latin-America.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsDesigningPlace() {
+         bgsoundLatinAmericas.play();
+    }
+       
+    function pauseDesigningPlace() {
+         bgsoundLatinAmericas.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+    $("#playstopWhereIsLatinAmerica").on('tap', function() {
+      if(!playing) {
+        WhereIsLatinAmericaaudio.play();
+        $('.micbtnLatinAmericas').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        WhereIsLatinAmericaaudio.pause(); WhereIsLatinAmericaaudio.currentTime = 0;
+        $('.micbtnLatinAmericas').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#WhereIsLatinAmericaaudioplbtn").on('tap', function() {
+      if(!paused) {
+        WhereIsLatinAmericaaudio.pause();
+        paused = true;
+      } else {
+        WhereIsLatinAmericaaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#WhereIsLatinAmericaaudiofbtn").on('tap', function() {
+      var ctime = WhereIsLatinAmericaaudio.currentTime;
+      WhereIsLatinAmericaaudio.currentTime = ctime + 10;
+    });
+    
+    $("#WhereIsLatinAmericaaudiobbtn").on('tap', function() {
+      var ctime = WhereIsLatinAmericaaudio.currentTime;
+      WhereIsLatinAmericaaudio.currentTime = ctime - 10;
+    });
+    
+    $("#WhereIsLatinAmericaaudiopsbtn").on('tap', function() {
+      WhereIsLatinAmericaaudio.pause();
+    });
+  </script>
+  <script src="js/threecardLogicb.js"></script>  <!-- for card dragging effects -->
+</div> <!--//home-->

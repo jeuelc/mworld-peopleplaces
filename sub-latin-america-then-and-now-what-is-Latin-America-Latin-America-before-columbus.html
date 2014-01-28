@@ -1,0 +1,183 @@
+<!-- i-C-a -->
+<div data-role="page" id="sub-latin-america-then-and-now-what-is-Latin-America-Latin-America-before-columbus">
+  <script src="js/hammer.js"></script>
+  <script src="js/jquery.hammer.js"></script>
+  <script src="js/slidebar_latin_america_then_and_now.js"></script>
+  <link rel="stylesheet" href="css/style_latin_america_then_and_now.css" />
+  <div class="menuhousing"></div>
+  <div class="homebtnholder"><div class="homebtnLatinAmericas"></div></div>
+  <div class="mpbtnholder"><div class="mpbtnLatinAmericas"></div></div>
+  <div class="cpbtnholder"><div class="cpbtnLatinAmericas"></div></div>
+  <div class="infobtnholder"><div class="infobtnLatinAmericas"></div></div>
+  <div class="credsbtnholder"><div class="credsbtnLatinAmericas"></div></div>
+  <div class="menubtnholder"><div class="menubtnLatinAmericas"></div></div>
+  
+  <div class="bptitleholder" style="padding-top:0px;"><h1>Latin America before Columbus</h1></div>
+  <div id="spacechar">&nbsp;
+    <div data-role="content" class="kidzcontent">
+      <div class="v-spacer"></div>
+      <div class="sidebarleft-half">
+        <a id="externallink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Latin_America/What_Is_Latin_America/Latin_America_Before_Columbus/Machu_Picchu_Hi_Res.jpg', 'Machu Picchu or Machu Pikchu is a 15th-century Inca site located in Peru, 2,430 metres above sea level.');">click here</a>
+		
+        <a id="closelink" style="visibility:hidden;" href="JavaScript:html5Lightbox.showLightbox(0, 'css/images/9-12/People_and_Places/Latin_America/What_Is_Latin_America/Latin_America_Before_Columbus/The_Aztec_Calendar_Hi_Res.jpg', 'The Aztecs, who lived in Mexico, were one of the many indigenous communities of Latin America.');">click here</a>
+		
+		<div id="f1_container" style="visibility:hidden;position:absolute;left:100px;top:270px;">
+          <div id="f1_card">
+            <div class="front face">
+              <img id="dopple" src="css/images/9-12/People_and_Places/Latin_America/What_Is_Latin_America/Latin_America_Before_Columbus/Christopher_Columbus.jpg">
+            </div>
+            <div id="backofcard" class="back face center" style="background:url(css/images/9-12/People_and_Places/Latin_America/What_Is_Latin_America/Latin_America_Before_Columbus/Christopher_Columbus_Reverse.png) no-repeat;">
+              <div class="returncard" style="position:absolute;left: 140px;top: 0px;width: 98px;height: 54px;"></div>
+              <div id="trueans" style="position:absolute;left: 171px;top: 103px;width: 157px;height: 28px;"></div>
+              <div id="falseans1" style="position:absolute;left: 171px;top: 140px;width: 157px;height: 29px;"></div>
+			  <div id="falseans2" style="position:absolute;left: 171px;top: 178px;width: 157px;height: 29px;"></div>
+			  <div id="falseans3" style="position:absolute;left: 171px;top: 210px;width: 157px;height: 29px;"></div>
+			</div>
+          </div><!--/f1+card-->
+        </div><!--/f1_container-->
+		
+		<div id="zoomwrapper">
+          <div id="pol1" class="pPiece" style="left:100px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Latin_America/What_Is_Latin_America/Latin_America_Before_Columbus/Christopher_Columbus.jpg" alt="" />
+          </div>
+          <div id="pol2"class="pPiece" style="left:75px;top:290px;">
+             <img src="css/images/9-12/People_and_Places/Latin_America/What_Is_Latin_America/Latin_America_Before_Columbus/Machu_Picchu.jpg" alt="" />
+          </div>
+		  <div id="pol3"class="pPiece" style="left:80px;top:270px;">
+             <img src="css/images/9-12/People_and_Places/Latin_America/What_Is_Latin_America/Latin_America_Before_Columbus/The_Aztec_Calendar.jpg" alt="" />
+          </div>
+		</div><!--/zoomwrapper-->
+      </div>
+      
+      <div class="bpcontentLatinAmericas">
+        <p>Did Christopher Columbus discover a 'New World' when he first touched American soil in 1492?  Well, that's what the Europeans thought.  But it was only 'new' to them.  Hundreds of indigenous communities with a total population of several million had already been living in the Americas for centuries before Columbus's arrival.  In fact, some of their cities were larger and more effectively organised than the cities of Europe.</p>
+		<p>One of these cities was Tenochtitl&agrave;n, which was the capital of the Mexica people, who we know today as the Aztecs.  It was so huge and sophisticated the Europeans had never seen anything like it.  Over the centuries, Mexico City has slowly been built on top of the ruins of Tenochtitl&agrave;n.  And because Tenochtitl&agrave;n had been built on a lake, the soft soil beneath means that today the sheer weight of Mexico City makes it sink 10-15cm every year!</p>
+      </div>
+       
+      <div class="botlogoholder"><a href="home.html" class="homelinkbh"><img src="css/images/9-12/People_and_Places/bottomhomepp.png"></a></div>
+    </div> <!-- end content -->  
+  </div><!--/spacechar-->        
+  
+    <div class="micbtnholder"><div class="micbtnLatinAmericas" id="playstopBeforeColumbus"></div></div>
+    <div class="bLatinAmericas"><div class="rwLatinAmericas" id="BeforeColumbusaudiobbtn"></div></div>
+    <div class="plLatinAmericas"><div class="plpsLatinAmericas" id="BeforeColumbusaudioplbtn"></div></div>
+    <div class="fLatinAmericas"><div class="fwLatinAmericas" id="BeforeColumbusaudiofbtn"></div></div>
+    <div id="actualaudio-BeforeColumbus" style="visibility:hidden;"></div>
+  <!-- </div> -->
+  
+  <script>
+  // sound setup is in home.html and index.js
+    sound = new Audio(); // 'sound' is now an audio object
+ 
+	var playing;
+    var paused;
+    (function() {
+      playing = false;
+      paused = true;
+      $('div#pol1').css("z-index", 2);
+      $('div#pol2').css("z-index", 1);
+      $('div#pol1 > img').css("-webkit-transform", "rotate(0deg)");
+      $('div#pol2 > img').css("-webkit-transform", "rotate(5deg)");
+      $('div#pol3 > img').css("-webkit-transform", "rotate(-3deg)");
+      
+	  if(sound.canPlayType('audio/mpeg')) {
+			$('#actualaudio-BeforeColumbus').html('<audio id="BeforeColumbusaudio" controls preload onpause="playsLatinAmericas()" onplay="pauseLatinAmericas()"><source src="audio/Latin_America/Before_Columbus.mp3" type="audio/mpeg"></audio>');
+		  }             
+	  $("#sub-latin-america-then-and-now-what-is-Latin-America-Latin-America-before-columbus").swipe( { swipeRight:goBack, allowPageScroll:"auto"} );
+	})();
+    
+	$('.homelinkbh').on('tap', function() { mainaudiobg.play(); bgsoundLatinAmericasToday.pause(); bgsoundLatinAmericasToday.currentTime = 0;});
+    
+	$('#falseans1').on('tap', function() {
+      alert("Wrong answer");
+    });
+	$('#falseans2').on('tap', function() {
+      alert("Wrong answer");
+    });
+	$('#falseans3').on('tap', function() {
+      alert("Wrong answer");
+    });
+    $('#trueans').on('tap', function() {
+      alert("Correct answer");
+    });
+	
+	$(".returncard").on('tap', function() {
+      $('#f1_card').css({"-webkit-transform": "rotateY(0deg)"});
+      $('#f1_card').css({"-moz-transform": "rotateY(0deg)"});
+      $('#f1_card').css({"-o-transform": "rotateY(0deg)"});
+      $('#f1_card').css({"transform": "rotateY(0deg)"});
+      setTimeout(function() {
+        $("#pol1").css({"visibility":"visible", "z-index":4});
+        $('#f1_container').css({"visibility":"hidden", "z-index":0});
+      }, 1000);
+    });
+    
+    $("#pol1").on('tap', function() {
+      $('#f1_container').css({"visibility":"visible", "z-index":10});
+      $(this).css({"visibility":"hidden"});
+      $('#f1_card').css({"-webkit-transform": "rotateY(180deg)"});
+      $('#f1_card').css({"-moz-transform": "rotateY(180deg)"});
+      $('#f1_card').css({"-o-transform": "rotateY(180deg)"});
+      $('#f1_card').css({"transform": "rotateY(180deg)"});
+    });
+    $("#pol2").on('tap', function() {
+      $('#externallink')[0].click();
+    });
+    $("#pol3").on('tap', function() {
+      $('#closelink')[0].click();
+    });
+	
+	function goBack() {
+      $.mobile.changePage("sub-latin-america-then-and-now-what-is-Latin-America.html", {transition: "slide", reverse: true });
+    }
+    
+    function playsDesigningPlace() {
+         bgsoundLatinAmericas.play();
+    }
+       
+    function pauseDesigningPlace() {
+         bgsoundLatinAmericas.pause();
+    }
+    /* ******************** */
+    /* this is the microphone button */
+    $("#playstopBeforeColumbus").on('tap', function() {
+      if(!playing) {
+        BeforeColumbusaudio.play();
+        $('.micbtnLatinAmericas').css('background-position-x', '-81px');
+        playing = true;
+        paused = false;
+      } else {
+        BeforeColumbusaudio.pause(); BeforeColumbusaudio.currentTime = 0;
+        $('.micbtnLatinAmericas').css('background-position-x', '0px');
+        playing = false;
+        paused = true;
+      }
+    });
+    
+    $("#BeforeColumbusaudioplbtn").on('tap', function() {
+      if(!paused) {
+        BeforeColumbusaudio.pause();
+        paused = true;
+      } else {
+        BeforeColumbusaudio.play();
+        paused = false;
+      }
+      //$(".audiopanel").css({"backgroundPosition":"-197px 0px"});
+    });
+    
+    $("#BeforeColumbusaudiofbtn").on('tap', function() {
+      var ctime = BeforeColumbusaudio.currentTime;
+      BeforeColumbusaudio.currentTime = ctime + 10;
+    });
+    
+    $("#BeforeColumbusaudiobbtn").on('tap', function() {
+      var ctime = BeforeColumbusaudio.currentTime;
+      BeforeColumbusaudio.currentTime = ctime - 10;
+    });
+    
+    $("#BeforeColumbusaudiopsbtn").on('tap', function() {
+      BeforeColumbusaudio.pause();
+    });
+  </script>
+  <script src="js/threecardLogic.js"></script>  <!-- for card dragging effects -->
+</div> <!--//home-->
